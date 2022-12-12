@@ -407,8 +407,8 @@ if ($('.collections-swiper').length) {
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.collections-swiper__next',
+			prevEl: '.collections-swiper__prev',
 		},
 		pagination: {
 			el: ".swiper-pagination",
@@ -427,6 +427,12 @@ if ($('.collections-swiper').length) {
 			},
 
 			1200: {
+				slidesPerView: 4,
+				spaceBetween: 30,
+
+			},
+
+			1800: {
 				slidesPerView: 4,
 				spaceBetween: 40,
 			},
