@@ -1,0 +1,101 @@
+<div class="hi-card">
+	<a href="#" class="hi-card__img">
+		<img src="@@img" alt="">
+	</a>
+	<div class="hi-card__content">
+		<div class="hi-card__brand">@@brand</div>
+		<div class="hi-card__row">
+			<div class="hi-card__head">
+				<a href="#" class="hi-card__title">@@title</a>
+				<div class="hi-card__price visible-iphone">
+					@@if(priceOld != ''){
+					<span class="price-old">@@priceOld</span>
+					}
+					<span class="price-value @@if(priceOld != ''){text-danger}">@@priceValue</span>
+
+				</div>
+				<div class="hi-card__details ort-details">
+					@@if(size != ''){
+					<div class="ort-details__item">
+						<div class="ort-details__icon">
+							<svg class="icon icon-size">
+								<use xlink:href="img/sprite.svg#size"></use>
+							</svg>
+						</div>
+						<div class="ort-details__content">
+							@@size
+						</div>
+					</div>
+					}
+					@@if(delivery != ''){
+					<div class="ort-details__item">
+						<div class="ort-details__icon">
+							<svg class="icon icon-track">
+								<use xlink:href="img/sprite.svg#track"></use>
+							</svg>
+						</div>
+						<div class="ort-details__content toltipe-wrap _toltipe-toggle">
+							<span class="dotted">@@delivery</span>
+							<div class="toltipe toltipe--top-center ">
+								Взуття в наявності на складі в постачальника в Україні. <br>Безкоштовна доставка до вашого відділення Нової Пошти займе 3-7 днів, залежно від регіону доставки.
+							</div>
+						</div>
+					</div>
+					}
+					@@if(tth != ''){
+					<div class="ort-details__item">
+						<div class="ort-details__icon">
+							<svg class="icon icon-track">
+								<use xlink:href="img/sprite.svg#track"></use>
+							</svg>
+						</div>
+						<div class="ort-details__content">
+
+							@@tth
+							@@if(tthCopyBtn == 'true'){
+							<button class="btn-copy">
+								<svg class="icon icon-copy">
+									<use xlink:href="img/sprite.svg#copy"></use>
+								</svg>
+							</button>
+							}
+						</div>
+					</div>
+					}
+
+					<div class="ort-details__row">
+						<div class="ort-details__item ort-details__item--default">
+							<div class="ort-details__icon">
+								<svg class="icon icon-info">
+									<use xlink:href="img/sprite.svg#info"></use>
+								</svg>
+							</div>
+							<div class="ort-details__content">
+								@@dataDelivery
+
+							</div>
+						</div>
+						<div class="ort-details__item ort-details__item--default">
+							<div class="ort-details__icon">
+								<svg class="icon icon-gift-circle">
+									<use xlink:href="img/sprite.svg#gift-circle"></use>
+								</svg>
+							</div>
+							<div class="ort-details__content">
+								@@promoCode
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hi-card__price hidden-iphone">
+				@@if(priceOld != ''){
+				<span class="price-old">@@priceOld</span>
+				}
+				<span class="price-value @@if(priceOld != ''){text-danger}">@@priceValue</span>
+			</div>
+		</div>
+	</div>
+</div>

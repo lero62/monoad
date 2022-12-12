@@ -1,0 +1,582 @@
+.tel-bot
+	display: flex 
+	align-items: flex-start
+	padding: 1rem
+	&__icon 
+		flex: none 
+		margin-right: 2.3rem
+		padding-top: 0.5rem
+		.icon
+			font-size: 2.5rem
+	&__content 
+		flex: 1
+		min-width: 1px
+
+
+.favorites
+	border: .1rem solid #E1E1E1
+	.favorite-card
+		border-bottom: .1rem solid #E1E1E1
+		&:last-child 
+			border: none
+
+.favorite-card
+	position: relative
+	padding: 3.2rem 8rem 3.2rem 6rem
+	display: flex 
+	align-items: flex-start
+	transition: background 0.2s linear
+	&__img 
+		width: 24.2rem
+		flex: none 
+		margin-right: 4.5rem
+		position: relative
+		img 
+			max-height: 20.9rem
+			margin-left: auto
+			margin-right: auto
+	&__content
+		flex: 1
+		align-self: center 
+		min-width: 1px 
+	&__row 
+		display: flex 
+		
+	&__head 
+		flex: 1 
+		min-width: 1px 
+
+		.alert
+			margin-bottom: 1.6rem
+
+	&__brand 
+		text-transform: uppercase
+		font-size: 1.3rem
+		color: #636363
+		margin-bottom: 0.4rem
+	&__title 
+		font-weight: 500
+		font-size: 2.4rem
+		margin-bottom: 1.5rem
+		line-height: 1.2
+
+	&__details 
+		display: flex 
+		flex-wrap: wrap
+
+		margin-bottom: 2rem
+		.ort-details__item
+			margin-right: 4rem
+			&:last-child 
+				margin-right: 0
+				margin-bottom: 0.5rem
+
+	&__description 
+		font-size: 1.3rem
+		font-weight: 400
+		line-height: 1.7
+		+ellipsis(3)
+		max-height: 6.6rem
+
+	&__side 
+		flex: none
+		width: 16.5rem
+		margin-left: 6rem
+		text-align: center
+		display: flex 
+		flex-direction: column
+
+	&__price 
+		margin-top: -.2rem
+		margin-bottom: 2.5rem
+		.price-old, .price-value 
+			font-size: 2.4rem
+			margin: 0
+			display: block
+		.price-old 
+			font-size: 1.8rem
+			padding-top: 0.5rem
+			padding-bottom: 0.4rem
+
+	&__controls 
+		.btn 
+			margin-top: 1rem
+	&__check 
+		position: absolute
+		top: -.1rem
+		left: -.1rem
+		margin: 0
+		cursor: pointer
+		z-index: 3
+		span 
+			display: flex 
+			align-items: center
+			justify-content: center
+			width: 5.2rem
+			height: 5.2rem
+			+tr
+			&:after 
+				content: ''
+				width: 3.6rem
+				height: 3.6rem
+				position: absolute
+				top: .8rem
+				left: .8rem
+				background: rgba(229, 229, 229, 0.52)
+				+tr
+			&:before 
+				content: ''
+				position: absolute
+				left: 1.6rem
+				top: 1.6rem
+				width: 2rem
+				height: 2rem
+				background: #FFFFFF
+				border: .1rem solid #C4C4C4
+				border-radius: .2rem
+				z-index: 2
+				+tr
+			.icon 
+				transform: scale(0)
+				font-size: 2rem
+
+
+		input 
+			display: none
+			&:checked + span 
+				background: $color-warning
+				&:after, &:before 
+					opacity: 0
+				.icon 
+					transform: scale(1)
+
+	&__remove
+		position: absolute
+		top: -.1rem
+		right: -.1rem
+		width: 5.2rem
+		height: 5.2rem
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		z-index: 3
+		.icon 
+			font-size: 2.8rem
+			color: rgba(#131313, 0.4)
+
+	&__not-aviable
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		pointer-events: none
+
+	.toltipe
+		
+		
+		padding: 1.2rem 2rem
+		line-height: 1.4
+		font-size: 1.1rem
+		&-s1 
+			width: 22rem
+		&-s2 
+			width: 36rem
+			left: -12rem
+			transform: none
+
+
+	@media (any-hover: hover) 
+		&:hover 
+			background: $color-default
+
+	&--not-aviable
+		.favorite-card
+			&__img 
+				img 
+					opacity: 0.3
+
+
+.not-aviable	
+	background: rgba(245, 245, 245, 0.85)
+	box-shadow: 0px 16px 43px rgba(0, 0, 0, 0.05)
+	border-radius: 34px
+	height: 3.8rem
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	padding: 0 1.9rem
+	white-space: nowrap
+	text-transform: uppercase
+	font-family: $font2 
+	font-weight: 500
+	font-size: 1.3rem
+	color: #000
+
+.fcc-button 
+	position: relative
+
+.fcc-box
+	position: absolute
+	display: none
+	z-index: 10
+	text-align: left
+	background: #FFFFFF
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2)
+	border-radius: 2rem
+	padding: 3.5rem 7rem
+	width: 60rem
+	&__head 
+		padding-bottom: 2.5rem
+		margin-bottom: 2.5rem
+		border-bottom: .1rem solid rgba(48, 48, 48, 0.15)
+		padding-right: 8rem
+	&__icon 
+		display: flex
+		align-items: center
+		justify-content: center
+		background: $color-warning
+		width: 5rem
+		height: 5rem
+		border-radius: 50%
+		position: absolute
+		top: 3.5rem
+		right: 7rem
+		.icon 
+			font-size: 2.8rem
+			&-telegram
+				left: -.2rem
+
+	&__title 	
+		font: 500 2rem $font2
+		text-transform: uppercase
+		margin-bottom: 1rem
+
+	&__description 
+		font-size: 1.3rem
+
+	&__footer 
+		text-align: right
+		padding-top: 2.5rem
+		margin-top: 2.5rem
+		border-top: .1rem solid rgba(48, 48, 48, 0.15)
+		.btn 
+			width: 16.5rem
+			padding-left: 1rem
+			padding-right: 1rem
+
+	&._open 
+		display: block
+	&--default 
+		width: 41.4rem
+		padding: 2.5rem 5rem
+		border-radius: 0
+		background: #EDEDED
+		box-shadow: none
+
+.fcc-list 
+	li 
+		margin-bottom: .8rem
+		&:last-child 
+			margin-bottom: 0
+	.checkbox 
+		font-size: 1.5rem
+		display: block
+		margin: 0
+		&__figure 
+			width: 2rem
+			height: 2rem
+			top: -.1rem
+		&__text 
+			color: #595959
+		input:checked ~ .checkbox__text 
+			color: $color 
+			font-weight: 500
+
+.fbox-card 
+	background: #fff 
+	border-radius: 2rem
+	padding: 1.5rem 2rem
+	margin-bottom: 2.5rem
+	&__row 
+		display: flex
+		align-items: flex-start
+		margin-bottom: 2rem
+	&__img 
+		width: 7.5rem
+		margin-right: 1.5rem
+		flex: none
+		img 
+			max-height: 7.5rem
+	&__content 
+		flex: 1
+		min-width: 1px 
+		padding-top: 0.5rem
+	&__brand 
+		font-size: 0.9rem
+		color: #636363
+		text-transform: uppercase
+		margin-bottom: 0.4rem
+	&__title 
+		font-size: 1.2rem
+		font-weight: 500
+		color: $color
+		margin-bottom: 0.4rem
+	&__price 
+		margin-left: -0.4rem
+		margin-right: -0.4rem
+		.price-value, .price-old 
+			font-size: 1.6rem
+		.price-old 
+			padding-left: 0
+			padding-right: 0
+
+	&__details 
+		padding-left: .8rem
+
+.fbox-title 
+	font-size: 1.8rem
+	font-family: $font2 
+	text-transform: uppercase
+	font-weight: 500
+	margin-bottom: 1rem
+
+.sel-list
+	margin-left: -2rem
+	margin-right: -2rem
+	li 
+		font-size: 1.5rem
+		color: #595959
+		position: relative
+		padding: .4rem 2rem .4rem 4.6rem
+		cursor: pointer
+		&:before 
+			content: ''
+			display: block
+			position: absolute
+			left: 2rem
+			top: .6rem
+			transform: scale(0.4)
+			width: 1.6rem
+			height: 1.6rem
+			background: rgba(#131313, 0.7)
+			border-radius: 50%
+			+tr
+		&:after 
+			content: ''
+			display: block
+			position: absolute
+			left: 2.6rem
+			top: 1.1rem
+			+arr(.6rem, .6rem, $color, r)
+			+tr
+			transform: scale(0)
+			transition-delay: 0.1s
+		@media (any-hover: hover) 
+			&:hover 
+				background: #EAEAEA
+
+		&.selected 
+			background: #EAEAEA
+			&:before 
+				background: #FBC644
+				transform: scale(1)
+			&:after 
+				transform: scale(1)
+
+/* Panel fixed ============================================================ */ 
+.panel-wrapper 
+	position: relative
+	height: 5rem
+.panel-sticky
+	position: fixed
+	bottom: 0
+	left: 0
+	z-index: 10
+	width: 100%
+	background: $color-default
+	box-shadow: 0px -10px 40px rgba(0, 0, 0, 0.15)
+	padding-top: 2.1rem
+	padding-bottom: 2.1rem
+	display: none
+	&__container 
+		display: flex 
+		align-items: center
+		justify-content: center
+	&__title 
+		text-transform: uppercase
+		font-family: $font2
+		font-size: 1.5rem
+		font-weight: 500
+		margin-right: 3.5rem
+
+	&__buttons 
+		display: flex
+		.btn 
+			margin-right: 0.6rem
+			width: 16.5rem
+			padding-left: 1rem
+			padding-right: 1rem
+
+	&._open 
+		display: block
+
++max(1600px)
+	.favorite-card
+		padding-right: 5rem
+	.favorite-card__img
+		width: 18rem
+		margin-right: 3rem
+	.favorite-card__details
+		display: block
+		.ort-details__item
+			margin-right: 0
+	.favorite-card__side
+		margin-left: 3rem
+
++max(1400px)
+	.favorite-card
+		&__img 
+			width: 14rem
+			img 
+				max-height: 14rem
+		&__title 
+			font-size: 1.8rem
++max($laptop)
+	.favorite-card
+		
+		&__title 
+			font-size: 1.5rem
+			margin-bottom: 1rem
+		&__price 
+			margin-bottom: 2rem
+			.price-old, .price-value
+				display: inline-block
+				vertical-align: middle
+				font-size: 2.2rem
+		&__row 
+			display: block
+		&__side 
+			width: auto
+			margin-left: 0
+		&__controls 
+			display: flex 
+			.btn 
+				width: 16.5rem
+				margin-right: .7rem
+				margin-top: 0
+				&:last-child 
+					margin-right: 0
+		&__description
+			margin-bottom: 2rem
+
+
+
++max($ipad)
+	.panel-sticky
+		&__title
+			margin-right: 2rem
+		&__buttons 
+			.btn 
+				width: 12rem
+
+
+
++max($iphone)
+	.favorite-card
+		&__img
+			width: 12rem
+			margin-right: 2rem
+			img 
+				max-height: 12rem
+
+		&__description
+			display: none
+
+		&__controls 
+			margin-left: -0.5rem
+			margin-right: -0.5rem
+			.btn 
+				width: calc(50% - 1rem)
+				margin-right: .5rem
+				margin-left: 0.5rem
+				height: 3.8rem
+
+
+	.tel-bot
+		padding: 0
+		display: block
+		overflow: hidden
+		font-size: 1.3rem
+		&__icon 
+			float: right
+			margin-right: 0
+			margin-left: 1.5rem
+			margin-bottom: 1.5rem
+			.icon 
+				font-size: 3rem
+
+	.panel-wrapper
+		height: 7rem
+	.panel-sticky
+		text-align: center
+		padding-top: 1.5rem
+		padding-bottom: 1.5rem
+		&__container 
+			display: block
+			text-align: center
+		&__title 
+			margin-right: 0
+			margin-bottom: 1rem
+		&__buttons 
+			justify-content: center
+			margin-left: -0.5rem
+			margin-right: -0.5rem
+			.btn 
+				margin-left: 0.5rem
+				margin-right: 0.5rem
+
++max($iphone_sm)
+	.favorites
+		margin-left: -2rem
+		margin-right: -2rem
+		border-left: none 
+		border-right: none
+	.favorite-card
+		display: block
+		padding: 3rem 2rem
+		&__img 
+			width: 24.2rem
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 1.2rem
+			img 
+				max-height: 21rem
+
+		.toltipe-s2
+			left: -2rem
+			border-radius: 2rem 2rem 2rem 0
+			bottom: 100%
+			top: auto
+			margin-top: auto
+			margin-bottom: 1rem
+			width: 29rem
+			&:after 
+				left: 0
+				top: 100%
+				transform: none
+				+arr(1rem,1rem,#FFF3B1,tl)
+		.toltipe-s1
+			left: -2rem
+			border-radius: 2rem 2rem 2rem 0
+			bottom: 100%
+			top: auto
+			margin-top: auto
+			margin-bottom: 1rem
+			margin-left: 0
+			&:after 
+				left: 0
+				top: 100%
+				
+				+arr(1rem,1rem,#FFF3B1,tl)

@@ -1,0 +1,144 @@
+<div class="review-card @@if(activated == 'true') {review-card--activated} @@if(activated == 'admin') {review-card--admin}">
+	<div class="review-card__head">
+		<div class="review-card__avatar">
+			<img src="@@avatar" alt="">
+			<span class="review-card__status status">
+				@@if(activated !== 'admin') {
+				<svg class="icon icon-check2">
+					<use xlink:href="img/sprite.svg#check2"></use>
+				</svg>
+				}
+				@@if(activated == 'admin') {
+				<svg class="icon icon-circle">
+					<use xlink:href="img/sprite.svg#circle"></use>
+				</svg>
+				}
+			</span>
+		</div>
+		<div class="review-card__info">
+			<span class="review-card__name">@@name</span>
+			<span class="review-card__date">@@date</span>
+			<div class="review-card__user-status">@@user_status</div>
+			@@if(rating == 'true') {
+			<div class="review-card__rating rating rating--md">
+				<div class="rating__stars">
+					<div class="rating-1"></div>
+					<div class="rating-1"></div>
+					<div class="rating-1"></div>
+					<div class="rating-1"></div>
+					<div class="rating-05"></div>
+				</div>
+
+			</div>
+			}
+		</div>
+	</div>
+	<div class="review-card__content">
+		<div class="review-card__body">
+			@@if(advantages_stores == 'true') {
+			<div class="rc-advant rc-advant--horizontal">
+				<div class="rc-advant__item">
+					<div class="rc-advant__label">Впечатление от покупки:</div>
+					<div class="rc-advant__labeled">
+						<div class="rating rating--md">
+							<div class="rating__stars">
+								<div class="rating-1"></div>
+								<div class="rating-1"></div>
+								<div class="rating-1"></div>
+								<div class="rating-1"></div>
+								<div class="rating-05"></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="rc-advant__item">
+					<div class="rc-advant__label">Помощь менеджера:</div>
+					<div class="rc-advant__labeled">
+						<div class="rating rating--md">
+							<div class="rating__stars">
+								<div class="rating-1"></div>
+								<div class="rating-1"></div>
+								<div class="rating-1"></div>
+								<div class="rating-1"></div>
+								<div class="rating-05"></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="rc-advant__item">
+					<div class="rc-advant__label">Удобство заказа товара:</div>
+					<div class="rc-advant__labeled">
+						<div class="rating rating--md">
+							<div class="rating__stars">
+								<div class="rating-1"></div>
+								<div class="rating-1"></div>
+								<div class="rating-1"></div>
+								<div class="rating-1"></div>
+								<div class="rating-05"></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			}
+
+			@@text
+
+			@@if(advantages !== '' && flaws !== '') {
+			<div class="rc-advant">
+				@@if(advantages !== '') {
+				<div class="rc-advant__item">
+					<div class="rc-advant__label">Достоинства:</div>
+					<div class="rc-advant__labeled">@@advantages</div>
+				</div>
+				}
+				@@if(flaws !== '') {
+				<div class="rc-advant__item">
+					<div class="rc-advant__label">Недостатки:</div>
+					<div class="rc-advant__labeled">@@flaws</div>
+				</div>
+				}
+			</div>
+			}
+
+
+			@@if(gallery !== '') {
+			<div class="rc-gallery">
+				@@gallery
+			</div>
+			}
+		</div>
+		@@if(actions == true) {
+		<div class="review-card__actions">
+			<div class="likes">
+				<button class="like-btn @@if(like_val == '0') {like-btn--no-active}">
+					<svg class="icon icon-like">
+						<use xlink:href="img/sprite.svg#like"></use>
+					</svg>
+					@@like_val
+				</button>
+				<button class="dislike-btn @@if(dislike_val == '0') {dislike-btn--no-active}">
+					<svg class="icon icon-dislike">
+						<use xlink:href="img/sprite.svg#dislike"></use>
+					</svg>
+					@@dislike_val
+				</button>
+			</div>
+			@@if(reply !== false) {
+			<button class="reply-btn">
+				<svg class="icon icon-reply">
+					<use xlink:href="img/sprite.svg#reply"></use>
+				</svg>
+				@@reply
+			</button>
+			}
+		</div>
+		}
+	</div>
+
+</div>

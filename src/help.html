@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Помощь покупателю"
+})
+
+<body class="loaded ">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+				<div class="content">
+					<!-- Crumbs -->
+					<ul class="breadcrumbs ">
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">Помощь покупателю</li>
+					</ul>
+					<!-- end Crumbs -->
+
+					<div class="content__header">
+						<h1 class="content__title">Мы поможем вам решить все проблемы</h1>
+					</div>
+
+					<!-- BEGIN question -->
+					<div class="questions-grid">
+						@@include('./template/blocks/question-grid-item.html', {
+						img: "img/help/h1.png",
+						title: "ДОСТАВКА ЗАМОВЛЕННЯ",
+						text: "Сроки доставки и отправки, отслеживание заказа, примерка, отмена заказа и другие вопросы.",
+						})
+						@@include('./template/blocks/question-grid-item.html', {
+						img: "img/help/h2.png",
+						title: "ОПЛАТА ЗАМОВЛЕННЯ",
+						text: "Варианты и сроки доставки, сроки отправки, способы оплаты, доставка в другие страны и другие вопросы.",
+						})
+
+						@@include('./template/blocks/question-grid-item.html', {
+						img: "img/help/h3.png",
+						title: "ОБМІН ТА ПОВЕРНЕННЯ",
+						text: "Как вернуть неподошедший товар, когда вернут денежные средства, условия возврата и другие вопросы.",
+						})
+						@@include('./template/blocks/question-grid-item.html', {
+						img: "img/help/h4.png",
+						title: "ЧИ МОЖЛИВА ДОСТАВКА ЗА МЕЖІ УКРАЇНИ?",
+						text: "Как подобрать свой размер, какие размеры указаны на сайте, резервирование товаров ",
+						})
+						@@include('./template/blocks/question-grid-item.html', {
+						img: "img/help/h5.png",
+						title: "ЯК ВИБРАТИ РОЗМІР ВЗУТТЯ ?",
+						text: "Система скидок, скидка в день рождения, накопительная карта и как ими воспользоваться.",
+						})
+						@@include('./template/blocks/question-grid-item.html', {
+						img: "img/help/h6.png",
+						title: "ПОВЕРНЕННЯ КОШТІВ",
+						text: "Адреса наших розничных магазинов, товары, представленные в наших розничных магазинах и другие вопросы.",
+						})
+
+						@@include('./template/blocks/question-grid-item.html', {
+						img: "img/help/h7.png",
+						title: "ЧИ МОЖУ Я ПРИМІРЯТИ ВЗУТТЯ ПЕРЕД ПОКУПКОЮ?",
+						text: "Сроки доставки и отправки, отслеживание заказа, примерка, отмена заказа и другие",
+						})
+
+						@@include('./template/blocks/question-grid-item.html', {
+						img: "img/help/h8.png",
+						title: "ВИ ПРОДАЄТЕ ОРИГІНАЛЬНУ ПРОДУКЦІЮ?",
+						text: "Варианты и сроки доставки, сроки отправки, способы оплаты, доставка в другие страны и другие вопросы.",
+						})
+
+						@@include('./template/blocks/question-grid-item.html', {
+						img: "img/help/h9.png",
+						title: "ЯК ОФОРМИТИ ЗАМОВЛЕННЯ? ",
+						text: "Как вернуть неподошедший товар, когда вернут денежные средства, условия возврата и другие вопросы.",
+						})
+						@@include('./template/blocks/question-grid-item.html', {
+						img: "img/help/h10.png",
+						title: "НАДАЄТЕ ГАРАНТІЮ НА ВЗУТТЯ ТА АКСЕСУАРИ? ",
+						text: "Как подобрать свой размер, какие размеры указаны на сайте, резервирование товаров ",
+						})
+
+
+					</div>
+					<!-- question EOF -->
+
+				</div>
+				<!-- CONTENT EOF -->
+
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

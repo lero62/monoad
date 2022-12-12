@@ -1,0 +1,85 @@
+.page-404 
+	.main 
+		display: flex 
+		align-items: center
+		padding-bottom: 0 !important
+
+.error-wrap 
+	display: flex 
+	align-items: center
+	max-width: 61.6rem
+	margin-left: auto
+	margin-right: auto
+	padding: 7rem 0 9.8rem
+	&__img 
+		flex: none 
+		margin-right: 4.5rem
+	&__content 
+		flex: 1
+		min-width: 1px
+
+	&__title 
+		font-size: 3rem
+		font-weight: 500
+		margin-bottom: 1.5rem
+
+	&__text 
+		font-size: 1.7rem
+		line-height: 1.7
+
+
+.cookie 
+	position: fixed
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 10
+	padding: 2rem 0
+	background: $color-default
+	box-shadow: 0px -10px 40px rgba(0, 0, 0, 0.15)
+	&__wrapper 
+		max-width: 103rem
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+	&__text 	
+		font-size: 1.3rem
+		margin-bottom: 2rem
+	&__buttons 
+		display: flex 
+		justify-content: center
+		margin-left: -0.5rem
+		margin-right: -0.5rem
+		.btn 
+			margin-left: 0.5rem
+			margin-right: 0.5rem
+			min-width: 16.6rem
+
++max($ipad)
+	.error-wrap
+		padding: 3rem 0 5rem
+
+
++max($iphone)
+	.error-wrap
+		padding: 2.5rem 0 4rem
+		display: block
+		text-align: center
+		&__img 
+			margin-right: 0
+			margin-bottom: 3rem
+			img
+				margin-left: auto
+				margin-right: auto
+
+		&__title 
+			font-size: 1.8rem
+			margin-bottom: 1rem
+		&__text 
+			font-size: 1.5rem
+
+	.cookie 
+		&__buttons 
+			.btn 
+				min-width: 1px 
+				width: calc(50% - 1rem)

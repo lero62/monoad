@@ -1,0 +1,125 @@
+.questions-grid
+	display: flex
+	flex-wrap: wrap
+	&__item
+		width: 33.33%
+		background: #FBFBFB
+		padding: 4rem
+		display: flex
+		align-items: flex-start
+		transition: none
+		+min($ipad + 1)
+			&:nth-child(odd)
+				background: #F4F4F4
+
+	&__icon
+		flex: none
+		width: 11rem
+		height: 11rem
+		margin-right: 3rem
+
+	&__content
+		flex: 1
+		min-width: 1px
+
+	&__title
+		font-size: 2rem
+		font-weight: 500
+		font-family: $font2
+		text-transform: uppercase
+		margin-bottom: 1rem
+	&__text
+		font-size: 1.5rem
+		line-height: 1.6
+
+.help-item
+	margin-bottom: 1rem
+
+	.hbox__body
+		font-size: 1.6rem
+		+margin
+		& > p
+			margin-bottom: 2rem
+
+.table-br
+	width: 100%
+	td
+		border: .1rem solid #E7E7E7
+		padding: 2rem
+		vertical-align: top
+
+.tb-img
+	width: 20rem
+	vertical-align: middle !important
+	height: 13rem
+	text-align: center
+	font-size: 0
+	img
+		display: inline-block
+		vertical-align: middle
+
++max(1600px)
+	.questions-grid
+		&__item
+			padding: 3rem
+		&__icon
+			width: 10rem
+			height: 10rem
+			margin-right: 2rem
+
+		&__title
+			font-size: 1.8rem
+		&__text
+			font-size: 1.4rem
+
++max(1400px)
+	.questions-grid
+		&__item
+			padding: 2.4rem
+		&__icon
+			width: 6.4rem
+			height: 6.4rem
+
+		&__title
+			font-size: 1.6rem
+		&__text
+			font-size: 1.3rem
+			line-height: 1.5
+
++max($laptop)
+	.help-item .hbox__body
+		font-size: 1.3rem
+
++max($ipad)
+	.questions-grid
+		&__item
+			width: 50%
+			background: #F4F4F4
+
+@media screen and (max-width: $ipad) and (min-width: $iphone + 1)
+	.questions-grid
+		&__item
+			&:nth-child(4n+2), &:nth-child(4n+3)
+				background: #FBFBFB
+
++max($iphone)
+	.questions-grid
+		&__item
+			width: 100%
+			&:nth-child(even)
+				background: #FBFBFB
+		&__icon
+			margin-right: 1.7rem
+			width: 5rem
+			height: 5rem
+
+		&__title
+			font-size: 1.5rem
+
+	.table-br
+		td
+			padding: 1.5rem
+
+	.tb-img
+		vertical-align: top !important
+		width: 12rem

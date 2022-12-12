@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Коллекции 2"
+})
+
+<body class="loaded page-catalog">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main" id="main">
+			<div class="container-fluid">
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar">
+						<div class="back-page">
+							<a href="#" class="back-page__btn"><svg class="icon icon-back">
+									<use xlink:href="img/sprite.svg#back"></use>
+								</svg></a>
+						</div>
+
+						<div class="sidebar-item">
+							<ul class="cat-menu">
+								<li class="cat-menu__item dropdown">
+									<a href="#" class="cat-menu__link active">Коллекции</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Made in England</a></li>
+										<li><a href="#" class="active">The Originals</a></li>
+									</ul>
+								</li>
+								<li class="cat-menu__item">
+									<a href="#" class="cat-menu__link active">Подошва</a>
+								</li>
+								<li class="cat-menu__item">
+									<a href="#" class="cat-menu__link active">Кожа</a>
+								</li>
+								<li class="cat-menu__item">
+									<a href="#" class="cat-menu__link active">Уход</a>
+								</li>
+								<li class="cat-menu__item">
+									<a href="#" class="cat-menu__link active">История</a>
+								</li>
+							</ul>
+						</div>
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="banner banner--gallery banner--white banner-img-2" style="background-image: url('img/banner-5.jpg')">
+							<div class="back-page">
+								<a href="#" class="back-page__btn"><svg class="icon icon-back">
+										<use xlink:href="img/sprite.svg#back"></use>
+									</svg></a>
+							</div>
+							<div class="banner-wrap">
+								<div class="banner__title">DR.Martnes в деталях</div>
+								<div class="banner__subtitle"><span class="selection">all about dr.martens</span></div>
+
+
+							</div>
+							<div class="banner__gallery">
+								<div class="img" style="background-image: url('img/l1.jpg')"></div>
+								<div class="img" style="background-image: url('img/l1.jpg')"></div>
+								<div class="img" style="background-image: url('img/l1.jpg')"></div>
+
+							</div>
+						</div>
+
+						<!-- BEGIN COLLECTION CATEGORY -->
+						<div class="row collections-cat-wrap">
+							<div class="col-12 collections-cat-wrap__item">
+								<a href="#" class="collections-cat-long">
+									<div class="collections-cat-long__img ">
+										<img src="img/1.png" alt="">
+									</div>
+									<div class="collections-cat-long__body">
+										<div class="collections-cat-long__title"><span>Ознакомьтесь с Моделями кожи felix rub off</span></div>
+										<div class="collections-cat-long__text">
+											<p>THE ARCHIVE - это довольно интересная коллекция, которая отображает дух бренда первых десятилетий со дня основания. Собственно на этом и построен концепт коллекции. После того как была выпущена первая эталонная пара 1460 Cherry Red Smooth, в 1960-м году, изготовлялись модели разных фасонов, которые не относились к каким-то коллекциям и выпускались с неопределёнными интервалами. Тем не менее многие силуэты прижились в разных субкультурах, отображая дух свободы тех времен. В начале 2000-х было принято решение восстановить производство ранее популярных силуэтов, сохраняя даже самые мелкие детали, такие как цвет подошвы, светлая строчка пошива, максимально приближенная кожа, которая соответсвует качеству и визуальному виду того времени. </p>
+										</div>
+									</div>
+
+								</a>
+							</div>
+						</div>
+						<!-- COLLECTION CATEGORY EOF -->
+
+					</div>
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN CATEGORY FOR MOBILE -->
+		<div class="category ">
+			<div class="category__overlay"></div>
+			<div class="category__container">
+				<a href="#" class="category__close"><svg class="icon icon-close">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg></a>
+				<div class="sidebar-item">
+					<ul class="cat-menu">
+						<li class="cat-menu__item dropdown">
+							<a href="#" class="cat-menu__link active">Коллекции</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Made in England</a></li>
+								<li><a href="#" class="active">The Originals</a></li>
+							</ul>
+						</li>
+						<li class="cat-menu__item">
+							<a href="#" class="cat-menu__link active">Подошва</a>
+						</li>
+						<li class="cat-menu__item">
+							<a href="#" class="cat-menu__link active">Кожа</a>
+						</li>
+						<li class="cat-menu__item">
+							<a href="#" class="cat-menu__link active">Уход</a>
+						</li>
+						<li class="cat-menu__item">
+							<a href="#" class="cat-menu__link active">История</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- CATEGORY FOR MOBILE EOF -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Оформление заказа step 2"
+})
+
+<body class="loaded page-order">
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN MAIN -->
+		<main class="main" id="main">
+			<div class="back-page">
+				<a href="#" class="back-page__btn"><svg class="icon icon-back">
+						<use xlink:href="img/sprite.svg#back"></use>
+					</svg></a>
+			</div>
+			<div class="container">
+				<!-- BEGIN CONTENT -->
+				<div class="content">
+					<div class="order-main">
+
+						<div class="order-main__head">
+							<div class="order-main__head-logo"><img src="img/logo-mini.png" alt=""></div>
+							<h1>Оформление заказа</h1>
+							<span class="order-number">
+								<span class="order-number__symbol">N</span>
+								<span class="order-number__content">
+									Номер заказа:
+									<span class="order-number__drop-btn">
+										<span>40560800</span>
+										<svg class="icon icon-caret">
+											<use xlink:href="img/sprite.svg#caret"></use>
+										</svg>
+									</span>
+								</span>
+							</span>
+
+							<div class="order-main__head-close">
+								<svg class="icon icon-close">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg>
+							</div>
+						</div>
+
+						@@include('./template/blocks/order_crumbs.html', {
+						"crumbs": 2,
+						})
+
+						<div class="order-main__steps">
+							<ul class="steps">
+								<li class="steps__item _select">
+									<span class="steps__number">1</span>
+									<span class="steps__title">Личные данные</span>
+								</li>
+								<li class="steps__item _active">
+									<span class="steps__number">2</span>
+									<span class="steps__title">Доставка</span>
+								</li>
+								<li class="steps__item">
+									<span class="steps__number">3</span>
+									<span class="steps__title">Оплата</span>
+								</li>
+								<li class="steps__item">
+									<span class="steps__number">4</span>
+									<span class="steps__title">Заказ</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tab-wrap _tab">
+							<nav class="tab-wrap__nav hidden-iphone">
+								<div class="tab-wrap__navitem _tab__navitem _active">
+									<div class="tab-wrap__navtitle">На отделение Новой почты</div>
+								</div>
+								<div class="tab-wrap__navitem _tab__navitem">
+									<div class="tab-wrap__navtitle">Курьером</div>
+								</div>
+							</nav>
+							<div class="tab-wrap__items">
+								<!-- Таб для мобилы -->
+								<div class="tab-wrap__head _tab__head _active visible-iphone" data-tab-index="0">
+									<div class="tab-wrap__title">На отделение Новой почты</div>
+									<div class="cb-accordion-item__caret">
+										<svg class="icon icon-arrow-down">
+											<use xlink:href="img/sprite.svg#arrow-down"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="tab-wrap__item _tab__item _active">
+									<form action="#" class="order-form">
+										<div class="alert">
+											<div class="alert__inner alert__wrapicon">
+												<svg class="alert__icon icon icon-warning">
+													<use xlink:href="img/sprite.svg#warning"></use>
+												</svg>
+												<div>
+													<span class="font-700">Бесплатная доставка к отделению Новой почты</span> <br>
+
+													При выборе почтомата убедитесь, что посылка пройдет по габаритам.<br>
+													Ближайшее отделение можете выбрать на сайте Новой Почты. <br>
+													<a href="#" class="font-700">Выбрать отделение</a>
+												</div>
+
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">ФИО получателя</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input" placeholder="Иванов Иван">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Номер телефона</label>
+											</div>
+											<div class="col-md">
+												<input type="tel" class="form-input" placeholder="+380999999999">
+											</div>
+										</div>
+
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Город</label>
+											</div>
+											<div class="col-md">
+												<div class="selectbox selectbox--lower">
+													<div class="selectbox__head">
+														<div class="selectbox__text placeholder">Выбирите город</div>
+														<div class="selectbox__caret"></div>
+													</div>
+													<div class="selectbox__drop">
+														<div class="selectbox__search">
+															<input type="text" placeholder="Поиск..." autocomplete="off">
+														</div>
+														<ul>
+															<li>Авангард</li>
+															<li>Белая</li>
+															<li>Вараш</li>
+															<li>Авангард</li>
+															<li>Белая</li>
+															<li>Вараш</li>
+															<li>Авангард</li>
+															<li>Белая</li>
+															<li>Вараш</li>
+															<li>Авангард</li>
+															<li>Белая</li>
+															<li>Вараш</li>
+															<li>Авангард</li>
+															<li>Белая</li>
+															<li>Вараш</li>
+														</ul>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">№ отделения</label>
+											</div>
+											<div class="col-md">
+												<div class="selectbox selectbox--lower">
+													<div class="selectbox__head">
+														<div class="selectbox__text placeholder">Выберите отделение Новой почты в Вашем городе</div>
+														<div class="selectbox__caret"></div>
+													</div>
+													<div class="selectbox__drop">
+														<div class="selectbox__search">
+															<input type="text" placeholder="Поиск..." autocomplete="off">
+														</div>
+														<ul>
+
+															<li>Авангард</li>
+															<li>Белая</li>
+															<li>Вараш</li>
+															<li>Авангард</li>
+															<li>Белая</li>
+															<li>Вараш</li>
+															<li>Авангард</li>
+															<li>Белая</li>
+															<li>Вараш</li>
+															<li>Авангард</li>
+															<li>Белая</li>
+															<li>Вараш</li>
+															<li>Авангард</li>
+															<li>Белая</li>
+															<li>Вараш</li>
+														</ul>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</form>
+
+									<div class="tab-wrap__footer d-flex justify-content-between">
+
+										<a href="#" class="btn">Назад</a>
+										<a href="#" class="btn btn--warning">Далее</a>
+
+									</div>
+								</div>
+
+								<!-- Таб для мобилы -->
+								<div class="tab-wrap__head _tab__head visible-iphone" data-tab-index="1">
+									<div class="tab-wrap__title">Курьером</div>
+									<div class="cb-accordion-item__caret">
+										<svg class="icon icon-arrow-down">
+											<use xlink:href="img/sprite.svg#arrow-down"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="tab-wrap__item _tab__item">
+									<form action="#" class="order-form">
+
+										<div class="alert">
+											<div class="alert__inner alert__wrapicon">
+												<svg class="alert__icon icon icon-warning">
+													<use xlink:href="img/sprite.svg#warning"></use>
+												</svg>
+
+												<div><span class="font-700">Доставка на любой адрес в Вашем городе</span> <br>
+													Cтоимость доставки платная, по тарифам Новой Почты.
+												</div>
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Город</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group ">
+
+											<div class="col-6">
+												<div class="row">
+													<div class="col-md-auto">
+														<label class="form-group__label">Улица</label>
+													</div>
+													<div class="col-md">
+														<input type="text" class="form-input">
+													</div>
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="row flex-nowrap align-items-center">
+													<div class="col-md-auto hidden-iphone">
+														<label class="form-group__label text-right-md">№<br class="visible-md"> дома</label>
+													</div>
+													<div class="col-md col-6">
+														<label class="form-group__label visible-iphone">№ дома</label>
+														<input type="text" class="form-input">
+													</div>
+													<div class="col-md-auto hidden-iphone">
+														<label class="form-group__label  text-right-md">№<br class="visible-md"> квартиры</label>
+													</div>
+													<div class="col-md col-6">
+														<label class="form-group__label  visible-iphone">Квартира</label>
+														<input type="text" class="form-input">
+													</div>
+												</div>
+											</div>
+
+
+										</div>
+										<div class="row form-group align-items-start">
+											<div class="col-md-auto">
+												<label class="form-group__label">Примечание</label>
+											</div>
+											<div class="col-md">
+												<textarea placeholder="Если необходимо, добавьте примечание для курьера" class="form-input"></textarea>
+											</div>
+										</div>
+									</form>
+									<div class="tab-wrap__footer d-flex justify-content-between">
+
+										<a href="#" class="btn">Назад</a>
+										<a href="#" class="btn btn--warning">Далее</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+				</div>
+				<!-- CONTENT EOF -->
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

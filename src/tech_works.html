@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+	"title": "На сайте Ведутся работы"
+})
+<body class="loaded page-404">
+
+
+<!-- BEGIN BODY -->
+<div class="main-wrapper">
+
+	<!-- BEGIN HEADER -->
+	@@include('./template/_header.html', {
+		user: 0,
+		nav: 10,
+	})
+	<!-- HEADER EOF -->
+
+	<!-- BEGIN MAIN -->
+	<main class="main" id="main">
+		<div class="container-fluid ">
+			<div class="error-wrap">
+				<div class="error-wrap__img">
+					<img src="img/error-page-img.svg" alt="">
+				</div>
+				<div class="error-wrap__content">
+					<h1 class="error-wrap__title">На сайте Ведутся работы</h1>
+					<p class="error-wrap__text">Приносим свои извинения, в настоящий момент на сайте ведутся работы. <br>Работы будут окончены сегодня в 19:00</p>
+				</div>
+			</div>
+			
+		</div>
+	</main>
+	<!-- MAIN EOF   -->
+
+
+	<!-- BEGIN FOOTER -->
+	@@include('./template/_footer.html', {})
+	<!-- FOOTER EOF   -->
+	@@include('./template/blocks/cookie.html', {})
+
+	@@include('./template/popups/popup_login.html', {})
+	@@include('./template/popups/popup_contacts.html', {})
+</div>
+<!-- BODY EOF   -->
+
+@@include('./template/_js.html', {})
+
+</body>
+</html>

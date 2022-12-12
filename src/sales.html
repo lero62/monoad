@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Скидки"
+})
+
+<body class="loaded page-catalog">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 3,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item">
+							<div class="filter-button _box-fixed-toggle" data-box-fixed-toggle="3">
+								<svg class="icon icon-grid">
+									<use xlink:href="img/sprite.svg#grid"></use>
+								</svg>
+								<span>Категории</span>
+								<div class="filter-button__caret"></div>
+							</div>
+						</div>
+						<div class="controls__item ">
+							<div class="filter-button _filter-toggle">
+								<svg class="icon icon-filter-alt">
+									<use xlink:href="img/sprite.svg#filter-alt"></use>
+								</svg>
+								<span>Фильтр</span>
+								<div class="filter-button__caret"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="filter-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem _active">
+									<div class="sbox__title">Тип скидки</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item _active"><a href="#">Все скидки</a></li>
+										<li class="sbox__list-item"><a href="#">Скидки на товары</a></li>
+										<li class="sbox__list-item"><a href="#">Скидки на комплекты</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem _active">
+									<div class="sbox__title">Все бренды</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item _active"><a href="#">Dr. Martens</a></li>
+										<li class="sbox__list-item"><a href="#">Converse</a></li>
+										<li class="sbox__list-item"><a href="#">Vans</a></li>
+										<li class="sbox__list-item"><a href="#">Monoad</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem _active">
+									<div class="sbox__title">РАзмер</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+									<div class="sbox__inner">
+										<div class="label-tags _toggle">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+											<div class="label-tags__item">49 EUR</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem _active">
+									<div class="sbox__title">Срок доставки</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item _active"><span>Все сроки</span></li>
+										<li class="sbox__list-item"><span>В наличии 1-2 дня</span></li>
+										<li class="sbox__list-item"><span>Под заказ 3-7 дней</span></li>
+										<li class="sbox__list-item"><span>Под заказ 10-15 дней</span></li>
+
+									</ul>
+								</div>
+							</div>
+
+							<div class="sidebar__icons-box ">
+								<a href="#" class="icons-box">
+									<div class="icons-box__icon">
+										<svg class="icon icon-table-size">
+											<use xlink:href="img/sprite.svg#table-size"></use>
+										</svg>
+									</div>
+									<div class="icons-box__title">Таблица <br>размеров</div>
+								</a>
+								<a href="#" class="icons-box">
+									<div class="icons-box__icon">
+										<svg class="icon icon-calculator">
+											<use xlink:href="img/sprite.svg#calculator"></use>
+										</svg>
+									</div>
+									<div class="icons-box__title">Подбор <br>размера</div>
+								</a>
+								<a href="#" class="icons-box">
+									<div class="icons-box__icon">
+										<svg class="icon icon-roulette">
+											<use xlink:href="img/sprite.svg#roulette"></use>
+										</svg>
+									</div>
+									<div class="icons-box__title">Мой <br>размер</div>
+								</a>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body" data-da="main-header, 1, 1199">
+							<!-- Crumbs -->
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">Скидки</li>
+							</ul>
+							<!-- end Crumbs -->
+
+							<div class="content__header row flex-lg-nowrap">
+								<div class="col-12 col-lg-auto order-lg-1 hidden-md">
+									<div class="content__sorting">
+										<div class="sorting">
+											<div class="sorting__item ">
+												<div class="selectbox selectbox--icon selectbox--bold">
+													<div class="selectbox__head">
+														<div class="selectbox__icon"><svg class="icon icon-grid">
+																<use xlink:href="img/sprite.svg#grid"></use>
+															</svg></div>
+														<div class="selectbox__text">По 20 на странице</div>
+														<div class="selectbox__caret"></div>
+													</div>
+													<div class="selectbox__drop">
+														<ul>
+															<li class="_selected">По 20 на странице</li>
+															<li>По 40 на странице</li>
+															<li>По 60 на странице</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="sorting__item">
+												<div class="selectbox selectbox--icon selectbox--bold">
+													<div class="selectbox__head">
+														<div class="selectbox__icon"><svg class="icon icon-sort">
+																<use xlink:href="img/sprite.svg#sort"></use>
+															</svg></div>
+														<div class="selectbox__text">Популярные</div>
+														<div class="selectbox__caret"></div>
+													</div>
+													<div class="selectbox__drop">
+														<ul>
+															<li>По умолчанию</li>
+															<li>Скидки</li>
+															<li>От дешевых</li>
+															<li>От дорогих</li>
+															<li>Новинки</li>
+															<li class="_selected">Популярные</li>
+															<li>Доставка 1-2 дня</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg">
+									<h1 class="content__title">Скидки на товары всех брендов</h1>
+								</div>
+							</div>
+						</div>
+						<!-- BEGIN PRODUCTS -->
+						<div class="row no-gutters products">
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img1.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<div class="sticker-wrap">
+												<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+												<span class="sticker-wrap__content">
+													<span class="sticker-wrap__title">До конца акции <span class="hidden-md">осталось</span></span>
+													<span class="sticker-wrap__timer">2 дня 1:53:44</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">1460 Pascal Hardware Black Virginia</a></div>
+										<div class="product-card__price">
+
+											<div class="price-value">17800 грн.</div>
+										</div>
+									</div>
+
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img2.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<div class="sticker-wrap">
+												<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+												<span class="sticker-wrap__content">
+													<span class="sticker-wrap__title">До конца акции <span class="hidden-md">осталось</span></span>
+													<span class="sticker-wrap__timer">3 дня 5:20:56</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">3989 YS Black Smooth</a></div>
+										<div class="product-card__price">
+											<div class="price-old">22400 грн.</div>
+											<div class="price-value text-danger">19999 грн.</div>
+										</div>
+
+									</div>
+
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img3.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+										<div class="product-card__price">
+											<div class="price-value">10 900 грн.</div>
+										</div>
+
+									</div>
+
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img4.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+										<div class="product-card__price">
+											<div class="price-value">10 900 грн.</div>
+										</div>
+
+									</div>
+
+									<div class="product-card__footer">
+										<div class="label-tags">
+
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img5.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+										<div class="product-card__price">
+											<div class="price-value">10 900 грн.</div>
+										</div>
+
+									</div>
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img6.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+										<div class="product-card__price">
+
+											<div class="price-value">10 900 грн.</div>
+										</div>
+
+									</div>
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card ">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img7.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites active">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+										<div class="product-card__price">
+
+											<div class="price-value">10 900 грн.</div>
+										</div>
+
+									</div>
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img3.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+										<div class="product-card__price">
+
+											<div class="price-value">10 900 грн.</div>
+										</div>
+
+									</div>
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img1.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+										<div class="product-card__price">
+											<div class="price-value">10 900 грн.</div>
+										</div>
+
+									</div>
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img5.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+										<div class="product-card__price">
+
+											<div class="price-value">10 900 грн.</div>
+										</div>
+
+									</div>
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img7.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+										<div class="product-card__price">
+
+											<div class="price-value">10 900 грн.</div>
+										</div>
+
+									</div>
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xxl-3">
+								<div class="product-card">
+									<div class="product-card__img">
+										<a href="#"><img src="img/products/catalog-img2.jpg" alt=""></a>
+										<div class="product-card__stickers">
+											<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+										</div>
+									</div>
+									<div class="product-card__body">
+										<span class="btn-favorites">
+											<svg class="icon icon-star">
+												<use xlink:href="img/sprite.svg#star"></use>
+											</svg>
+											<svg class="icon icon-star-filled">
+												<use xlink:href="img/sprite.svg#star-filled"></use>
+											</svg>
+										</span>
+										<div class="product-card__brand">DR.MARTENS</div>
+										<div class="product-card__title"><a href="#">8065 Mary Jane Black Smooth</a></div>
+										<div class="product-card__price">
+
+											<div class="price-value">10 900 грн.</div>
+										</div>
+
+									</div>
+									<div class="product-card__footer">
+										<div class="label-tags">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+										</div>
+
+										<div class="product-card__actions">
+											<a href="#" class="btn btn--warning">Купить в 1 клик</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PRODUCTS EOF -->
+
+						<!-- BEGIN PAGINATION -->
+						<div class="box-paging">
+							<div class="box-paging__button visible-iphone">
+								<a href="#" class="btn btn--dark">Смотреть больше</a>
+							</div>
+							<ul class="paging-list hidden-iphone">
+								<li class="paging-list__item paging-prev">
+									<a href="#" class="paging-list__link">НАЗАД</a>
+								</li>
+								<li class="paging-list__item ">
+									<a href="#" class="paging-list__link ">1</a>
+								</li>
+								<li class="paging-list__item">
+									<a href="#" class="paging-list__link active">2</a>
+								</li>
+								<li class="paging-list__item">
+									<a href="#" class="paging-list__link">3</a>
+								</li>
+								<li class="paging-list__item">
+									<a href="#" class="paging-list__link">4</a>
+								</li>
+								<li class="paging-list__item">
+									<a href="#" class="paging-list__link">5</a>
+								</li>
+								<li class="paging-list__item paging-next">
+									<a href="#" class="paging-list__link">ВПЕРЁД</a>
+								</li>
+							</ul>
+						</div>
+						<!-- PAGINATION EOF -->
+
+						<section class="section section-set">
+							<div class="section__head">
+								<h2 class="section__title">Скидки на Комплекты</h2>
+							</div>
+
+							<div class="box">
+								<div class="box__head">
+									<div class="box__title">Купи 3 пары шнурков и получи рюкзак в подарок!</div>
+								</div>
+								<div class="box__body">
+									<!-- together-cheaper-slider -->
+									<div class="together-cheaper-slider">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+
+													<div class="product-card">
+														<div class="product-card__img">
+															<a href="#"><img src="img/products/catalog-img2.jpg" alt=""></a>
+														</div>
+														<div class="product-card__body">
+
+															<div class="product-card__brand">DR.MARTENS</div>
+															<div class="product-card__title"><a href="#">3989 YS Black Smooth</a></div>
+															<div class="product-card__price">
+
+																<div class="price-value ">4680 грн.</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="together-cheaper-slider__symbol">
+														<svg class="icon icon-plus">
+															<use xlink:href="img/sprite.svg#plus"></use>
+														</svg>
+													</div>
+
+													<div class="product-card">
+														<div class="product-card__img">
+															<a href="#"><img src="img/products/catalog-img2.jpg" alt=""></a>
+															<div class="product-card__stickers"><span class="sticker"><img src="img/new.png" alt=""></span></div>
+														</div>
+														<div class="product-card__body">
+
+															<div class="product-card__brand">CONVERSE</div>
+															<div class="product-card__title"><a href="#">Поясная сумка Converse Invision Black</a></div>
+															<div class="product-card__price">
+																<div class="price-value">2180 грн.</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="together-cheaper-slider__symbol">
+														<svg class="icon icon-equals">
+															<use xlink:href="img/sprite.svg#equals"></use>
+														</svg>
+													</div>
+
+													<div class="product-card product-card--gift">
+														<div class="product-card__img">
+															<a href="#"><img src="img/products/catalog-img2.jpg" alt=""></a>
+															<div class="product-card__stickers">
+																<span class="sticker sticker--gift"><img src="img/gift.png" alt=""></span>
+															</div>
+														</div>
+														<div class="product-card__body">
+
+															<div class="product-card__brand">CONVERSE</div>
+															<div class="product-card__title"><a href="#">3989 YS Black Smooth</a></div>
+															<div class="product-card__price">
+																<div class="price-old">950 грн.</div>
+																<div class="gift-value">В подарок!</div>
+															</div>
+
+
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="product-card">
+														<div class="product-card__img">
+															<a href="#"><img src="img/products/catalog-img2.jpg" alt=""></a>
+															<div class="product-card__stickers"><span class="sticker"><img src="img/new.png" alt=""></span></div>
+														</div>
+														<div class="product-card__body">
+
+															<div class="product-card__brand">CONVERSE</div>
+															<div class="product-card__title"><a href="#">Поясная сумка Converse Invision Black</a></div>
+															<div class="product-card__price">
+																<div class="price-value">2180 грн.</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="together-cheaper-slider__symbol">
+														<svg class="icon icon-plus">
+															<use xlink:href="img/sprite.svg#plus"></use>
+														</svg>
+													</div>
+
+													<div class="product-card">
+														<div class="product-card__img">
+															<a href="#"><img src="img/products/catalog-img2.jpg" alt=""></a>
+															<div class="product-card__stickers"><span class="sticker"><img src="img/new.png" alt=""></span></div>
+														</div>
+														<div class="product-card__body">
+
+															<div class="product-card__brand">CONVERSE</div>
+															<div class="product-card__title"><a href="#">Поясная сумка Converse Invision Black</a></div>
+															<div class="product-card__price">
+																<div class="price-value">2180 грн.</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="together-cheaper-slider__symbol">
+														<svg class="icon icon-plus">
+															<use xlink:href="img/sprite.svg#plus"></use>
+														</svg>
+													</div>
+
+													<div class="product-card">
+														<div class="product-card__img">
+															<a href="#"><img src="img/products/catalog-img2.jpg" alt=""></a>
+														</div>
+														<div class="product-card__body">
+
+															<div class="product-card__brand">DR.MARTENS</div>
+															<div class="product-card__title"><a href="#">3989 YS Black Smooth</a></div>
+															<div class="product-card__price">
+
+																<div class="price-value ">4680 грн.</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="together-cheaper-slider__symbol">
+														<svg class="icon icon-equals">
+															<use xlink:href="img/sprite.svg#equals"></use>
+														</svg>
+													</div>
+
+													<div class="product-card product-card--gift">
+														<div class="product-card__img">
+															<a href="#"><img src="img/products/catalog-img2.jpg" alt=""></a>
+															<div class="product-card__stickers">
+																<span class="sticker sticker--gift"><img src="img/gift.png" alt=""></span>
+															</div>
+														</div>
+														<div class="product-card__body">
+
+															<div class="product-card__brand">CONVERSE</div>
+															<div class="product-card__title"><a href="#">3989 YS Black Smooth</a></div>
+															<div class="product-card__price">
+																<div class="price-old">950 грн.</div>
+																<div class="gift-value">В подарок!</div>
+															</div>
+
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="together-cheaper-slider-prev swiper-button-prev">
+											<svg class="icon icon-swiper-arrow">
+												<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+											</svg>
+										</div>
+										<div class="together-cheaper-slider-next swiper-button-next">
+											<svg class="icon icon-swiper-arrow">
+												<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+											</svg>
+										</div>
+									</div>
+
+									<div class="section__button">
+										<a href="#" class="btn btn--dark"><span class="hidden-iphone">Посмотреть</span> все шнурки</a>
+										<a href="#" class="btn btn--warning"><span class="hidden-iphone">Добавить</span> в корзину</a>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<!-- BEGIN Filter fixed -->
+		@@include('./template/blocks/filter.html', {})
+		<!-- Filter fixed EOF -->
+
+		@@include('./template/blocks/category.html', {})
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>
