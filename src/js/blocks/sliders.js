@@ -417,17 +417,17 @@ if ($('.collections-swiper').length) {
 		breakpoints: {
 			100: {
 				slidesPerView: 1,
-
+				spaceBetween: 20,
 			},
 
-			768: {
+			576: {
 				slidesPerView: 2,
 				spaceBetween: 20,
 
 			},
 
-			1200: {
-				slidesPerView: 4,
+			1400: {
+				slidesPerView: 3,
 				spaceBetween: 30,
 
 			},

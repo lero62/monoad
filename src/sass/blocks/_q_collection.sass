@@ -45,9 +45,8 @@
 		background: #F4F4F4
 		padding-top: 1.4rem
 		padding-bottom: 1.4rem
-		height: 100%
-		display: flex
-		flex-direction: column
+		& + .lines-map__item
+			margin-top: 2rem
 	&__head
 		padding: 2rem 6rem
 		margin-bottom: 1rem
@@ -66,7 +65,8 @@
 
 .lm-item
 	background: #FBFBFB
-	height: 100%
+	& + .lm-item
+		margin-top: 2rem
 	&__head
 		padding: 1.8rem 3.5rem
 		display: flex
@@ -83,7 +83,7 @@
 		vertical-align: middle
 		border-bottom: .4rem solid $color-warning
 	&__body
-		padding: .5rem 3.5rem 2rem
+		padding: .1rem 3.5rem 2rem
 
 	&__heading
 		text-transform: uppercase
@@ -280,15 +280,21 @@
 		font-size: 1.6rem
 		font-weight: 500
 
-+min($desktop_lg)
-	.lines-col-lg
-		width: 40% !important
+// +min($desktop_lg)
+// 	.lines-col-lg
+// 		width: 40% !important
+
+.lines-grid
+	display: grid
+	gap: 3rem
+	grid-template-columns: repeat(5, 1fr)
 
 .lines-item
 	display: flex
 	flex-direction: column
 	height: 100%
 	background: #fff
+	min-width: 1px
 
 	&__img
 		flex: 1
@@ -310,7 +316,8 @@
 		font-family: $font2
 
 	&--lg
-
+		grid-column: span 2
+		grid-row: span 2
 		.lines-item
 			&__body
 				padding-left: 3rem
@@ -404,8 +411,7 @@
 			right: -5.5rem
 
 +max($desktop_lg)
-	.arhive-swiper
-
+	.arhive-swiper, .collections-swiper
 		.swiper-button-prev
 			left: -4.5rem
 
@@ -417,6 +423,10 @@
 
 	.section-box
 		padding: 4rem 6rem
+
+	.lines-grid
+		gap: 2rem
+		grid-template-columns: repeat(4, 1fr)
 
 	.subcollections
 		&__img
@@ -445,6 +455,9 @@
 		padding: 4rem
 		p
 			line-height: 1.73
+
+	.lines-grid
+		grid-template-columns: repeat(3, 1fr)
 
 	.subcollections
 		&__img
@@ -575,23 +588,9 @@
 			font-size: 1.7rem
 			margin-bottom: 1rem
 
-	.chart
-
-		&__img
-			margin-left: auto
-			margin-right: auto
-			margin-bottom: 2.5rem
-		&__list
-			max-width: 22rem
-			margin-left: auto
-			margin-right: auto
-			li
-				font-size: 1.5rem
-				padding-left: 2.5rem
-				line-height: 1.4
-				margin-bottom: 0.4rem
-		&__color
-			top: .2rem
+	.lines-grid
+		gap: 1rem
+		grid-template-columns: repeat(2, 1fr)
 
 	.subcollections
 		display: block
@@ -628,8 +627,44 @@
 	.etalon-card
 		&__badge
 			font-size: 1.4rem
+			line-height: 1.9rem
 		&__title
-			font-size: 1.3rem
+			font-size: 1.1rem
+			line-height: 1.2
+
+	.lines-item
+		&__body
+			padding-left: 1.5rem
+			padding-right: 1.5rem
+		&__title
+			font-size: 1.5rem
+		&--lg
+			.lines-item__body
+				padding-left: 1.5rem
+				padding-right: 1.5rem
+
+	.collections-card__body
+		padding-left: 2rem
+		padding-right: 2rem
+
++max($iphone_sm)
+	.chart
+
+		&__img
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 2.5rem
+		&__list
+			max-width: 22rem
+			margin-left: auto
+			margin-right: auto
+			li
+				font-size: 1.5rem
+				padding-left: 2.5rem
+				line-height: 1.4
+				margin-bottom: 0.4rem
+		&__color
+			top: .2rem
 
 +max($iphone_xs)
 	.lm-item
