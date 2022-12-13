@@ -1,20 +1,4 @@
 
-+font('Oswald', 'Oswaldregular')
-	font-weight: 400
-	font-style: normal
-
-+font('Oswald', 'Oswaldmedium')
-	font-weight: 500
-	font-style: normal
-
-+font('Oswald', 'Oswalddemibold')
-	font-weight: 600
-	font-style: normal
-
-+font('Oswald', 'Oswaldbold')
-	font-weight: 700
-	font-style: normal
-
 .text-left
 	text-align: left !important
 
@@ -92,6 +76,34 @@ ul, ol
 	margin: 0
 	padding: 0
 
+.decimal
+	+counter(li)
+	margin-bottom: 2.3rem
+	&:last-child
+		margin-bottom: 0
+	li
+		font-size: 1.6rem
+		position: relative
+		padding-left: 3.5rem
+		line-height: 2
+		margin-bottom: 1.6rem
+		&:last-child
+			margin-bottom: 0
+		&:before
+			background: $color
+			width: 2.5rem
+			height: 2.5rem
+			display: block
+			position: absolute
+			top: .2rem
+			left: 0
+			font-size: 1.5rem
+			font-weight: 900
+			line-height: 2.5rem
+			text-align: center
+			color: #fff
+			border-radius: 50%
+
 .ul-default
 	margin-bottom: 2rem
 
@@ -154,3 +166,39 @@ a
 
 .mt15
 	margin-top: 1.5rem !important
+
+.seo-text
+	font-size: 1.6rem
+	h5
+		font-size: 2rem
+	h3, h4, h5, h6
+		text-transform: uppercase
+		margin-top: 4rem
+		margin-bottom: 3rem
+		font-weight: 500
+
+	p
+		margin-bottom: 2.3rem
+		line-height: 2.05
+		&:last-child
+			margin-bottom: 0
+
++max($laptop)
+
+	.seo-text
+		font-size: 1.5rem
+		h3, h4, h5, h6
+			margin-top: 3rem
+			margin-bottom: 1.5rem
+		h5
+			font-size: 1.5rem
+		p
+			line-height: 1.73
+
+	.decimal
+		li
+			line-height: 1.73
+			font-size: 1.5rem
+			&:before
+				font-size: 1.4rem
+				top: 0
