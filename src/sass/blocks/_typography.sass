@@ -25,6 +25,8 @@
 	color: #575857 !important
 .text-secondary
 	color: $color-secondary !important
+.text-primary
+	color: $color-primary
 .strong
 	font-weight: bold
 
@@ -76,12 +78,20 @@ ul, ol
 	margin: 0
 	padding: 0
 
+.size-h6
+	font-size: 1.8rem
+
 .decimal
 	+counter(li)
 	margin-bottom: 2.3rem
+	&__title
+		font-size: 1.8rem
+		font-weight: 500
+		line-height: 1.8
+		margin-bottom: 0.5rem
 	&:last-child
 		margin-bottom: 0
-	li
+	& > li
 		font-size: 1.6rem
 		position: relative
 		padding-left: 3.5rem
@@ -97,7 +107,7 @@ ul, ol
 			position: absolute
 			top: .2rem
 			left: 0
-			font-size: 1.5rem
+			font-size: 1.4rem
 			font-weight: 900
 			line-height: 2.5rem
 			text-align: center
@@ -108,11 +118,12 @@ ul, ol
 	margin-bottom: 2.3rem
 	&:last-child
 		margin-bottom: 0
-	li
+	& > li
 		font-size: 1.6rem
 		position: relative
 		padding-left: 2rem
-		margin-bottom: 1rem
+		margin-bottom: .5rem
+		line-height: 2
 		&:last-child
 			margin-bottom: 0
 		&:before
@@ -122,7 +133,7 @@ ul, ol
 			height: 1rem
 			display: block
 			position: absolute
-			top: .2rem
+			top: 1rem
 			left: 0
 			border-radius: 50%
 
@@ -225,9 +236,22 @@ a
 			line-height: 1.73
 
 	.decimal
-		li
+		& > li
 			line-height: 1.73
 			font-size: 1.5rem
 			&:before
 				font-size: 1.4rem
 				top: 0
+
+		&__title
+			font-size: 1.7rem
+			line-height: 1.55
+			margin-bottom: 1rem
+
+	.disc
+		& > li
+			font-size: 1.5rem
+			line-height: 1.73
+			margin-bottom: 1rem
+			&:before
+				top: .6rem

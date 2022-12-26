@@ -1,25 +1,11 @@
-// +min(1920px)
-// 	html 
-// 		font-size: 70%
 
-// +min(3020px)
-// 	html 
-// 		font-size: 80%
-
-+min(1601px)
++min($desktop_lg + 1)
 	.visible-xl, .burger
 		display: none !important
 
-+max(1600px)
-
++max($desktop_lg)
 	.hidden-xl
 		display: none !important
-
-	.top-nav
-		display: none
-
-	.header__search
-		margin-left: 3rem
 
 	/* Categories Grid */ 
 	.categories-grid-inner
@@ -34,7 +20,7 @@
 	.seo-wrap__img
 		margin-bottom: 2rem
 
-+max(1400px)
++max($desktop)
 
 	/* Categories Grid */ 
 	.categories-grid-inner
@@ -82,16 +68,6 @@
 	.hidden-lg, .hidden-laptop
 		display: none !important
 
-	.dropdown-block
-		&--lg-left
-			border-radius: 0 1.5rem 1.5rem 1.5rem
-			right: auto
-			left: 50%
-			&:after
-				left: 0
-				right: auto
-				+arr(1.8rem, 1.7rem, #fff, bl)
-
 	/* Main =================== */
 
 	.wrap .sidebar
@@ -136,23 +112,6 @@
 			font-size: 1.5rem
 			span
 				display: block
-	/* Footer ============== */
-	.footer
-		&__head
-			font-size: 3.2rem
-			margin-bottom: 5rem
-
-		&__nav
-			li
-				margin-bottom: 1.1rem
-			a
-				font-size: 1.4rem
-
-		&__title
-			font-size: 2rem
-
-		&__alert
-			margin-top: 4rem
 
 /* Ipad ===========================*/
 +min($ipad + 1)
@@ -164,57 +123,6 @@
 	.container-fluid, .container
 		padding-left: 2rem !important
 		padding-right: 2rem !important
-	/* Header */
-	.header
-		padding-top: 2rem
-
-		&__container
-			flex-wrap: wrap
-		&__logo
-			max-width: 20rem
-		&__mobile-search
-			width: 100%
-			padding-top: 2rem
-			transition: transform 0.2s linear
-		&__lang
-			margin-left: 2rem
-		&-controls__link
-			.icon
-				font-size: 1.8rem
-			.icon-shopping-cart
-				font-size: 2.2rem
-			.icon-user
-				font-size: 1.6rem
-
-		&__left, &__logo, &__right
-			transition: transform 0.2s linear, opacity 0.2s linear
-
-		&._search
-			.header__left, .header__logo, .header__right
-				opacity: 0
-
-			.header__mobile-search
-				transform: translate(0, -6rem)
-
-			.top-search__form
-				position: relative
-				z-index: 11
-				margin-right: 3rem
-
-	.top-search
-		flex: 1
-		min-width: 1px
-
-		&__input
-			height: 3.5rem
-			border-radius: 3.5rem
-			font-size: 1.2rem
-			padding-left: 3.8rem
-		&__icon
-
-			left: 1.4rem
-			.icon
-				font-size: 1.6rem
 
 	/* Main =======================*/
 
@@ -233,7 +141,7 @@
 		&__button
 			margin-top: 2.5rem
 	.content__title
-		font-size: 1.8rem
+		font-size: 2.4rem
 		text-align: center
 		line-height: 1.5
 		.badge
@@ -333,83 +241,6 @@
 			margin-right: -3rem
 			margin-bottom: -3rem
 
-	/* Footer ============== */
-	.footer
-		&__top
-			padding: 3.7rem 0 1.8rem
-			&-container
-				display: flex
-				flex-direction: column
-		&__head
-			font-size: 2.6rem
-			padding-top: 0
-			font-weight: 500
-			margin-bottom: 3.5rem
-			order: 0
-		&__title
-			font-size: 1.8rem
-			margin-bottom: 1.2rem
-			&--contact
-				display: none
-		&__alert
-			order: 1
-			margin-top: 0
-			margin-bottom: 5.8rem
-			max-width: 67.6rem
-			margin-left: auto
-			margin-right: auto
-
-		&__row
-			order: 2
-			margin-bottom: -2.1rem
-
-		&__nav
-			li
-				margin-bottom: .6rem
-
-		&__bottom
-			text-align: center
-			&-container
-				padding-top: 0
-				&:after
-					display: none
-
-		&__social
-			.social
-				justify-content: center
-				margin-top: 1.5rem
-				margin-right: 0
-
-		&__pay-systems
-			margin-top: 1.5rem
-
-	.f-alert
-		padding: 2.4rem 2.4rem 3.5rem
-		border-radius: 2.3rem
-		text-align: center
-		&__icon
-			bottom: -2.3rem
-			top: auto
-			left: 50%
-			margin-top: 0
-			margin-left: -2.3rem
-
-	.pay-systems
-		&__item
-			margin: .3rem .5rem
-			height: 2rem
-
-@media screen and(max-width: $ipad) and (min-width: $iphone_sm +1)
-	.f-contacts
-		width: auto
-		display: flex
-		flex-wrap: wrap
-		justify-content: center
-		margin-bottom: -1.5rem
-		&__item
-			margin-left: 2rem
-			margin-right: 2rem
-
 /* Mobile =========================*/
 +min($iphone + 1)
 	.visible-iphone
@@ -423,109 +254,6 @@
 +max($iphone)
 	.hidden-iphone
 		display: none !important
-
-	.header
-		padding-top: 1.5rem
-		&__logo
-			max-width: 14.2rem
-		&__lang
-			margin-left: 1.8rem
-		&__actions
-
-			margin-left: 1rem
-			.sorting__item
-				width: auto
-			.filter-button
-				width: 3.5rem
-				padding: 0
-				overflow: visible
-				justify-content: center
-				.icon
-					margin-right: 0
-					top: 0
-					display: block
-				&__caret, span:not(.badge)
-					display: none
-				.badge
-					right: -.3rem
-					top: -.3rem
-					margin-top: 0
-					min-width: 1.3rem
-					height: 1.3rem
-					line-height: 1.3rem
-					font-size: 0.9rem
-
-		&__mobile-search
-			padding-top: 1.4rem
-
-		.top-search
-			flex: 1 0 100%
-
-		&.fixed
-			padding-top: 1.5rem
-		&._filter
-			.header__actions
-				margin-left: 0
-			.top-search
-				flex: 1
-
-		&._search
-			.top-search
-				flex: 1 0 100%
-			.header__actions
-				display: none
-			.header__left, .header__logo, .header__right
-				transform: translate(0, -4.5rem)
-
-			.header__mobile-search
-				transform: translate(0, -4.5rem)
-
-	.burger
-		width: 2rem
-		height: 2rem
-		.icon
-			font-size: 1.7rem
-			top: -.1rem
-
-	.top-lang
-		&__link
-			font-size: 1.1rem
-			line-height: 2rem
-			display: block
-
-	.top-controls
-		&__item
-			margin-left: .7rem
-			margin-right: -0.7rem
-		&__link
-			.icon
-				font-size: 1.7rem
-
-		&__badge
-			min-width: 1.3rem
-			height: 1.3rem
-			top: .4rem
-			line-height: 1.3rem
-			font-size: 0.9rem
-
-	.controls
-		margin-bottom: 2.2rem
-		display: flex
-		margin-left: -0.5rem
-		margin-right: -0.5rem
-		&__item
-			width: calc(50% - 1rem)
-			margin-left: .5rem
-			margin-right: .5rem
-			&:first-child:last-child
-				width: calc(100% - 1rem)
-
-		.selectbox
-			&__head
-				height: 3.5rem
-			&__text
-				line-height: 3.3rem !important
-				font-size: 1.2rem !important
 
 	/* Main =================== */ 
 	.alert-fixed
@@ -566,26 +294,25 @@
 	.content-header
 		text-align: center
 
-	.content__header
-		margin-bottom: 2rem
-		&.row
-			margin-bottom: 0
-
-	.content__title
-		margin-bottom: 1rem
-
-	.content__text
-		margin-bottom: 3rem
-		font-size: 1.3rem
-		p
+	.content
+		&__header
 			margin-bottom: 2rem
+			&.row
+				margin-bottom: 0
+
+		&__title
+			font-size: 1.8rem
+
+		&__text
+			margin-bottom: 3rem
+			font-size: 1.3rem
+			p
+				margin-bottom: 2rem
 
 	.section-seo
-
 		padding: 2rem
 
 	.seo-wrap
-
 		&__title
 			font-size: 1.8rem
 			margin-bottom: 1.5rem
@@ -614,7 +341,6 @@
 	.categories-grid
 		margin-bottom: 4rem
 	.categories-grid-inner
-
 		&__title
 			font-size: 1.8rem
 			margin-bottom: 1rem
@@ -681,7 +407,6 @@
 
 	.nav-tab-list
 		display: block
-
 		padding: 0 0 2.6rem
 		background: none
 
@@ -763,12 +488,6 @@
 		margin-left: auto
 		margin-right: auto
 
-	/* Footer ============== */
-
-	.pay-systems
-		&__item
-			height: 1.5rem
-
 +max(630px)
 	/* Categories Grid */ 
 	.categories-grid-inner
@@ -810,10 +529,6 @@
 	.hidden-sm
 		display: none !important
 
-	.navbar
-		&__container
-			width: 22.5rem
-
 	/* Banners grid ============== */
 	.banner-card
 		height: 26rem
@@ -840,30 +555,6 @@
 		margin-left: auto
 		margin-right: auto
 
-	/* Footer ============== */
-	.footer
-		&__top
-			padding-bottom: 3.3rem
-		&__row
-			margin-bottom: -2.6rem
-
-		&__item
-			margin-bottom: 2.6rem
-
-		&__title
-			font-size: 1.8rem
-			margin-bottom: 1rem
-			&--contact
-				display: block
-
-		&__nav
-			li
-				margin-bottom: .6rem
-
-	.f-contacts
-		&__item
-			margin-bottom: 0.7rem
-
 /* Mobile xs ======================*/
 +min($iphone_xs + 1)
 	.visible-xs
@@ -878,15 +569,6 @@
 	.container-fluid, .container
 		padding-left: 1.5rem !important
 		padding-right: 1.5rem !important
-
-	.header__logo
-		max-width: 12rem
-	.header__lang
-		margin-left: 1.5rem
-
-	.top-controls
-		&__item
-			margin-left: 0.2rem
 
 	.section--default
 		padding-left: 1.5rem

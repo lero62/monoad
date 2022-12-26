@@ -1,3 +1,53 @@
+/* Datepicker */
+/* --------------------------------------------------------------- */
+
+.air-datepicker.-inline-
+	width: auto !important
+	background: transparent
+	border: none
+	margin-left: -.8rem
+	margin-right: -.8rem
+	.air-datepicker-nav
+		border: none !important
+.air-datepicker-nav--title
+	background: #FDFDFD
+	border: 1px solid #D0D0D0
+	border-radius: 35px !important
+	height: 3.8rem
+	font-family: $font2 !important
+	font-size: 1.4rem
+	font-weight: 400
+	position: relative
+	text-transform: uppercase
+	padding: 0 4rem 0 2rem !important
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		height: 100%
+		width: 4rem
+		background: url('../img/down-arrow.svg') no-repeat center
+		background-size: 1rem
+
+.air-datepicker-body--day-name
+	font-size: 1.1rem !important
+	font-weight: 500 !important
+
+.air-datepicker-cell
+	border-radius: 25px !important
+.air-datepicker-cell.-selected-
+
+	background: #131313 !important
+
+.air-datepicker-nav--action
+	width: 2rem !important
+	svg
+		display: none
+	&[data-action="prev"]
+		background: url('../img/arrow-left.svg') no-repeat center
+	&[data-action="next"]
+		background: url('../img/arrow-right.svg') no-repeat center
 
 /* Rating */
 /* --------------------------------------------------------------- */
@@ -305,6 +355,16 @@
 				background: $color-warning
 				color: $color
 
+.back-button
+	width: 4rem
+	height: 4rem
+	display: flex
+	align-items: center
+	justify-content: center
+	.icon
+		font-size: 2.4rem
+		display: block
+
 /* Social */ 
 /* ===================================================================================================================== */
 
@@ -401,6 +461,7 @@
 	height: 1.6rem
 	background-color: $color-warning
 	color: $color
+	font-family: $font-family, Arial, sans-serif
 	text-align: center
 	line-height: 1.6rem
 	white-space: nowrap
@@ -828,7 +889,7 @@
 		position: absolute
 		bottom: 100%
 		margin-bottom: -.1rem
-		left: 0
+		left: -.1rem
 		width: 3.2rem
 		height: 1.4rem
 		z-index: 1
@@ -859,7 +920,7 @@
 		border-top-right-radius: 0
 		&:after
 			left: auto
-			right: 0
+			right: -.1rem
 			transform: scale(-1, 1)
 
 	.ond-drop
@@ -1037,6 +1098,11 @@
 	.swiper-button-prev
 		left: -.5rem
 
+	.tab-line, .tab-wrap
+		&__header
+
+			h2
+				font-size: 2.4rem
 	.tab-line
 		&--lg
 			.tab-line
@@ -1127,6 +1193,10 @@
 			background-size: 1.2rem 1.2rem
 			width: 1.2rem
 			height: 1.2rem
+			transition: transform 0.2s linear
+		&._active
+			&:after
+				transform: rotate(180deg)
 
 +max($iphone)
 

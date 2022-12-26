@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "blog"
+})
+
+<body class="loaded">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item "><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Натуральная кожа</a></li>
+												<li class="sbox__list-item"><a href="#">Эко материал</a></li>
+												<li class="sbox__list-item"><a href="#">Полиуретановая кожа</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Подошва</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Основные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Дополнительные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Сезонные подошвы</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>Фасон</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item _active"><a href="#">Основные фасоны</a></li>
+												<li class="sbox__list-item"><a href="#">Дополнительные фасоны</a></li>
+											</ul>
+
+										</li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item  _active"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Календарь публикаций</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__inner">
+										<div id="blog-datepicker" class="datepicker"></div>
+									</div>
+
+								</div>
+							</div>
+							<div class="sbox filter__sbox">
+
+								<div class="sbox__body pt-lg-4 pb-lg-4 pt-0 pb-0">
+									<div class="sbox__inner">
+										<div class="search-block form-wicon">
+											<input type="text" class="form-input " placeholder="Поиск по блогу">
+											<span class="form-wicon__icon">
+												<svg class="icon icon-search">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg>
+											</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+
+								<li class="breadcrumbs__item">Блог</li>
+							</ul>
+							<div class="content__header ">
+								<h1 class="content__title mb-0">
+									Блог dr.martens
+								</h1>
+							</div>
+						</div>
+
+						<div class="blog-row">
+							@@include('./template/blocks/blog_card.html', {
+							img: 'img/blog/blog-card-img-1.jpg',
+							brand: 'DR.martens',
+							title: 'Обувь Dr.Martens удобная ? ',
+							text: 'Натуральная кожа используется человечеством с давних времен. Несмотря на изобретение большого количества синтетических материалов, именно натуральный материал остается на вершине популярности благодаря обилию преимуществ. Сегодня существует множество видов кожи, а новые методы ее обработки позволяют изделиям быть новые методы Сегодня существует множество видов кожи, а новые методы ее обработки позволяют изделиям быть новые методы',
+							})
+
+							@@include('./template/blocks/blog_card.html', {
+							img: 'img/blog/blog-card-img-2.jpg',
+							brand: 'DR.martens',
+							title: 'Чем отличаются английские мартинсы из коллекции "MADE IN ENGLAND" от азиатских из коллекции "THE ORIGINALS" ?',
+							text: 'Натуральная кожа используется человечеством с давних времен. Несмотря на изобретение большого количества синтетических материалов, именно натуральный материал остается на вершине популярности благодаря обилию ',
+							})
+
+							@@include('./template/blocks/blog_card.html', {
+							img: 'img/blog/blog-card-img-3.jpg',
+							brand: 'DR.martens',
+							title: 'Как разносить обувь Dr.Martens ?',
+							text: 'Натуральная кожа используется человечеством с давних времен. Несмотря на изобретение большого количества синтетических материалов, именно натуральный материал остается на вершине популярности благодаря обилию преимуществ. Сегодня существует множество видов кожи, а новые методы ее обработки позволяют изделиям быть новые методы',
+							})
+
+							@@include('./template/blocks/blog_card.html', {
+							img: 'img/blog/blog-card-img-4.jpg',
+							brand: 'DR.martens',
+							title: 'Чем отличаются английские мартинсы из коллекции "MADE IN ENGLAND" от азиатских',
+							text: 'Натуральная кожа используется человечеством с давних времен. Несмотря на изобретение большого количества синтетических материалов, именно натуральный материал остается на вершине популярности благодаря обилию преимуществ. Сегодня существует множество видов кожи, а новые методы ее обработки позволяют изделиям быть новые методы Сегодня существует множество видов кожи, а новые методы ее обработки позволяют изделиям быть новые методы',
+							})
+
+							@@include('./template/blocks/blog_card.html', {
+							img: 'img/blog/blog-card-img-5.jpg',
+							brand: 'DR.martens',
+							title: 'Dr.Martens дорогие ?',
+							text: 'Натуральная кожа используется человечеством с давних времен. Несмотря на изобретение большого количества синтетических материалов, именно натуральный материал остается на вершине популярности благодаря обилию преимуществ. Сегодня существует множество видов кожи, а новые методы ее обработки позволяют изделиям быть новые методы Сегодня существует множество видов кожи, а новые методы ее обработки позволяют изделиям быть новые методы',
+							})
+
+
+						</div>
+
+						<!-- BEGIN PAGINATION -->
+						<div class="box-paging">
+							<div class="box-paging__button visible-iphone">
+								<a href="#" class="btn btn--dark">Смотреть больше</a>
+							</div>
+							<ul class="paging-list hidden-iphone">
+								<li class="paging-list__item paging-prev">
+									<a href="#" class="paging-list__link">НАЗАД</a>
+								</li>
+								<li class="paging-list__item ">
+									<a href="#" class="paging-list__link ">1</a>
+								</li>
+								<li class="paging-list__item">
+									<a href="#" class="paging-list__link active">2</a>
+								</li>
+								<li class="paging-list__item">
+									<a href="#" class="paging-list__link">3</a>
+								</li>
+								<li class="paging-list__item">
+									<a href="#" class="paging-list__link">4</a>
+								</li>
+								<li class="paging-list__item">
+									<a href="#" class="paging-list__link">5</a>
+								</li>
+								<li class="paging-list__item paging-next">
+									<a href="#" class="paging-list__link">ВПЕРЁД</a>
+								</li>
+							</ul>
+						</div>
+						<!-- PAGINATION EOF -->
+					</div>
+
+
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

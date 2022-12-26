@@ -20,25 +20,55 @@
 	&__body
 		position: relative
 		z-index: 2
-		padding: 5rem 7rem
+		padding: 2rem 7rem 5rem 7rem
 		display: flex
 		flex-direction: column
 		width: 100%
 	&__head
 		margin-top: auto
+
 		h2
 			font-size: 3.5rem
 		h1
 			font-size: 5.2rem
+		+min($ipad + 1)
+			&--row
+				display: flex
+				align-items: flex-start
+				flex-wrap: wrap
+				.collection-banner__icon
+					margin-bottom: 0
+					margin-left: 3rem
+					order: 1
+					margin-top: 1rem
+
+	&__content
+		flex: 0 1 auto
+
+	&__icon
+		background: #fff
+		border-radius: 50%
+		width: 10.6rem
+		height: 10.6rem
+		flex: none
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 2.5rem
+		.icon
+			font-size: 7.8rem
 
 	&__title
 		text-transform: uppercase
 		color: #fff
 		font-weight: 500
 		font-family: $font2
-		margin-bottom: 2rem
+		margin-bottom: 0
+
 	&__button
 		margin-top: 2rem
+		width: 100%
+		order: 2
 		.btn
 			min-width: 23.1rem
 
@@ -112,18 +142,34 @@
 				&:hover
 					text-decoration: underline
 
-		&.colspan2
+		&.colspan2, &.colspan3, &.colspan4, &.colspan5
 			columns: 2
 			column-gap: 2rem
 			li
 				display: inline-block
 				width: 100%
-				min-width: 11rem
+		&.colspan3
+			columns: 3
+		&.colspan4
+			columns: 4
+		&.colspan5
+			columns: 5
 
+/* Section box */	
 .section-box
 	background: #F4F4F4
 	padding: 5.2rem 8rem
-
+	&__top
+		margin-top: -5.2rem
+		background: $color-warning
+		margin-left: -8rem
+		margin-right: -8rem
+		padding: 1.8rem 8rem
+		margin-bottom: 4.2rem
+		.section-box__title
+			font-size: 4rem
+			line-height: 1.25
+			margin-bottom: 0
 	&__title
 		font-size: 2.9rem
 		line-height: 1.4
@@ -134,6 +180,16 @@
 		margin-top: 0
 		.badge
 			vertical-align: top
+		&--sm
+			font-size: 2rem
+			line-height: 1.5
+
+	&__picture
+		margin-left: -8rem
+		margin-right: -8rem
+		display: block
+		img
+			width: 100%
 
 .chart
 
@@ -158,54 +214,7 @@
 		height: 1.6rem
 		border-radius: 50%
 
-.subcollections
-	position: relative
-	display: flex
-	background: #fff
-	margin-bottom: 3rem
-	&:last-child
-		margin-bottom: 0
-	&__img
-		max-width: 49.5rem
-		min-width: 36.8rem
-		width: 39%
-		flex: none
-		overflow: hidden
-		img
-			width: 100%
-			height: 100%
-			object-fit: cover
-			transition: transform 0.2s linear
-
-	&__content
-		flex: 1
-		min-width: 1px
-		padding: 3.5rem 4rem 3rem 6rem
-		display: flex
-		flex-direction: column
-
-	&__title
-		font-family: $font2
-		font-size: 2rem
-		font-weight: 500
-		text-transform: uppercase
-		margin-bottom: 1.8rem
-
-	&__text
-		line-height: 1.8
-		font-size: 1.6rem
-		margin-bottom: 2rem
-		+ellipsis(6)
-
-	&__button
-		margin-top: auto
-
-	@media (any-hover: hover)
-		&:hover
-			.subcollections__img
-				img
-					transform: scale(1.05)
-
+/* arhive */
 .arhive-col
 	&-images
 		min-width: 1px
@@ -287,14 +296,59 @@
 		line-height: 2.5rem
 		border-radius: .5rem
 		padding: 0 .5rem
+		text-transform: uppercase
 
 	&__title
 		font-size: 1.6rem
 		font-weight: 500
 
-// +min($desktop_lg)
-// 	.lines-col-lg
-// 		width: 40% !important
+.subcollections
+	position: relative
+	display: flex
+	background: #fff
+	margin-bottom: 3rem
+	&:last-child
+		margin-bottom: 0
+	&__img
+		max-width: 49.5rem
+		min-width: 36.8rem
+		width: 39%
+		flex: none
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: transform 0.2s linear
+
+	&__content
+		flex: 1
+		min-width: 1px
+		padding: 3.5rem 4rem 3rem 6rem
+		display: flex
+		flex-direction: column
+
+	&__title
+		font-family: $font2
+		font-size: 2rem
+		font-weight: 500
+		text-transform: uppercase
+		margin-bottom: 1.8rem
+
+	&__text
+		line-height: 1.8
+		font-size: 1.6rem
+		margin-bottom: 2rem
+		+ellipsis(6)
+
+	&__button
+		margin-top: auto
+
+	@media (any-hover: hover)
+		&:hover
+			.subcollections__img
+				img
+					transform: scale(1.05)
 
 .lines-grid
 	display: grid
@@ -343,7 +397,7 @@
 				&__title
 					color: $color-warning
 
-.collections-swiper
+.collections-swiper, .collections-one-swiper
 	padding-left: 2.3rem
 	padding-right: 2.3rem
 
@@ -361,10 +415,16 @@
 		.icon
 			font-size: 2.8rem
 
+.collections-one-swiper
+	width: 32rem
+	margin-left: auto
+	margin-right: auto
+
 .collections-card
 	display: flex
 	flex-direction: column
 	height: 100%
+	position: relative
 	&__img
 		background: #fff
 		padding: 2.6rem 1.5rem
@@ -389,6 +449,12 @@
 		transition: color 0.2s linear
 		+ellipsis(2)
 
+	.btn-favorites
+		position: absolute
+		top: 1.5rem
+		right: 1.5rem
+		z-index: 3
+
 	@media (any-hover: hover)
 		&:hover
 			.collections-card__title
@@ -408,11 +474,32 @@
 	&__labeled
 		font-size: 1.3rem
 
+/* Materials */
+/* --------------------------------------------------------------- */
+.temperature-informer
+	background: #FFF
+	padding: 2.5rem 4rem
+	&__icon
+		flex: none
+		margin-right: 2rem
+		width: 8.4rem
+		height: 8.4rem
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		background: $color-warning
+		svg
+			max-width: 55%
+	&__content
+		font-size: 1.6rem
+		flex: 1
+		min-width: 1px
 /* Media */
 /* --------------------------------------------------------------- */
 
 +max($desktop_xl)
-	.arhive-swiper, .collections-swiper
+	.arhive-swiper, .collections-swiper, .collections-one-swiper
 		padding-left: 0
 		padding-right: 0
 		.swiper-button-prev
@@ -422,19 +509,38 @@
 			right: -5.5rem
 
 +max($desktop_lg)
-	.arhive-swiper, .collections-swiper
+	.arhive-swiper, .collections-swiper, .collections-one-swiper
 		.swiper-button-prev
 			left: -4.5rem
 
 		.swiper-button-next
 			right: -4.5rem
+
+	.collections-one-swiper
+		width: auto
 	.collection-banner
 		&__body
 			padding: 3rem 6rem
 
+	.lm-item
+		&__list
+			&.colspan5, &.colspan4
+				columns: 3
+
 	.section-box
 		padding: 4rem 6rem
-
+		&__top
+			margin-top: -4rem
+			margin-left: -6rem
+			margin-right: -6rem
+			padding-left: 6rem
+			padding-right: 6rem
+			margin-bottom: 4rem
+			.section-box__title
+				font-size: 3rem
+		&__picture
+			margin-left: -6rem
+			margin-right: -6rem
 	.lines-grid
 		gap: 2rem
 		grid-template-columns: repeat(4, 1fr)
@@ -462,8 +568,25 @@
 			h1
 				font-size: 4rem
 
+		&__icon
+			width: 7.8rem
+			height: 7.8rem
+
+			margin-bottom: 1.5rem
+			.icon
+				font-size: 6rem
+
 	.section-box
 		padding: 4rem
+		&__top
+
+			margin-left: -4rem
+			margin-right: -4rem
+			padding-left: 4rem
+			padding-right: 4rem
+		&__picture
+			margin-left: -4rem
+			margin-right: -4rem
 
 	.lines-grid
 		grid-template-columns: repeat(3, 1fr)
@@ -504,7 +627,7 @@
 		height: 25rem
 
 		&__body
-			padding: 3rem 4rem
+			padding: 2rem 4rem 3rem 4rem
 		&__head
 			h2, h1
 				font-size: 2.6rem
@@ -524,14 +647,14 @@
 
 	.lm-item
 		&__head
-			padding-left: 3rem
-			padding-right: 3rem
+			padding-left: 2.5rem
+			padding-right: 2.5rem
 		&__title
 			font-size: 1.6rem
 
 		&__body
-			padding-left: 3rem
-			padding-right: 3rem
+			padding-left: 2.5rem
+			padding-right: 2.5rem
 
 		&__heading
 			font-size: 1.4rem
@@ -543,6 +666,9 @@
 					font-size: 1.3rem
 
 	.section-box
+		&__top
+			.section-box__title
+				font-size: 2.6rem
 		&__title
 			font-size: 2.6rem
 
@@ -557,6 +683,10 @@
 		&__head
 			h2, h1
 				font-size: 2rem
+
+		&__icon
+			margin-left: auto
+			margin-right: auto
 
 		&__button
 			margin-top: 1.7rem
@@ -573,31 +703,29 @@
 			padding-right: 2rem
 
 	.lm-item
-		&__head
-			padding-left: 3rem
-			padding-right: 3rem
-		&__title
-			font-size: 1.6rem
-			border-width: .3rem
-		&__body
-			padding-left: 3rem
-			padding-right: 3rem
-		&__heading
-			font-size: 1.4rem
 		&__list
-			li
-				a
-					font-size: 1.3rem
-			&.colspan2 li
-				min-width: 1px
+			&.colspan3, &.colspan5, &.colspan4
+				columns: 2
 
 	.section-box
 		padding: 2.3rem 2.8rem 2.5rem
-
+		&__top
+			margin-top: -2.3rem
+			margin-left: -2.8rem
+			margin-right: -2.8rem
+			padding-left: 2.8rem
+			padding-right: 2.8rem
+			margin-bottom: 2.3rem
+			padding-top: 1.4rem
+			padding-bottom: 1.4rem
+			.section-box__title
+				font-size: 1.7rem
 		&__title
 			font-size: 1.7rem
 			margin-bottom: 1rem
-
+		&__picture
+			margin-left: -2.8rem
+			margin-right: -2.8rem
 	.lines-grid
 		gap: 1rem
 		grid-template-columns: repeat(2, 1fr)
@@ -657,6 +785,16 @@
 		padding-left: 2rem
 		padding-right: 2rem
 
+	/* Materials */
+	.temperature-informer
+		padding: 2rem
+		&__icon
+			width: 4rem
+			height: 4rem
+			margin-right: 1.5rem
+		&__content
+			font-size: 1.4rem
+
 +max($iphone_sm)
 	.chart
 
@@ -682,7 +820,7 @@
 			padding-left: 2rem
 			padding-right: 2rem
 		&__list
-			&.colspan2
+			&.colspan2, &.colspan3, &.colspan5, &.colspan4
 				columns: auto
 				li
 					display: block
@@ -690,7 +828,19 @@
 	.section-box
 		padding-left: 2rem
 		padding-right: 2rem
+		&__top
+			margin-left: -2rem
+			margin-right: -2rem
+		&__picture
+			margin-left: -2rem
+			margin-right: -2rem
 
 	.arhive-item__wrap
 		padding-left: 2rem
 		padding-right: 2rem
+	/* Materials */
+	.temperature-informer
+		padding: 1.5rem
+
+		&__content
+			font-size: 1.2rem

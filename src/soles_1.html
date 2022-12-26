@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "soles_1"
+})
+
+<body class="loaded">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Натуральная кожа</a></li>
+												<li class="sbox__list-item"><a href="#">Эко материал</a></li>
+												<li class="sbox__list-item"><a href="#">Полиуретановая кожа</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop _active">
+											<span>Подошва</span>
+											<ul class="sbox__list sbox__dropdown" style="display: block;">
+												<li class="sbox__list-item _active"><a href="#">Основные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Дополнительные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Сезонные подошвы</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item"><a href="#">Фасон</a></li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar__articles mt-5">
+							<div class="row g-2" data-da="section-blog, 1, 1024">
+								<div class="col-lg-12 col-md-4 col-sm-6">
+									<a href="#" class="article-side-card ">
+										<div class="article-side-card__img">
+											<img src="img/soles/article-side-card.jpg" alt="">
+										</div>
+										<div class="article-side-card__body">
+											<div class="article-side-card__title">Как ухаживать за подошвой dr.martens</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body mb-lg-4 mb-3" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">подошвы</a>
+								</li>
+								<li class="breadcrumbs__item">основные подошвы</li>
+							</ul>
+
+						</div>
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-10',
+						imgMobile: 'img/collection/collection-banner-img-iphone-10',
+						icon: '<svg class="icon icon-sole">\r<use xlink:href="img/sprite.svg#sole"></use>\r</svg>',
+						title: 'основные <br class="hidden-ipad">подошвы',
+						titleH1: true,
+						btn: 'Подробнее о подошвах',
+						})
+
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title">Об основной подошве dr.martens</div>
+
+							<div class="row g-xxl-6 g-xl-3 g-2 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+
+									<p>Натуральная кожа используется человечеством с давних времен. Несмотря на изобретение большого количества синтетических материалов, именно натуральный материал остается на вершине популярности благодаря обилию преимуществ. Сегодня существует множество видов кожи, а новые методы ее обработки позволяют изделиям быть более износостойкими и привлекательными. Давайте подробнее рассмотрим основные типы и особенности натурального материала, а также при помощи каких методов он производится.
+									</p>
+
+									<p>Дубление — это наиболее распространенный вид выделки натуральной кожи, позволяющий обработать сырой материал, сделать его пригодным к использованию и устранить его негативные свойства. Такая процедура придает изделию прочность, эластичность, а также долговечность. Сейчас существуют как натуральные способы дубления, так и химические, позволяющие добиться не менее достойных результатов.</p>
+
+
+								</div>
+								<div class="col-xxl-auto">
+									<img src="img/soles/img-1.png" alt="">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-7 text-center">Визуальная схема подошв dr.martens</div>
+							<div class="row justify-content-center g-xxl-4 gx-md-2 gy-3 ">
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'VDM',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'DMS',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'DMS',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'DML',
+									})
+
+								</div>
+
+
+							</div>
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-5 text-center text-lg-start">Виды основных подошв</div>
+							<div class="row seo-text g-lg-2 g-1">
+								<div class="col-xxl-6">
+									<div class="swb-box">
+										<div class="swb-box__head ac-navitem-lg _ac__navitem">
+											<div class="swb-box__title"><span class="t-line">Подошва VDM</span></div>
+										</div>
+
+										<div class="swb-box__body ac-item-lg _ac__item">
+											<p>Главное отличие этой подошвы заключается в линии протектора, которая значительно тоньше.</p>
+
+											<div class="row pt-2 g-3">
+												<div class="col-xxxl-6 col-xxl-12 col-md-5  order-xxxl-1 order-xxl-0 order-md-1">
+													<img src="img/soles/swb-1.png" alt="" class="ms-auto me-auto">
+												</div>
+
+												<div class="col-xxxl-6 col-xxl-12 col-md-7">
+													<ul class="disc">
+														<li>Округлый носок</li>
+														<li>Подошва тёмного оттенка</li>
+														<li>Производится в Англии где и сама обувь.</li>
+														<li>Состав ПВХ</li>
+														<li>Рифлёная надпись</li>
+														<li>Made in England</li>
+														<li>Модели из коллекции</li>
+														<li>Mie Vintage</li>
+													</ul>
+												</div>
+
+												<div class="col-xxxl-6 col-xxl-12 col-md-5 order-xxxl-3 order-xxl-0 order-md-3">
+													<img src="img/soles/swb-2.jpg" alt="" class="ms-auto me-auto">
+												</div>
+												<div class="col-xxxl-6 col-xxl-12 col-md-7 order-xxxl-2 order-xxl-0 order-md-2">
+													<table class="size-table">
+														<tr>
+															<th>Размер
+																UK</th>
+															<th>Длина
+																мм</th>
+															<th>Ширина, мм</th>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>230.50</td>
+															<td>86</td>
+														</tr>
+														<tr>
+															<td>4</td>
+															<td>235.50</td>
+															<td>88</td>
+														</tr>
+														<tr>
+															<td>5</td>
+															<td>254.50</td>
+															<td>90</td>
+														</tr>
+														<tr>
+															<td>6</td>
+															<td>263.00</td>
+															<td>92</td>
+														</tr>
+														<tr>
+															<td>7</td>
+															<td>270.00</td>
+															<td>94</td>
+														</tr>
+														<tr>
+															<td>8</td>
+															<td>280.00</td>
+															<td>96</td>
+														</tr>
+														<tr>
+															<td>9</td>
+															<td>288.50</td>
+															<td>98</td>
+														</tr>
+														<tr>
+															<td>10</td>
+															<td>297.00</td>
+															<td>100</td>
+														</tr>
+														<tr>
+															<td>11</td>
+															<td>305.50</td>
+															<td>102</td>
+														</tr>
+														<tr>
+															<td>12</td>
+															<td>314.00</td>
+															<td>104</td>
+														</tr>
+														<tr>
+															<td>13</td>
+															<td>322.50</td>
+															<td>106</td>
+														</tr>
+													</table>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xxl-6">
+									<div class="swb-box">
+										<div class="swb-box__head ac-navitem-lg _ac__navitem">
+											<div class="swb-box__title"><span class="t-line">Подошва DMS</span></div>
+										</div>
+
+										<div class="swb-box__body ac-item-lg _ac__item">
+											<p>Главное отличие этой подошвы заключается в линии протектора, которая значительно тоньше.</p>
+
+											<div class="row pt-2 g-3">
+												<div class="col-xxxl-6 col-xxl-12 col-md-5  order-xxxl-1 order-xxl-0 order-md-1">
+													<img src="img/soles/swb-1.png" alt="" class="ms-auto me-auto">
+												</div>
+
+												<div class="col-xxxl-6 col-xxl-12 col-md-7">
+													<ul class="disc">
+														<li>Округлый носок</li>
+														<li>Подошва тёмного оттенка</li>
+														<li>Производится в Англии где и сама обувь.</li>
+														<li>Состав ПВХ</li>
+														<li>Рифлёная надпись</li>
+														<li>Made in England</li>
+														<li>Модели из коллекции</li>
+														<li>Mie Vintage</li>
+													</ul>
+												</div>
+
+												<div class="col-xxxl-6 col-xxl-12 col-md-5 order-xxxl-3 order-xxl-0 order-md-3">
+													<img src="img/soles/swb-2.jpg" alt="" class="ms-auto me-auto">
+												</div>
+												<div class="col-xxxl-6 col-xxl-12 col-md-7 order-xxxl-2 order-xxl-0 order-md-2">
+													<table class="size-table">
+														<tr>
+															<th>Размер
+																UK</th>
+															<th>Длина
+																мм</th>
+															<th>Ширина, мм</th>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>230.50</td>
+															<td>86</td>
+														</tr>
+														<tr>
+															<td>4</td>
+															<td>235.50</td>
+															<td>88</td>
+														</tr>
+														<tr>
+															<td>5</td>
+															<td>254.50</td>
+															<td>90</td>
+														</tr>
+														<tr>
+															<td>6</td>
+															<td>263.00</td>
+															<td>92</td>
+														</tr>
+														<tr>
+															<td>7</td>
+															<td>270.00</td>
+															<td>94</td>
+														</tr>
+														<tr>
+															<td>8</td>
+															<td>280.00</td>
+															<td>96</td>
+														</tr>
+														<tr>
+															<td>9</td>
+															<td>288.50</td>
+															<td>98</td>
+														</tr>
+														<tr>
+															<td>10</td>
+															<td>297.00</td>
+															<td>100</td>
+														</tr>
+														<tr>
+															<td>11</td>
+															<td>305.50</td>
+															<td>102</td>
+														</tr>
+														<tr>
+															<td>12</td>
+															<td>314.00</td>
+															<td>104</td>
+														</tr>
+														<tr>
+															<td>13</td>
+															<td>322.50</td>
+															<td>106</td>
+														</tr>
+													</table>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xxl-6">
+									<div class="swb-box">
+										<div class="swb-box__head ac-navitem-lg _ac__navitem">
+											<div class="swb-box__title"><span class="t-line">Подошва DMC</span></div>
+										</div>
+
+										<div class="swb-box__body ac-item-lg _ac__item">
+											<p>Главное отличие этой подошвы заключается в линии протектора, которая значительно тоньше.</p>
+
+											<div class="row pt-2 g-3">
+												<div class="col-xxxl-6 col-xxl-12 col-md-5  order-xxxl-1 order-xxl-0 order-md-1">
+													<img src="img/soles/swb-1.png" alt="" class="ms-auto me-auto">
+												</div>
+
+												<div class="col-xxxl-6 col-xxl-12 col-md-7">
+													<ul class="disc">
+														<li>Округлый носок</li>
+														<li>Подошва тёмного оттенка</li>
+														<li>Производится в Англии где и сама обувь.</li>
+														<li>Состав ПВХ</li>
+														<li>Рифлёная надпись</li>
+														<li>Made in England</li>
+														<li>Модели из коллекции</li>
+														<li>Mie Vintage</li>
+													</ul>
+												</div>
+
+												<div class="col-xxxl-6 col-xxl-12 col-md-5 order-xxxl-3 order-xxl-0 order-md-3">
+													<img src="img/soles/swb-2.jpg" alt="" class="ms-auto me-auto">
+												</div>
+												<div class="col-xxxl-6 col-xxl-12 col-md-7 order-xxxl-2 order-xxl-0 order-md-2">
+													<table class="size-table">
+														<tr>
+															<th>Размер
+																UK</th>
+															<th>Длина
+																мм</th>
+															<th>Ширина, мм</th>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>230.50</td>
+															<td>86</td>
+														</tr>
+														<tr>
+															<td>4</td>
+															<td>235.50</td>
+															<td>88</td>
+														</tr>
+														<tr>
+															<td>5</td>
+															<td>254.50</td>
+															<td>90</td>
+														</tr>
+														<tr>
+															<td>6</td>
+															<td>263.00</td>
+															<td>92</td>
+														</tr>
+														<tr>
+															<td>7</td>
+															<td>270.00</td>
+															<td>94</td>
+														</tr>
+														<tr>
+															<td>8</td>
+															<td>280.00</td>
+															<td>96</td>
+														</tr>
+														<tr>
+															<td>9</td>
+															<td>288.50</td>
+															<td>98</td>
+														</tr>
+														<tr>
+															<td>10</td>
+															<td>297.00</td>
+															<td>100</td>
+														</tr>
+														<tr>
+															<td>11</td>
+															<td>305.50</td>
+															<td>102</td>
+														</tr>
+														<tr>
+															<td>12</td>
+															<td>314.00</td>
+															<td>104</td>
+														</tr>
+														<tr>
+															<td>13</td>
+															<td>322.50</td>
+															<td>106</td>
+														</tr>
+													</table>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xxl-6">
+									<div class="swb-box">
+										<div class="swb-box__head ac-navitem-lg _ac__navitem">
+											<div class="swb-box__title"><span class="t-line">Подошва DML</span></div>
+										</div>
+
+										<div class="swb-box__body ac-item-lg _ac__item">
+											<p>Главное отличие этой подошвы заключается в линии протектора, которая значительно тоньше.</p>
+
+											<div class="row pt-2 g-3">
+												<div class="col-xxxl-6 col-xxl-12 col-md-5  order-xxxl-1 order-xxl-0 order-md-1">
+													<img src="img/soles/swb-1.png" alt="" class="ms-auto me-auto">
+												</div>
+
+												<div class="col-xxxl-6 col-xxl-12 col-md-7">
+													<ul class="disc">
+														<li>Округлый носок</li>
+														<li>Подошва тёмного оттенка</li>
+														<li>Производится в Англии где и сама обувь.</li>
+														<li>Состав ПВХ</li>
+														<li>Рифлёная надпись</li>
+														<li>Made in England</li>
+														<li>Модели из коллекции</li>
+														<li>Mie Vintage</li>
+													</ul>
+												</div>
+
+												<div class="col-xxxl-6 col-xxl-12 col-md-5 order-xxxl-3 order-xxl-0 order-md-3">
+													<img src="img/soles/swb-2.jpg" alt="" class="ms-auto me-auto">
+												</div>
+												<div class="col-xxxl-6 col-xxl-12 col-md-7 order-xxxl-2 order-xxl-0 order-md-2">
+													<table class="size-table">
+														<tr>
+															<th>Размер
+																UK</th>
+															<th>Длина
+																мм</th>
+															<th>Ширина, мм</th>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>230.50</td>
+															<td>86</td>
+														</tr>
+														<tr>
+															<td>4</td>
+															<td>235.50</td>
+															<td>88</td>
+														</tr>
+														<tr>
+															<td>5</td>
+															<td>254.50</td>
+															<td>90</td>
+														</tr>
+														<tr>
+															<td>6</td>
+															<td>263.00</td>
+															<td>92</td>
+														</tr>
+														<tr>
+															<td>7</td>
+															<td>270.00</td>
+															<td>94</td>
+														</tr>
+														<tr>
+															<td>8</td>
+															<td>280.00</td>
+															<td>96</td>
+														</tr>
+														<tr>
+															<td>9</td>
+															<td>288.50</td>
+															<td>98</td>
+														</tr>
+														<tr>
+															<td>10</td>
+															<td>297.00</td>
+															<td>100</td>
+														</tr>
+														<tr>
+															<td>11</td>
+															<td>305.50</td>
+															<td>102</td>
+														</tr>
+														<tr>
+															<td>12</td>
+															<td>314.00</td>
+															<td>104</td>
+														</tr>
+														<tr>
+															<td>13</td>
+															<td>322.50</td>
+															<td>106</td>
+														</tr>
+													</table>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-5 text-md-center">товары с основной <span class="nowrap">подошвой <span class="badge badge--lg">9</span></span></div>
+
+							<div class="collections-swiper">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-1.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: false,
+											soles: true,
+											fason: false,
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-2.png',
+											title: '1460 Pascal Brown Savanna ',
+											materials: false,
+											soles: true,
+											fason: false,
+
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-3.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: false,
+											soles: true,
+											fason: false,
+
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-4.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: false,
+											soles: true,
+											fason: false,
+
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-1.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: false,
+											soles: true,
+											fason: false,
+
+											})
+										</div>
+
+									</div>
+									<div class="swiper-pagination swiper-pagination--static visible-laptop"></div>
+
+								</div>
+								<div class="collections-swiper__prev swiper-button-prev hidden-laptop">
+									<svg class="icon icon-swiper-arrow">
+										<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+									</svg>
+								</div>
+								<div class="collections-swiper__next swiper-button-next hidden-laptop">
+									<svg class="icon icon-swiper-arrow">
+										<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-blog mt-lg-7 mt-4 visible-ipad"></div>
+
+
+						<a href="#" class="btn btn--fill btn--block mt-5">
+							<svg class="icon icon-star-filled me-2">
+								<use xlink:href="img/sprite.svg#star-filled"></use>
+							</svg>
+							<span>Сохранить страницу в избранном</span>
+						</a>
+					</div>
+
+
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

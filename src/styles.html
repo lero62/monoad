@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "styles"
+})
+
+<body class="loaded page-catalog">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Натуральная кожа</a></li>
+												<li class="sbox__list-item"><a href="#">Эко материал</a></li>
+												<li class="sbox__list-item"><a href="#">Полиуретановая кожа</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Подошва</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Основные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Дополнительные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Сезонные подошвы</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item  sbox__list-drop _active">
+											<span>Фасон</span>
+											<ul class="sbox__list sbox__dropdown" style="display: block;">
+												<li class="sbox__list-item"><a href="#">Основные фасоны</a></li>
+												<li class="sbox__list-item"><a href="#">Дополнительные фасоны</a></li>
+											</ul>
+
+										</li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+								<li class="breadcrumbs__item">фасон</li>
+							</ul>
+
+
+							<div class="content__header ">
+								<h1 class="content__title ">
+									фасон
+								</h1>
+							</div>
+						</div>
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-10',
+						imgMobile: 'img/collection/collection-banner-img-iphone-10',
+						icon: '',
+						title: 'основные фасоны',
+						titleH1: false,
+						btn: 'Подробнее о фасонах',
+
+						})
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-11',
+						imgMobile: 'img/collection/collection-banner-img-iphone-11',
+						icon: '',
+						title: 'дополнительные фасоны',
+						titleH1: false,
+						btn: 'Подробнее о фасонах',
+
+						})
+
+
+
+						<div class="lines-map mt-lg-6 mt-4">
+
+							<div class="lines-map__item ">
+								<div class="lines-map__head ac-navitem-lg _ac__navitem _active">
+									<div class="lines-map__title">Фасоны Dr.martens</div>
+								</div>
+								<div class="ac-item-lg _ac__item " style="display: block;">
+									<div class="lines-map__body ">
+										<div class="row ">
+											<div class="col-xxxl-3 col-xxl-4 col-xl-5 ">
+												<div class="lm-item">
+													<div class="lm-item__head ">
+														<div class="lm-item__title"><span class="t-line">Основные фасоны</span></div>
+													</div>
+
+													<div class="lm-item__body ">
+														<ul class="lm-item__list colspan2">
+															<li><a href="#">1461</a></li>
+															<li><a href="#">1461 Bex</a></li>
+															<li><a href="#">1461 Quad</a></li>
+															<li><a href="#">101</a></li>
+															<li><a href="#">101 Bex</a></li>
+															<li><a href="#">101 Quad</a></li>
+															<li><a href="#">2976</a></li>
+															<li><a href="#">2976 Bex</a></li>
+															<li><a href="#">2976 Quad</a></li>
+															<li><a href="#">1460</a></li>
+															<li><a href="#">1460 Bex</a></li>
+															<li><a href="#">Jadon</a></li>
+															<li><a href="#">Jadon Max</a></li>
+															<li><a href="#">1490</a></li>
+															<li><a href="#">1490 Bex</a></li>
+															<li><a href="#">Jadon Hi</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-xxxl-9 col-xxl-8 col-xl-7">
+												<div class="lm-item">
+													<div class="lm-item__head ">
+														<div class="lm-item__title"><span class="t-line">дополнительные фасоны</span></div>
+													</div>
+													<div class="lm-item__body ">
+
+														<ul class="lm-item__list colspan5">
+															<li><a href="#">Polley</a></li>
+															<li><a href="#">8065</a></li>
+															<li><a href="#">Shore sandals</a></li>
+															<li><a href="#">Ziggy sandals</a></li>
+															<li><a href="#">Lorsan sandals</a></li>
+															<li><a href="#">Tract sandals</a></li>
+															<li><a href="#">Neoteric sandals</a></li>
+															<li><a href="#">Combs</a></li>
+															<li><a href="#">Combs Tech</a></li>
+															<li><a href="#">Bonny</a></li>
+															<li><a href="#">Rakim</a></li>
+															<li><a href="#">Adrian</a></li>
+															<li><a href="#">1925</a></li>
+															<li><a href="#">Neoteric shoes</a></li>
+															<li><a href="#">3989</a></li>
+															<li><a href="#">8053</a></li>
+															<li><a href="#">8053 Quad</a></li>
+															<li><a href="#">3989 Bex</a></li>
+															<li><a href="#">Church</a></li>
+															<li><a href="#">Church Quad</a></li>
+															<li><a href="#">939</a></li>
+															<li><a href="#">Flora</a></li>
+															<li><a href="#">Leonore</a></li>
+															<li><a href="#">Neoteric chelsea</a></li>
+															<li><a href="#">1460 Pascal</a></li>
+															<li><a href="#">Serena</a></li>
+															<li><a href="#">Neoteric boots</a></li>
+															<li><a href="#">Sinclair</a></li>
+															<li><a href="#">Molly</a></li>
+															<li><a href="#">8761 BXB</a></li>
+															<li><a href="#">1919</a></li>
+															<li><a href="#">1914</a></li>
+															<li><a href="#">1B99</a></li>
+															<li><a href="#">1B60</a></li>
+														</ul>
+
+													</div>
+												</div>
+											</div>
+
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<a href="#" class="btn btn--fill btn--block mt-5">
+							<svg class="icon icon-star-filled me-2">
+								<use xlink:href="img/sprite.svg#star-filled"></use>
+							</svg>
+							<span>Сохранить страницу в избранном</span>
+						</a>
+					</div>
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

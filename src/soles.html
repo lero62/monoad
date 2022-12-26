@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "soles"
+})
+
+<body class="loaded page-catalog">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Натуральная кожа</a></li>
+												<li class="sbox__list-item"><a href="#">Эко материал</a></li>
+												<li class="sbox__list-item"><a href="#">Полиуретановая кожа</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop _active">
+											<span>Подошва</span>
+											<ul class="sbox__list sbox__dropdown" style="display: block;">
+												<li class="sbox__list-item"><a href="#">Основные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Дополнительные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Сезонные подошвы</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item"><a href="#">Фасон</a></li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+								<li class="breadcrumbs__item">подошвы</li>
+							</ul>
+
+
+							<div class="content__header ">
+								<h1 class="content__title ">
+									подошвы
+								</h1>
+							</div>
+						</div>
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-10',
+						imgMobile: 'img/collection/collection-banner-img-iphone-10',
+						icon: '<svg class="icon icon-sole">\r<use xlink:href="img/sprite.svg#sole"></use>\r</svg>',
+						title: 'основные подошвы',
+						titleH1: false,
+						btn: 'Подробнее о подошвах',
+
+						})
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-11',
+						imgMobile: 'img/collection/collection-banner-img-iphone-11',
+						icon: '<svg class="icon icon-sole">\r<use xlink:href="img/sprite.svg#sole"></use>\r</svg>',
+						title: 'дополнительные подошвы',
+						titleH1: false,
+						btn: 'Подробнее о подошвах',
+
+						})
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-12',
+						imgMobile: 'img/collection/collection-banner-img-iphone-12',
+						icon: '<svg class="icon icon-sole">\r<use xlink:href="img/sprite.svg#sole"></use>\r</svg>',
+						title: 'сезонные подошвы',
+						titleH1: false,
+						btn: 'Подробнее о подошвах',
+
+						})
+
+						<div class="lines-map mt-lg-6 mt-4">
+
+							<div class="lines-map__item ">
+								<div class="lines-map__head ac-navitem-lg _ac__navitem ">
+									<div class="lines-map__title">Подошва dr.martens</div>
+								</div>
+								<div class="ac-item-lg _ac__item ">
+									<div class="lines-map__body ">
+										<div class="row ">
+											<div class="col-xxxl-auto col-xxl-3 col-xl-5 ">
+												<div class="lm-item">
+													<div class="lm-item__head ">
+														<div class="lm-item__title"><span class="t-line">Основные подошвы</span></div>
+													</div>
+													<div class="lm-item__body ">
+														<ul class="lm-item__list ">
+															<li><a href="#">VDM</a></li>
+															<li><a href="#">DMS</a></li>
+															<li><a href="#">DMC</a></li>
+															<li><a href="#">DML</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-xxxl-3 col-xxl-4 col-xl-7">
+												<div class="lm-item">
+													<div class="lm-item__head ">
+														<div class="lm-item__title"><span class="t-line">дополнительные подошвы</span></div>
+													</div>
+													<div class="lm-item__body ">
+
+														<ul class="lm-item__list colspan2">
+															<li><a href="#">BEN</a></li>
+															<li><a href="#">BEX</a></li>
+															<li><a href="#">QUAD</a></li>
+															<li><a href="#">QUAD MAX</a></li>
+															<li><a href="#">shore</a></li>
+															<li><a href="#">v14</a></li>
+															<li><a href="#">tract</a></li>
+														</ul>
+
+													</div>
+												</div>
+											</div>
+
+
+											<div class="col-xxxl-4 col-xxl-5 col-xl-10 ">
+												<div class="lm-item">
+													<div class="lm-item__head ">
+														<div class="lm-item__title"><span class="t-line">сезонные подошвы</span></div>
+													</div>
+													<div class="lm-item__body ">
+														<ul class="lm-item__list colspan3">
+															<li><a href="#">CELIA</a></li>
+															<li><a href="#">VIBE</a></li>
+															<li><a href="#">LORSAN</a></li>
+															<li><a href="#">ZIGGY</a></li>
+															<li><a href="#">QUAD ZIGGY</a></li>
+															<li><a href="#">DMG</a></li>
+															<li><a href="#">QUAD SHORE</a></li>
+															<li><a href="#">QUAD NEOTERIC</a></li>
+															<li><a href="#">bex neoteric</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-7 text-center text-md-start">Визуальная схема подошв dr.martens</div>
+							<div class="row justify-content-center g-xxl-4 gx-md-2 gy-3 ">
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'VDM',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'DMS',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'DMS',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'DML',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'BEN',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'BEN',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'VDM',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'DMS',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'DMS',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'tract',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'celia',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'vibe',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'lorsan',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'ziggy',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'quad ziggy',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'DML',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'dmg',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'quad shore',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'quad neoteric',
+									})
+
+								</div>
+								<div class="col-xxxl-2 col-xl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/soles/etalon-img-1.png',
+									title: '',
+									badge: 'bex neoteric',
+									})
+
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="btn btn--fill btn--block mt-5">
+							<svg class="icon icon-star-filled me-2">
+								<use xlink:href="img/sprite.svg#star-filled"></use>
+							</svg>
+							<span>Сохранить страницу в избранном</span>
+						</a>
+					</div>
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

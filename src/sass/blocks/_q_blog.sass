@@ -1,0 +1,144 @@
+
+.blog-card
+	background:#F4F4F4
+	margin-bottom: 3rem
+	&:last-child
+		margin-bottom: 0
+	&__img
+		width: 32.5rem
+		display: block
+		flex: none
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: transform 0.2s linear
+	&__content
+		flex: 1
+		min-width: 1px
+		padding: 3.5rem 6.5rem 3.5rem 7rem
+		display: flex
+		flex-direction: column
+	&__head
+
+		height: 14.4rem
+		overflow: hidden
+
+	&__title
+		font-size: 2rem
+		font-weight: 500
+		line-height: 1.7
+		font-family: $font2
+		text-transform: uppercase
+		+ellipsis(2)
+		a
+			@media (any-hover: hover)
+				&:hover
+
+					color: $color-warning
+
+	&__text
+		line-height: 2.05
+		font-size: 1.6rem
+	&__panel
+		.like-btn, .dislike-btn, .reply-btn
+
+			color: #515151
+			.icon
+				color: #3B3B3B
+			@media (any-hover: hover)
+				&:hover
+					.icon
+						color: #888
+
+	@media (any-hover: hover)
+		&:hover
+			.blog-card
+				&__img
+					img
+						transform: scale(1.05)
+
+.c-brand
+	font-size: 1.6rem
+	font-weight: 500
+	font-family: $font2
+	text-transform: uppercase
+	color: #9E9E9E
+
+.c-date
+	display: inline-flex
+	align-items: center
+	font-size: 1.4rem
+	font-weight: 400
+	color: #515151
+	.icon
+		color: #3B3B3B
+		font-size: 1.4rem
+		top: -.1rem
+
+.search-block
+	.form-input
+
+		font-family: $font2
+		font-size: 1.4rem
+		+placeholder
+			text-transform: uppercase
+
++max($desktop)
+	.blog-card
+		&__img
+			width: 30rem
+
+		&__content
+			padding-top: 2.5rem
+			padding-bottom: 2.5rem
+			padding-left: 4rem
+			padding-right: 3rem
+
++max($laptop)
+	.blog-card
+		margin-bottom: 2rem
+		&__img
+			width: 24rem
+
+		&__content
+			padding-top: 2rem
+			padding-bottom: 2rem
+			padding-left: 3rem
+			padding-right: 2rem
+		&__head
+			height: 11.5rem
+		&__title
+			font-size: 1.8rem
+			line-height: 1.55
+		&__text
+			font-size: 1.5rem
+			line-height: 1.73
+
+	.c-brand
+		font-size: 1.4rem
+
++max($iphone)
+	.blog-card
+
+		&__img
+			width: auto
+		&__content
+			padding: 1.5rem 3rem
+		&__head
+			height: auto
+		&__title
+			display: block
+			font-size: 1.5rem
+		&__text
+			display: none
+
+	.c-brand
+		font-size: 1.2rem
+
++max($iphone_xs)
+	.blog-card
+
+		&__content
+			padding: 1.5rem 2rem

@@ -4,7 +4,7 @@
 "title": "collection-page"
 })
 
-<body class="loaded">
+<body class="loaded ">
 
 
 	<!-- BEGIN BODY -->
@@ -57,15 +57,15 @@
 										</div>
 									</div>
 
-									<ul class="sbox__list">
-										<li class="sbox__list-item sbox__list-item--bg sbox__list-drop _active">
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop _active">
 											<span>Коллекции</span>
 											<ul class="sbox__list sbox__dropdown" style="display: block;">
 												<li class="sbox__list-item _active"><a href="#">The Originals</a></li>
 												<li class="sbox__list-item"><a href="#">Made in England</a></li>
 											</ul>
 										</li>
-										<li class="sbox__list-item sbox__list-item--bg sbox__list-drop">
+										<li class="sbox__list-item  sbox__list-drop">
 											<span>Материал изделий</span>
 											<ul class="sbox__list sbox__dropdown">
 												<li class="sbox__list-item"><a href="#">Все</a></li>
@@ -161,6 +161,7 @@
 						@@include('./template/blocks/collection-banner.html', {
 						img: 'img/collection/collection-banner-img-1',
 						imgMobile: 'img/collection/collection-banner-img-iphone-1',
+						icon: '',
 						title: 'коллекция <br class="hidden-ipad">the originals',
 						titleH1: true,
 						btn: 'Посмотреть товары',
@@ -286,6 +287,195 @@
 			</div>
 		</div>
 
+		<!-- 
+		<div class="window-photo">
+			<div class="window-photo__close">
+				<svg class="icon icon-close-2">
+					<use xlink:href="img/sprite.svg#close-2"></use>
+				</svg>
+			</div>
+			<div class="window-photo__wrap">
+				<div class="window-photo__swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+						<div class="swiper-slide ">
+								<div class="arhive-item">
+									<img src="img/collection/arhiver-img-1-big.jpg" alt="">
+									<div class="arhive-item__wrap">
+										<div class="arhive-item__title"><span class="t-line">1460 Pascal Brown</span></div>
+										<div class="d-flex mt-3">
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Год выпуска: </div>
+												<div class="arhive-item__labels-text">2009 г.</div>
+											</div>
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Снято с продажи: </div>
+												<div class="arhive-item__labels-text">2021 г.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide ">
+								<div class="arhive-item">
+									<img src="img/collection/arhiver-img-1-big.jpg" alt="">
+									<div class="arhive-item__wrap">
+										<div class="arhive-item__title"><span class="t-line">1460 Pascal Brown</span></div>
+										<div class="d-flex mt-3">
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Год выпуска: </div>
+												<div class="arhive-item__labels-text">2009 г.</div>
+											</div>
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Снято с продажи: </div>
+												<div class="arhive-item__labels-text">2021 г.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide ">
+								<div class="arhive-item">
+									<img src="img/collection/arhiver-img-1-big.jpg" alt="">
+									<div class="arhive-item__wrap">
+										<div class="arhive-item__title"><span class="t-line">1460 Pascal Brown</span></div>
+										<div class="d-flex mt-3">
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Год выпуска: </div>
+												<div class="arhive-item__labels-text">2009 г.</div>
+											</div>
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Снято с продажи: </div>
+												<div class="arhive-item__labels-text">2021 г.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide ">
+								<div class="arhive-item">
+									<img src="img/collection/arhiver-img-1-big.jpg" alt="">
+									<div class="arhive-item__wrap">
+										<div class="arhive-item__title"><span class="t-line">1460 Pascal Brown</span></div>
+										<div class="d-flex mt-3">
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Год выпуска: </div>
+												<div class="arhive-item__labels-text">2009 г.</div>
+											</div>
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Снято с продажи: </div>
+												<div class="arhive-item__labels-text">2021 г.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-button-prev window-photo__prev">
+						<svg class="icon icon-swiper-arrow">
+							<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+						</svg>
+					</div>
+					<div class="swiper-button-next window-photo__next">
+						<svg class="icon icon-swiper-arrow">
+							<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+						</svg>
+					</div>
+				</div>
+
+
+				<div class="window-photo__swiper-thumbs">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide ">
+								<div class="arhive-item">
+									<img src="img/collection/arhiver-img-1-big.jpg" alt="">
+									<div class="arhive-item__wrap">
+										<div class="arhive-item__title"><span class="t-line">1460 Pascal Brown</span></div>
+										<div class="d-flex mt-3">
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Год выпуска: </div>
+												<div class="arhive-item__labels-text">2009 г.</div>
+											</div>
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Снято с продажи: </div>
+												<div class="arhive-item__labels-text">2021 г.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide ">
+								<div class="arhive-item">
+									<img src="img/collection/arhiver-img-2.jpg" alt="">
+									<div class="arhive-item__wrap">
+										<div class="arhive-item__title"><span class="t-line">1460 Pascal Brown</span></div>
+										<div class="d-flex mt-3">
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Год выпуска: </div>
+												<div class="arhive-item__labels-text">2009 г.</div>
+											</div>
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Снято с продажи: </div>
+												<div class="arhive-item__labels-text">2021 г.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide ">
+								<div class="arhive-item">
+									<img src="img/collection/arhiver-img-1-big.jpg" alt="">
+									<div class="arhive-item__wrap">
+										<div class="arhive-item__title"><span class="t-line">1460 Pascal Brown</span></div>
+										<div class="d-flex mt-3">
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Год выпуска: </div>
+												<div class="arhive-item__labels-text">2009 г.</div>
+											</div>
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Снято с продажи: </div>
+												<div class="arhive-item__labels-text">2021 г.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide ">
+								<div class="arhive-item">
+									<img src="img/collection/arhiver-img-2.jpg" alt="">
+									<div class="arhive-item__wrap">
+										<div class="arhive-item__title"><span class="t-line">1460 Pascal Brown</span></div>
+										<div class="d-flex mt-3">
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Год выпуска: </div>
+												<div class="arhive-item__labels-text">2009 г.</div>
+											</div>
+											<div class="arhive-item__labels">
+												<div class="arhive-item__labels-title">Снято с продажи: </div>
+												<div class="arhive-item__labels-text">2021 г.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div> -->
 
 
 		<!-- BEGIN FOOTER -->

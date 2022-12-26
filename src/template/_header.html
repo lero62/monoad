@@ -59,7 +59,12 @@
 
 		<div class="header__logo logo">
 			<a href="#">
+				@@if(nav != 'history-brand') {
 				<img src="img/logo.svg" alt="">
+				}
+				@@if(nav == 'history-brand') {
+				<img src="img/logo-light.svg" alt="">
+				}
 			</a>
 		</div>
 
@@ -410,6 +415,32 @@
 							<use xlink:href="img/sprite.svg#menu"></use>
 						</svg>
 						<span>@@nav</span>
+					</div>
+				</div>
+			</div>
+			}
+
+			@@if (nav == 'history-brand' ) {
+
+			<!-- Блоки сортировки и фильтров только в каталогах -->
+			<div class="header__actions sorting visible-md">
+				<div class="sorting__item sorting__item--year">
+					<div class="selectbox selectbox--warning" data-selectbox>
+						<div class="selectbox__head" data-selectbox-head>
+							<div class="selectbox__text" data-selectbox-title>1901</div>
+							<div class="selectbox__caret"></div>
+						</div>
+						<div class="selectbox__drop _fixed-drop">
+							<ul>
+								<li data-history-href="#section-h-1" class="selected">1901</li>
+								<li data-history-href="#section-h-2">1960</li>
+								<li data-history-href="#section-h-3">1970</li>
+								<li data-history-href="#section-h-4">1980</li>
+								<li data-history-href="#section-h-5">1990</li>
+								<li data-history-href="#section-h-6">2000</li>
+								<li data-history-href="#section-h-7">2013</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

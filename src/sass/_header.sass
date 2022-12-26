@@ -92,7 +92,8 @@
 			transition: inherit
 		&--selected
 			color: $color-warning
-
+			&:after
+				background: $color-warning
 		&._active
 			&:after
 				background: $color-warning
@@ -155,7 +156,7 @@
 		position: absolute
 		bottom: 100%
 		margin-bottom: -.1rem
-		left: 0
+		left: -.1rem
 		width: 3.2rem
 		height: 1.4rem
 		z-index: 1
@@ -476,3 +477,206 @@
 
 ._vis
 	display: flex !important
+
++max($desktop_lg)
+	.top-nav
+		display: none
+
+	.header__search
+		margin-left: 3rem
+
++max($laptop)
+	.dropdown-block
+		&--lg-left
+			border-radius: 0 1.5rem 1.5rem 1.5rem
+			right: auto
+			left: 50%
+			&:after
+				left: 0
+				right: auto
+				+arr(1.8rem, 1.7rem, #fff, bl)
+
++max($ipad)
+	.header
+		padding-top: 2rem
+
+		&__container
+			flex-wrap: wrap
+		&__logo
+			max-width: 20rem
+		&__mobile-search
+			width: 100%
+			padding-top: 2rem
+			transition: transform 0.2s linear
+		&__lang
+			margin-left: 2rem
+		&-controls__link
+			.icon
+				font-size: 1.8rem
+			.icon-shopping-cart
+				font-size: 2.2rem
+			.icon-user
+				font-size: 1.6rem
+
+		&__left, &__logo, &__right
+			transition: transform 0.2s linear, opacity 0.2s linear
+
+		&._search
+			.header__left, .header__logo, .header__right
+				opacity: 0
+
+			.header__mobile-search
+				transform: translate(0, -6rem)
+
+			.top-search__form
+				position: relative
+				z-index: 11
+				margin-right: 3rem
+
+	.top-search
+		flex: 1
+		min-width: 1px
+
+		&__input
+			height: 3.5rem
+			border-radius: 3.5rem
+			font-size: 1.2rem
+			padding-left: 3.8rem
+		&__icon
+
+			left: 1.4rem
+			.icon
+				font-size: 1.6rem
+
++max($iphone)
+	.header
+		padding-top: 1.5rem
+		&__logo
+			max-width: 14.2rem
+		&__lang
+			margin-left: 1.8rem
+		&__actions
+
+			margin-left: 1rem
+			.sorting__item
+				width: auto
+			.filter-button
+				width: 3.5rem
+				padding: 0
+				overflow: visible
+				justify-content: center
+				.icon
+					margin-right: 0
+					top: 0
+					display: block
+				&__caret, span:not(.badge)
+					display: none
+				.badge
+					right: -.3rem
+					top: -.3rem
+					margin-top: 0
+					min-width: 1.3rem
+					height: 1.3rem
+					line-height: 1.3rem
+					font-size: 0.9rem
+
+		&__mobile-search
+			padding-top: 1.4rem
+
+		.top-search
+			flex: 1 0 100%
+
+		&.fixed
+			padding-top: 1.5rem
+		&._filter
+			.header__actions
+				margin-left: 0
+			.top-search
+				flex: 1
+
+		&._search
+			.top-search
+				flex: 1 0 100%
+			.header__actions
+				display: none
+			.header__left, .header__logo, .header__right
+				transform: translate(0, -4.5rem)
+
+			.header__mobile-search
+				transform: translate(0, -4.5rem)
+
+	.burger
+		width: 2rem
+		height: 2rem
+		.icon
+			font-size: 1.7rem
+			top: -.1rem
+
+	.top-lang
+		&__link
+			font-size: 1.1rem
+			line-height: 2rem
+			display: block
+
+	.top-controls
+		&__item
+			margin-left: .7rem
+			margin-right: -0.7rem
+
+		&__link
+			.icon
+				font-size: 1.7rem
+
+		&__badge
+			min-width: 1.3rem
+			height: 1.3rem
+			top: .4rem
+			line-height: 1.3rem
+			font-size: 0.9rem
+
+	.controls
+		margin-bottom: 2.2rem
+		display: flex
+		margin-left: -0.5rem
+		margin-right: -0.5rem
+		&__item
+			width: calc(50% - 1rem)
+			margin-left: .5rem
+			margin-right: .5rem
+			&:first-child:last-child
+				width: calc(100% - 1rem)
+
+			&--year
+				width: 9rem
+				.selectbox__head
+					border-radius: 1rem
+				.selectbox__text
+					font-size: 1.8rem
+				.selectbox__drop
+					border-radius: 1rem
+
+		.selectbox
+			&__head
+				height: 3.5rem
+			&__text
+				line-height: 3.3rem !important
+			&__drop
+				padding-top: 3.5rem
+				top: 0
+			&__caret
+				width: 3rem
+
++max($iphone_sm)
+	.navbar
+		&__container
+			width: 22.5rem
+
++max($iphone_xs)
+	.header__logo
+		max-width: 12rem
+	.header__lang
+		margin-left: 1.5rem
+
+	.top-controls
+		&__item
+			margin-left: 0.2rem

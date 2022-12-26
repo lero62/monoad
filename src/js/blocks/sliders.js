@@ -399,7 +399,7 @@ if ($('.arhive-swiper').length) {
 
 if ($('.collections-swiper').length) {
 
-	var arhiveSlider = new Swiper('.collections-swiper .swiper-container', {
+	var collectionsSlider = new Swiper('.collections-swiper .swiper-container', {
 		loop: false,
 		slidesPerView: 4,
 		spaceBetween: 40,
@@ -435,6 +435,52 @@ if ($('.collections-swiper').length) {
 			1800: {
 				slidesPerView: 4,
 				spaceBetween: 40,
+			},
+
+
+		}
+
+
+	})
+};
+if ($('.collections-one-swiper').length) {
+
+	var collectionsOneSlider = new Swiper('.collections-one-swiper .swiper-container', {
+		loop: false,
+		slidesPerView: 1,
+		spaceBetween: 20,
+		watchOverflow: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: '.collections-one-swiper__next',
+			prevEl: '.collections-one-swiper__prev',
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		breakpoints: {
+			100: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+			},
+
+			576: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+
+			},
+
+			1400: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+
+			},
+
+			1600: {
+				slidesPerView: 1,
+				spaceBetween: 20,
 			},
 
 

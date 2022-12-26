@@ -150,3 +150,127 @@
 	font-size: 1.4rem
 	line-height: 1.2
 	color: #565656
+
++max($laptop)
+	.footer
+		&__head
+			font-size: 3.2rem
+			margin-bottom: 5rem
+
+		&__nav
+			li
+				margin-bottom: 1.1rem
+			a
+				font-size: 1.4rem
+
+		&__title
+			font-size: 2rem
+
+		&__alert
+			margin-top: 4rem
+
++max($ipad)
+	.footer
+		&__top
+			padding: 3.7rem 0 1.8rem
+			&-container
+				display: flex
+				flex-direction: column
+		&__head
+			font-size: 2.6rem
+			padding-top: 0
+			font-weight: 500
+			margin-bottom: 3.5rem
+			order: 0
+		&__title
+			font-size: 1.8rem
+			margin-bottom: 1.2rem
+			&--contact
+				display: none
+		&__alert
+			order: 1
+			margin-top: 0
+			margin-bottom: 5.8rem
+			max-width: 67.6rem
+			margin-left: auto
+			margin-right: auto
+
+		&__row
+			order: 2
+			margin-bottom: -2.1rem
+
+		&__nav
+			li
+				margin-bottom: .6rem
+
+		&__bottom
+			text-align: center
+			&-container
+				padding-top: 0
+				&:after
+					display: none
+
+		&__social
+			.social
+				justify-content: center
+				margin-top: 1.5rem
+				margin-right: 0
+
+		&__pay-systems
+			margin-top: 1.5rem
+
+	.f-alert
+		padding: 2.4rem 2.4rem 3.5rem
+		border-radius: 2.3rem
+		text-align: center
+		&__icon
+			bottom: -2.3rem
+			top: auto
+			left: 50%
+			margin-top: 0
+			margin-left: -2.3rem
+
+	.pay-systems
+		&__item
+			margin: .3rem .5rem
+			height: 2rem
+
+@media screen and(max-width: $ipad) and (min-width: $iphone_sm +1)
+	.f-contacts
+		width: auto
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: -1.5rem
+		&__item
+			margin-left: 2rem
+			margin-right: 2rem
+
++max($iphone)
+	.pay-systems
+		&__item
+			height: 1.5rem
+
++max($iphone_sm)
+	.footer
+		&__top
+			padding-bottom: 3.3rem
+		&__row
+			margin-bottom: -2.6rem
+
+		&__item
+			margin-bottom: 2.6rem
+
+		&__title
+			font-size: 1.8rem
+			margin-bottom: 1rem
+			&--contact
+				display: block
+
+		&__nav
+			li
+				margin-bottom: .6rem
+
+	.f-contacts
+		&__item
+			margin-bottom: 0.7rem
