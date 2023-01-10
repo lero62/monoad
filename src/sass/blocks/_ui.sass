@@ -679,6 +679,11 @@
 			box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15)
 			&:after
 				border-top-color: #FFAAA2
+	&--default
+		.alert__inner
+			background: #F5F5F5
+			&:after
+				border-top-color: #F5F5F5
 
 /* Swiper */ 
 /* ===================================================================================================================== */
@@ -982,12 +987,26 @@
 		&._open
 			display: block
 
+	&--danger
+		background: #FFAAA2
+		box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15)
+		&:after
+			+arr(1rem, 1rem, #FFAAA2, tr)
+
+	&._visible
+		display: block
+
 	+max($ipad)
 		&._open
 			display: block
 
 /* Loader */ 
 /* ===================================================================================================================== */
+.preloader
+
+	.icon-load
+		display: flex
+		background-color: rgba(#0b0b0b, 0.9)
 
 .loaded .main-wrapper
 	visibility: hidden
@@ -1013,7 +1032,7 @@
 	height: 3rem
 	border-radius: 1.5rem
 	background: white
-	opacity: 0.3
+	opacity: 0
 
 .a
 	margin-right: 1rem
@@ -1028,7 +1047,7 @@
 @keyframes ball-a
 	from
 		height: 2rem
-		opacity: 0.3
+		opacity: 0
 		background: #fff
 	to
 		height: 7rem
@@ -1038,22 +1057,22 @@
 @keyframes ball-b
 	from
 		height: 2rem
-		opacity: 0.3
+		opacity: 0
 		background: #fff
 	to
 		height: 6.5rem
 		opacity: 1
-		background: #929FB2
+		background: rgba(#929FB2, 0.6)
 
 @keyframes ball-c
 	from
 		height: 2rem
-		opacity: 0.3
+		opacity: 0
 		background: #fff
 	to
 		height: 6rem
 		opacity: 1
-		background: darken(#1C466C, 6%)
+		background: rgba(#929FB2, 1)
 
 /* Media */ 
 /* ===================================================================================================================== */

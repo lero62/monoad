@@ -33,6 +33,9 @@
 .font-500
 	font-weight: 500
 
+.font-600
+	font-weight: 600
+
 .font-700
 	font-weight: 700
 
@@ -81,6 +84,9 @@ ul, ol
 .size-h6
 	font-size: 1.8rem
 
+.size-md
+	font-size: 1.4rem
+
 .decimal
 	+counter(li)
 	margin-bottom: 2.3rem
@@ -112,6 +118,36 @@ ul, ol
 			line-height: 2.5rem
 			text-align: center
 			color: #fff
+			border-radius: 50%
+
+.decimal-sm
+	+counter(li)
+	margin-bottom: 2.3rem
+
+	&:last-child
+		margin-bottom: 0
+	& > li
+
+		position: relative
+		padding-left: 2.5rem
+		line-height: 1.5
+		font-size: 1.2rem
+		margin-bottom: .8rem
+		&:last-child
+			margin-bottom: 0
+		&:before
+			background: $color-warning
+			width: 1.6rem
+			height: 1.6rem
+			display: block
+			position: absolute
+			top: 0rem
+			left: 0
+			font-size: 1rem
+			font-weight: 700
+			line-height: 1.6rem
+			text-align: center
+			color: $color
 			border-radius: 50%
 
 .disc
