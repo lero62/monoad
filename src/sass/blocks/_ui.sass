@@ -419,7 +419,6 @@
 
 .dotted
 	border-bottom: .1rem dotted
-	cursor: default
 	@media (any-hover: hover)
 		&:hover
 			border-color: transparent
@@ -983,6 +982,20 @@
 			left: 50%
 			top: 100%
 			transform: translate(-50%, 0)
+
+	&--start
+		left: 0
+		top: 100%
+		margin-left: 0
+		margin-top: 1.5rem
+		&:after
+			+arr(1.5rem, 1rem, #FFF3B1, bl)
+			top: auto
+			bottom: 100%
+			left: 0
+		&.toltipe--danger
+			&:after
+				border-left-color: #FFAAA2
 	&--click
 		&._open
 			display: block
@@ -991,8 +1004,7 @@
 		background: #FFAAA2
 		box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15)
 		&:after
-			+arr(1rem, 1rem, #FFAAA2, tr)
-
+			border-right-color: #FFAAA2
 	&._visible
 		display: block
 
@@ -1000,6 +1012,19 @@
 		&._open
 			display: block
 
+		&--ipad-start
+			left: 0
+			top: 100%
+			margin-left: 0
+			margin-top: 1.5rem
+			&:after
+				+arr(1.5rem, 1rem, #FFF3B1, bl)
+				top: auto
+				bottom: 100%
+				left: 0
+			&.toltipe--danger
+				&:after
+					border-left-color: #FFAAA2
 /* Loader */ 
 /* ===================================================================================================================== */
 .preloader

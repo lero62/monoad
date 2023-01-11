@@ -32,38 +32,35 @@
 							</div>
 						</div>
 
-						<div class="row g-5">
+						<div class="row g-xl-5 gx-3 gy-2">
 							<div class="col-lg-7">
-								<div class="pbox">
+								<!-- start Личные данные -->
+								<div class="pbox mb-4">
 									<div class="pbox__head d-flex justify-content-between align-items-center">
-										<div class="hi-steps hi-steps--lg hi-steps--warning">
+										<div class="hi-steps hi-steps--lg hi-steps--selected">
 											<div class="hi-steps__badge">1</div>
 											<div class="hi-steps__title">личные данные</div>
 										</div>
-
-										<a href="#" class="edit-link">
-											<svg class="icon icon-pencil">
-												<use xlink:href="img/sprite.svg#pencil"></use>
-											</svg>
-											<span>Редактировать</span>
-										</a>
 									</div>
 
 									<div class="pbox__body">
-										<div class="row gy-0 form-group toltipe-wrap">
+										<div class="row gy-0 form-group ">
 											<div class="col-md-auto">
 												<label class="form-group__label">Телефон:</label>
 											</div>
 											<div class="col-md">
-												<input type="tel" class="form-input" placeholder="">
-											</div>
-											<div class="toltipe toltipe--danger _visible" style="width: 222px">
-												Проверьте номер телефона,
-												кажется не хватает цифр
+												<div class="toltipe-wrap">
+													<input type="tel" class="form-input" placeholder="">
+													<div class="toltipe toltipe--ipad-start toltipe--danger _visible" style="width: 222px">
+														Проверьте номер телефона,
+														кажется не хватает цифр
 
+													</div>
+												</div>
 											</div>
+
 										</div>
-										<div class="row form-group">
+										<div class="row gy-0 form-group">
 											<div class="col-md-auto">
 												<label class="form-group__label">Фамилия:</label>
 											</div>
@@ -71,7 +68,7 @@
 												<input type="text" class="form-input" placeholder="">
 											</div>
 										</div>
-										<div class="row form-group">
+										<div class="row gy-0 form-group">
 											<div class="col-md-auto">
 												<label class="form-group__label">Имя:</label>
 											</div>
@@ -80,7 +77,7 @@
 											</div>
 										</div>
 
-										<div class="alert">
+										<div class="alert mt-md-4 mt-3">
 											<div class="alert__inner alert__wrapicon">
 												<svg class="alert__icon icon icon-warning">
 													<use xlink:href="img/sprite.svg#warning"></use>
@@ -98,12 +95,12 @@
 											</div>
 											<div class="col-12">
 												<div class="com-method-item">
-													<label class="radio">
+													<label class="radio radio--iphone-block">
 														<input type="radio" id="se-el1" name="se-el">
 														<span class="radio__figure"></span>
 														<span class="radio__text">Написать мне в месседжер </span>
 													</label>
-													<label class="radio">
+													<label class="radio radio--iphone-block">
 														<input type="radio" id="se-el2" name="se-el" checked="">
 														<span class="radio__figure"></span>
 														<span class="radio__text"> По телефону / SMS</span>
@@ -111,19 +108,19 @@
 												</div>
 												<div id="sel-el-block" style="display: none;">
 													<div class="com-method-item">
-														<label class="label mb-1">Выберите удобный для вас месседжер:</label>
+														<label class="form-group__label">Выберите удобный для вас месседжер:</label>
 
-														<label class="checkbox">
+														<label class="checkbox checkbox--iphone-block">
 															<input type="checkbox">
 															<span class="checkbox__figure"></span>
 															<span class="checkbox__text">Telegram</span>
 														</label>
-														<label class="checkbox">
+														<label class="checkbox checkbox--iphone-block">
 															<input type="checkbox">
 															<span class="checkbox__figure"></span>
 															<span class="checkbox__text">Viber</span>
 														</label>
-														<label class="checkbox">
+														<label class="checkbox checkbox--iphone-block">
 															<input type="checkbox">
 															<span class="checkbox__figure"></span>
 															<span class="checkbox__text">WhatsApp</span>
@@ -131,7 +128,7 @@
 													</div>
 													<div class="com-method-item">
 														<div class="alert alert--default mb-5">
-															<div class="alert__inner ps-5 pe-5 pt-4 pb-4">
+															<div class="alert__inner ps-md-5 pe-md-5 pt-4 pb-4">
 
 																<div class="font-600 size-md mb-1">ВАЖНО! Случаи когда мы не сможем связаться с Вами:</div>
 																<ol class="decimal-sm">
@@ -145,7 +142,7 @@
 																		сможем Вам написать. Если у Вас предусмотрен запрет, укажите
 																		пожалуйста псевдоним в Telegram. Псевдоним можно
 																		Скопировать зайдя в НАСТРОЙКИ и под аватаром нажать на
-																		свой псевдоним, где появится кнопка - КОПИРОВАТЬ <br>
+																		свой псевдоним, где появится кнопка - КОПИРОВАТЬ
 																		ПСЕВДОНИМ.
 																	</li>
 																</ol>
@@ -194,23 +191,223 @@
 
 									</div>
 								</div>
-							</div>
-							<div class="col-lg-5">
-								<div class="pbox">
-									<div class="pbox__head d-flex justify-content-between align-items-center">
-										<div class="pbox__title pbox__title--sm">Товары в корзине</div>
 
-										<a href="#" class="edit-link">
+								<div class="pbox mb-4">
+									<div class="pbox__head d-flex justify-content-between align-items-center">
+										<div class="hi-steps hi-steps--lg ">
+											<div class="hi-steps__badge">1</div>
+											<div class="hi-steps__title">личные данные</div>
+										</div>
+
+										<button class="edit-link">
 											<svg class="icon icon-pencil">
 												<use xlink:href="img/sprite.svg#pencil"></use>
 											</svg>
-											<span>Редактировать</span>
-										</a>
+											<span class="hidden-iphone">Редактировать</span>
+										</button>
+									</div>
+									<div class="pbox__body">
+										<div class="data-checking">
+											<div class="data-checking__item ">
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Телефон:</div>
+													<div class="data-checking__labeled">+38(050) 918-54-18</div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Имя и фамилия:</div>
+													<div class="data-checking__labeled">Эдуард Сандалькин </div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Способ связи:</div>
+													<div class="data-checking__labeled">Телеграм @sandalkin88</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- end  Личные данные -->
+
+
+								<!-- start Доставка -->
+								<div class="pbox mb-4">
+									<div class="pbox__head d-flex justify-content-between align-items-center">
+										<div class="hi-steps hi-steps--lg hi-steps--selected">
+											<div class="hi-steps__badge">2</div>
+											<div class="hi-steps__title">Доставка</div>
+										</div>
 									</div>
 
 									<div class="pbox__body">
 
-										<div class="cards-table cards-table--sm">
+										<div class="alert">
+											<div class="alert__inner alert__wrapicon">
+												<svg class="alert__icon icon icon-warning">
+													<use xlink:href="img/sprite.svg#warning"></use>
+												</svg>
+												<div>
+													<span class="font-700">Бесплатная доставка к отделению Новой почты</span> <br>
+
+													При выборе почтомата убедитесь, что посылка пройдет по габаритам.
+													Ближайшее отделение можете выбрать на сайте Новой Почты. <br>
+													<a href="#" class="font-700">Выбрать отделение</a>
+												</div>
+
+											</div>
+										</div>
+
+
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Город: </label>
+											</div>
+											<div class="col-md">
+												<div class="selectbox selectbox--default selectbox--drop-different">
+													<div class="selectbox__head">
+														<div class="selectbox__text placeholder">Укажите город доставки</div>
+														<div class="selectbox__caret"></div>
+													</div>
+													<div class="selectbox__drop">
+														<ul class="ul-dotted">
+															<li><span>Киев</span></li>
+															<li><span>Харьков</span></li>
+															<li><span>Одесса</span></li>
+															<li><span>Днепр</span></li>
+
+															<li><span>Запорожье</span></li>
+
+															<li><span>Львов</span></li>
+														</ul>
+
+														<div class="selectbox__search mt-4">
+															<svg class="icon icon-search">
+																<use xlink:href="img/sprite.svg#search"></use>
+															</svg>
+															<input type="text" class="form-input" placeholder="Поиск города" autocomplete="off">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Способ доставки:</label>
+											</div>
+											<div class="col-md">
+												<div class="selectbox selectbox--default">
+													<div class="selectbox__head">
+														<div class="selectbox__text placeholder">Курьером</div>
+														<div class="selectbox__caret"></div>
+													</div>
+													<div class="selectbox__drop">
+														<ul>
+															<li class="selected">Курьером</li>
+															<li>В отделение Новой Почты</li>
+														</ul>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">ФИО получателя: </label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input" value="Иванов Иван">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Улица: </label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input" value="ул. Ленина ">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Дом, № квартиры: </label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input" value="15 / 46">
+											</div>
+										</div>
+
+										<div class="row form-group align-items-start">
+											<div class="col-md-auto">
+												<label class="form-group__label">Комментарий: </label>
+											</div>
+											<div class="col-md">
+												<textarea class="form-input">Звоните как подъедите, домофон не работает</textarea>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="pbox mb-4">
+									<div class="pbox__head d-flex justify-content-between align-items-center">
+										<div class="hi-steps hi-steps--lg ">
+											<div class="hi-steps__badge">2</div>
+											<div class="hi-steps__title">Доставка</div>
+										</div>
+
+										<button class="edit-link">
+											<svg class="icon icon-pencil">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg>
+											<span class="hidden-iphone">Редактировать</span>
+										</button>
+									</div>
+									<div class="pbox__body">
+
+										<div class="data-checking">
+											<div class="data-checking__item ">
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Город:</div>
+													<div class="data-checking__labeled">Киев</div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Способ доставки:</div>
+													<div class="data-checking__labeled">В отделение Новой Почты </div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">№ отеделения:</div>
+													<div class="data-checking__labeled">№5, ул. Ленина, 44/1</div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">ФИО получателя:</div>
+													<div class="data-checking__labeled">Иванов Пётр</div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Телефон получателя:</div>
+													<div class="data-checking__labeled">+38(050) 918-54-18</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- end  Личные данные -->
+							</div>
+							<div class="col-lg-5">
+								<div class="pbox mb-5">
+									<div class="pbox__head d-flex justify-content-between align-items-center">
+										<div class="pbox__title pbox__title--sm">Товары в корзине</div>
+
+										<button class="edit-link">
+											<svg class="icon icon-pencil">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg>
+											<span>Редактировать</span>
+										</button>
+									</div>
+
+									<div class="pbox__body">
+
+										<div class="cards-table cards-table--sm mb-5">
 											<a href="#" class="cards-table__item">
 												<div class="cards-table__img">
 													<img src="img/products/catalog-img1.jpg" alt="">
@@ -282,6 +479,28 @@
 											</a>
 										</div>
 
+										<div class="pbox__inner">
+
+											<label class="pbox__inner-head checkbox checkbox--sm ">
+												<input type="checkbox" />
+												<span class="checkbox__figure"></span>
+												<span class="checkbox__text">
+													<span class="dotted">Добавить подарочную упаковку</span></span>
+											</label>
+
+											<div class="pbox__inner-body"></div>
+										</div>
+										<div class="pbox__inner">
+
+											<label class="pbox__inner-head checkbox checkbox--sm ">
+												<input type="checkbox" />
+												<span class="checkbox__figure"></span>
+												<span class="checkbox__text">
+													<span class="dotted">Оставить комментарий к заказу</span></span>
+											</label>
+
+											<div class="pbox__inner-body"></div>
+										</div>
 										<div class="order-total mt-0">
 
 											<table class="total-table">
@@ -290,7 +509,7 @@
 														<td>Стоимость товаров:</td>
 														<td>13 000 грн</td>
 													</tr>
-													<tr class="hidden-sm">
+													<tr>
 														<td>Скидка:</td>
 														<td>0.00%</td>
 													</tr>
@@ -300,19 +519,15 @@
 													</tr>
 													<tr class="total-table__last">
 														<td>
-															<span class="hidden-sm">К оплате:</span>
-															<span class="visible-sm">Общая стоимость:</span>
+															К оплате:
 														</td>
 														<td>13 000 грн</td>
 													</tr>
 												</tbody>
 											</table>
-
-
-
 										</div>
-
 									</div>
+
 								</div>
 
 								<div class="prestend-wrap text-center">
