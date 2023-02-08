@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Оформление заказа step 3"
+})
+
+<body class="loaded page-order">
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		<!-- 	//= template/header.html -->
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main" id="main">
+			<div class="back-page">
+				<a href="#" class="back-page__btn"><svg class="icon icon-back">
+						<use xlink:href="img/sprite.svg#back"></use>
+					</svg></a>
+			</div>
+			<div class="container">
+				<!-- BEGIN CONTENT -->
+				<div class="content">
+					<div class="order-main">
+
+						<div class="order-main__head">
+							<div class="order-main__head-logo"><img src="img/logo-mini.png" alt=""></div>
+							<h1>Оформление заказа</h1>
+							<span class="order-number">
+								<span class="order-number__symbol">N</span>
+								<span class="order-number__content">
+									Номер заказа:
+									<span class="order-number__drop-btn">
+										<span>40560800</span>
+										<svg class="icon icon-caret">
+											<use xlink:href="img/sprite.svg#caret"></use>
+										</svg>
+									</span>
+								</span>
+							</span>
+
+							<div class="order-main__head-close">
+								<svg class="icon icon-close">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg>
+							</div>
+						</div>
+
+						@@include('./template/blocks/order_crumbs.html', {
+						"crumbs": 3,
+						})
+
+						<div class="order-main__steps">
+							<ul class="steps">
+								<li class="steps__item _select">
+									<span class="steps__number">1</span>
+									<span class="steps__title">Личные данные</span>
+								</li>
+								<li class="steps__item _select">
+									<span class="steps__number">2</span>
+									<span class="steps__title">Доставка</span>
+								</li>
+								<li class="steps__item _active">
+									<span class="steps__number ">3</span>
+									<span class="steps__title">Оплата</span>
+								</li>
+								<li class="steps__item">
+									<span class="steps__number">4</span>
+									<span class="steps__title">Заказ</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="pbox">
+							<div class="pbox__head">
+								<div class="pbox__title">Выберите удобный для вас способ оплаты</div>
+							</div>
+							<div class="pbox__body">
+								<form action="#" class="order-form">
+									<div class="row">
+										<div class="col-lg-6">
+											<ul class="check-list">
+												<li class="check-list__item toltipe-wrap ">
+													<label class="radio">
+														<input type="radio" name="ord-el">
+														<span class="radio__figure"></span>
+														<span class="radio__text">
+															<div class="font-700">Оплата онлайн </div>
+															Google Pay, Apple Pay, Банковской картой Monobank, Privatbank и других. через систему LiqPay
+														</span>
+													</label>
+													<div class="toltipe">
+														Самый удобный и быстрый способ для автоматического
+														подтверждения платежа и с нашей стороны скорейшей
+														обработки и отправки заказа.
+
+													</div>
+												</li>
+												<li class="check-list__item toltipe-wrap ">
+													<label class="radio">
+														<input type="radio" name="ord-el" checked="">
+														<span class="radio__figure"></span>
+														<span class="radio__text">
+															<div class="font-700">Оплата по реквизитам</div>
+															Банковский перевод через телефонное приложение, кассу банка или терминал самообслуживания.
+														</span>
+													</label>
+													<div class="toltipe">
+														Самый удобный и быстрый способ для автоматического
+														подтверждения платежа и с нашей стороны скорейшей
+														обработки и отправки заказа.
+
+													</div>
+												</li>
+												<li class="check-list__item toltipe-wrap ">
+													<label class="radio">
+														<input type="radio" name="ord-el">
+														<span class="radio__figure"></span>
+														<span class="radio__text">
+															<div class="font-700">Оплата при получении</div>
+															Наложенный платеж от Новой Почты.
+														</span>
+													</label>
+													<div class="toltipe">
+														Самый удобный и быстрый способ для автоматического
+														подтверждения платежа и с нашей стороны скорейшей
+														обработки и отправки заказа.
+
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+
+									<div class="hr hr--sm"></div>
+
+
+									<div class="alert visible-md">
+										<div class="alert__inner">
+											Самый удобный и быстрый способ для автоматического
+											подтверждения платежа и с нашей стороны скорейшей
+											обработки и отправки заказа.
+										</div>
+									</div>
+									<div class="reg-block">
+										<label class="label">Выберите банк <span class="hidden-sm">, для получения реквизитов</span></label>
+
+										<label class="radio">
+											<input type="radio" checked="" name="rek-el">
+											<span class="radio__figure"></span>
+											<span class="radio__text">ПриватБанк</span>
+										</label>
+										<label class="radio">
+											<input type="radio" name="rek-el">
+											<span class="radio__figure"></span>
+											<span class="radio__text">MonoBank</span>
+										</label>
+									</div>
+
+								</form>
+
+								<div class="pbox__footer d-flex justify-content-between">
+									<a href="#" class="btn">Назад</a>
+									<a href="#" class="btn btn--warning">Далее</a>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<!-- CONTENT EOF -->
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

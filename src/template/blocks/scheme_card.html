@@ -1,0 +1,20 @@
+<div class="scheme-card">
+	<div class="scheme-card__img">
+		<img src="@@img" alt="">
+	</div>
+	<div class="scheme-card__badge">@@badge</div>
+	<div class="scheme-card__title">@@title</div>
+	@@if(detailsTitle !='') {
+	<div class="scheme-card__details">
+		<div class="scheme-card__details-title">@@detailsTitle</div>
+		<div class="scheme-card__details-item">
+			<span>Ширина:</span>
+			@@detailsWidth
+		</div>
+		<div class="scheme-card__details-item">
+			<span>Высота:</span>
+			@@detailsHeight
+		</div>
+	</div>
+	}
+</div>

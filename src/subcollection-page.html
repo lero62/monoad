@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "subcollection-page"
+})
+
+<body class="loaded">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list">
+										<li class="sbox__list-item sbox__list-item--bg sbox__list-drop _active">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown" style="display: block;">
+												<li class="sbox__list-item _active"><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item sbox__list-item--bg sbox__list-drop">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Все</a></li>
+												<li class="sbox__list-item"><a href="#">Сандалии</a></li>
+												<li class="sbox__list-item"><a href="#">Шлепанцы</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Подошва</a></li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item"><a href="#">Фасон</a></li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem  _active">
+									<div class="sbox__title">Линейки</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+
+									<ul class="sbox__list">
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>THE ICONS</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">CORE</a></li>
+												<li class="sbox__list-item"><a href="#">VEGAN</a></li>
+												<li class="sbox__list-item"><a href="#">ICONS</a></li>
+												<li class="sbox__list-item"><a href="#">CORE PRINT</a></li>
+												<li class="sbox__list-item"><a href="#">CORE APPLIQUE</a></li>
+												<li class="sbox__list-item"><a href="#">COLLABORATIONS</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>FUSION</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">CORE BEX</a></li>
+												<li class="sbox__list-item"><a href="#">QUAD RETRO</a></li>
+												<li class="sbox__list-item"><a href="#">QUAD CREEPERS</a></li>
+												<li class="sbox__list-item"><a href="#">SHORE</a></li>
+												<li class="sbox__list-item"><a href="#">ZEBRILUS</a></li>
+												<li class="sbox__list-item"><a href="#">LORSAN</a></li>
+												<li class="sbox__list-item"><a href="#">QUAD RETRO MAX</a></li>
+												<li class="sbox__list-item"><a href="#">KENSINGTON</a></li>
+												<li class="sbox__list-item"><a href="#">QUAD SHORE</a></li>
+												<li class="sbox__list-item"><a href="#">WINTERGRIP</a></li>
+												<li class="sbox__list-item"><a href="#">CORE BEN</a></li>
+												<li class="sbox__list-item"><a href="#">SERENA</a></li>
+												<li class="sbox__list-item"><a href="#">LEONORE</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>CASUAL</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">TRACT</a></li>
+												<li class="sbox__list-item"><a href="#">TRACT W</a></li>
+												<li class="sbox__list-item"><a href="#">VIBE</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body mb-lg-4 mb-3" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Коллекции</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">The originals</a>
+								</li>
+								<li class="breadcrumbs__item">The icons</li>
+							</ul>
+
+						</div>
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-3',
+						imgMobile: 'img/collection/collection-banner-img-iphone-3',
+						icon: '',
+						title: 'Подколлекция <br class="hidden-ipad">the icons',
+						titleH1: true,
+						btn: 'Посмотреть товары',
+						})
+
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title">О подколлекции</div>
+
+							<div class="row g-xxl-6 g-xl-3 g-2 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+
+									<p>THE ICONS - первая и самая узнаваемая подколлекция азиатского ответвления Dr. Martens. <br>Подколлекция вобрала в себя самые классические и узнаваемые силуэты, которые ранее выпускались только на английских фабриках. Модели The Icons, азиатского производства видоизменились в деталях, но вмешательство было не значительным, что позволило сохранить узнаваемость. Главная линейка подколлекции с одноименным названием “ICONS" символично отдает дань первым английским мартинсам и выпускается исключительно в коже Smooth и двух цветах: Cherry Red Smooth - является прототипом Oxblood Quilon и Black Smooth - прототип Black Quilon. Простыми словами, вся подколлекция The Icons, за исключением линейки "Icons", особенность которой описали выше, это всевозможные вариации цветовых решений, патчей, принтов, фурнитуры, видов материала и многое другое, что применяется только на 11 эталонных фасонах:
+									</p>
+
+
+								</div>
+								<div class="col-xxl-auto">
+									<img src="img/collection/img-2.jpg" alt="">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-6">Эталонные фасоны The Icons</div>
+
+							<div class="row g-xxl-4 gx-md-2 gy-3">
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-1.png',
+									title: 'Ботинки на 8-люверсов со шнуровкой',
+									badge: '1460',
+									})
+
+								</div>
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-2.png',
+									title: 'Туфли на 3-люверса шнуровкой',
+									badge: '1461',
+									})
+
+								</div>
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-3.png',
+									title: 'Ботинки на 10-люверсов со шнуровкой',
+									badge: '1490',
+									})
+
+								</div>
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-4.png',
+									title: 'Ботинки на 14-люверсов со шнуровкой',
+									badge: '1914',
+									})
+
+								</div>
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-1.png',
+									title: 'Ботинки на 8-люверсов со шнуровкой',
+									badge: '1460',
+									})
+
+								</div>
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-2.png',
+									title: 'Туфли на 3-люверса шнуровкой',
+									badge: '1461',
+									})
+
+								</div>
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-3.png',
+									title: 'Ботинки на 10-люверсов со шнуровкой',
+									badge: '1490',
+									})
+
+								</div>
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-4.png',
+									title: 'Ботинки на 14-люверсов со шнуровкой',
+									badge: '1914',
+									})
+
+								</div>
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-1.png',
+									title: 'Ботинки на 8-люверсов со шнуровкой',
+									badge: 'Church',
+									})
+
+								</div>
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-2.png',
+									title: 'Лоферы',
+									badge: 'Adrian',
+									})
+
+								</div>
+								<div class="col-xxl-3 col-md-4 col-6">
+
+									@@include('./template/blocks/etalon_card.html', {
+									img: 'img/subcollection/etalon-img-3.png',
+									title: 'Сандалии на пряжке',
+									badge: 'Polley',
+									})
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-5">линейки The icons</div>
+
+							<div class="lines-grid">
+								<a href="#" class="lines-item lines-item--lg">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-1.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">Core applique</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-2.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">Core</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-5.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">collaborations</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-3.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">vegan</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-6.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">core print</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-4.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">icons</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-7.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">Core applique </div>
+									</div>
+								</a>
+							</div>
+
+							<div class="text-center mt-md-6 mt-4 d-md-block d-flex flex-column">
+								<a href="#" class="ms-md-2 me-md-2 mb-1 btn btn--dark btn--iphone-static">
+									<span class="hidden-iphone">Посмотреть следующую подколлекцию</span>
+									<span class="visible-iphone">Следующая коллекция</span>
+
+								</a>
+								<a href="#" class="ms-md-2 me-md-2 btn btn--warning btn--iphone-static">Посмотреть все товары the icons</a>
+							</div>
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-5 text-md-center">товары из коллекции The <span class="nowrap">originals <span class="badge badge--lg">9</span></span></div>
+
+							<div class="collections-swiper">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-1.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: false,
+											soles: false,
+											fason: false,
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-2.png',
+											title: '1460 Pascal Brown Savanna ',
+											materials: false,
+											soles: false,
+											fason: false,
+
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-3.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: false,
+											soles: false,
+											fason: false,
+
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-4.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: false,
+											soles: false,
+											fason: false,
+
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-1.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: false,
+											soles: false,
+											fason: false,
+
+											})
+										</div>
+
+									</div>
+									<div class="swiper-pagination swiper-pagination--static visible-laptop"></div>
+
+								</div>
+								<div class="collections-swiper__prev swiper-button-prev hidden-laptop">
+									<svg class="icon icon-swiper-arrow">
+										<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+									</svg>
+								</div>
+								<div class="collections-swiper__next swiper-button-next hidden-laptop">
+									<svg class="icon icon-swiper-arrow">
+										<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="btn btn--fill btn--block mt-5">
+							<svg class="icon icon-star-filled me-2">
+								<use xlink:href="img/sprite.svg#star-filled"></use>
+							</svg>
+							<span>Сохранить страницу в избранном</span>
+						</a>
+					</div>
+
+
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

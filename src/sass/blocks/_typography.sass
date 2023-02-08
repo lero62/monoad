@@ -1,0 +1,293 @@
+
+.text-left
+	text-align: left !important
+
+.text-center
+	text-align: center !important
+
+.text-right
+	text-align: right !important
+
+.nowrap
+	white-space: nowrap
+
+.word-break
+	word-break: break-all
+
+.ttu
+	text-transform: uppercase
+
+.text-danger
+	color: #f94141 !important
+.text-success
+	color: #5a9229 !important
+.text-default
+	color: #575857 !important
+.text-secondary
+	color: $color-secondary !important
+.text-primary
+	color: $color-primary
+.strong
+	font-weight: bold
+
+.font-500
+	font-weight: 500
+
+.font-600
+	font-weight: 600
+
+.font-700
+	font-weight: 700
+
+h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6
+	margin-top: 0
+	margin-bottom: 0
+	font-weight: 600
+	line-height: 1.2
+	text-transform: uppercase
+
+	font-family: $font2
+
+h1, .h1
+	font-size: 3.5rem
+
+	margin-bottom: 2.2rem
+h2, .h2
+	font-size: 3rem
+	margin-bottom: 2rem
+h3, .h3
+	font-size: 2.6rem
+	margin-bottom: 2rem
+h4, .h4
+	font-size: 2.4rem
+	line-height: 1.2
+	margin-bottom: 1.6rem
+	text-transform: none
+h5, .h5
+	font-size: 2rem
+	margin-bottom: 1rem
+	text-transform: none
+h6, .h6
+	font-size: 1.5rem
+	margin-bottom: 1rem
+
+p
+	margin-bottom: 1rem
+	&:last-child
+		margin-bottom: 0
+
+ul, ol
+	list-style: none
+	margin: 0
+	padding: 0
+
+.size-h6
+	font-size: 1.8rem
+
+.size-md
+	font-size: 1.4rem
+
+.decimal
+	+counter(li)
+	margin-bottom: 2.3rem
+	&__title
+		font-size: 1.8rem
+		font-weight: 500
+		line-height: 1.8
+		margin-bottom: 0.5rem
+	&:last-child
+		margin-bottom: 0
+	& > li
+		font-size: 1.6rem
+		position: relative
+		padding-left: 3.5rem
+		line-height: 2
+		margin-bottom: 1.6rem
+		&:last-child
+			margin-bottom: 0
+		&:before
+			background: $color
+			width: 2.5rem
+			height: 2.5rem
+			display: block
+			position: absolute
+			top: .2rem
+			left: 0
+			font-size: 1.4rem
+			font-weight: 900
+			line-height: 2.5rem
+			text-align: center
+			color: #fff
+			border-radius: 50%
+
+.decimal-sm
+	+counter(li)
+	margin-bottom: 2.3rem
+
+	&:last-child
+		margin-bottom: 0
+	& > li
+
+		position: relative
+		padding-left: 2.5rem
+		line-height: 1.5
+		font-size: 1.2rem
+		margin-bottom: .8rem
+		&:last-child
+			margin-bottom: 0
+		&:before
+			background: $color-warning
+			width: 1.6rem
+			height: 1.6rem
+			display: block
+			position: absolute
+			top: 0rem
+			left: 0
+			font-size: 1rem
+			font-weight: 700
+			line-height: 1.6rem
+			text-align: center
+			color: $color
+			border-radius: 50%
+
+.disc
+	margin-bottom: 2.3rem
+	&:last-child
+		margin-bottom: 0
+	& > li
+		font-size: 1.6rem
+		position: relative
+		padding-left: 2rem
+		margin-bottom: .5rem
+		line-height: 2
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content: ''
+			background: $color-warning
+			width: 1rem
+			height: 1rem
+			display: block
+			position: absolute
+			top: 1rem
+			left: 0
+			border-radius: 50%
+
+.ul-default
+	margin-bottom: 2rem
+
+	li
+
+		display: flex
+		align-items: flex-start
+		line-height: 1.8
+
+	&__counter
+		flex: none
+		margin-right: 0.5rem
+	&__content
+		flex: 1
+		min-width: 1px
+
+img
+	display: block
+	max-width: 100%
+
+a
+	color: $color
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+.link-aft
+	font-weight: 700
+	position: relative
+	z-index: 1
+	display: inline-block
+
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		z-index: -1
+		left: -.5rem
+		top: -.1rem
+		height: 100%
+		background: #fbc644
+		width: 0
+		transition: width 0.4s ease-in-out
+	&:hover
+		text-decoration: none
+
+		&:after
+			width: 80%
+.margin
+	+margin
+
+.mb15
+	margin-bottom: 1.5rem
+
+.mb20
+	margin-bottom: 2rem !important
+
+.mt0
+	margin-top: 0 !important
+
+.mt15
+	margin-top: 1.5rem !important
+
+.seo-text
+	font-size: 1.6rem
+
+	h3, h4, h5, h6
+		text-transform: uppercase
+		margin-top: 4rem
+		margin-bottom: 3rem
+		font-weight: 500
+		&:first-child
+			margin-top: 0
+
+	h5
+		font-size: 2rem
+	h6
+		font-size: 1.8rem
+		margin-bottom: 1.6rem
+
+	p
+		margin-bottom: 2.3rem
+		line-height: 2.05
+		&:last-child
+			margin-bottom: 0
+
++max($laptop)
+
+	.seo-text
+		font-size: 1.5rem
+		h3, h4, h5, h6
+			margin-top: 3rem
+			margin-bottom: 1.5rem
+		h5
+			font-size: 1.5rem
+		p
+			line-height: 1.73
+
+	.decimal
+		& > li
+			line-height: 1.73
+			font-size: 1.5rem
+			&:before
+				font-size: 1.4rem
+				top: 0
+
+		&__title
+			font-size: 1.7rem
+			line-height: 1.55
+			margin-bottom: 1rem
+
+	.disc
+		& > li
+			font-size: 1.5rem
+			line-height: 1.73
+			margin-bottom: 1rem
+			&:before
+				top: .6rem

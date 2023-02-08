@@ -1,0 +1,169 @@
+<div id="popup-question-card" class="popup popup--mst">
+	<div class="popup__body">
+		<div class="popup__content">
+			<div class="popup__close _close-popup">
+				<svg class="icon icon-close">
+					<use xlink:href="img/sprite.svg#close"></use>
+				</svg>
+			</div>
+
+			<div class="popup__top">
+				<div class="popup__top-logo">
+					<img src="img/logo-mini.png" alt="">
+				</div>
+				<div class="popup__title ">Задайте вопрос о товаре</div>
+			</div>
+
+
+
+			<div class="rv-card">
+				<a href="#" class="rv-card__img">
+					<img src="img/rv-card.png" alt="">
+				</a>
+				<div class="rv-card__content">
+					<div class="rv-card__brand">DR.MARTENS</div>
+					<div class="rv-card__title"><a href="#">1750 Brown Pascal All Season</a></div>
+				</div>
+			</div>
+
+			<form action="#">
+				<div class="rv-fieldset">
+					<div class="row gy-0">
+						<div class="col-md-12 form-field-lg">
+							<label>Тема вопроса в нескольких словах</label>
+							<input type="text" class="form-input">
+						</div>
+
+						<div class="col-md-12 form-field-lg">
+							<label for="">Опишите, что вас интересует?</label>
+							<textarea class="form-input"></textarea>
+						</div>
+
+						<div class="col-md-12 form-field-lg">
+							<label for="">Добавьте фото</label>
+							<div class="upload-file ">
+								<div class="upload-file__text">Ваши реальные фотографии товара помогут другим пользователям.</div>
+								<div class="upload-file__images" data-preview="addImages"></div>
+								<div class="upload-file__wrap">
+									<input type="file" class="addImages" id="addImages" multiple>
+									<div class="upload-file__browse">
+										<svg class="icon icon-camera">
+											<use xlink:href="img/sprite.svg#camera"></use>
+										</svg>
+									</div>
+									<div class="upload-file__name">Нажмите, чтобы добавить ваши фотографии</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="rv-fieldset">
+					<div class="row ">
+						<div class="col-md-5 form-field-lg align-self-center">
+
+							<label for="">Выберите своё публичное имя</label>
+							<div class="rv-user ">
+								<div class="rv-user__name ">
+									<input type="text" class="form-input" value="Игнатюк М.">
+								</div>
+								<div class="rv-user__avatar ">
+									<div class="upload-file ">
+										<div class="upload-file__wrap">
+											<input type="file">
+											<div class="upload-file__browse">
+												<svg class="icon icon-camera">
+													<use xlink:href="img/sprite.svg#camera"></use>
+												</svg>
+											</div>
+											<div class="upload-file__name">Изменить юзерпик</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+
+						</div>
+						<div class="col-md-7 form-field-lg">
+							<div class="rv-review-card">
+
+								<div class="rv-review-card__head">
+									<div class="rv-review-card__avatar">
+										<img src="img/reviews/avatar.png" alt="">
+										<span class="rv-review-card__status status">
+											<svg class="icon icon-check2">
+												<use xlink:href="img/sprite.svg#check2"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="rv-review-card__info">
+										<span class="rv-review-card__name">Маматумба И.</span>
+										<span class="rv-review-card__date">04.08.2022</span>
+										<div class="rv-review-card__user-status">Пользователь сайта</div>
+										<div class="rv-review-card__rating rating rating--md">
+											<ul class="rating__stars">
+												<li class="rating-1"></li>
+												<li class="rating-1"></li>
+												<li class="rating-1"></li>
+												<li class="rating-1"></li>
+												<li></li>
+											</ul>
+
+										</div>
+										<div class="rv-review-card__message">Так вы будете выглядить на сайте</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 form-field-lg">
+							<label for="">Уведомлять об ответах на:</label>
+							<label class="checkbox">
+								<input type="checkbox" checked>
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">E-mail </span>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" checked>
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Telegram</span>
+							</label>
+						</div>
+						<div class="col-md-6 form-field-lg">
+							<label for="">Ваш E-mail</label>
+							<input type="text" class="form-input" value="mamatumba1980@gmail.com">
+						</div>
+						<div class="col-md-6 form-field-lg">
+							<label for="">Telegram</label>
+							<input type="text" class="form-input">
+						</div>
+						<div class="col-md-6 ">
+							<label for="">Ваш телефон</label>
+							<input type="text" class="form-input tel" placeholder="+380 (__) ___ __ __">
+
+						</div>
+						<div class="col-md-12">
+							<div class="alert alert--top mt15">
+								<div class="alert__inner">
+									Введите номер телефона для регистрации или авторизации если уже зарегистрированы.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rv-fieldset">
+					<div class="rv-fieldset__buttons">
+						<button class="btn btn--dark">Отменить</button>
+						<button class="btn btn--warning">Отправить</button>
+					</div>
+
+					<div class="rv-fieldset__text">Все оставляемые пользователями комментарии и отзывы на нашем сайте проходят модерацию до публикации. Все отзывы, не относящиеся к товару, содержащие нецензурную лексику и слишком эмоциональные критические отзывы на товар без четких аргументов и указания реальных причин негативного отношения к товару будут удалены!
+					</div>
+				</div>
+			</form>
+
+
+		</div>
+	</div>
+</div>

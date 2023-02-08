@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "materials"
+})
+
+<body class="loaded page-catalog">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop _active">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown" style="display: block;">
+												<li class="sbox__list-item"><a href="#">Натуральная кожа</a></li>
+												<li class="sbox__list-item"><a href="#">Эко материал</a></li>
+												<li class="sbox__list-item"><a href="#">Полиуретановая кожа</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Подошва</a></li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item"><a href="#">Фасон</a></li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+								<li class="breadcrumbs__item">Материал изделий</li>
+							</ul>
+
+
+							<div class="content__header ">
+								<h1 class="content__title ">
+									Материалы изделий
+								</h1>
+							</div>
+						</div>
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-5',
+						imgMobile: 'img/collection/collection-banner-img-iphone-5',
+						icon: '',
+						title: 'Натуральная кожа',
+						titleH1: false,
+						btn: 'Подробнее о материале',
+
+						})
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-6',
+						imgMobile: 'img/collection/collection-banner-img-iphone-6',
+						icon: '',
+						title: 'Эко материал',
+						titleH1: false,
+						btn: 'Подробнее о материале',
+
+						})
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-7',
+						imgMobile: 'img/collection/collection-banner-img-iphone-7',
+						icon: '',
+						title: 'Полиуретановая кожа',
+						titleH1: false,
+						btn: 'Подробнее о материале',
+
+						})
+
+						<div class="lines-map mt-lg-6 mt-4">
+							<div class="row g-md-2 g-1 flex-xxl-nowrap">
+								<div class="col-xxl ">
+									<div class="lines-map__item ">
+										<div class="lines-map__head ac-navitem-lg _ac__navitem">
+											<div class="lines-map__title">Натуральная кожа</div>
+										</div>
+										<div class="ac-item-lg _ac__item">
+											<div class="lines-map__body ">
+												<div class="row ">
+													<div class="col-xl-7 col-lg-12 col-md-7">
+														<div class="lm-item">
+															<div class="lm-item__head">
+																<div class="lm-item__title"><span class="t-line">Масляная кожа</span></div>
+															</div>
+															<div class="lm-item__body">
+																<ul class="lm-item__list colspan2">
+																	<li><a href="#">Greasy</a></li>
+																	<li><a href="#">Brando</a></li>
+																	<li><a href="#">Wyoming</a></li>
+																	<li><a href="#">Orleans</a></li>
+																	<li><a href="#">Pisa</a></li>
+																	<li><a href="#">Ambruzo</a></li>
+																	<li><a href="#">Crazy Horse</a></li>
+																	<li><a href="#">Snowplow</a></li>
+																	<li><a href="#">Buttero</a></li>
+																	<li><a href="#">Atlas</a></li>
+																	<li><a href="#">Ambassador</a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="col-xl-5 col-lg-6 col-md-5">
+														<div class="lm-item">
+															<div class="lm-item__head">
+																<div class="lm-item__title"><span class="t-line">Лакированная кожа</span></div>
+															</div>
+															<div class="lm-item__body">
+																<ul class="lm-item__list ">
+																	<li><a href="#">Greasy</a></li>
+																	<li><a href="#">Brando</a></li>
+																	<li><a href="#">Wyoming</a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="col-xl-5 col-lg-6 col-md-5">
+														<div class="lm-item">
+															<div class="lm-item__head">
+																<div class="lm-item__title"><span class="t-line">Гладкая кожа</span></div>
+															</div>
+															<div class="lm-item__body">
+
+																<ul class="lm-item__list">
+																	<li><a href="#">Greasy</a></li>
+																	<li><a href="#">Brando</a></li>
+																	<li><a href="#">Wyoming</a></li>
+																	<li><a href="#">Orleans</a></li>
+																	<li><a href="#">Pisa</a></li>
+																	<li><a href="#">Ambassador</a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="col-xl-7 col-lg-12 col-md-7">
+														<div class="lm-item">
+															<div class="lm-item__head">
+																<div class="lm-item__title"><span class="t-line">Зернистая кожа</span></div>
+															</div>
+															<div class="lm-item__body">
+
+																<ul class="lm-item__list colspan2">
+																	<li><a href="#">Greasy</a></li>
+																	<li><a href="#">Brando</a></li>
+																	<li><a href="#">Wyoming</a></li>
+																	<li><a href="#">Orleans</a></li>
+																	<li><a href="#">Pisa</a></li>
+																	<li><a href="#">Ambassador</a></li>
+																	<li><a href="#">Pisa</a></li>
+																	<li><a href="#">Crazy Horse</a></li>
+																	<li><a href="#">Snowplow</a></li>
+																	<li><a href="#">Buttero</a></li>
+																	<li><a href="#">Atlas</a></li>
+																	<li><a href="#">Abruzzo</a></li>
+																	<li><a href="#">Buttero</a></li>
+																	<li><a href="#">Buttero</a></li>
+
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="col-xxxl-4 col-xxl-5 col-md-6 ">
+														<div class="lm-item">
+															<div class="lm-item__head">
+																<div class="lm-item__title"><span class="t-line">принтовая кожа</span></div>
+															</div>
+															<div class="lm-item__body">
+
+																<ul class="lm-item__list">
+																	<li><a href="#">Greasy</a></li>
+																	<li><a href="#">Brando</a></li>
+																	<li><a href="#">Wyoming</a></li>
+																	<li><a href="#">Orleans</a></li>
+																	<li><a href="#">Pisa</a></li>
+																	<li><a href="#">Ambassador</a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-xxxl-4 col-xxl-5 col-md-6 ">
+														<div class="lm-item">
+															<div class="lm-item__head">
+																<div class="lm-item__title"><span class="t-line">Ворсистая кожа</span></div>
+															</div>
+															<div class="lm-item__body">
+
+																<ul class="lm-item__list ">
+																	<li><a href="#">Greasy</a></li>
+																	<li><a href="#">Brando</a></li>
+																	<li><a href="#">Wyoming</a></li>
+																	<li><a href="#">Orleans</a></li>
+																	<li><a href="#">Pisa</a></li>
+																	<li><a href="#">Ambassador</a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xxl-auto lines-map__col-right-lg">
+									<div class="row">
+										<div class="col-xxl-12 col-xl-6">
+											<div class="lines-map__item ">
+												<div class="lines-map__head ac-navitem-lg _ac__navitem">
+													<div class="lines-map__title">Эко материал</div>
+												</div>
+												<div class="ac-item-lg _ac__item">
+													<div class="lines-map__body ">
+														<div class="lm-item">
+															<div class="lm-item__head">
+																<div class="lm-item__title"><span class="t-line">виды Материалов</span></div>
+															</div>
+															<div class="lm-item__body">
+																<ul class="lm-item__list">
+																	<li><a href="#">MIE VINTAGE</a></li>
+																	<li><a href="#">MIE COLLABORATIONS</a></li>
+																	<li><a href="#">MIE FASHION</a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xxl-12 col-xl-6">
+											<div class="lines-map__item ">
+												<div class="lines-map__head ac-navitem-lg _ac__navitem">
+													<div class="lines-map__title">Полиуретановая кожа</div>
+												</div>
+												<div class="ac-item-lg _ac__item">
+													<div class="lines-map__body ">
+														<div class="lm-item">
+															<div class="lm-item__head">
+																<div class="lm-item__title"><span class="t-line">виды Материалов</span></div>
+															</div>
+															<div class="lm-item__body">
+																<ul class="lm-item__list">
+																	<li><a href="#">MIE VINTAGE</a></li>
+																	<li><a href="#">MIE COLLABORATIONS</a></li>
+																	<li><a href="#">MIE FASHION</a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="btn btn--fill btn--block mt-5">
+							<svg class="icon icon-star-filled me-2">
+								<use xlink:href="img/sprite.svg#star-filled"></use>
+							</svg>
+							<span>Сохранить страницу в избранном</span>
+						</a>
+					</div>
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

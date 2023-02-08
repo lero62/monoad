@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "История заказов"
+})
+
+<body class="loaded page-catalog">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 11,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--size  _filter-toggle">
+								<svg class="icon icon-roulette">
+									<use xlink:href="img/sprite.svg#roulette"></use>
+								</svg>
+								<span>Мой размер</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem _active">
+									<div class="sbox__title">Меню кабинета</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item _active"><a href="#">История заказов <span class="badge">1</span></a></li>
+										<li class="sbox__list-item"><a href="#">Личные данные</a></li>
+										<li class="sbox__list-item"><a href="#">Избранное <span class="badge">26</span></a></li>
+										<li class="sbox__list-item"><a href="#">Выйти</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="dbox">
+								<div class="dbox__title">Мой размер</div>
+								<a href="#popup-edit-size" class="dbox__icon _open-popup"><svg class="icon icon-pencil">
+										<use xlink:href="img/sprite.svg#pencil"></use>
+									</svg></a>
+								<div class="dbox__list ">
+									<div class="db-size">
+										<div class="db-size__item toltipe-wrap">
+											<div class="db-size__title">DR.MARTENS</div>
+											<div class="db-size__value">
+												<span class="badge">2</span>
+												36 EUR
+											</div>
+
+											<div class="dbox__toltipe toltipe">
+												Найдено 2 позиций на скидке по выбранному вами размеру 36 EUR
+											</div>
+										</div>
+										<div class="db-size__item toltipe-wrap">
+											<div class="db-size__title">CONVERSE</div>
+											<div class="db-size__value">
+												<span class="badge">95</span>
+												38 EUR
+											</div>
+											<div class="dbox__toltipe toltipe">
+												Найдено 95 позиций на скидке по выбранному вами размеру 38 EUR
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="dbox__button">
+									<a href="#" class="btn btn--dark btn--block">Добавить бренд</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="sidebar__promocode-list">
+							<div class="promocode-list " data-da="hbox__promocode-list, 1, 1024">
+								<div class="promocode-list__item toltipe-wrap">
+									<a href="#" class="promocode-card">
+										<div class="promocode-card__icon">
+											<svg class="icon icon-gift2">
+												<use xlink:href="img/sprite.svg#gift2"></use>
+											</svg>
+										</div>
+										<div class="promocode-card__title">
+											Скидка
+											<span>200 грн!</span>
+										</div>
+									</a>
+
+									<div class="promocode-list__toltipe toltipe">
+										<div class="promocode-copy">
+											<div class="promocode-copy__title">Q2ET-Q1EF-G5ET</div>
+											<div class="promocode-copy__btn"><svg class="icon icon-copy">
+													<use xlink:href="img/sprite.svg#copy"></use>
+												</svg></div>
+										</div>
+										Введите этот код при оформлении заказа и автоматически получите в подарок шнурки Dr.Martens
+									</div>
+								</div>
+								<div class="promocode-list__item toltipe-wrap">
+									<a href="#" class="promocode-card">
+										<div class="promocode-card__img">
+											<img src="img/shn2-2.png" alt="">
+										</div>
+										<div class="promocode-card__title">
+											Шнурки
+											<span><small>в подарок!</small></span>
+										</div>
+									</a>
+									<div class="promocode-list__toltipe toltipe">
+										<div class="promocode-copy">
+											<div class="promocode-copy__title">Q2ET-Q1EF-G5ET</div>
+											<div class="promocode-copy__btn"><svg class="icon icon-copy">
+													<use xlink:href="img/sprite.svg#copy"></use>
+												</svg></div>
+										</div>
+										Введите этот код при оформлении заказа и автоматически получите в подарок шнурки Dr.Martens
+									</div>
+								</div>
+								<div class="promocode-list__item toltipe-wrap">
+									<a href="#" class="promocode-card promocode-card--sale">
+										<div class="promocode-card__icon">
+											<svg class="icon icon-gift2">
+												<use xlink:href="img/sprite.svg#gift2"></use>
+											</svg>
+										</div>
+										<div class="promocode-card__title">
+											Вся обувь
+											<span>до -15%</span>
+										</div>
+									</a>
+									<div class="promocode-list__toltipe toltipe">
+										<div class="promocode-copy">
+											<div class="promocode-copy__title">Q2ET-Q1EF-G5ET</div>
+											<div class="promocode-copy__btn"><svg class="icon icon-copy">
+													<use xlink:href="img/sprite.svg#copy"></use>
+												</svg></div>
+										</div>
+										Введите этот код при оформлении заказа и автоматически получите в подарок шнурки Dr.Martens
+									</div>
+								</div>
+								<div class="promocode-list__item toltipe-wrap">
+									<a href="#" class="promocode-card promocode-card--sale">
+										<div class="promocode-card__icon">
+											<svg class="icon icon-gift2">
+												<use xlink:href="img/sprite.svg#gift2"></use>
+											</svg>
+										</div>
+										<div class="promocode-card__title">
+											Вся обувь
+											<span>до -15%</span>
+										</div>
+									</a>
+									<div class="promocode-list__toltipe toltipe">
+										<div class="promocode-copy">
+											<div class="promocode-copy__title">Q2ET-Q1EF-G5ET</div>
+											<div class="promocode-copy__btn"><svg class="icon icon-copy">
+													<use xlink:href="img/sprite.svg#copy"></use>
+												</svg></div>
+										</div>
+										Введите этот код при оформлении заказа и автоматически получите в подарок шнурки Dr.Martens
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="text-center">
+							<a href="#" class="btn btn--dark">Показать еще 10</a>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+
+						<div class="main-header__body" data-da="main-header, 1, 1199">
+							<!-- Crumbs -->
+							<ul class="breadcrumbs">
+								<li class="breadcrumbs__item ">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Личный кабинет</a>
+								</li>
+
+								<li class="breadcrumbs__item">История заказов</li>
+							</ul>
+							<!-- end Crumbs -->
+
+							<div class="content__header">
+								<h1 class="content__title">История заказов</h1>
+							</div>
+						</div>
+
+						<!-- Promocode Mobile -->
+						<div class="hbox visible-md">
+							<div class="hbox__top _ac__navitem _active">
+								<div class="hbox__title">Мои промо-коды</div>
+								<div class="hbox__caret"></div>
+							</div>
+							<div class="hbox__body _ac__item" style="display: block;">
+								<div class="hbox__promocode-list"></div>
+								<div class="hbox__more-link text-center"><a href="#" class="dotted _open-promocode-list">Посмотреть еще 3 промо-кода</a></div>
+							</div>
+						</div>
+						<!-- Promocode Mobile EOF -->
+
+						<!-- BEGIN Histrory -->
+						<div class="history-wrapper">
+							<div class="hbox history-item">
+								<div class="hbox__top history-item__top _ac__navitem _active">
+									<div class="history-item__number">Заказ №9159</div>
+									<div class="history-item__date">от 12.12.2021</div>
+									<div class="history-item__steps hi-steps">
+										<div class="hi-steps__item hi-steps__item--selected">
+											<div class="hi-steps__badge">
+												<svg class="icon icon-check">
+													<use xlink:href="img/sprite.svg#check"></use>
+												</svg>
+											</div>
+											<div class="hi-steps__title">Открыт</div>
+										</div>
+										<div class="hi-steps__item hi-steps__item--selected">
+											<div class="hi-steps__badge">
+												<svg class="icon icon-check">
+													<use xlink:href="img/sprite.svg#check"></use>
+												</svg>
+											</div>
+											<div class="hi-steps__title">Оформление</div>
+										</div>
+										<div class="hi-steps__item hi-steps__item--active">
+											<div class="hi-steps__badge">3</div>
+											<div class="hi-steps__title">Отправка</div>
+										</div>
+										<div class="hi-steps__item">
+											<div class="hi-steps__badge">4</div>
+											<div class="hi-steps__title">Доставка</div>
+										</div>
+									</div>
+									<div class="history-item__status hidden-iphone">
+										<svg class="icon icon-reload">
+											<use xlink:href="img/sprite.svg#reload"></use>
+										</svg>
+										Последнее обновление 15 мин. назад
+									</div>
+									<div class="hbox__caret"></div>
+								</div>
+								<div class="hbox__body history-item__body _ac__item" style="display: block;">
+									<div class="history-item__status visible-iphone">
+										<svg class="icon icon-reload">
+											<use xlink:href="img/sprite.svg#reload"></use>
+										</svg>
+										Последнее обновление 15 мин. назад
+									</div>
+									<div class="hi-steps">
+										<div class="hi-steps__badge">1</div>
+										<div class="hi-steps__title">Состав Заказа</div>
+									</div>
+
+									<div class="history-item__cards">
+
+										@@include('./template/blocks/history_card.html', {
+										img: 'img/products/catalog-img1.jpg',
+										brand: 'DR.MARTENS',
+										title: 'a1460 Pascal Hardware Black Virginia',
+										priceValue: '6100 грн',
+										priceOld: '',
+										size: 'Размер - 42 EUR / 8,5 US Men / 27 см.',
+										delivery: 'Бесплатная доставка 5-10 дней',
+										tth: '<a href="#">ТТН 20400222550645</a>',
+										tthCopyBtn: 'true',
+										dataDelivery: 'Ориентировочная дата доставки: <span>09.12.2021</span>',
+										promoCode: 'Промо-код: <span>QER2T-QW4ER-SWDFG <span class="procent">-15%</span></span>'
+										})
+
+										@@include('./template/blocks/history_card.html', {
+										img: 'img/products/catalog-img5.jpg',
+										brand: 'DR.MARTENS',
+										title: '1460 Cian Colorado Blue',
+										priceValue: '6100 грн',
+										priceOld: '5400 грн',
+										size: 'Размер - 42 EUR / 8,5 US Men / 27 см.',
+										delivery: 'Бесплатная доставка 5-10 дней',
+										tth: '<a href="#">ТТН</a>',
+										tthCopyBtn: '',
+										dataDelivery: 'Ориентировочная дата доставки: <span>09.12.2021</span>',
+										promoCode: 'Промо-код: <span class="no-active">неактивирован</span>'
+										})
+
+
+									</div>
+
+									<div class="history-item__footer">
+
+										<div class="history-item__total"><span>Итого:</span> 10000 грн</div>
+										<a href="#" class="history-item__more hi-more _da-toggle" data-href="hi-info_1">
+											<span class="hi-more__1">Показать данные о доставке и опциях</span>
+											<span class="hi-more__2">Скрыть данные о доставке и опциях</span>
+										</a>
+									</div>
+
+									<div class="history-item__info" data-toggle="hi-info_1" style="display: none;">
+										<div class="history-item__info-item">
+											<div class="hi-steps">
+												<div class="hi-steps__badge">2</div>
+												<div class="hi-steps__title">Доставка и способ оплаты</div>
+											</div>
+
+											<div class="hi-info">
+												<div class="hi-info__tr">
+													<div class="hi-info__th">ФИО</div>
+													<div class="hi-info__td">Иванов Иван Иванович</div>
+												</div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Телефон</div>
+													<div class="hi-info__td">+38099 155-98-55</div>
+												</div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Способ связи</div>
+													<div class="hi-info__td">Телеграмм: @ivanov-prokaznik</div>
+												</div>
+												<div class="hi-info__br"></div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Доставка</div>
+													<div class="hi-info__td">Доставка на отделение Новой Почты г. Житомир, отделение №16, ул. Леха Качинского,68</div>
+												</div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Комментарий</div>
+													<div class="hi-info__td">Ребят, только не так как в прошлый раз, курьер пришел в 5 утра!!!</div>
+												</div>
+												<div class="hi-info__br"></div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Способ оплаты</div>
+													<div class="hi-info__td">Оплата онлайн. / Google Pay, Apple Pay, Банковской картой Monobank, Privatbank и других. через систему LiqPay</div>
+												</div>
+											</div>
+										</div>
+										<div class="history-item__info-item">
+											<div class="hi-steps">
+												<div class="hi-steps__badge">3</div>
+												<div class="hi-steps__title">Дополнительные опции</div>
+											</div>
+
+											<div class="hi-info">
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Промокод</div>
+													<div class="hi-info__td">Неактивирован</div>
+												</div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Комментарий</div>
+													<div class="hi-info__td">Пожалуйста, упакуйте в подарочную упаковку для девушки, что-то розовое желательно.</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="hbox history-item history-item--closet">
+								<div class="hbox__top history-item__top _ac__navitem ">
+									<div class="history-item__number">Заказ №9159</div>
+									<div class="history-item__date">от 12.12.2021</div>
+
+									<div class="history-item__status hidden-iphone">Успешно закрыт месяц назад</div>
+									<div class="hbox__caret"></div>
+								</div>
+								<div class="hbox__body history-item__body _ac__item" style="display: none;">
+									<div class="history-item__status visible-iphone">Успешно закрыт месяц назад</div>
+									<div class="hi-steps hi-steps--lg">
+										<div class="hi-steps__badge">1</div>
+										<div class="hi-steps__title">Состав Заказа</div>
+									</div>
+
+									<div class="history-item__cards">
+										@@include('./template/blocks/history_card.html', {
+										img: 'img/products/catalog-img1.jpg',
+										brand: 'DR.MARTENS',
+										title: 'a1460 Pascal Hardware Black Virginia',
+										priceValue: '6100 грн',
+										priceOld: '',
+										size: 'Размер - 42 EUR / 8,5 US Men / 27 см.',
+										delivery: 'Бесплатная доставка 5-10 дней',
+										tth: '<a href="#">ТТН 20400222550645</a>',
+										tthCopyBtn: 'true',
+										dataDelivery: 'Ориентировочная дата доставки: <span>09.12.2021</span>',
+										promoCode: 'Промо-код: <span>QER2T-QW4ER-SWDFG <span class="procent">-15%</span></span>'
+										})
+
+										@@include('./template/blocks/history_card.html', {
+										img: 'img/products/catalog-img5.jpg',
+										brand: 'DR.MARTENS',
+										title: '1460 Cian Colorado Blue',
+										priceValue: '6100 грн',
+										priceOld: '5400 грн',
+										size: 'Размер - 42 EUR / 8,5 US Men / 27 см.',
+										delivery: 'Бесплатная доставка 5-10 дней',
+										tth: '<a href="#">ТТН</a>',
+										tthCopyBtn: '',
+										dataDelivery: 'Ориентировочная дата доставки: <span>09.12.2021</span>',
+										promoCode: 'Промо-код: <span class="no-active">неактивирован</span>'
+										})
+									</div>
+
+									<div class="history-item__footer">
+										<div class="history-item__total"><span>Итого:</span> 10000 грн</div>
+										<a href="#" class="history-item__more hi-more _da-toggle" data-href="hi-info_2">
+											<span class="hi-more__1">Показать данные о доставке и опциях</span>
+											<span class="hi-more__2">Скрыть данные о доставке и опциях</span>
+										</a>
+									</div>
+
+									<div class="history-item__info" data-toggle="hi-info_2" style="display: none;">
+										<div class="history-item__info-item">
+											<div class="hi-steps hi-steps--lg">
+												<div class="hi-steps__badge">2</div>
+												<div class="hi-steps__title">Доставка и способ оплаты</div>
+											</div>
+
+											<div class="hi-info">
+												<div class="hi-info__tr">
+													<div class="hi-info__th">ФИО</div>
+													<div class="hi-info__td">Иванов Иван Иванович</div>
+												</div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Телефон</div>
+													<div class="hi-info__td">+38099 155-98-55</div>
+												</div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Способ связи</div>
+													<div class="hi-info__td">Телеграмм: @ivanov-prokaznik</div>
+												</div>
+												<div class="hi-info__br"></div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Доставка</div>
+													<div class="hi-info__td">Доставка на отделение Новой Почты г. Житомир, отделение №16, ул. Леха Качинского,68</div>
+												</div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Комментарий</div>
+													<div class="hi-info__td">Ребят, только не так как в прошлый раз, курьер пришел в 5 утра!!!</div>
+												</div>
+												<div class="hi-info__br"></div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Способ оплаты</div>
+													<div class="hi-info__td">Оплата онлайн. / Google Pay, Apple Pay, Банковской картой Monobank, Privatbank и других. через систему LiqPay</div>
+												</div>
+											</div>
+										</div>
+										<div class="history-item__info-item">
+											<div class="hi-steps hi-steps--lg">
+												<div class="hi-steps__badge">3</div>
+												<div class="hi-steps__title">Дополнительные опции</div>
+											</div>
+
+											<div class="hi-info">
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Промокод</div>
+													<div class="hi-info__td">Неактивирован</div>
+												</div>
+												<div class="hi-info__tr">
+													<div class="hi-info__th">Комментарий</div>
+													<div class="hi-info__td">Пожалуйста, упакуйте в подарочную упаковку для девушки, что-то розовое желательно.</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Histrory EOF -->
+
+
+					</div>
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<!-- BEGIN Filter fixed -->
+
+		<div class="filter-fixed ">
+			<div class="filter-fixed__overlay _filter-toggle"></div>
+			<div class="filter-fixed__container">
+				<div class="filter-fixed__head">
+					<div class="filter-fixed__title">Мой размер</div>
+					<a href="#popup-edit-size" class="filter-fixed__edit _open-popup">
+						<svg class="icon icon-pencil">
+							<use xlink:href="img/sprite.svg#pencil"></use>
+						</svg>
+						Редактировать
+					</a>
+					<div class="filter-fixed__close _filter-toggle">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="filter-fixed__body scrollbar">
+					<div class="db-size" data-da="filter__db-size, 1, 1024">
+						<div class="db-size__item toltipe-wrap">
+							<div class="db-size__title">DR.MARTENS</div>
+							<div class="db-size__value">
+								<span class="badge">2</span>
+								36 EUR
+							</div>
+
+							<div class="dbox__toltipe toltipe">
+								Найдено 2 позиций на скидке по выбранному вами размеру 36 EUR
+							</div>
+						</div>
+						<div class="db-size__item toltipe-wrap">
+							<div class="db-size__title">CONVERSE</div>
+							<div class="db-size__value">
+								<span class="badge">95</span>
+								38 EUR
+							</div>
+							<div class="dbox__toltipe toltipe">
+								Найдено 95 позиций на скидке по выбранному вами размеру 38 EUR
+							</div>
+						</div>
+					</div>
+
+					<div class="filter-fixed__button">
+						<a href="" class="btn btn--dark">Добавить бренд</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Filter fixed EOF -->
+
+		<!-- BEGIN NAVBAR FOR MOBILE -->
+		<nav class="navbar" data-navbar="2">
+			<div class="navbar__overlay _navbar-toggle" data-burger="2"></div>
+
+			<div class="navbar__container">
+
+				<ul class="navbar-menu ">
+					<li><a href="#">История заказов <span class="badge">1</span></a></li>
+					<li><a href="#">Личные данные</a></li>
+					<li><a href="#">Избранное <span class="badge">26</span></a></li>
+					<li><a href="#">Выйти</a></li>
+				</ul>
+
+			</div>
+		</nav>
+		<!-- NAVBAR FOR MOBILE EOF -->
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+		@@include('./template/popups/popup_edit_size.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

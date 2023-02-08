@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "blog_textpage"
+})
+
+<body class="loaded">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item "><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Натуральная кожа</a></li>
+												<li class="sbox__list-item"><a href="#">Эко материал</a></li>
+												<li class="sbox__list-item"><a href="#">Полиуретановая кожа</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Подошва</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Основные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Дополнительные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Сезонные подошвы</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>Фасон</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item _active"><a href="#">Основные фасоны</a></li>
+												<li class="sbox__list-item"><a href="#">Дополнительные фасоны</a></li>
+											</ul>
+
+										</li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item  _active"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Календарь публикаций</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__inner">
+										<div id="blog-datepicker" class="datepicker"></div>
+									</div>
+
+								</div>
+							</div>
+							<div class="sbox filter__sbox">
+
+								<div class="sbox__body pt-lg-4 pb-lg-4 pt-0 pb-0">
+									<div class="sbox__inner">
+										<div class="search-block form-wicon">
+											<input type="text" class="form-input " placeholder="Поиск по блогу">
+											<span class="form-wicon__icon">
+												<svg class="icon icon-search">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg>
+											</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Блог</a>
+								</li>
+
+
+							</ul>
+							<div class="content__header ">
+								<h1 class="content__title text-start">
+									Чем отличаются английские мартинсы из коллекции "MADE IN ENGLAND"
+									от азиатских из коллекции "THE ORIGINALS" ?
+
+								</h1>
+							</div>
+						</div>
+						<div class="section-box ">
+							<div class="section-box__title section-box__title--sm">Самые главные отличия:</div>
+
+							<div class="row g-xxl-6 g-3 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+									<ol class="decimal">
+										<li>Стелька из войлока, которая со временем принимает форму вашей стопы, в то время как у сделанных в Азии стелька из пеноматериала, которая не имеет таких свойств.</li>
+										<li>Более прочный рант, который сильнее крепится к подошве.</li>
+										<li>Английские мартинсы более износостойкие из-за премиальных материалов и ручного метода производства.</li>
+										<li>Внушительно меньше фасонов, цветов кожи и видов материала по сравнению с Азией. Азиатские заводы выпускают практически все лимитированные коллаборации, совершенно новые фасоны, новые технологии и много другое.</li>
+										<li>Дороже азиатских мартинсов на 80-120 долларов, и даже больше, в зависимости от линейки.</li>
+										<li>Другой вид подошвы, по крайней мере у эталонных английских мартинсах из коллекции MIE Vintage, где используется уникальная подошва VDM, являющаяся прототипом подошвы первых мартинсов, выпускавшихся в 60-ых, подошва повторяющая формы и рисунок на протекторе. Азиатские направление, по нашим наблюдениям, каждый год презентует минимум один вид новой подошвы. </li>
+									</ol>
+								</div>
+								<div class="col-xxl-auto">
+									<img src="img/blog/img-1.jpg" alt="">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title section-box__title--sm">Очевидно, есть несколько отличий, Dr.Martens <br class="hidden-ipad">
+								сделанных в Англии от моделей сделанных в Азии</div>
+
+							<div class="row g-xxl-6 g-3 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+									<p>По мнению многих покупателей, которые оставляли свои отзывы на заграничных ресурсах и статьи с обзорами настоящих фанатов, Dr.Martens Made In England лучше. По большей части отмечают, что британские ботинки более долговечны и удобны, чем их азиатские аналоги. Ограниченное количество цветов дополняют винтажный вид, делая ботинки максимально похожими на своих предшественников, выпущенных в 1960 году. Из-за более прочной кожи ботинкам потребуется немного больше времени, чтобы их разносить, но как только вы их разносите, вам покажется, что они созданы специально для ваших ног. Кроме того, они, вероятно, прослужат дольше.
+									</p>
+									<p>
+										Продолжая наше описание различий, хотели поделиться, что наша команда Monoad, в особенности ответственные по направлению Dr.Martens, долгое время являемся фанатами бренда и детально изучаем компанию начиная с 2017-го года. Носим мартинсы с 2008-го :) И так как не пришлось хорошо протестировать английские мартинсы, имея всего несколько пар на всю команду, мы опираемся на опыт других. Что касается азии мы можем поделиться не только своим опытом более чем 10 лет взаимодействия с мартинсами а и опытом наших клиентов, с кем тесно поддерживаем диалог в случае нетипичных ситуаций или интересных наблюдений. И можем смело, без преувеличений, назвать себя лучшими во всем что касается Dr.Martens на просторах Украины, и вероятно стран постсоветского пространства.
+
+									</p>
+								</div>
+								<div class="col-xxl-auto">
+									<img src="img/blog/img-2.png" alt="">
+								</div>
+							</div>
+
+
+							<picture class="section-box__picture mt-xl-7 mb-xl-7 mt-4 mb-4">
+								<source srcset="img/blog/img-3.webp" type="image/webp">
+								<img src="img/blog/img-3.jpg" alt="">
+							</picture>
+
+							<div class="row g-xxl-6 g-3 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+									<p>Как мы уже выяснили, обувь азиатских заводов немного отличается от британского. Существует тонкая грань между предубеждением и стремлением к высокому качеству! И поскольку даже бренд, гарантирует что азиатские мартинсы сделаны добросовестно, со всей компетентностью в своем деле и опытом десятилетий, мы изучая этот вопрос убедились на опыте что это так, но с небольшими нюансами, которые опишем дальше. Описывая достоинства английских мартинсов исходя из опыта других, мы имея свой опыт и опыт клиентов точно можем сказать, что основным и внушительным свойством английских мартинсов является их долговечность. И в защиту азии можем сказать что если исходить только из достоинства как - долговечность, мы точно поняли, это свойство зависит по большей мере от материала изделия и мартинсы азиатского производства выпускают большое количество моделей например с масляными кожами, которая будет служить дольше чем подошва, которую можно и стереть, имея индивидуальные особенности стопы. Проще говоря, спустя какое-то время эти мартинсы вы скорее оставите как память и захотите обновиться на новые, чем они выйдут из строя. Кроме масляных кож есть ряд других не менее прочных и стоит выделить эко материалы от Dr.Martens, которые выпускаются исключительно в азиатских моделях и по мнению многих прочнее чем любые другие виды натуральной кожи, с чем мы кстати согласны и протестировали. Разобрав две коллекции на долговечность вы сами можете сделать выводы и определиться для себя какие мартинсы больше по нраву или соображениям. А из неприятного, на что мы обращали внимание, бренд внедрял новую подошву для азиатского ответвления, из нового материала и нового типа протектора, форма протектора оказался совсем не износостойким и протектор на подошве стирается можно сказать за сезон и подошва имела не эстетический вид, в следующем году выпустили новую коллекцию из этого же материала но с обновленным протектором, который служит уже второй сезон, на момент написания этой статьи. А также ввиду того, что азиатская коллекция это 99% всех мартинсов, бренд выпускает модели во множестве разных материалов, некоторые и нередко имеют низкое качество и обувь быстро изнашивается. Тем не менее, самым важным преимуществом и в целом чем нам, команде Monoad больше нравится азия, это огромное разнообразие фасонов, цветов, новаций, новых коллекций, принтов от художников, всевозможных коллабораций с другими брендами чего нет в коллекции Made In England, не считая редких коллабов.
+
+
+									</p>
+									<p>
+										В целом, Dr. Martens, сделанные в Азии, - достойный и доступный выбор. Мнения могут быть разными, но они определенно хорошо сделаны, удобны и стильны. Главное, конечно же, правильно ухаживать за ботинками! И резюмируя считаем что различия скорее носят эстетический и, возможно, эмоциональный характер.
+									</p>
+								</div>
+								<div class="col-xxl-auto">
+									<img src="img/blog/img-4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+
+
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "material_page"
+})
+
+<body class="loaded">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop _active">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown" style="display: block;">
+												<li class="sbox__list-item _active"><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Все</a></li>
+												<li class="sbox__list-item"><a href="#">Сандалии</a></li>
+												<li class="sbox__list-item"><a href="#">Шлепанцы</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Подошва</a></li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item"><a href="#">Фасон</a></li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem  _active">
+									<div class="sbox__title">Виды материалов</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item _active"><a href="#">Масляная кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Гладкая кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Зернистая кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Лакированная кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Ворсистая кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Принтовая кожа</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body mb-lg-4 mb-3" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">материал изделий</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">натуральная кожа</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Масляная кожа</a>
+								</li>
+								<li class="breadcrumbs__item">материал Greasy</li>
+							</ul>
+
+						</div>
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-9',
+						imgMobile: 'img/collection/collection-banner-img-iphone-9',
+						icon: '',
+						title: 'Материал <br class="hidden-ipad">Greasy',
+						titleH1: true,
+						btn: 'Посмотреть товары',
+						})
+
+
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title">О материале greasy</div>
+							<div class="temperature-informer d-flex mb-md-6 mb-4">
+								<div class="temperature-informer__icon ">
+									<svg width="35" height="51" viewBox="0 0 35 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="17.5" cy="33.5" r="17.5" fill="white" />
+										<path d="M23.3333 37.6249H20.6667V18.8124C20.6667 17.3267 19.4725 16.1249 18 16.1249H12.6667C11.1942 16.1249 10 17.3267 10 18.8124C10 20.2981 11.1942 21.4243 12.6667 21.4243H15.3333V37.5493H12.6667C11.1942 37.5493 10 38.7511 10 40.2368C10 41.7225 11.1942 42.9243 12.6667 42.9243H23.3333C24.8058 42.9243 26 41.7225 26 40.2368C26 38.7511 24.8083 37.6249 23.3333 37.6249ZM18 10.7499C20.2092 10.7499 22 8.94507 22 6.71864C22 4.49222 20.2083 2.68823 18 2.68823C15.7917 2.68823 14 4.49306 14 6.71948C14 8.94591 15.7908 10.7499 18 10.7499Z" fill="black" />
+									</svg>
+
+
+								</div>
+								<div class="temperature-informer__content align-self-center">
+									<div class="row gx-xl-6 g-2">
+										<div class="col-xl-auto">
+											<div class="temperature-informer__item mb-3">
+												<div class="font-700 mb-1">Тип материала: </div>
+												<div>Натуральная кожа</div>
+											</div>
+											<div class="temperature-informer__item mb-3">
+												<div class="font-700 mb-1">Вид материала:</div>
+												<div>​​Масляная кожа Greasy</div>
+											</div>
+											<div class="temperature-informer__item">
+												<div class="font-700 mb-1">Сезон: </div>
+												<div>​Демисезон</div>
+											</div>
+										</div>
+										<div class="col-xl">
+											<div class="temperature-informer__in mb-3">
+												<div class="mb-1 font-700">Температура: -7°C +10°C</div>
+												<span class="text-primary">* При температурах ниже +5°C для моделей без утепления необходима дополнительная меховая стелька</span>
+											</div>
+											<div class="temperature-informer__in">
+												<div class="mb-1 font-700">Цвет: </div>
+
+												Черный, Вишневый, Синий…10+ <br>
+												<span class="text-primary">* Кожа поддается окрашиванию. Бренд практически ежегодно выпускает новые цвета.</span>
+
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="row g-xxl-6 g-xl-3 g-2 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+
+									<p>Одна из классических кож используемых Dr. Martens.</p>
+
+
+
+									<p>Кожа масляная, которую обрабатывают тщательной шлифовкой и пропитывают масляным составом. <br> Обувь из этой кожи в разы практичнее большинства аналогов из других кож за счет своих свойств:</p>
+
+									<ul class="disc">
+										<li>За счет своей структуры кожа обладает высоким качеством. долго не изнашивается и выглядит свежо на протяжении всей эксплуатации обуви.</li>
+
+										<li>Мягкая, легко разнашивается.</li>
+
+										<li>Не требует тщательного ухода но есть необходимость в подпитке кремом для маслянистых кож, что существенно продлит ресурс.</li>
+
+										<li>Не подвержена температурным изменениям, что позволяет носить обувь при низких температурах.</li>
+
+										<li>Царапины и следы довольно просто удалить, вернув коже первоначальный вид, потерев место чем-то мягким.</li>
+
+										<li>Материал матовый и не придается блеску.</li>
+
+										<li>Кожа со временем имеет свойство восстанавливаться. Старые царапины будут практически незаметны.</li>
+									</ul>
+
+
+									<div class="row pt-md-4 pt-1 gy-3">
+										<div class="col-xxxl-5 col-md-6">
+											<h6>Преимущества масляной кожи</h6>
+											<ul class="disc">
+												<li>Очень мягкая</li>
+												<li>Долговременный лоск</li>
+												<li>Изящная</li>
+												<li>Статусная</li>
+												<li>Не стирается</li>
+											</ul>
+										</div>
+										<div class="col-xxxl-5 col-md-6">
+											<h6>недостатки масляной кожи</h6>
+											<ul class="disc">
+												<li>Плохо чистится</li>
+												<li>Требует специальных средств хранения</li>
+												<li>Изнашивается</li>
+												<li>Дорогая</li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+								<div class="col-xxl-auto">
+									<div data-open-window>
+										<span class="zoom">
+											<img src="img/maretials/img-4.jpg" alt="" data-window-img="img/maretials/img-4.jpg">
+											<span class="ic-zoom">
+												<svg class="icon icon-zoom">
+													<use xlink:href="img/sprite.svg#zoom"></use>
+												</svg>
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-5 text-md-center">товары из масляной <span class="nowrap">кожи <span class="badge badge--lg">9</span></span></div>
+
+							<div class="collections-swiper">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-1.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: true,
+											soles: false,
+											fason: false,
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-2.png',
+											title: '1460 Pascal Brown Savanna ',
+											materials: true,
+											soles: false,
+											fason: false,
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-3.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: true,
+											soles: false,
+											fason: false,
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-4.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: true,
+											soles: false,
+											fason: false,
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-1.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: true,
+											soles: false,
+											fason: false,
+											})
+										</div>
+
+									</div>
+									<div class="swiper-pagination swiper-pagination--static visible-laptop"></div>
+
+								</div>
+								<div class="collections-swiper__prev swiper-button-prev hidden-laptop">
+									<svg class="icon icon-swiper-arrow">
+										<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+									</svg>
+								</div>
+								<div class="collections-swiper__next swiper-button-next hidden-laptop">
+									<svg class="icon icon-swiper-arrow">
+										<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__top">
+								<div class="section-box__title ">УХод за кожей Greasy</div>
+							</div>
+							<div class="row g-xxl-6 g-xl-3 g-2 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+
+
+
+									<p>Уход за масляной кожей довольно простой и поэтому мы рекомендуем не забывать ухаживать за своей любимой парой, что-бы продлить ресурс эксплуатации обуви. </p>
+
+									<h6>Почему уход это так важно?</h6>
+									<p>Вместе со стопой ноги Ваша обувь совершает в день около 6 тысяч изгибов, а соль и грязь на наших улицах являются сильными химическими раздражителями (реагентами), которые незаметно разрушают структуру кожи, сушат кожу, что ослабляет ее прочность и возможны необратимые деформации.</p>
+
+									<h6>Этапы по уходу</h6>
+
+
+									<ol class="decimal">
+										<li>
+											<div class="decimal__title">Чистка и сушка:</div>
+
+											<strong>Если обувь сильно загрязнена ?</strong>
+											<ul class="disc">
+												<li>Ее можно промыть прохладной водой (не долго), стараясь избегать попадания влаги вовнутрь.</li>
+												<li>Очистить от грязи и пыли щеткой, после вытереть влажной, а затем сухой мягкой тканью.</li>
+											</ul>
+
+											<strong>Если обувь пыльная и не сильно загрязнена ?</strong>
+											<ul class="disc">
+												<li>Достаточно вытереть влажной, а затем сухой мягкой тканью.</li>
+												<li>Дать немного времени просохнуть верхнему слою кожи, которая впитала немного влаги во время чистки.</li>
+											</ul>
+
+											<strong>Если обувь промокла ?</strong>
+											<p>Сушить необходимо при комнатной температуре, но не на солнце и не у нагревательных приборов. Чтобы ускорить процесс, обувь набивают бумагой, меняйте ее по мере необходимости. Обычно сушка не занимает более суток, все зависит от степени влаги.</p>
+										</li>
+										<li>
+											<div class="decimal__title">Обработка средствами по уходу:</div>
+
+											<ul class="disc">
+												<li> После чистки и просушки обуви, воспользуйтесь бальзамом или специальным воском, чтобы
+													восстановить и увлажнить кожу. Dr. Martens предлагает оригинальные средства по уходу, к
+													оторые подходят для кожи Crazy Horse: DUBBIN - это специальное средство для ухода за всеми
+													масляными типами кожи. WONDER BALSAM - универсальный и бесцветный воск.</li>
+												<li>Для подпитки кожи необходимо совсем немного бальзама, ровно столько, сколько требуется
+													чтобы покрыть всю плоскость обуви. Средство равномерно, втирая в кожу, нанести мягкой
+													хлопковой тканью или специальным спонжем.</li>
+												<li>Хлопковой тканью слегка отполировать, чтобы вобрать возможные остатки средства по уходу и
+													выровнять тон кожи.</li>
+												<li>Оставьте подсохнуть на пару минут.</li>
+											</ul>
+
+											<p>Обувь готова к эксплуатации 🙂</p>
+										</li>
+									</ol>
+								</div>
+								<div class="col-xxl-auto">
+									<img src="img/maretials/img-5.jpg" alt="" class="mb-3">
+									<img src="img/maretials/img-6.jpg" alt="" class="mb-3">
+
+									<div class="collections-one-swiper mt-md-7 mt-5">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="collections-card text-center">
+														<a href="#" class="collections-card__img">
+															<img src="img/subcollection/collection_card-img-0.jpg" alt="">
+														</a>
+														<span class="btn-favorites">
+															<svg class="icon icon-star">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg>
+															<svg class="icon icon-star-filled">
+																<use xlink:href="img/sprite.svg#star-filled"></use>
+															</svg>
+														</span>
+														<div class="collections-card__body">
+															<a href="#" class="collections-card__title">Wonder Balsam
+															</a>
+															<div class="collections-card__details cc-details">
+
+																<div class="cc-details__item ">
+																	<div class="cc-details__label">Бренд: </div>
+																	<div class="cc-details__labeled ttu">Dr.Martens</div>
+																</div>
+
+																<a href="#" class="btn btn--warning mt-2">В корзину</a>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="collections-card text-center">
+														<a href="#" class="collections-card__img">
+															<img src="img/subcollection/collection_card-img-0.jpg" alt="">
+														</a>
+														<span class="btn-favorites">
+															<svg class="icon icon-star">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg>
+															<svg class="icon icon-star-filled">
+																<use xlink:href="img/sprite.svg#star-filled"></use>
+															</svg>
+														</span>
+														<div class="collections-card__body">
+															<a href="#" class="collections-card__title">Wonder Balsam
+															</a>
+															<div class="collections-card__details cc-details">
+
+																<div class="cc-details__item ">
+																	<div class="cc-details__label">Бренд: </div>
+																	<div class="cc-details__labeled ttu">Dr.Martens</div>
+																</div>
+
+																<a href="#" class="btn btn--warning mt-2">В корзину</a>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="collections-card text-center">
+														<a href="#" class="collections-card__img">
+															<img src="img/subcollection/collection_card-img-0.jpg" alt="">
+														</a>
+														<span class="btn-favorites">
+															<svg class="icon icon-star">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg>
+															<svg class="icon icon-star-filled">
+																<use xlink:href="img/sprite.svg#star-filled"></use>
+															</svg>
+														</span>
+														<div class="collections-card__body">
+															<a href="#" class="collections-card__title">Wonder Balsam
+															</a>
+															<div class="collections-card__details cc-details">
+
+																<div class="cc-details__item ">
+																	<div class="cc-details__label">Бренд: </div>
+																	<div class="cc-details__labeled ttu">Dr.Martens</div>
+																</div>
+
+																<a href="#" class="btn btn--warning mt-2">В корзину</a>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="collections-card text-center">
+														<a href="#" class="collections-card__img">
+															<img src="img/subcollection/collection_card-img-0.jpg" alt="">
+														</a>
+														<span class="btn-favorites">
+															<svg class="icon icon-star">
+																<use xlink:href="img/sprite.svg#star"></use>
+															</svg>
+															<svg class="icon icon-star-filled">
+																<use xlink:href="img/sprite.svg#star-filled"></use>
+															</svg>
+														</span>
+														<div class="collections-card__body">
+															<a href="#" class="collections-card__title">Wonder Balsam
+															</a>
+															<div class="collections-card__details cc-details">
+
+																<div class="cc-details__item ">
+																	<div class="cc-details__label">Бренд: </div>
+																	<div class="cc-details__labeled ttu">Dr.Martens</div>
+																</div>
+
+																<a href="#" class="btn btn--warning mt-2">В корзину</a>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-pagination swiper-pagination--static visible-laptop"></div>
+
+										</div>
+										<div class="collections-one-swiper__prev swiper-button-prev hidden-laptop">
+											<svg class="icon icon-swiper-arrow">
+												<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+											</svg>
+										</div>
+										<div class="collections-one-swiper__next swiper-button-next hidden-laptop">
+											<svg class="icon icon-swiper-arrow">
+												<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+
+						<a href="#" class="btn btn--fill btn--block mt-5">
+							<svg class="icon icon-star-filled me-2">
+								<use xlink:href="img/sprite.svg#star-filled"></use>
+							</svg>
+							<span>Сохранить страницу в избранном</span>
+						</a>
+					</div>
+
+
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

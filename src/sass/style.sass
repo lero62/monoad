@@ -1,0 +1,131 @@
+/* mixin ============================================== */
+@import lib/base
+/* mixin ============================================== */
+
+/* body =============================================== */
+$font-family: 'Roboto'
+$font2: 'Oswald', 'Arial', sans-serif
+$color:		 #131313
+$bgcolor:	  #fff
+$color-secondary: #595959
+$color-primary: #8C8C8C
+$color-danger: #ff4633
+$color-success: #3FAB0C
+$color-warning: #fbc644
+$color-default: #F5F5F5
+$color22: #333333
+
+/*  Container ========================================== */
+$gutters: 15px
+$minWidth: 32
+$maxWidth: 192
+$containerrem: 120
+$container:	1200
+$desktop_xl: 1799px
+$desktop_lg: 1599px
+$desktop: 1399px
+$laptop:	1199px
+$ipad: 1024px
+$iphone:	767px
+$iphone_sm:	575px
+$iphone_xs:	370px
+
+/* Normalize =========================================== */
+@import normalize
+@import fonts
+
+html
+	font-size: 62.5%
+	&.lock, &.lock body
+		overflow: hidden
+	&.lock-navbar, &.lock-navbar body
+		overflow: hidden
+
+	+max($ipad)
+		&.lock-ipad, &.lock-ipad body
+			overflow: hidden
+		&.lock-ipad-fixed, &.lock-ipad-fixed body
+			overflow: hidden
+
+body
+	color: #000
+	font: 400 1.5rem $font-family, Arial, sans-serif
+	line-height: 1.4
+	background: $bgcolor
+	min-height: 100%
+	display: flex
+	margin: 0px
+	padding: 0px
+	overflow-x: hidden
+	position: relative
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+	&.lock
+		overflow: hidden
+
+/* Normalize ====================================== */
+
+/* TYPOGRAPHY
+/* ================================================ */
+@import blocks/typography
+
+/* HEADER
+/* ================================================ */
+@import header
+
+/* MAIN
+/* ================================================ */
+@import main
+
+@import blocks/_q_card
+
+@import blocks/_q_catalog
+
+@import blocks/_q_order
+
+@import blocks/_q_history
+
+// @import blocks/_q_sole
+
+@import blocks/_q_error
+
+@import blocks/_q_favorite
+
+@import blocks/_q_collection
+
+@import blocks/_q_soles
+
+@import blocks/_q_help
+
+@import blocks/_q_blog
+
+@import blocks/_q_history_brand
+
+@import blocks/themes
+
+@import blocks/ui
+
+@import blocks/buttons
+
+@import blocks/forms
+
+@import blocks/icons
+
+@import blocks/popup
+
+@import blocks/window-photo
+
+// @import blocks/grid
+
+@import blocks/layout
+
+// @import blocks/tooltip 
+
+/* FOOTER
+/* ================================================ */
+@import footer
+
+/* MEDIA
+/* ================================================ */
+@import media

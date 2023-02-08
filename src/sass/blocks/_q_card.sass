@@ -1,0 +1,1583 @@
+
+/* PRODUCT CARD ========= */
++min(1601px)
+	.page-card
+		.main
+			padding-top: 14rem
+.card-wrapper
+
+	display: flex
+	align-items: flex-start
+	&__middle
+		padding: 0 3rem
+		order: 1
+		flex: 1
+		margin-bottom: 5rem
+		// margin: 0 45rem
+
+	&__left, &__right
+		margin-bottom: 5rem
+		position: sticky
+		top: 14rem
+
+		width: 45rem
+		flex: none
+		z-index: 5
+
+	&__left
+		left: 3.5%
+
+	&__right
+		right: 3.5%
+		order: 2
+
+	.btn-favorites
+		.icon
+			font-size: 2.2rem !important
+		&.active
+			.icon
+				color: $color-warning
+
+.card-slider
+	position: relative
+	&:focus
+		outline: none
+	&__item
+
+		a
+			display: block
+			height: 100%
+		&:focus
+			outline: none
+		img
+			flex: none
+			max-height: 100%
+			margin-left: auto
+			margin-right: auto
+			cursor: url('../img/zoom-in-16x16.png'), pointer
+
+	.swiper-pagination
+		display: none
+
+	.btn-favorites
+		position: absolute
+		top: .5rem
+		right: .5rem
+		z-index: 3
+
+.page-card-gallery
+	.main
+		display: none
+
+.card-gallery
+	display: none
+	// visibility: hidden
+	// pointer-events: none
+	// opacity: 0
+	position: fixed
+	top: 0
+	z-index: 200
+	height: 100%
+	overflow: hidden
+	overflow-y: auto
+	z-index: 100
+	background: #fff
+
+	width: 100%
+	&.open
+		display: block
+		// visibility: visible
+		// pointer-events: auto
+		// opacity: 1
+		// z-index: 200
+	&__item
+		height: 100vh
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 4rem 0
+		cursor: url('../img/zoom-in-16x16.png'), pointer
+		img
+			flex: none
+			max-height: 100%
+
+.card-box
+	background: $color-default
+	padding: 4rem 5rem
+	position: relative
+	&__description
+		overflow: hidden
+		overflow-y: auto
+		max-height: 20rem
+		font-size: 1.5rem
+		line-height: 1.7
+		padding-right: 2rem
+		margin-right: -2rem
+
+	&__characteristic
+		overflow: hidden
+		overflow-y: auto
+		max-height: 14.5rem
+		padding-right: 2rem
+		margin-right: -2rem
+
+	&__title
+		font-size: 2.4rem
+		font-weight: 500
+		text-transform: uppercase
+		margin-bottom: 1rem
+
+	&__info
+		border-top: .1rem solid #DEDEDE
+		margin-top: 3rem
+		padding-top: 2.6rem
+
+	&__details
+		border-top: .1rem solid #DEDEDE
+		margin-top: 2.5rem
+		padding-top: 1.9rem
+
+	/*right */
+	&__head
+		display: flex
+		align-items: flex-start
+		&-left
+			flex: 1
+			min-width: 1px
+		&-right
+			flex: none
+			text-align: right
+			margin-left: 2rem
+			width: 40%
+
+	&__brand
+		font-size: 3rem
+		font-weight: 600
+		text-transform: uppercase
+		color: $color
+		line-height: 1.1
+		font-family: $font2
+		margin-bottom: 1rem
+
+	&__subtitle
+		font-size: 1.6rem
+		font-weight: 500
+		color: #818181
+		font-family: $font2
+
+	&__delivery
+		font-size: 1.2rem
+		font-weight: 400
+		margin-top: 1.5rem
+
+	&__favorite
+		position: absolute
+		top: 1.5rem
+		right: 1.5rem
+
+	&__size
+		margin-top: 2rem
+		.tab-line__nav
+			margin-bottom: 0
+		.tab-line__navitem
+			margin-right: 2.1rem
+			&:after
+				margin-left: 1.1rem
+
+	&__row
+		margin-top: 1.6rem
+		display: flex
+		align-items: flex-start
+		.cb-colors
+			flex: 1
+			min-width: 1px
+
+		.sticker-wrap
+
+			width: 13rem
+			margin-top: 0.2rem
+			margin-right: 0
+			height: 3.6rem
+			&__content
+				padding-left: 0.5rem
+				padding-top: 0.5rem
+			&__title
+				font-size: 0.8rem
+				line-height: 1.2
+			&__timer
+				font-size: 1.2rem
+			.sticker
+				height: 3.6rem
+				width: 3.6rem
+				flex: none
+				padding-top: 0.3rem
+				&--sale
+					font-size: 1.6rem
+
+	&__sticker
+		margin-left: auto
+		flex: none
+		padding-left: 3.4rem
+	&__buttons
+		margin-top: 2rem
+		display: flex
+		margin-left: -1rem
+		margin-right: -1rem
+		.btn
+			width: calc(50% - 2rem)
+			margin-left: 1rem
+			margin-right: 1rem
+
+	&__my-size
+		position: absolute
+		right: 100%
+		bottom: 0
+		z-index: 5
+
+	&__alert-box
+		margin-bottom: 1rem
+
+	&__settings-list
+		margin-bottom: 1.2rem !important
+
+	.price-value
+		font-size: 2.8rem
+		display: block
+		line-height: 1
+		font-weight: 600
+		margin-left: 0
+		margin-right: 0
+	.price-old
+		font-size: 1.6rem
+		margin-top: .8rem
+		margin-bottom: .8rem
+		margin-right: 0
+
+	.rating
+		margin-bottom: 2rem
+		&__value
+			font-family: $font-family
+			color: #8C8C8C
+
+/* Card box LEFT ================ */
+
+.characteristic
+	display: table
+	width: 100%
+
+	&__row
+		display: table-row
+	&__th
+		display: table-cell
+		vertical-align: top
+		font-size: 1.5rem
+		font-weight: 400
+		color: #666666
+		padding-top: 0.6rem
+		padding-bottom: 0.6rem
+		white-space: nowrap
+
+	&__td
+		display: table-cell
+		vertical-align: top
+		padding-left: 1.6rem
+		font-weight: 400
+		font-size: 1.5rem
+		padding-top: 0.6rem
+		padding-bottom: 0.6rem
+
+.card-details
+	display: flex
+	align-items: flex-start
+	margin-left: -0.5rem
+	margin-right: -0.5rem
+	&__item
+		display: flex
+		align-items: center
+		text-decoration: none
+		width: calc(50% - 1rem)
+		margin-right: .5rem
+		margin-left: .5rem
+		&:last-child
+			margin-right: 0
+
+	&__img
+		flex: none
+		width: 6rem
+		height: 6rem
+		overflow: hidden
+		margin-right: 1.5rem
+		border-radius: 50%
+		img
+			width: 100%
+			height: 100%
+
+	&__play
+		+coverdiv
+		background: rgba(19, 19, 19, 0.6)
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			width: 2.8rem
+			height: 2.8rem
+			margin-left: -1.4rem
+			margin-top: -1.4rem
+			border-radius: 50%
+			background: $color-warning
+		&:after
+			content: ''
+			position: absolute
+			+arr(1.2rem, 1.2rem, #000, r)
+			left: 50%
+			top: 50%
+			margin-top: -0.6rem
+			margin-left: -0.4rem
+
+	&__content
+		flex: 1
+		min-width: 1px
+	&__title
+		font-family: $font2
+		font-size: 1.5rem
+		font-weight: 500
+		text-transform: uppercase
+		color: #000
+
+.video-toltipe
+	width: 22rem
+
+/* Card box Right ================ */
+.cb-accordion-item
+
+	&__head
+		border-top: .1rem solid #DEDEDE
+		padding-top: 1.8rem
+		padding-bottom: 1.2rem
+	&__title
+		font-size: 1.4rem
+		text-transform: uppercase
+		font-weight: 600
+		font-family: $font2
+		color: $color
+
+	&__caret
+		display: none
+
+.cb-size
+	+margin
+	&__top
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 2rem
+
+	&__label-tags
+		margin-bottom: 1.6rem !important
+		position: relative
+
+	&__label-tags-table
+		position: absolute
+		right: 100%
+		bottom: -2rem
+		margin-right: 4.7rem
+		z-index: 5
+		width: 25.2rem
+		visibility: hidden
+		opacity: 0
+		pointer-events: none
+		+tr
+		+min($ipad + 1)
+			&._open
+				@media (any-hover: none)
+					visibility: visible
+					opacity: 1
+					pointer-events: auto
+		+max($ipad)
+			display: none
+			position: static
+			margin-right: 0
+			width: auto
+			visibility: visible
+			opacity: 1
+			pointer-events: auto
+			&._open
+				display: block
+
+	&__alert-box
+		margin-bottom: 1.5rem
+
+	.label-tags
+		&__item
+			width: calc(20% - .6rem)
+
+			+min($ipad + 1)
+				@media (any-hover: hover)
+					&:hover +  .cb-size__label-tags-table
+						visibility: visible
+						opacity: 1
+						pointer-events: auto
+
+	.selectbox
+		&__drop
+			min-width: 12rem
+
+.cb-colors-slider
+	position: relative
+	display: inline-block
+	max-width: 100%
+	.swiper-container
+		padding: .5rem
+		margin: -.5rem
+
+	.swiper-button-next, .swiper-button-prev
+		height: 4rem
+		width: 2rem
+		margin-top: -2rem
+		.icon
+			font-size: 1.4rem
+	.swiper-button-next
+		right: -2.5rem
+	.swiper-button-prev
+		left: -2.5rem
+
+	&._cb-colors-small
+		.swiper-slide
+			width: 4rem !important
+		.cb-colors__item
+			height: auto
+
+	&._cb-colors-big
+		display: block
+		.cb-colors__item
+			height: auto
+
++max($iphone)
+	.cb-colors-slider
+		&._cb-colors-big
+			.swiper-button-next, .swiper-button-prev
+				display: none !important
+
+.cb-colors
+
+	&__item
+		display: block
+
+		height: 4rem
+		border: .1rem solid transparent
+		box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05)
+		&--active
+			border-color: $color-warning
+
+		@media (any-hover: hover)
+			&:not(.cb-colors__item--active):hover
+				border-color: rgba(251, 198, 68, 0.4)
+
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+.settings-list
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin-bottom: -1.4rem
+	&__item
+		width: 58%
+		font-size: 1.2rem
+		position: relative
+		padding-left: 2.5rem
+		margin-bottom: 1.4rem
+
+		&:nth-child(1), &:nth-child(3)
+			width: 42%
+
+		&._active
+			.settings-list__status-check
+				display: flex
+
+		@media (any-hover: hover)
+			&:hover
+				.settings-list__icon > .icon
+					transform: scale(1.1)
+	&__icon
+		position: absolute
+		top: -.2rem
+		left: 0
+		& > .icon
+			font-size: 1.8rem
+
+	&__status-check
+		position: absolute
+		bottom: -.3rem
+		right: -.3rem
+		display: none
+
+.label-tags-table
+	background: #EDEDED
+	padding: 3rem
+
+	table
+		width: 100%
+		td
+			font-size: 1.2rem
+			padding: .5rem 2rem
+			&:first-child
+				border-right: .1rem solid #DEDEDE
+
+			&._active
+				font-weight: 700
+
+	&__close
+		display: none
+
+.my-size
+	background: #EDEDED
+	padding: 4rem 4.5rem
+	width: 41.4rem
+
+	&__head
+		position: relative
+		padding-right: 8rem
+	&__icon
+
+		display: flex
+		align-items: center
+		justify-content: center
+		background: $color-warning
+		width: 5rem
+		height: 5rem
+		border-radius: 50%
+		position: absolute
+		top: 0
+		right: 0
+		.icon
+			font-size: 2.8rem
+			&-telegram
+				left: -.2rem
+	&__title
+		font-size: 2rem
+		font-weight: 500
+		font-family: $font2
+		text-transform: uppercase
+		margin-bottom: 1rem
+	&__description
+		font-size: 1.3rem
+		font-weight: 400
+		line-height: 1.6
+		margin-bottom: 1rem
+	&__selects
+		border-top: .1rem solid #D1D1D1
+		margin-top: 2.3rem
+		padding-top: 3rem
+		.selectbox
+			margin-bottom: 1rem
+			&:last-child
+				margin-bottom: 0
+	&__button
+		text-align: right
+		border-top: .1rem solid #D1D1D1
+		margin-top: 3rem
+		padding-top: 3rem
+
+.infobl
+	display: inline-block
+	font-size: 1.3rem
+	position: relative
+	line-height: 1.5
+	color: #000
+	padding-left: 2.5rem
+	span
+		border-bottom: .1rem dotted
+
+	img
+
+		position: absolute
+		top: -.2rem
+		left: 0
+	.icon
+
+		position: absolute
+		left: 0
+		top: -.2rem
+		font-size: 2rem
+		&-play-alt
+			color: $color-danger
+
+	@media (any-hover: hover)
+		&:hover
+			span
+				border-color: transparent
+
+.status-check
+	width: 1.6rem
+	height: 1.6rem
+	background: $color-warning
+	border-radius: 50%
+	display: flex
+	align-items: center
+	justify-content: center
+	.icon
+		font-size: 1rem
+		color: $color
+
+.gallery
+	height: 100%
+
+/* Reviews Section */
+/* ===================================================================== */
+
+.together-cheaper-slider
+	position: relative
+	.swiper-container
+		padding-left: 2.5rem
+		padding-right: 2.5rem
+	.swiper-slide
+		display: flex
+		justify-content: center
+	.swiper-button-next, .swiper-button-prev
+		top: calc(50% - 6.1rem)
+		width: 3rem
+		height: 4rem
+		margin-top: -2rem
+		.icon
+			font-size: 2.4rem
+
+	&__symbol
+		flex: none
+		width: 3rem
+		text-align: center
+		position: relative
+		.icon
+			font-size: 2.6rem
+
+			color: #565656
+			display: block
+			left: .2rem
+			position: absolute
+			top: calc(50% - 6.1rem)
+			margin-top: -1.4rem
+
+	.product-card
+		margin-bottom: 0
+		padding-top: 0
+		max-width: calc(25% - 2.2rem)
+		flex: 1 1 calc(25% - 2.2rem)
+		&__body
+			padding-bottom: 0
+			min-height: 12.2rem
+
+		&__title
+			font-weight: 700
+		@media (any-hover: hover)
+			&:hover
+				background: transparent
+
+	.sticker
+		width: 4rem
+		height: 4rem
+
+.reviews-wrap
+	display: flex
+	align-items: flex-start
+
+	&__left
+		margin-bottom: 5rem
+
+		width: 45rem
+		flex: none
+
+		margin-right: 6rem
+	&__right
+		flex: 1
+		min-width: 1px
+		padding-top: 3.5rem
+
+.reviews-box
+	background: $color-default
+	padding: 4rem 5rem
+	position: relative
+	&__head
+		margin-bottom: 2.5rem
+	&__title
+		font-size: 2.6rem
+		margin-bottom: 1rem
+	&__text
+		font-size: 1.3rem
+		font-weight: 600
+
+	&__rating
+		margin-bottom: 1.5rem
+
+	&__item
+		margin-bottom: 3.6rem
+		&:last-child
+			margin-bottom: 0
+		&-head
+			display: flex
+			align-items: center
+			justify-content: space-between
+			flex-wrap: wrap
+
+		&-title
+			text-transform: uppercase
+			font-family: $font2
+			font-size: 1.6rem
+			font-weight: 600
+			margin-bottom: 1rem
+			margin-right: 1rem
+		&-text
+			margin-bottom: 1rem
+			font-size: 1.3rem
+			font-weight: 600
+			a
+				text-decoration: underline
+
+		&--lines
+			border-top: 1px solid rgba(48, 48, 48, 0.15)
+			padding-top: 3.6rem
+
+	&__buttons
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		margin-top: 3rem
+
+		.btn
+			margin-right: 1rem
+			max-width: 22rem
+			&:last-child
+				margin-right: 0
+
+.pre-lines
+	display: table
+	table-layout: fixed
+	width: 100%
+	&__item
+		display: table-row
+		cursor: pointer
+		@media (any-hover: hover)
+			&:hover
+				.pre-lines__th, .pre-lines__value
+					color: #E2711E
+				.progress-bar
+					background: #FFFBE4
+					& > div
+						background: #FFCC6F
+	&__th
+		display: table-cell
+		vertical-align: middle
+		color: #363636
+		font-size: 1.5rem
+		line-height: 1.2
+		padding-right: 1rem
+		padding-bottom: .5rem
+		padding-top: 0.5rem
+
+	&__td
+		display: table-cell
+		vertical-align: middle
+		padding-bottom: .5rem
+		padding-top: .5rem
+
+	&__value
+		width: 4rem
+		font-size: 1.3rem
+		color: #7D7D7D
+
+		text-align: right
+	&__t-1
+		width: 8.5rem
+	&__p-2
+		width: 8.3rem
+
+	&__p-3
+		width: 13rem
+
+.progress-bar
+	height: 1.4rem
+	background: #fff
+	position: relative
+	& > div
+		background: $color-warning
+		height: 100%
+
+.status
+	width: 2.2rem
+	height: 2.2rem
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	background: #76BA57
+	border: 3px solid #FFFFFF
+	border-radius: 50%
+	.icon
+		color: #fff
+		font-size: 1rem
+
+.reviews
+	padding-top: 1rem
+	&__item
+		.review-card
+			margin-left: 6.5rem
+			&:first-child
+				margin-left: 0
+.review-card
+	padding-bottom: 3rem
+	margin-bottom: 3rem
+	border-bottom: .1rem solid rgba(196, 196, 196, 0.4)
+
+	&__head
+		display: flex
+		align-items: flex-start
+		margin-bottom: 1rem
+	&__avatar
+		position: relative
+		flex: none
+		margin-right: 1.5rem
+		img
+			width: 4.8rem
+			height: 4.8rem
+			border-radius: 50%
+			object-fit: cover
+
+	&__status
+		position: absolute
+		top: -.3rem
+		right: -1rem
+		display: none
+
+	&__info
+		flex: 1
+		min-width: 1px
+		align-self: center
+
+	&__name
+		display: inline-block
+		vertical-align: middle
+		white-space: nowrap
+		color: #000
+		font-size: 1.5rem
+		font-weight: 500
+	&__date
+		font-size: 1.5rem
+		font-weight: 400
+		color: #8C8C8C
+		display: inline-block
+		vertical-align: middle
+		white-space: nowrap
+
+	&__user-status
+		color: #B0B0B0
+		font-size: 1.3rem
+		font-weight: 500
+
+	&__rating
+		margin-top: 0.5rem
+
+	&__content
+		display: flex
+		align-items: flex-end
+
+	&__body
+		flex: 1 1 auto
+		line-height: 1.6
+		font-size: 1.6rem
+		h6
+			font-family: $font-family
+			text-transform: none
+			font-size: 1.6rem
+			font-weight: 600
+			line-height: 1.6
+			margin-bottom: 0
+		p
+			margin-bottom: 1.5rem
+			&:last-child
+				margin-bottom: 0
+	&__actions
+		flex: none
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		.reply-btn
+			margin-left: 3.6rem
+
+		.dislike-btn
+			margin-left: 1rem
+
+	&--activated
+		.review-card__user-status
+			color: #609F44
+
+		.review-card__status
+			display: inline-flex
+
+	&--admin
+		.review-card__user-status
+			color: #E58D3C
+
+		.review-card__status
+			display: inline-flex
+			background: #FBC644
+
+.reply-btn, .dislike-btn, .like-btn
+	color: #8C8C8C
+	font-size: 1.4rem
+	font-family: $font-family
+	border: none
+	flex: none
+	background-color: transparent
+	white-space: nowrap
+	padding: 0 .5rem
+	height: 2rem
+	.icon
+		vertical-align: middle
+		font-size: 1.4rem
+		top: -.1rem
+
+	&--no-active
+		color: #BABABA
+
+.like-btn
+	.icon
+		top: -.2rem
+
+.rc-advant
+	&__item
+		margin-bottom: 1.5rem
+	&__label
+		font-size: 1.6rem
+		font-weight: 600
+		color: #000
+	&--horizontal
+		margin-bottom: 2rem
+		.rc-advant
+			&__item
+				display: flex
+				margin-bottom: .3rem
+			&__label
+				width: 20rem
+				flex: none
+
+			&__labeled
+				flex: 1
+
+				.rating
+					margin-top: 0.4rem
+.rc-gallery
+	display: flex
+	flex-wrap: wrap
+	margin-top: 2.5rem
+	margin-bottom: -1rem
+	&__item
+		margin-bottom: 1rem
+		margin-right: 1rem
+		flex: none
+		cursor: pointer
+		img
+			height: 7rem
+			width: 7rem
+			object-fit: cover
+
+.informer
+	background: #F9F9F9
+	padding: 9rem
+
+	&__wrap
+		max-width: 63rem
+		margin-left: auto
+		margin-right: auto
+		display: flex
+		align-items: center
+	&__icon
+		flex: none
+		margin-right: 4.3rem
+		.icon
+			font-size: 16.6rem
+			display: block
+			color: #C4C4C4
+
+	&__content
+		flex: 1
+		min-width: 1px
+	&__text
+		font-size: 1.7rem
+		font-weight: 400
+		line-height: 1.6
+	&__button
+		margin-top: 2.8rem
+		.btn
+			padding-left: 5rem
+			padding-right: 5rem
+
+.review-grid
+	margin-bottom: 5rem
+	&__item
+		background: #F9F9F9
+		padding: 3rem 5rem
+		height: 100%
+		display: flex
+		flex-direction: column
+		.review-card
+			margin-bottom: 0
+			padding-bottom: 0
+			border: none
+	&__head
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 1.5rem
+		flex: none
+	&__body
+		flex: 1
+		min-height: 1px
+
+	&__title
+		font-family: $font2
+		font-size: 1.6rem
+		font-weight: 600
+		text-transform: uppercase
+		margin-right: 3rem
+		margin-bottom: 1rem
+
+	&__text
+		font-size: 13px
+		font-weight: 600
+		margin-bottom: 1rem
+
+	&__foot
+		flex: none
+		margin-top: 2.5rem
+		padding-top: 2.5rem
+		border-top: 1px solid rgba(48, 48, 48, 0.15)
+.review-grid-swiper
+	.swiper-slide
+		height: auto
+
+/* Media */
+/* ===================================================================== */
+
++min($desktop + 1)
+	/* Reviews */
+
+	.reviews-box-swiper
+		.swiper-wrapper
+			display: block
+
+	.reviews-box-swiper-pagination.swiper-pagination
+		display: none
+
++min(1601px)
+	.card-slider
+		&__item
+			display: flex
+			align-items: center
+			justify-content: center
+
+			padding-bottom: 1rem
+			padding-top: 1rem
+			&:first-child
+				padding-top: 0
+				padding-bottom: 14rem
+				height: calc(100vh - 14rem) !important
+
++max(1600px)
+
+	.card-wrapper
+		&__middle
+			padding-left: 0
+
+		&__left
+			display: none
+		&__right
+			position: relative
+			right: auto
+			top: auto !important
+
+	.card-slider
+		&__item
+			img
+				max-height: calc(100vh - 17rem)
+
+	.card-box
+		margin-bottom: 2rem
+		&:last-child
+			margin-bottom: 0
+
+	/* recommendations */
+	.together-cheaper-slider
+		&__symbol
+			width: 2.4rem
+			.icon
+				font-size: 2.4rem
+
+		.product-card
+			max-width: calc(25% - 1.8rem)
+			flex: 1 1 calc(25% - 1.8rem)
+
+	/* Reviews */
+	.reviews-wrap
+		&__left
+			margin-right: 5rem
+			width: 36rem
+
+	.reviews-box
+		padding: 3.5rem
+
++max($desktop)
+	/* Reviews */
+
+	.reviews-wrap
+		&__left
+			display: none
+		&__right
+			padding-top: 0
+
+	.reviews-box
+		&__title
+			font-size: 2rem
+		&__item
+			margin-bottom: 0
+			&--lines
+				padding-top: 0
+				border: none
+		&__buttons
+			margin-top: 2.5rem
+			padding-top: 2.5rem
+			border-top: 1px solid rgba(48, 48, 48, 0.15)
+
+	.reviews-box-swiper-pagination.swiper-pagination
+		position: static
+		display: flex
+		justify-content: center
+		margin-top: 2rem
+		margin-bottom: -2rem
+		.swiper-pagination-bullet
+			margin-left: .3rem
+			margin-right: 0.3rem
+
+	.reviews-container
+		display: flex
+		align-items: flex-start
+		&__left
+			width: 36rem
+			margin-right: 4rem
+			flex: none
+		&__right
+			flex: 1
+			min-width: 1px
+
+	.review-card
+		padding-bottom: 2rem
+		margin-bottom: 2rem
+		&__actions
+			justify-content: space-between
+			margin-top: 1rem
+		&__content
+			display: block
+
+	.review-grid__item
+		padding-bottom: 4rem
+
++min($ipad + 1)
+	.card-slider
+
+		.swiper-wrapper
+			display: block
+			transform: none
+			height: auto
+
+	.cb-accordion-item__body
+		display: block !important
+
++max($ipad)
+
+	.card-wrapper
+		display: block
+		margin: 0
+		&__middle
+			width: auto
+			padding: 0
+			margin-bottom: 0
+
+		&__right, &__left
+			width: 100%
+			margin-bottom: 5rem
+
+	.card-slider
+		margin: 0 auto 3rem
+		&__item
+
+			margin-bottom: 0
+			height: 54vh !important
+			display: flex
+			align-items: center
+			justify-content: center
+			img
+				max-height: 54vh
+
+		.swiper-pagination
+			display: block
+			position: static
+
+	.card-box
+		padding: 5rem
+		margin-bottom: 0
+
+		&__details
+			margin-top: 0
+			border: none
+		&__size
+			margin-top: 2.7rem
+		&__my-size
+			position: fixed
+			top: 0
+			bottom: 0
+			z-index: 225
+			right: 0
+			left: 0
+			width: auto
+		&--info
+			padding-bottom: 0
+		&--details
+			padding-top: 0
+			padding-bottom: 3rem
+
+	.cb-size
+
+		.label-tags__item
+			width: calc(12.5% - .6rem)
+
+		&__label-tags-table
+			order: 1
+			width: 100%
+			margin-top: 1.5rem
+
+	.cb-accordion-item
+		border-bottom: .1rem solid #dedede
+
+		&__head
+			position: relative
+			padding-top: 2rem
+			padding-bottom: 1.8rem
+			margin-top: -0.1rem
+			&._active
+
+				.cb-accordion-item__caret
+					transform: rotate(180deg)
+
+		&__title
+			font-size: 1.6rem
+
+		&__caret
+			display: block
+			position: absolute
+			top: 2.4rem
+			right: 0
+			.icon
+				font-size: 1.4rem
+				display: block
+
+		&__body
+			padding-bottom: 2.5rem
+
+		.tab-line__item
+			padding-bottom: 0
+
+	.my-size
+		overflow: hidden
+		overflow-y: auto
+		&__close
+			position: absolute
+			top: 3.4rem
+			cursor: pointer
+			right: 4rem
+			.icon
+				font-size: 4rem
+				display: block
+
+	.label-tags-table
+		background: transparent
+		padding: 0
+		&__box
+			background: #fff
+			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08)
+			border-radius: 2rem
+			padding: 1.5rem .5rem
+			padding-right: 4rem
+			position: relative
+		&__close
+
+			position: absolute
+			top: .6rem
+			right: .6rem
+			width: 3rem
+			height: 3rem
+			display: flex
+			align-items: center
+			justify-content: center
+			cursor: pointer
+			.icon
+				font-size: 3rem
+				color: rgba($color, 0.6)
+
+	/* recommendations */
+	.together-cheaper-slider
+		&__symbol
+			width: 2rem
+			.icon
+				top: calc(50% - 5.1rem)
+				font-size: 2rem
+
+		.product-card
+			max-width: calc(25% - 1.5rem)
+			flex: 1 1 calc(25% - 1.5rem)
+			&__body
+				min-height: 10.2rem
+		.swiper-button-next, .swiper-button-prev
+			top: calc(50% - 5.1rem)
+
+	/* Reviews */
+	.reviews-container
+		display: block
+
+		&__left
+			width: auto
+			margin-right: 0
+			margin-bottom: 2.5rem
+
+	.reviews__item
+		.review-card
+			margin-left: 3rem
+@media screen and (max-width: $ipad) and (min-width: $iphone + 1)
+	.settings-list
+
+		&__item
+			font-size: 1.4rem
+			padding-left: 3.6rem
+			margin-bottom: 2rem
+		&__icon
+			top: -.3rem
+			& > .icon
+				font-size: 2.4rem
+		&__status-check
+			bottom: .2rem
+	.settings-list__item,
+	.settings-list__item:nth-child(3),
+	.settings-list__item:nth-child(1)
+		width: 40%
+
++max($iphone)
+
+	.card-wrapper
+		&__right, &__left
+			width: auto
+			margin-left: -2rem
+			margin-right: -2rem
+			margin-bottom: 2rem
+	.card-slider
+		margin: 0 auto 1.3rem
+
+		&__item
+			height: 35vh !important
+			min-height: 25rem
+			img
+				max-height: 35vh !important
+
+	.cb-colors-slider
+		display: flex
+		align-items: center
+		.swiper-button-next, .swiper-button-prev
+			position: static
+			margin-top: 0
+		.swiper-button-prev
+			order: 0
+			margin-right: 0.5rem
+		.swiper-button-next
+			margin-left: 0.5rem
+		.swiper-container, .swiper-button-next
+			order: 1
+
+	.card-box
+		padding-left: 2rem
+		padding-right: 2rem
+		&__head
+			margin-bottom: 1rem
+		&__brand
+			font-size: 2rem
+			font-weight: 500
+			margin-bottom: 0.7rem
+		&__subtitle
+			font-size: 1.5rem
+
+		&__row
+			margin-top: 2.5rem
+
+		&__sticker
+			padding-left: 2.8rem
+
+		&__delivery
+			margin-top: 1rem
+
+		&__settings-list
+			margin-bottom: 0 !important
+
+		&--info
+			padding-top: 2.5rem
+		&--details
+			padding-bottom: 2.5rem
+
+		.price-old
+			font-size: 1.3rem
+			margin-top: 0.4rem
+			margin-bottom: 1rem
+
+		.price-value
+			font-size: 1.8rem
+			margin-bottom: 0
+
+	.cb-accordion-item
+		&__title
+			font-size: 1.5rem
+
+		&__caret
+
+			top: 2.4rem
+
+			.icon
+				font-size: 1.2rem
+
+	.cb-size
+		.label-tags__item
+			width: calc(20% - .6rem)
+
+	.settings-list
+
+		&__item
+			font-size: 1.3rem
+
+		&__status-check
+			bottom: .2rem
+	.settings-list__item
+		width: 55%
+	.settings-list__item:nth-child(3),
+	.settings-list__item:nth-child(1)
+		width: 45%
+
+	.card-details
+		&__img
+			margin-right: 1rem
+
+		&__title
+			font-size: 1.3rem
+			line-height: 1.6
+
+	.my-size
+		padding: 2.5rem 2rem
+		&__close
+			top: 2.3rem
+			right: 2rem
+			.icon
+				font-size: 3rem
+		&__title
+			font-size: 1.8rem
+
+	/* recommendations */
+	.recommendations
+		.tab-line__item
+			padding-bottom: 2.5rem
+	.together-cheaper-slider
+		&__symbol
+			display: none
+		.swiper-container
+			padding-left: 0
+			padding-right: 0
+
+		.swiper-slide
+			flex-wrap: wrap
+		.swiper-button-next, .swiper-button-prev
+			top: calc(50% + 5.7rem)
+		.product-card
+
+			flex: 1 1 33.33%
+			max-width: 33.33%
+			&:not(.product-card--gift)
+				.product-card__body, .product-card__img
+					padding-left: 0.5rem
+					padding-right: 0.5rem
+					.price-value
+						font-size: 1.6rem
+
+				.product-card__img
+					img
+						width: 100%
+						max-width: 14rem
+				.product-card__body
+					min-height: 1px
+			&--gift
+				max-width: 100%
+				flex: 1 1 100%
+				margin-top: 2rem
+				.product-card__body
+					min-height: 8.6rem
+				.product-card__brand
+					font-size: 1.1rem
+				.product-card__title
+					font-size: 1.4rem
+					max-height: 3.3rem
+				.price-old, .price-value, .gift-value
+					font-size: 2.6rem
+					display: inline-block
+
+	.page-card .main
+		padding-bottom: 0
+
+	/* Reviews */
+	.reviews-box
+		padding: 3rem
+		&__title
+			font-size: 1.5rem
+		&__item
+			&-title
+				font-size: 1.5rem
+
+	.pre-lines__th
+		font-size: 1.4rem
+
+	.reviews-box-swiper-pagination.swiper-pagination
+		margin-bottom: -1.5rem
+
+	.informer
+		padding: 3rem
+		text-align: center
+		&__wrap
+			display: block
+		&__icon
+			margin-right: 0
+			margin-bottom: 2rem
+			.icon
+				margin-left: auto
+				margin-right: auto
+				font-size: 8rem
+
+		&__text
+			font-size: 1.3rem
+
+		&__button
+			margin-top: 2rem
+
++max($iphone_sm)
+	/* recommendations */
+	.together-cheaper-slider
+
+		.product-card
+			&:not(.product-card--gift)
+				.product-card__img
+					img
+						max-width: 10rem
+	.card-box__subtitle
+		font-size: 1.3rem
+	.card-box__delivery
+		font-size: 1rem

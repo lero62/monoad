@@ -1,0 +1,939 @@
+.popup
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(#0b0b0b, 0.9)
+	top: 0
+	left: 0
+	z-index: 1
+	opacity: 0
+	pointer-events: none
+	visibility: hidden
+	overflow-y: auto
+	overflow-x: hidden
+	transition: all 0.2s ease-in-out
+
+	&._open
+		opacity: 1
+		visibility: visible
+		z-index: 1000
+		pointer-events: auto
+
+		.popup__content
+			transform: scale(1)
+			opacity: 1
+
+	&__body
+		width: 100%
+		min-height: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 3rem 1rem
+		transition: all 0.2s ease-in-out
+	&__scroll
+		margin-right: -2rem
+		padding-right: 2rem
+		margin-top: -3rem
+		padding-top: 2rem
+		overflow: hidden
+		overflow-y: auto
+
+	&__content
+		background-color: #fff
+		color: #000
+		width: 100%
+		max-width: 80rem
+		padding: 5rem 8rem
+		position: relative
+
+		opacity: 0
+		border-radius: 1.5rem
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+
+		&--image
+			width: auto
+			padding: 0
+
+			img
+				max-width: 100%
+				display: block
+
+	&__close
+		position: absolute
+		right: 2rem
+		top: 2rem
+		z-index: 3
+		cursor: pointer
+		color: #000
+		height: 3.4rem
+		width: 3.4rem
+		display: flex
+		align-items: center
+		justify-content: center
+		.icon
+			display: block
+			font-size: 3.4rem
+
+	&__head
+		text-align: center
+		margin-bottom: 3rem
+		p
+			font-size: 1.6rem
+			line-height: 1.4
+
+	&__top
+		display: flex
+		align-items: flex-start
+		border-bottom: .2rem solid #828282
+		padding-bottom: 2rem
+		margin-bottom: 3rem
+		padding-top: 0.2rem
+		flex: none
+
+		&-logo
+			flex: none
+			margin-right: 2rem
+		.popup__title
+			margin-bottom: 0
+			text-align: left
+
+	&__title
+		font-size: 2.9rem
+		font-family: $font2
+		font-weight: 500
+		margin-bottom: 1rem
+		line-height: 1.2
+		text-transform: uppercase
+
+	&__description
+		font-size: 1.5rem
+		font-weight: 400
+		margin-bottom: 2.4rem
+
+	&__foot-buttons
+		display: flex
+		justify-content: space-between
+		margin-top: 3rem
+
+	&__footer
+		flex: none
+		margin: 0 -8rem -5rem
+		background: #F5F5F5
+		box-shadow: 0px -10px 40px rgba(0, 0, 0, 0.15)
+		border-radius: 0 0 1.5rem 1.5rem
+		padding: 2.2rem 8rem
+		display: flex
+		align-items: center
+		&-title
+			font-size: 1.8rem
+			font-weight: 500
+			font-family: $font2
+			text-transform: uppercase
+			flex: 1
+			min-width: 1px
+		&-buttons
+			margin-left: 3rem
+			flex: none
+			display: flex
+			.btn
+				margin-left: 1rem
+				padding-left: 2.3rem
+				padding-right: 2.3rem
+	&__lang-list
+		margin-bottom: 3rem
+
+	&--sm .popup__content
+		max-width: 75rem !important
+
+	.order-cards-table__item
+		padding-top: 3.5rem
+		padding-bottom: 3.5rem
+		padding-right: 6.3rem
+	.order-cards-table__img
+		width: 21.5rem
+	.order-cards-table__title
+		font-size: 2rem
+		line-height: 1.4
+	.order-cards-table__price
+		font-size: 2.2rem
+		font-weight: 700
+
+#popup-cart2
+	.cards-table
+		margin-top: -2rem
+		&__content
+			padding-right: 4.5rem
+
+#popup-location
+	text-align: center
+
+	.popup__content
+		max-width: 43rem !important
+		padding: 5rem  !important
+
+.atc-sale
+	padding-left: 3rem
+	padding-right: 3rem
+	position: relative
+	.atc-sale-swiper-next,
+	.atc-sale-swiper-prev
+		.icon
+			font-size: 2.4rem
+
+.atc-item
+	text-align: center
+	+min($ipad + 1)
+		margin-top: 0 !important
+	&__img
+		height: 9.4rem
+		display: flex
+		align-items: flex-end
+		justify-content: center
+		margin-bottom: 1rem
+		img
+			flex: none
+			max-height: 100%
+
+	&__cat
+		line-height: 1.4
+		color: #525252
+		font-size: 1.2rem
+		margin-bottom: 0.5rem
+
+	&__title
+		line-height: 1.2
+		margin-bottom: 0.2rem
+		font-weight: 700
+		+ellipsis(2)
+
+	&__price
+		margin-left: -0.2rem
+		margin-right: -0.2rem
+		.price-old, .price-value
+			margin-left: 0.2rem
+			margin-right: 0.2rem
+			font-size: 1.6rem
+
+		.price-value
+			color: #f94141
+
+	&__button
+		margin-top: .7rem
+		.btn
+			height: 2.8rem
+			line-height: 2.6rem
+			font-size: 1rem
+			font-weight: 500
+			padding-left: 1.5rem
+			padding-right: 1.5rem
+
+/* Login ============== */
+/* ===================================================================================================================== */
+#popup-login
+	.popup__content
+		max-width: 73rem
+
+/* Table size ============== */
+/* ===================================================================================================================== */
+
+#popup-table-size2
+	.popup__content
+		max-width: 104rem
+
+.table-size
+	&__step
+		display: flex
+		align-items: flex-end
+		&-item
+
+			text-align: center
+			font-size: 1.3rem
+			margin-left: auto
+			margin-right: .6rem
+			img
+				margin-left: auto
+				margin-right: auto
+			&:last-child
+				margin-right: 0
+			&--lg
+				flex: none
+				margin-right: 2rem
+				margin-bottom: 1.2rem
+				margin-left: 0
+				img
+					margin-left: 0
+
+	&__step2
+		display: flex
+		align-items: flex-start
+		&-item
+			flex: none
+			margin-right: 3rem
+
+		&-content
+			flex: 1
+			min-width: 1px
+			font-size: 1.2rem
+			line-height: 1.6
+			.infobl
+				font-size: 1.2rem
+
+	&__play-link
+		margin-top: 1.8rem
+
+	&__wrap
+		display: flex
+		align-items: flex-start
+		margin-bottom: 2rem
+		&-item
+			order: -1
+			padding-top: 7rem
+			width: 33.33%
+			padding-right: 3rem
+			.step-list__title
+				margin-bottom: 1rem
+			p
+				font-size: 1.2rem
+		&-img
+
+			width: 33.33%
+
+			img
+				margin-left: auto
+				margin-right: auto
+		&-content
+			padding-top: 7rem
+			width: 33.33%
+			padding-left: 3rem
+			.step-list__title
+				margin-bottom: 1rem
+			p
+				font-size: 1.2rem
+
+		.step-list__item
+			flex: 1
+
+.step-list
+	+counter(li)
+	&__item
+		margin-bottom: 1.8rem
+		position: relative
+		padding-left: 4rem
+
+		&:last-child
+			margin-bottom: 0 !important
+
+	&__number, &__item:before
+		position: absolute
+		left: 0
+		top: .8rem
+		width: 3rem
+		height: 3rem
+		background-color: $color-warning
+		border-radius: 50%
+		color: $color
+		font-family: $font2
+		font-weight: 700
+		text-align: center
+		line-height: 3rem
+		font-size: 1.5rem
+
+	&__title
+		margin-bottom: 1.7rem
+		padding-top: 1.3rem
+		font-size: 1.6rem
+		font-weight: 500
+		font-family: $font2
+		text-transform: uppercase
+	&__body
+		margin-top: 2.5rem
+
+/* Contacts  ============== */
+/* ===================================================================================================================== */
+
+.contacts-item
+	margin-bottom: 1.6rem
+	font-size: 1.5rem
+	line-height: 1.65
+	&__title
+		text-transform: uppercase
+		font-size: 2rem
+		font-family: $font2
+		font-weight: 500
+		margin-bottom: 1.1rem
+		line-height: 1.2
+	p
+		margin-bottom: 1.1rem
+.contacts-list
+	list-style: none
+	&__item
+		margin-bottom: 1rem
+		line-height: 1.4
+		&:last-child
+			margin-bottom: 0
+	&__icon
+		position: absolute
+		left: 0
+		top: -.4rem
+		width: 2.4rem
+		height: 2.4rem
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		background: $color-warning
+		.icon
+			color: $color
+			font-size: 1.4rem
+			display: block
+			&-telegram
+				left: -.1rem
+			&-vk
+				font-size: 1.6rem
+
+			&-tel
+				left: .1rem
+			&-messenger2
+				font-size: 1.6rem
+
+	&__link
+		display: inline-block
+		position: relative
+		padding-left: 3.6rem
+		font-size: 1.4rem
+		font-weight: 500
+
+		@media (any-hover: hover)
+			&:hover
+
+				color: #888
+
+/* Add product ============== */
+/* ===================================================================================================================== */
+
+#popup-add-product
+	overflow: hidden
+	.popup__content
+		max-width: 114.7rem
+		max-height: 100%
+		display: flex
+		flex-direction: column
+	.popup__top
+		box-shadow: 0 1rem 2rem #fff
+		position: relative
+		z-index: 2
+	.product-card
+		padding-top: 0
+		&__img
+			img
+				max-height: 25.5rem
+
+		@media (any-hover: hover)
+			&:hover
+				background: transparent
+
+	+min($ipad + 1)
+		.sticker
+			width: 4.6rem
+			height: 4.6rem
+			&--check
+				.icon
+					font-size: 2.2rem
+
+.add-product-scroll
+	max-height: calc(100vh - 14rem - 16rem)
+	padding-bottom: 1rem
+
+/* edit size ============== */
+/* ===================================================================================================================== */
+
+#popup-edit-size
+	.popup__content
+		max-width: 60rem
+
+.edit-size
+	.selectbox
+		margin-bottom: 1rem
+	&__footer
+		display: flex
+		justify-content: space-between
+		margin-top: 3rem
+		padding-top: 3rem
+		border-top: .1rem solid #E0E0E0
+		.btn
+			width: 16.6rem
+			padding-left: 1rem
+			padding-right: 1rem
+
+/* Review Card */
+/* --------------------------------------------------------------- */	
+
+#popup-review-card,
+#popup-question-card
+	.popup__content
+		max-width: 76.8rem
+#popup-thanks-review
+	.popup__content
+		max-width: 73rem
+#popup-review-card-visible
+	.popup__content
+		max-width: 100rem
+.rv-card
+	display: flex
+	align-items: center
+	&__img
+		flex: none
+		width: 8rem
+		margin-right: 1.5rem
+	&__content
+		flex: 1
+		min-width: 1px
+	&__brand
+		text-transform: uppercase
+		color: #636363
+		font-size: 1.1rem
+		margin-bottom: 0.3rem
+	&__title
+		color: #000
+		font-size: 1.8rem
+		font-weight: 500
+		a
+			color: inherit
+
+.rv-fieldset
+	margin-top: 3.2rem
+	padding-top: 3.2rem
+
+	border-top: .1rem solid rgba(196, 196, 196, 0.4)
+	&__buttons
+		display: flex
+		justify-content: space-between
+		.btn
+			width: 25.7rem
+
+	&__text
+		font-size: 1.3rem
+		color: #515151
+		margin-top: 3rem
+		line-height: 1.65
+		text-align: center
+.rv-review-card
+	padding: 2.2rem 2.8rem
+	background: #FFFFFF
+	box-shadow: 0px 1.4rem 4rem rgba(0, 0, 0, 0.12)
+	border-radius: 2.5rem
+
+	&__head
+		display: flex
+		align-items: flex-start
+
+	&__avatar
+		position: relative
+		flex: none
+		margin-right: 1.5rem
+		img
+			width: 4.8rem
+			height: 4.8rem
+			border-radius: 50%
+			object-fit: cover
+
+	&__status
+		position: absolute
+		top: -.3rem
+		right: -1rem
+		display: none
+
+	&__info
+		flex: 1
+		min-width: 1px
+		align-self: center
+
+	&__name
+		display: inline-block
+		vertical-align: middle
+		white-space: nowrap
+		color: #000
+		font-size: 1.5rem
+		font-weight: 500
+	&__date
+		font-size: 1.5rem
+		font-weight: 400
+		color: #8C8C8C
+		display: inline-block
+		vertical-align: middle
+		white-space: nowrap
+
+	&__user-status
+		color: #B0B0B0
+		font-size: 1.3rem
+		font-weight: 500
+
+	&__rating
+		margin-top: 0.5rem
+
+	&__message
+		color: #636363
+		font-size: 1.3rem
+		margin-top: 1rem
+
+	&--activated
+		.review-card__user-status
+			color: #609F44
+
+		.review-card__status
+			display: inline-flex
+
+	&--admin
+		.review-card__user-status
+			color: #E58D3C
+
+		.review-card__status
+			display: inline-flex
+			background: #FBC644
+
+.rv-user
+
+	&__name
+		margin-bottom: 2rem
+
+.wrap-wi
+	display: flex
+	align-items: center
+	&__content
+		flex: 1
+		h2
+			font-size: 2.9rem
+			font-family: $font2
+			font-weight: 500
+			margin-bottom: 1rem
+			line-height: 1.2
+			text-transform: uppercase
+	&__icon
+		flex: none
+		order: 1
+		margin-left: 7rem
+		.icon
+			font-size: 14rem
+			color: #D8D8D8
+			display: block
+
+.wrap-wsl
+	display: flex
+	align-items: flex-start
+	&__content
+		flex: 1
+	&__img
+		flex: none
+		margin-right: 6rem
+		width: 47rem
+		img
+			width: 100%
+
+	.review-card
+		padding-bottom: 0
+		margin-bottom: 0
+		border: none
+		&__content
+			display: block
+		&__actions
+			margin-top: 1rem
+			justify-content: space-between
+
+.wsl-slider
+	position: relative
+	padding-left: 4.5rem
+	padding-right: 4.5rem
+	.swiper-pagination
+		display: none
+
+/* Media */
+/* --------------------------------------------------------------- */
+
++max($ipad)
+	.popup
+		&__content
+			padding: 4rem 4.5rem
+		&__title
+			font-size: 2.4rem
+		&__top
+			.popup__title
+				padding-top: 0.3rem
+
+		&__footer
+			margin: 0 -4.5rem -4rem
+			display: block
+			padding: 1.8rem 4.5rem
+			&-title
+				margin-bottom: 1rem
+			&-buttons
+				margin-left: -1rem
+
+	#popup-table-size , #popup-contacts, #popup-table-size2
+		.popup__content
+			max-width: 69rem
+
+	.table-size__wrap
+		&-content
+			width: 50%
+			padding-top: 2rem
+		&-img
+			width: 50%
+
+	/* reviews card */
+	.wrap-wsl
+		&__img
+
+			width: 38rem
+
+	.wsl-slider
+		padding-left: 0
+		padding-right: 0
+		.swiper-button-prev
+			left: -3.5rem
+		.swiper-button-next
+			right: -3.5rem
++max($iphone)
+	.popup
+		display: none
+
+		&__body
+			padding: 0
+			align-items: stretch
+
+		&__content
+			border-radius: 0
+			padding: 2rem
+			max-width: none !important
+			transform: none !important
+
+		&__title
+			font-size: 1.8rem
+		&__close
+			top: 1.9rem
+			right: 1.2rem
+		&__top
+			padding-bottom: 1.3rem
+			padding-right: 3rem
+
+			&-logo
+				width: 4rem
+				margin-right: 1.2rem
+			.popup__title
+				padding-top: 0.3rem
+		&__scroll
+			flex: 1 1 auto
+			min-height: 1px
+			margin-right: -1rem
+			padding-right: 1rem
+
+		&__footer
+
+			padding: 1.5rem 2rem
+			margin: 0 -2rem -2rem
+			border-radius: 0
+			box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.15)
+			&-title
+				font-size: 1.5rem
+
+		&--mst
+			.popup__top
+				margin-top: -2rem
+				margin-left: -2rem
+				margin-right: -2rem
+				background: #212121
+				padding-top: 1.4rem
+				padding-bottom: 1.6rem
+				padding-left: 2rem
+				padding-right: 6rem
+				border: none
+				margin-bottom: 2rem
+				&-logo
+					display: none
+			.popup__title
+				color: #B7B7B7
+				+text-overflow
+
+			.popup__close
+				top: 1rem
+				right: 1.1rem
+				color: #B7B7B7
+		&._open
+			display: block
+
+	#popup-cart2
+		.total-box
+			padding-left: 10.5rem
+
+	#popup-add-product
+		.popup__body
+			height: 100%
+		.popup__content
+			max-height: none
+			height: 100%
+	.add-product-scroll
+		max-height: none
+
+	.step-list
+		&__item
+			padding-left: 3.4rem
+			margin-bottom: 3rem
+		&__number, &__item:before
+
+			top: -.2rem
+			width: 2.4rem
+			height: 2.4rem
+			line-height: 2.4rem
+			font-size: 1.3rem
+		&__title
+			margin-bottom: 1rem
+			padding-top: 0
+
+		&__table
+			margin-left: -5.4rem
+			margin-right: -2rem
+			margin-top: 2rem
+
+		p
+			line-height: 1.5
+			font-size: 1.3rem
+
+	.table-size
+		&__step
+			flex-wrap: wrap
+			margin-left: -0.5rem
+			margin-right: -0.5rem
+			&-item
+				width: calc(33.33% - 1rem)
+				max-width: 12rem
+				margin-left: 0.5rem
+				margin-right: 0.5rem
+				&--lg
+					width: 100%
+					max-width: none
+					margin: 0 0 1rem
+		&__step2
+			display: block
+			&-item
+				width: 100%
+				margin-bottom: 1rem
+
+	.contacts-item
+		margin-bottom: 2.5rem
+		line-height: 1.5
+		font-size: 1.3rem
+		&__title
+			font-size: 1.6rem
+		p
+			margin-bottom: 2rem
+
+	.edit-size
+		&__footer
+			border: none
+			padding-top: 0
+			.btn
+				width: 14.2rem
+
+	/* Reviews */
+	.rv-fieldset
+		padding-top: 2.5rem
+		margin-top: 2.5rem
+		&__text
+			margin-top: 2.5rem
+
+	.rv-card__title
+		font-size: 1.5rem
+
+	.rv-user
+		display: flex
+		&__avatar
+			flex: none
+			margin-left: 2rem
+			padding-top: .5rem
+		&__name
+			flex: 1
+			margin-bottom: 0
+
+	.rv-review-card
+		margin-bottom: 1.5rem
+
+	.rv-fieldset__buttons
+		.btn
+			width: 13rem
+
+	.wrap-wi
+		display: block
+		&__icon
+			margin: 0 0 2.5rem 0
+			width: auto
+			.icon
+				margin-left: auto
+				margin-right: auto
+
+		&__content
+			text-align: center
+
+			h2
+				font-size: 2rem
+				margin-bottom: 2rem
+
+	.wrap-wsl
+		display: block
+		&__img
+			width: auto
+			margin-left: -2rem
+			margin-right: -2rem
+			margin-top: -2rem
+			img
+				width: auto
+				margin-left: auto
+				margin-right: auto
+
+	.wsl-slider
+		padding-left: 0
+		padding-right: 0
+		margin-bottom: 5rem
+		.swiper-button-prev,
+		.swiper-button-next
+			display: none
+		.swiper-pagination
+			display: block
+			bottom: -3rem
+			width: 100%
+		.swiper-pagination-bullet
+			margin-left: 0.3rem
+			margin-right: 0.3rem
+
++max($iphone_sm)
+
+	.table-size__wrap
+		display: block
+		&-img
+			width: auto
+			margin-bottom: 2rem
+			max-width: 25rem
+			img
+				margin-left: 0
+		&-content
+			width: auto
+			padding-left: 0
+			padding-top: 0
+
+	.popup__foot-buttons .btn
+		padding-left: 1.4rem
+		padding-right: 1.4rem
+
+	#popup-cart2
+		.total-box
+			padding-left: 5.5rem
+
+	.atc-sale
+		padding-left: 1.5rem
+		padding-right: 1.5rem
+
++max($iphone_xs)
+
+	.popup__content
+		padding-left: 1.5rem
+		padding-right: 1.5rem

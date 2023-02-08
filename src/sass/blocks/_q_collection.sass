@@ -1,0 +1,846 @@
+
+.collection-banner
+	margin-bottom: 2rem
+	position: relative
+	height: 32rem
+	display: flex
+	&:after
+		content: ''
+		+coverdiv
+		background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.83) 100%)
+
+	&__bg
+		+coverdiv
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: transform 0.2s linear
+	&__body
+		position: relative
+		z-index: 2
+		padding: 2rem 7rem 5rem 7rem
+		display: flex
+		flex-direction: column
+		width: 100%
+	&__head
+		margin-top: auto
+
+		h2
+			font-size: 3.5rem
+		h1
+			font-size: 5.2rem
+		+min($ipad + 1)
+			&--row
+				display: flex
+				align-items: flex-start
+				flex-wrap: wrap
+				.collection-banner__icon
+					margin-bottom: 0
+					margin-left: 3rem
+					order: 1
+					margin-top: 1rem
+
+	&__content
+		flex: 0 1 auto
+
+	&__icon
+		background: #fff
+		border-radius: 50%
+		width: 10.6rem
+		height: 10.6rem
+		flex: none
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 2.5rem
+		.icon
+			font-size: 7.8rem
+
+	&__title
+		text-transform: uppercase
+		color: #fff
+		font-weight: 500
+		font-family: $font2
+		margin-bottom: 0
+
+	&__button
+		margin-top: 2rem
+		width: 100%
+		order: 2
+		.btn
+			min-width: 23.1rem
+
+	@media (any-hover: hover)
+		&:hover
+			.collection-banner__bg
+				img
+					transform: scale(1.03)
+.lines-map
+	&__item
+		background: #F4F4F4
+		padding-top: 1.4rem
+		padding-bottom: 1.4rem
+		height: 100%
+
+	&__head
+		padding: 2rem 6rem
+		margin-bottom: 1rem
+		flex: none
+
+	&__title
+		text-transform: uppercase
+		font-size: 2.4rem
+		font-family: $font2
+		font-weight: 500
+		line-height: 1.2
+		white-space: nowrap
+
+	&__body
+		padding: .1rem 6rem 2rem
+		flex: 1 1 auto
+	+min($desktop_lg)
+		&__col-right
+			width: 40rem !important
+		&__col-right-lg
+			width: 44.2rem !important
+
+.lm-item
+	background: #FBFBFB
+	height: 100%
+	&__head
+		padding: 1.5rem 3.5rem
+		display: flex
+		align-items: center
+	&__title
+		text-transform: uppercase
+		font-size: 1.8rem
+		font-family: $font2
+		font-weight: 500
+		line-height: 1.8
+		.t-line
+			padding-bottom: 0
+	&__body
+		padding: .1rem 3.5rem 2rem
+
+	&__heading
+		text-transform: uppercase
+		font-size: 1.5rem
+		font-family: $font2
+		font-weight: 500
+		line-height: 1.2
+		margin-bottom: 1.2rem
+
+	&__list
+		list-style-type: none
+
+		li
+			margin-bottom: .7rem
+			a
+				font-size: 1.4rem
+				&:hover
+					text-decoration: underline
+
+		&.colspan2, &.colspan3, &.colspan4, &.colspan5
+			columns: 2
+			column-gap: 2rem
+			li
+				display: inline-block
+				width: 100%
+		&.colspan3
+			columns: 3
+		&.colspan4
+			columns: 4
+		&.colspan5
+			columns: 5
+
+/* Section box */	
+.section-box
+	background: #F4F4F4
+	padding: 5.2rem 8rem
+	&__top
+		margin-top: -5.2rem
+		background: $color-warning
+		margin-left: -8rem
+		margin-right: -8rem
+		padding: 1.8rem 8rem
+		margin-bottom: 4.2rem
+		.section-box__title
+			font-size: 4rem
+			line-height: 1.25
+			margin-bottom: 0
+	&__title
+		font-size: 2.9rem
+		line-height: 1.4
+		font-weight: 500
+		font-family: $font2
+		text-transform: uppercase
+		margin-bottom: 1.7rem
+		margin-top: 0
+		.badge
+			vertical-align: top
+		&--sm
+			font-size: 2rem
+			line-height: 1.5
+
+	&__picture
+		margin-left: -8rem
+		margin-right: -8rem
+		display: block
+		img
+			width: 100%
+
+.chart
+
+	&__list
+		list-style-type: none
+		li
+			font-size: 1.6rem
+			font-weight: 400
+			line-height: 1.6
+			margin-bottom: .8rem
+			color: $color-secondary
+			position: relative
+			padding-left: 3rem
+			&:last-child
+				margin-bottom: 0
+
+	&__color
+		position: absolute
+		top: .4rem
+		left: 0
+		width: 1.6rem
+		height: 1.6rem
+		border-radius: 50%
+
+/* arhive */
+.arhive-col
+	&-images
+		min-width: 1px
+
++min($desktop_lg + 1)
+	.arhive-col-content
+		width: 35rem !important
+
+.arhive-swiper
+	position: relative
+	padding: 0 3rem
+
+	.swiper-container
+		position: static
+	.swiper-button-prev
+		left: -4rem
+		.icon
+			font-size: 2.8rem
+	.swiper-button-next
+		right: -4rem
+		.icon
+			font-size: 2.8rem
+
+.arhive-item
+	position: relative
+	img
+		width: 100%
+	&__wrap
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 70%
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		padding: 0 4rem 2.3rem 4rem
+		z-index: 1
+		background: linear-gradient(180deg, rgba(170, 170, 170, 0) 0%, #000000 100%)
+	&__title
+		font-size: 2.2rem
+		font-weight: 500
+		text-transform: uppercase
+		color: #fff
+		font-family: $font2
+	&__labels
+		margin-right: 2.6rem
+		&:last-child
+			margin-right: 0
+		&-title
+			font-size: 1.3rem
+			color: rgba(255, 255, 255, 0.6)
+		&-text
+			color: #fff
+			font-size: 1.3rem
+.t-line
+
+	border-bottom: .4rem solid $color-warning
+	padding-bottom: 0.2rem
+
+/* Subcollection */
+/* --------------------------------------------------------------- */
+.etalon-card
+	display: block
+	text-align: center
+	max-width: 26.1rem
+	margin-left: auto
+	margin-right: auto
+	&__img
+		img
+			margin-left: auto
+			margin-right: auto
+	&__badge
+		display: inline-block
+		vertical-align: middle
+		font-size: 1.8rem
+		font-weight: 700
+		background: $color-warning
+		line-height: 2.5rem
+		border-radius: .5rem
+		padding: 0 .5rem
+		text-transform: uppercase
+
+	&__title
+		font-size: 1.6rem
+		font-weight: 500
+
+.subcollections
+	position: relative
+	display: flex
+	background: #fff
+	margin-bottom: 3rem
+	&:last-child
+		margin-bottom: 0
+	&__img
+		max-width: 49.5rem
+		min-width: 36.8rem
+		width: 39%
+		flex: none
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: transform 0.2s linear
+
+	&__content
+		flex: 1
+		min-width: 1px
+		padding: 3.5rem 4rem 3rem 6rem
+		display: flex
+		flex-direction: column
+
+	&__title
+		font-family: $font2
+		font-size: 2rem
+		font-weight: 500
+		text-transform: uppercase
+		margin-bottom: 1.8rem
+
+	&__text
+		line-height: 1.8
+		font-size: 1.6rem
+		margin-bottom: 2rem
+		+ellipsis(6)
+
+	&__button
+		margin-top: auto
+
+	@media (any-hover: hover)
+		&:hover
+			.subcollections__img
+				img
+					transform: scale(1.05)
+
+.lines-grid
+	display: grid
+	gap: 3rem
+	grid-template-columns: repeat(5, 1fr)
+
+.lines-item
+	display: flex
+	flex-direction: column
+	height: 100%
+	background: #fff
+	min-width: 1px
+
+	&__img
+		flex: 1
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: transform 0.2s linear
+	&__body
+		padding: 1rem 1.7rem
+		flex: none
+	&__title
+		transition: color 0.2s linear
+		font-size: 1.8rem
+		font-weight: 500
+		+text-overflow
+		text-transform: uppercase
+		font-family: $font2
+
+	&--lg
+		grid-column: span 2
+		grid-row: span 2
+		.lines-item
+			&__body
+				padding-left: 3rem
+				padding-right: 3rem
+
+	@media (any-hover: hover)
+		&:hover
+			.lines-item
+				&__img img
+					transform: scale(1.05)
+				&__title
+					color: $color-warning
+
+.collections-swiper, .collections-one-swiper
+	padding-left: 2.3rem
+	padding-right: 2.3rem
+
+	position: relative
+
+	.swiper-slide
+		height: auto !important
+	.swiper-button-prev
+		left: -4rem
+
+		.icon
+			font-size: 2.8rem
+	.swiper-button-next
+		right: -4rem
+		.icon
+			font-size: 2.8rem
+
+.collections-one-swiper
+	width: 32rem
+	margin-left: auto
+	margin-right: auto
+
+.collections-card
+	display: flex
+	flex-direction: column
+	height: 100%
+	position: relative
+	&__img
+		background: #fff
+		padding: 2.6rem 1.5rem
+		flex: none
+		overflow: hidden
+		img
+			margin-left: auto
+			margin-right: auto
+			object-fit: cover
+			transition: transform 0.2s linear
+	&__body
+		background: linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 100%)
+		flex: 1
+		display: flex
+		flex-direction: column
+		padding: 2.2rem 3rem
+	&__title
+		font-size: 1.6rem
+		font-weight: 500
+		margin-bottom: 1rem
+		flex: 1
+		transition: color 0.2s linear
+		+ellipsis(2)
+
+	.btn-favorites
+		position: absolute
+		top: 1.5rem
+		right: 1.5rem
+		z-index: 3
+
+	@media (any-hover: hover)
+		&:hover
+			.collections-card__title
+				color: $color-warning
+			.collections-card__img
+				img
+					transform: scale(1.04)
+
+.cc-details
+	&__item
+		margin-bottom: .7rem
+		&:last-child
+			margin-bottom: 0
+	&__label
+		font-size: 1.3rem
+		color: #848484
+	&__labeled
+		font-size: 1.3rem
+
+/* Materials */
+/* --------------------------------------------------------------- */
+.temperature-informer
+	background: #FFF
+	padding: 2.5rem 4rem
+	&__icon
+		flex: none
+		margin-right: 2rem
+		width: 8.4rem
+		height: 8.4rem
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		background: $color-warning
+		svg
+			max-width: 55%
+	&__content
+		font-size: 1.6rem
+		flex: 1
+		min-width: 1px
+/* Media */
+/* --------------------------------------------------------------- */
+
++max($desktop_xl)
+	.arhive-swiper, .collections-swiper, .collections-one-swiper
+		padding-left: 0
+		padding-right: 0
+		.swiper-button-prev
+			left: -5.5rem
+
+		.swiper-button-next
+			right: -5.5rem
+
++max($desktop_lg)
+	.arhive-swiper, .collections-swiper, .collections-one-swiper
+		.swiper-button-prev
+			left: -4.5rem
+
+		.swiper-button-next
+			right: -4.5rem
+
+	.collections-one-swiper
+		width: auto
+	.collection-banner
+		&__body
+			padding: 3rem 6rem
+
+	.lm-item
+		&__list
+			&.colspan5, &.colspan4
+				columns: 3
+
+	.section-box
+		padding: 4rem 6rem
+		&__top
+			margin-top: -4rem
+			margin-left: -6rem
+			margin-right: -6rem
+			padding-left: 6rem
+			padding-right: 6rem
+			margin-bottom: 4rem
+			.section-box__title
+				font-size: 3rem
+		&__picture
+			margin-left: -6rem
+			margin-right: -6rem
+	.lines-grid
+		gap: 2rem
+		grid-template-columns: repeat(4, 1fr)
+
+	.subcollections
+		&__img
+			min-width: 27rem
+		&__content
+			padding-top: 2.5rem
+			padding-bottom: 2.5rem
+			padding-left: 4rem
+			padding-right: 3rem
+		&__text
+			-webkit-line-clamp: 4
+
++max($laptop)
+	.collection-banner
+		height: 26rem
+		&__body
+			padding-left: 4rem
+			padding-right: 4rem
+		&__head
+			h2
+				font-size: 2.9rem
+			h1
+				font-size: 4rem
+
+		&__icon
+			width: 7.8rem
+			height: 7.8rem
+
+			margin-bottom: 1.5rem
+			.icon
+				font-size: 6rem
+
+	.section-box
+		padding: 4rem
+		&__top
+
+			margin-left: -4rem
+			margin-right: -4rem
+			padding-left: 4rem
+			padding-right: 4rem
+		&__picture
+			margin-left: -4rem
+			margin-right: -4rem
+
+	.lines-grid
+		grid-template-columns: repeat(3, 1fr)
+
+	.subcollections
+		&__img
+			min-width: 24rem
+		&__content
+			padding-top: 2rem
+			padding-bottom: 2rem
+			padding-left: 3rem
+			padding-right: 2rem
+		&__text
+			font-size: 1.5rem
+			line-height: 1.73
+
+	.arhive-item
+		&__wrap
+			padding-left: 2.8rem
+			padding-right: 2.8rem
+		&__title
+			font-size: 1.9rem
+		&__labels
+			margin-right: 2rem
+
+	.t-line
+		border-width: .3rem
+
+	.etalon-card
+		&__badge
+			font-size: 1.7rem
+		&__title
+			font-size: 1.5rem
+
++max($ipad)
+
+	.collection-banner
+		height: 25rem
+
+		&__body
+			padding: 2rem 4rem 3rem 4rem
+		&__head
+			h2, h1
+				font-size: 2.6rem
+
+	.lines-map
+		&__item
+			padding: 0
+		&__head
+			padding: 1.7rem 3rem
+			margin-bottom: 0
+		&__title
+			font-size: 1.8rem
+		&__body
+			padding-top: .5rem
+			padding-left: 3rem
+			padding-right: 3rem
+
+	.lm-item
+		&__head
+			padding-left: 2.5rem
+			padding-right: 2.5rem
+		&__title
+			font-size: 1.6rem
+
+		&__body
+			padding-left: 2.5rem
+			padding-right: 2.5rem
+
+		&__heading
+			font-size: 1.4rem
+			margin-bottom: .9rem
+		&__list
+			li
+				margin-bottom: 0.4rem
+				a
+					font-size: 1.3rem
+
+	.section-box
+		&__top
+			.section-box__title
+				font-size: 2.6rem
+		&__title
+			font-size: 2.6rem
+
++max($iphone)
+
+	.collection-banner
+		text-align: center
+		margin-bottom: 1rem
+		&__body
+			padding: 3rem 2rem
+
+		&__head
+			h2, h1
+				font-size: 2rem
+
+		&__icon
+			margin-left: auto
+			margin-right: auto
+
+		&__button
+			margin-top: 1.7rem
+			.btn
+				height: 3.8rem
+				min-width: 20rem
+
+	.lines-map
+		&__head
+			padding-left: 2rem
+			padding-right: 2rem
+		&__body
+			padding-left: 2rem
+			padding-right: 2rem
+
+	.lm-item
+		&__list
+			&.colspan3, &.colspan5, &.colspan4
+				columns: 2
+
+	.section-box
+		padding: 2.3rem 2.8rem 2.5rem
+		&__top
+			margin-top: -2.3rem
+			margin-left: -2.8rem
+			margin-right: -2.8rem
+			padding-left: 2.8rem
+			padding-right: 2.8rem
+			margin-bottom: 2.3rem
+			padding-top: 1.4rem
+			padding-bottom: 1.4rem
+			.section-box__title
+				font-size: 1.7rem
+		&__title
+			font-size: 1.7rem
+			margin-bottom: 1rem
+		&__picture
+			margin-left: -2.8rem
+			margin-right: -2.8rem
+	.lines-grid
+		gap: 1rem
+		grid-template-columns: repeat(2, 1fr)
+
+	.subcollections
+		display: block
+		margin-bottom: 1rem
+		&__img
+			max-width: none
+			width: 100%
+		&__content
+			padding: 1.5rem 2rem 2.5rem
+		&__title
+			font-size: 1.5rem
+			margin-bottom: 1.5rem
+		&__text
+
+			display: block
+			margin-bottom: 1rem
+		&__button
+			text-align: center
+			.btn
+				height: 3.8rem
+
+	.arhive-col-content
+		text-align: center
+
+	.arhive-swiper
+		max-width: 39.5rem
+		margin-left: auto
+		margin-right: auto
+	.arhive-item
+
+		&__title
+			font-size: 1.7rem
+
+	.etalon-card
+		&__badge
+			font-size: 1.4rem
+			line-height: 1.9rem
+		&__title
+			font-size: 1.1rem
+			line-height: 1.2
+
+	.lines-item
+		&__body
+			padding-left: 1.5rem
+			padding-right: 1.5rem
+		&__title
+			font-size: 1.5rem
+		&--lg
+			.lines-item__body
+				padding-left: 1.5rem
+				padding-right: 1.5rem
+
+	.collections-card__body
+		padding-left: 2rem
+		padding-right: 2rem
+
+	/* Materials */
+	.temperature-informer
+		padding: 2rem
+		&__icon
+			width: 4rem
+			height: 4rem
+			margin-right: 1.5rem
+		&__content
+			font-size: 1.4rem
+
++max($iphone_sm)
+	.chart
+
+		&__img
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 2.5rem
+		&__list
+			max-width: 22rem
+			margin-left: auto
+			margin-right: auto
+			li
+				font-size: 1.5rem
+				padding-left: 2.5rem
+				line-height: 1.4
+				margin-bottom: 0.4rem
+		&__color
+			top: .2rem
+
++max($iphone_xs)
+	.lm-item
+		&__head, &__body
+			padding-left: 2rem
+			padding-right: 2rem
+		&__list
+			&.colspan2, &.colspan3, &.colspan5, &.colspan4
+				columns: auto
+				li
+					display: block
+
+	.section-box
+		padding-left: 2rem
+		padding-right: 2rem
+		&__top
+			margin-left: -2rem
+			margin-right: -2rem
+		&__picture
+			margin-left: -2rem
+			margin-right: -2rem
+
+	.arhive-item__wrap
+		padding-left: 2rem
+		padding-right: 2rem
+	/* Materials */
+	.temperature-informer
+		padding: 1.5rem
+
+		&__content
+			font-size: 1.2rem

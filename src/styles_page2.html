@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "styles_page"
+})
+
+<body class="loaded">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Натуральная кожа</a></li>
+												<li class="sbox__list-item"><a href="#">Эко материал</a></li>
+												<li class="sbox__list-item"><a href="#">Полиуретановая кожа</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Подошва</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Основные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Дополнительные подошвы</a></li>
+												<li class="sbox__list-item"><a href="#">Сезонные подошвы</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item  sbox__list-drop _active">
+											<span>Фасон</span>
+											<ul class="sbox__list sbox__dropdown" style="display: block;">
+												<li class="sbox__list-item"><a href="#">Основные фасоны</a></li>
+												<li class="sbox__list-item"><a href="#">Дополнительные фасоны</a></li>
+											</ul>
+
+										</li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body mb-lg-4 mb-3" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">фасон</a>
+								</li>
+								<li class="breadcrumbs__item"> дополнительные фасоны</li>
+							</ul>
+
+						</div>
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-10',
+						imgMobile: 'img/collection/collection-banner-img-iphone-10',
+						icon: '',
+						title: 'дополнительные <br class="hidden-ipad">фасоны',
+						titleH1: true,
+						btn: 'все товары основных фасонов',
+						})
+
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title">О дополнительные фасонах dr.martens</div>
+
+							<div class="row g-xxl-6 g-xl-3 g-2 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+
+									<p>Натуральная кожа используется человечеством с давних времен. Несмотря на изобретение большого количества синтетических материалов, именно натуральный материал остается на вершине популярности благодаря обилию преимуществ. Сегодня существует множество видов кожи, а новые методы ее обработки позволяют изделиям быть более износостойкими и привлекательными. Давайте подробнее рассмотрим основные типы и особенности натурального материала, а также при помощи каких методов он производится.
+									</p>
+
+									<p>Дубление — это наиболее распространенный вид выделки натуральной кожи, позволяющий обработать сырой материал, сделать его пригодным к использованию и устранить его негативные свойства. Такая процедура придает изделию прочность, эластичность, а также долговечность. Сейчас существуют как натуральные способы дубления, так и химические, позволяющие добиться не менее достойных результатов.</p>
+
+
+								</div>
+								<div class="col-xxl-auto">
+									<img src="img/styles/img-1.png" alt="">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-5 text-center text-lg-start">Визуальная схема дополнительных фасонов</div>
+							<div class="scheme">
+								<div class="scheme__head ac-navitem-lg _ac__navitem">
+									<div class="scheme__title">Подборка сандалий</div>
+								</div>
+								<div class="scheme__body ac-item-lg _ac__item">
+									<div class="row row-cols-xxxl-6 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-3 row-cols-sm-2 row-cols-1  g-1">
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-1.png',
+											badge: 'Polley',
+											title: 'Сандалии на пряжке',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-2.png',
+											badge: '8065',
+											title: 'Сандалии на пряжке',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-3.png',
+											badge: 'Shore sandals',
+											title: 'Классические сандалии на плоской подошве Shore',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-4.png',
+											badge: 'Ziggy sandals',
+											title: 'Сандалии на подошве Ziggy',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-5.png',
+											badge: 'Lorsan sandals',
+											title: 'Сандалии на подошве Lorsan',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-6.png',
+											badge: 'Tract sandals',
+											title: 'Сандалии на подошве Tract',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-7.png',
+											badge: 'Neoteric sandals',
+											title: 'Сандалии на подошве Neoteric',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="scheme mt-lg-7 mt-2">
+								<div class="scheme__head ac-navitem-lg _ac__navitem">
+									<div class="scheme__title">Подборка моделей из линейки Tract</div>
+								</div>
+								<div class="scheme__body ac-item-lg _ac__item">
+									<div class="row row-cols-xxxl-6 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-3 row-cols-sm-2 row-cols-1  g-1">
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-8.png',
+											badge: 'Combs',
+											title: 'Облегченные ботинки со шнуровкой на 8-люверсов',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-9.png',
+											badge: 'Combs tech',
+											title: 'Облегченные ботинки со шнуровкой на 8-люверсов и доп. застежкой с липучкой',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-10.png',
+											badge: 'Bonny',
+											title: 'Облегченные полуботинки со шнуровкой на 6',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-11.png',
+											badge: 'Rakim',
+											title: 'Облегченные полуботинки со шнуровкой на 6',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="scheme mt-lg-7 mt-2">
+								<div class="scheme__head ac-navitem-lg _ac__navitem">
+									<div class="scheme__title">Подборка туфель</div>
+								</div>
+								<div class="scheme__body ac-item-lg _ac__item">
+									<div class="row row-cols-xxxl-6 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-3 row-cols-sm-2 row-cols-1  g-1">
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-12.png',
+											badge: 'adrian',
+											title: 'Лоферы',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-13.png',
+											badge: '1925',
+											title: 'Ботинки со стальным носком и шнуровкой на',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-14.png',
+											badge: 'Neoteric shoes',
+											title: 'Туфли на подошве Neoteric',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-15.png',
+											badge: '3989',
+											title: 'Броги со шнуровкой на 5-люверсов',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-16.png',
+											badge: '8053',
+											title: 'Туфли с мягкой лодыжкой, со шнуровкой на',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-17.png',
+											badge: '8053 QUAD',
+											title: 'Туфли с мягкой лодыжкой на средней платфо',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-18.png',
+											badge: '3989 BEX',
+											title: 'Броги на низкой платформе, со шнуровкой н',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="scheme mt-lg-7 mt-2">
+								<div class="scheme__head ac-navitem-lg _ac__navitem">
+									<div class="scheme__title">Подборка низких ботинок</div>
+								</div>
+								<div class="scheme__body ac-item-lg _ac__item">
+									<div class="row row-cols-xxxl-6 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-3 row-cols-sm-2 row-cols-1  g-1">
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-19.png',
+											badge: 'CHURCH',
+											title: 'Ботинки на 5-люверсов со шнуровкой',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-20.png',
+											badge: 'CHURCH QUAD',
+											title: 'Ботинки на средней платформе, со шнуровко',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-21.png',
+											badge: '939',
+											title: 'Ботинки на 6-люверсов со шнуровкой',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="scheme mt-lg-7 mt-2">
+								<div class="scheme__head ac-navitem-lg _ac__navitem">
+									<div class="scheme__title">Подборка челси и ботинок</div>
+								</div>
+								<div class="scheme__body ac-item-lg _ac__item">
+									<div class="row row-cols-xxxl-6 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-3 row-cols-sm-2 row-cols-1  g-1">
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-22.png',
+											badge: 'Flora',
+											title: 'Челси на низкой подошве',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-23.png',
+											badge: 'Leonore',
+											title: 'Челси с мехом',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-24.png',
+											badge: 'Neoteric chelsea',
+											title: 'Челси на подошве Neoteric',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-25.png',
+											badge: '1460 Pascal',
+											title: 'Ботинки со шнуровкой на 8-люверсов',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-26.png',
+											badge: 'Serena',
+											title: 'Туфли с мягкой лодыжкой, со шнуровкой на',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-27.png',
+											badge: 'Neoteric boots',
+											title: 'Ботинки на подошве Neoteric',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-28.png',
+											badge: 'Sinclair',
+											title: 'Ботинки на средней платформе, на 8 люверс',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-29.png',
+											badge: 'Molly',
+											title: 'Ботинки на средней платформе, на 6 люверс',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="scheme mt-lg-7 mt-2">
+								<div class="scheme__head ac-navitem-lg _ac__navitem">
+									<div class="scheme__title">Подборка челси и ботинок</div>
+								</div>
+								<div class="scheme__body ac-item-lg _ac__item">
+									<div class="row row-cols-xxxl-6 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-3 row-cols-sm-2 row-cols-1  g-1">
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-30.png',
+											badge: '8761 BXB',
+											title: 'Ботинки со стальным носком и шнуровкой на',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-31.png',
+											badge: '1919',
+											title: 'Ботинки со стальным носком и шнуровкой на',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+										</div>
+
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-32.png',
+											badge: '1914',
+											title: 'Ботинки со шнуровкой на 14-люверсов',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-33.png',
+											badge: '1B99',
+											title: 'Ботинки со шнуровкой на 14-люверсов и молнией сбоку',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+										<div class="scheme__item col ">
+											@@include('./template/blocks/scheme_card.html', {
+											img: 'img/styles/scheme-img-34.png',
+											badge: '1B60',
+											title: 'Ботинки со шнуровкой на 20-люверсов и мол',
+											detailsTitle: '',
+											detailsWidth: '',
+											detailsHeight: '',
+											})
+
+										</div>
+
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+										<div class="scheme__item scheme__item--cover col">
+											<div class="scheme-cover"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						@@include('./template/sections/arhive_foto_line.html', {
+						title: 'Архивные фото дополнительных фасонов',
+						})
+
+						<a href="#" class="btn btn--fill btn--block mt-5">
+							<svg class="icon icon-star-filled me-2">
+								<use xlink:href="img/sprite.svg#star-filled"></use>
+							</svg>
+							<span>Сохранить страницу в избранном</span>
+						</a>
+					</div>
+
+
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

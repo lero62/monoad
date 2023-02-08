@@ -1,0 +1,72 @@
+<a href="#" class="collections-card">
+	<div class="collections-card__img">
+		<img src="@@img" alt="">
+	</div>
+	<div class="collections-card__body">
+		<div class="collections-card__title">@@title</div>
+		<div class="collections-card__details cc-details">
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Бренд: </div>
+				<div class="cc-details__labeled ttu">Dr.Martens</div>
+			</div>
+			@@if(materials == false && soles == false && fason == false) {
+
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Подколлекция: </div>
+				<div class="cc-details__labeled ttu">THE ICONS</div>
+			</div>
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Линейка: </div>
+				<div class="cc-details__labeled ttu">CORE PRINT</div>
+			</div>
+			}
+
+			@@if(materials == true) {
+
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Материал: </div>
+				<div class="cc-details__labeled">Масляная, натуральная кожа Greasy</div>
+			</div>
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Температура: </div>
+				<div class="cc-details__labeled">-7°C +10°C</div>
+			</div>
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Сезон: </div>
+				<div class="cc-details__labeled ttu">Демисезон</div>
+			</div>
+			}
+
+			@@if(soles == true) {
+
+
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Вид подошвы: </div>
+				<div class="cc-details__labeled ttu">DMS</div>
+			</div>
+
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Материал подошвы: </div>
+				<div class="cc-details__labeled ttu">PVC</div>
+			</div>
+
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Высота подошвы: </div>
+				<div class="cc-details__labeled ttu">1,6 см</div>
+			</div>
+
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Высота каблука: </div>
+				<div class="cc-details__labeled ttu">3,1 см</div>
+			</div>
+			}
+
+			@@if(fason == true) {
+			<div class="cc-details__item ">
+				<div class="cc-details__label">Фасон: </div>
+				<div class="cc-details__labeled">Polley</div>
+			</div>
+			}
+		</div>
+	</div>
+</a>

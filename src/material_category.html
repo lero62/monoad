@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "material_category"
+})
+
+<body class="loaded">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop ">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item "><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop _active">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown" style="display: block;">
+												<li class="sbox__list-item _active"><a href="#">Натуральная кожа</a></li>
+												<li class="sbox__list-item"><a href="#">Эко материал</a></li>
+												<li class="sbox__list-item"><a href="#">Полиуретановая кожа</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Подошва</a></li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item"><a href="#">Фасон</a></li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem  _active">
+									<div class="sbox__title">Виды материалов</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+
+									<ul class="sbox__list">
+										<li class="sbox__list-item"><a href="#">Масляная кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Гладкая кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Зернистая кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Лакированная кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Ворсистая кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Принтовая кожа</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body mb-lg-4 mb-3" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Материал изделий</a>
+								</li>
+								<li class="breadcrumbs__item">Натуральная кожа</li>
+							</ul>
+						</div>
+
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-5',
+						imgMobile: 'img/collection/collection-banner-img-iphone-5',
+						icon: '',
+						title: 'Натуральная <br class="hidden-ipad">кожа',
+						titleH1: true,
+						btn: 'Посмотреть товары',
+						})
+
+
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title">О натуральной коже</div>
+
+							<div class="row g-xxl-6 g-3 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+									<p>Натуральная кожа используется человечеством с давних времен. Несмотря на изобретение большого количества синтетических материалов, именно натуральный материал остается на вершине популярности благодаря обилию преимуществ. Сегодня существует множество видов кожи, а новые методы ее обработки позволяют изделиям быть более износостойкими и привлекательными. Давайте подробнее рассмотрим основные типы и особенности натурального материала, а также при помощи каких методов он производится.</p>
+
+									<p>Дубление — это наиболее распространенный вид выделки натуральной кожи, позволяющий обработать сырой материал, сделать его пригодным к использованию и устранить его негативные свойства. Такая процедура придает изделию прочность, эластичность, а также долговечность. Сейчас существуют как натуральные способы дубления, так и химические, позволяющие добиться не менее достойных результатов.</p>
+								</div>
+								<div class="col-xxl-auto">
+									<img src="img/maretials/img-1.jpg" alt="">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title">Дубление</div>
+
+							<div class="row g-xxl-6 g-3 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+									<p>Дубление — это наиболее распространенный вид выделки натуральной кожи, позволяющий обработать сырой материал, сделать его пригодным к использованию и устранить его негативные свойства. Такая процедура придает изделию прочность, эластичность, а также долговечность. Сейчас существуют как натуральные способы дубления, так и химические, позволяющие добиться не менее достойных результатов.
+									</p>
+									<h5>Виды дубления натуральной кожи:</h5>
+									<ol class="decimal">
+										<li><strong>Хромовое.</strong> В этом случае кожа обрабатывается при помощи основных солей хрома. Это позволяет кожаным изделиям становиться мягкими, эластичными и термоустойчивыми. Такие товары упруги, сильно и быстро намокают, легко пропускают воду.</li>
+										<li><strong>Растительное.</strong> Основано на применении таннидов — специальных дубящих веществ, содержащихся в коре и листьях деревьев. Конечный продукт имеет большую толщину, высокую плотность, водостойкость, но низкую термостойкость. Этот метод используется в комбинации с другими.</li>
+										<li><strong>Цирконическое.</strong> Здесь используется соединение циркония. Этот метод предназначен для получения белых кож, которые обладают повышенной устойчивостью и износостойкостью, не боятся воздействия воды и пота.</li>
+										<li><strong>Синтетические.</strong> Синтаны придают натуральной коже эластичность и привлекательный вид. Этот метод применяется в совокупности с другими.</li>
+										<li><strong>Жировое.</strong> Этот способ дубления натуральной кожи осуществляется при помощи рыбьего жира, а также жира морских животных.</li>
+										<li><strong>Алюминиевое.</strong> Дубление основано на действии солей алюминия. При помощи этого метода получают лайку, которая обладает мягкостью и эластичностью, но боится воздействия воды.</li>
+									</ol>
+								</div>
+								<div class="col-xxl-auto">
+									<img src="img/maretials/img-2.jpg" alt="">
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-5">Виды натуральной кожи</div>
+
+							@@include('./template/blocks/subcollection.html', {
+							img: 'img/collection/subsollection-img-1.jpg',
+							title: 'the icons',
+							text: 'THE ICONS - первая и самая узнаваемая подколлекция азиатского ответвления Dr. Martens. Подколлекция вобрала в себя самые классические и узнаваемые силуэты, которые ранее выпускались только на английских фабриках. Модели The Icons, азиатского производства видоизменились в деталях, но вмешательство было не значительным, что позволило сохранить узнаваемость. ',
+							btn: 'Подробнее о материале',
+							})
+
+							@@include('./template/blocks/subcollection.html', {
+							img: 'img/collection/subsollection-img-2.jpg',
+							title: 'FUsion',
+							text: 'FUSION - позднее ответвление, которое разделяет классические фасоны из подколлекции THE ICONS с более современными и порой совершенно не привычными силуэтами. Многие из этих силуэтов негласно стали классикой! Самые популярные из них это Jadon и Clarissa. В подколлекции все таки можно увидеть классические фасоны, но с отличием, как правило это подошва с платформой разной высоты. ',
+							btn: 'Подробнее о материале',
+							})
+
+
+							@@include('./template/blocks/subcollection.html', {
+							img: 'img/collection/subsollection-img-3.jpg',
+							title: 'CASUAL',
+							text: 'CASUAL - самая поздняя подколлекция от Dr. Martens, открыта в начале 2010-ых. В линейку casual входят совершенно не типичные фасоны, как для мартинсов, тем не менее сохранившие эталонные технологии и конечно же качество подошвы! где где другой рисунок протектора и видоизменилась подошва под новый стиль. Основным отличием является силуэт, который в отличии от других направлений полностью не похож на классику из подколлекции THE ICONS. ',
+							btn: 'Подробнее о материале',
+							})
+
+							@@include('./template/blocks/subcollection.html', {
+							img: 'img/collection/subsollection-img-1.jpg',
+							title: 'the icons',
+							text: 'THE ICONS - первая и самая узнаваемая подколлекция азиатского ответвления Dr. Martens. Подколлекция вобрала в себя самые классические и узнаваемые силуэты, которые ранее выпускались только на английских фабриках. Модели The Icons, азиатского производства видоизменились в деталях, но вмешательство было не значительным, что позволило сохранить узнаваемость. ',
+							btn: 'Подробнее о материале',
+							})
+
+							@@include('./template/blocks/subcollection.html', {
+							img: 'img/collection/subsollection-img-2.jpg',
+							title: 'FUsion',
+							text: 'FUSION - позднее ответвление, которое разделяет классические фасоны из подколлекции THE ICONS с более современными и порой совершенно не привычными силуэтами. Многие из этих силуэтов негласно стали классикой! Самые популярные из них это Jadon и Clarissa. В подколлекции все таки можно увидеть классические фасоны, но с отличием, как правило это подошва с платформой разной высоты. ',
+							btn: 'Подробнее о материале',
+							})
+
+
+							@@include('./template/blocks/subcollection.html', {
+							img: 'img/collection/subsollection-img-3.jpg',
+							title: 'CASUAL',
+							text: 'CASUAL - самая поздняя подколлекция от Dr. Martens, открыта в начале 2010-ых. В линейку casual входят совершенно не типичные фасоны, как для мартинсов, тем не менее сохранившие эталонные технологии и конечно же качество подошвы! где где другой рисунок протектора и видоизменилась подошва под новый стиль. Основным отличием является силуэт, который в отличии от других направлений полностью не похож на классику из подколлекции THE ICONS. ',
+							btn: 'Подробнее о материале',
+							})
+
+						</div>
+
+
+
+						<a href="#" class="btn btn--fill btn--block mt-5">
+							<svg class="icon icon-star-filled me-2">
+								<use xlink:href="img/sprite.svg#star-filled"></use>
+							</svg>
+							<span>Сохранить страницу в избранном</span>
+						</a>
+					</div>
+
+
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

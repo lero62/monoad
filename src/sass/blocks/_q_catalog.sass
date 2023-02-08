@@ -1,0 +1,1246 @@
+/* Filter ============== */
+/* ===================================================================================================================== */
+
+.sidebar
+	&__promocode-list
+		margin-top: 3rem
+	.back-button
+		margin-left: -.7rem
+
+.filter
+	position: relative
+	&__buttons
+		margin-top: 2rem
+		.btn
+			margin-top: 1rem
+
+.fix-finded
+	position: absolute
+	left: 100%
+	top: 0
+	z-index: 98
+	padding: .5rem 1.5rem
+	background: #EDEDED
+	height: 5rem
+
+	align-items: center
+	justify-content: center
+	margin-top: -0.7rem
+	display: none
+	+min($ipad + 1)
+		&._open
+			display: flex
+
+.sbox
+	background: $color-default
+	margin-bottom: 1rem
+	&__head
+		background: #EAEAEA
+		height: 5rem
+		padding: 0 3rem
+		display: flex
+		align-items: center
+		cursor: pointer
+		&._active
+			.sbox__caret:before
+				transform: rotate(90deg)
+
+		@media (any-hover: hover)
+			&:hover
+				.sbox__caret:before,
+				.sbox__caret:after
+					background: $color
+
+	&__title
+		font-weight: 500
+		font-family: $font2
+		font-size: 1.5rem
+		color: #000
+		text-transform: uppercase
+		flex: 1
+		+text-overflow
+	&__caret
+		flex: none
+		margin-left: 1rem
+		width: 1.2rem
+		height: 1.2rem
+		position: relative
+		&:after
+			content: ''
+			display: block
+			width: 1.2rem
+			height: 0.2rem
+			background: #B7B7B7
+			position: absolute
+			top: 50%
+			margin-top: -0.1rem
+			left: 0
+			+tr
+		&:before
+			content: ''
+			display: block
+			height: 1.2rem
+			width: 0.2rem
+			background: #B7B7B7
+			position: absolute
+			top: 0
+			margin-left: -0.1rem
+			left: 50%
+			+tr
+
+	&__body
+		padding: 1.6rem 0
+
+	&__inner
+		padding: 0 2.5rem 0 2.9rem
+	&__drops
+		padding: .6rem 2.5rem 2.1rem 2.9rem
+	.label-tags
+		&__item
+			height: 3.1rem
+			line-height: 2.7rem
+
+.sbox__list
+	&-item
+		position: relative
+		transition: padding 0.2s linear
+		&:after
+			content: ''
+			position: absolute
+			left: 3.4rem
+			top: 1.1rem
+			width: .6rem
+			height: 0.6rem
+			background: #3B3B3B
+			border-radius: 50%
+			+tr
+
+		&:before
+			content: ''
+			position: absolute
+			top: 1rem
+			left: 3.5rem
+			+arr(.6rem,.8rem,#fff,r)
+			z-index: 1
+			+tr
+			transform: scale(0)
+
+		& > a, & > span
+			display: flex
+			align-items: flex-start
+			font-size: 1.5rem
+			color: #000
+			line-height: 1.35
+			font-weight: 400
+			padding: .4rem 2.8rem .4rem 5.2rem
+			cursor: pointer
+			@media (any-hover: hover)
+				&:hover
+					background: #EEEEEE
+
+		&._active
+			& > a, & > span
+				font-weight: 500
+			&:after
+				width: 1.6rem
+				height: 1.6rem
+				top: .6rem
+				left: 2.9rem
+			&:before
+				transform: scale(1)
+
+		&--selected
+			& > a, & > span
+				color: #F0830F
+				font-weight: 500
+
+		&--selected-success
+			& > a, & > span
+				color: #379B8A
+				font-weight: 500
+
+		&--bg._active
+			background: #EEEEEE
+			padding-top: .7rem
+			&:after
+				top: 1.2rem
+				background: $color-warning
+			&:before
+				top: 1.6rem !important
+				border-left-color: $color
+
+		.sbox__list
+			padding-bottom: 1rem
+			display: none
+			&-item
+				transition: background 0.2s linear
+				&:after
+					left: 5.5rem
+				&:before
+					left: 5.6rem
+				& > a, & > span
+					padding-left: 7.2rem
+
+				&._active
+					background: #EEEEEE
+					&:after
+						left: 5rem
+			&-drop
+				&._active
+					&:before
+						left: 5.5rem
+	&-offset
+		height: 1rem
+	&-drop
+		&._active
+			&:before
+				transform: rotate(90deg)
+				left: 3.4rem
+				top: 1.1rem
+	.badge
+		margin-left: auto
+		flex: none
+		position: relative
+		top: .3rem
+
+	&--one
+		& > .sbox__list-item._active:after
+			background: $color-warning
+		& > .sbox__list-item._active:before
+			border-left-color: $color
+
+.sbox__sublist
+	padding-bottom: 1rem
+	padding-top: 0.5rem
+	display: none
+	li
+		position: relative
+		&:after
+			content: ''
+			display: block
+			width: 0.6rem
+			height: 0.2rem
+			background: #8C8C8C
+			position: absolute
+			top: 1rem
+			left: 7.3rem
+	a
+		display: block
+		font-size: 1.3rem
+		color: #000
+		line-height: 1.4
+		font-weight: 400
+		padding: .2rem 2.8rem .2rem 8.6rem
+
+		@media (any-hover: hover)
+			&:hover
+				background: #ddd
+
+.sbox__size
+	li
+		margin-bottom: 0.3rem
+		font-size: 1.5rem
+		font-weight: 400
+	.checkbox
+		padding: .3rem 2.8rem .3rem 4.5rem
+		display: block
+		margin-right: 0
+		&__figure, &__color
+			top: .4rem !important
+			left: 3rem
+
+		&__text
+			display: flex
+			width: 100%
+			align-items: center
+
+		.badge
+			margin-left: auto
+			flex: none
+
+.sidebar__icons-box
+	margin-top: 4rem
+	padding-left: 2rem
+	padding-right: 2rem
+
+.icons-box
+	display: flex
+	align-items: center
+	margin-bottom: 1.5rem
+	&__icon
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 6rem
+		height: 6rem
+		flex: none
+		border-radius: 50%
+		background: $color
+		margin-right: 1rem
+		.icon
+			color: #fff
+			display: block
+			font-size: 3rem
+
+	&__title
+		font-size: 1.5rem
+		font-family: $font2
+		font-weight: 500
+		text-transform: uppercase
+
+.article-side-card
+	display: block
+	background: #F4F4F4
+	&__img
+		img
+			width: 100%
+	&__body
+		padding: 1.7rem 3rem
+	&__title
+		font-family: $font2
+		font-size: 1.5rem
+		font-weight: 500
+		text-transform: uppercase
+
+/* Sorting ============== */
+/* ===================================================================================================================== */
+
+.content__header
+	.sorting
+		margin-top: -0.2rem
+.sorting
+	display: flex
+	&__item
+		flex: none
+		margin-left: 1rem
+
+.filter-results
+	display: flex
+	flex-wrap: wrap
+	overflow: hidden
+	overflow-x: auto
+	padding-bottom: 0.5rem
+	margin-bottom: 2rem
+	&__item
+		border-radius: 2rem
+		background: #fff
+		border: .1rem solid #D0D0D0
+		color: #131313
+		cursor: pointer
+		height: 3.2rem
+		padding: .1rem .7rem 0 1.5rem
+		position: relative
+		display: inline-flex
+		align-items: center
+
+		white-space: nowrap
+
+		font-family: $font2
+		font-size: 1.2rem
+		font-weight: 500
+		text-align: center
+		margin-right: 1rem
+		margin-bottom: 1rem
+		transition: border-color 0.2s linear
+		&:last-child
+			margin-right: 0
+		@media (any-hover: hover)
+			&:hover
+				border-color: $color
+
+	&__close
+		flex: none
+		margin-left: 0.7rem
+		.icon
+			display: block
+			color: rgba(0, 0, 0, 0.6)
+			font-size: 2.4rem
+
+/* Product Card ============== */
+/* ===================================================================================================================== */
+
+.product-card
+
+	text-align: center
+	position: relative
+	transition: background 0.1s linear
+	&__img
+		padding: 0 1rem
+		position: relative
+		img
+			margin: 0 auto
+	&__stickers
+		position: absolute
+		bottom: -1rem
+		left: 0
+		right: 0
+		text-align: center
+		white-space: nowrap
+		pointer-events: none
+		font-size: 0
+	&__body
+		padding: 2rem 1rem
+
+	&__brand
+		line-height: 1.4
+		font-size: 1.3rem
+		font-weight: 400
+		color: #636363
+		margin-bottom: .4rem
+		margin-top: .4rem
+		+text-overflow
+
+	&__title
+		font-size: 1.5rem
+		font-weight: 500
+		line-height: 1.2
+		color: #000
+		margin-bottom: 1rem
+		max-height: 3.5rem
+		overflow: hidden
+		+ellipsis(2)
+
+	&__price
+		margin-left: -.4rem
+		margin-right: -.4rem
+
+	&__footer
+		padding-bottom: 3rem
+		padding-left: 1rem
+		padding-right: 1rem
+
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		z-index: 2
+		visibility: hidden
+		opacity: 0
+		pointer-events: none
+		background: $color-default
+		transition: all 0.1s linear
+	&__actions
+		margin-top: 3rem
+
+	&__button
+		margin-top: 1.5rem
+
+	.label-tags
+		margin: 0 -.2rem -.4rem
+		justify-content: center
+		&__item
+			width: 5.4rem
+			padding-left: 0
+			padding-right: 0
+			height: 2.6rem
+			margin: 0 .2rem .4rem
+			line-height: 2.2rem
+
+	.btn-favorites
+		position: absolute
+		top: 1.5rem
+		right: 1.5rem
+		font-size: 0
+		opacity: 0
+		&.active
+			opacity: 1
+			.icon
+				color: $color-warning
+
+		@media (any-hover: hover)
+			&:hover
+				.icon-star
+					display: none
+				.icon-star-filled
+					display: block
+
+	.btn-mon
+		position: absolute
+		top: 4.5rem
+		right: 1.5rem
+		font-size: 0
+		opacity: 0
+		&.active
+			opacity: 1
+			.icon
+				color: $color-warning
+
+	+min($ipad + 1)
+
+		@media (any-hover: hover)
+			padding-top: 1rem
+			&:hover
+				z-index: 3
+				background: $color-default
+				.btn-favorites, .btn-mon
+					opacity: 1
+				.product-card__footer
+					visibility: visible
+					opacity: 1
+					pointer-events: auto
+			&._monWrapperActive
+				z-index: 3
+				background: $color-default
+				.btn-favorites, .btn-mon
+					opacity: 1
+				.product-card__footer
+					visibility: visible
+					opacity: 1
+					pointer-events: auto
+	+max($ipad)
+		.btn-favorites, .btn-mon
+			background: #F0F0F0
+			border-radius: 50%
+			width: 3rem
+			height: 3rem
+			display: flex
+			align-items: center
+			justify-content: center
+			opacity: 1
+			.icon
+				font-size: 1.8rem
+				top: -.1rem
+				color: rgba(19, 19, 19, 0.45)
+				&-watch
+					top: 0
+			&.active
+				background: $color-warning
+				.icon
+					color: #fff
+
+	@media (any-hover: none)
+
+		.btn-favorites, .btn-mon
+			background: #F0F0F0
+			border-radius: 50%
+			width: 3rem
+			height: 3rem
+			display: flex
+			align-items: center
+			justify-content: center
+			opacity: 1
+			.icon
+				font-size: 1.8rem
+				top: -.1rem
+				color: rgba(19, 19, 19, 0.45)
+				&-watch
+					top: 0
+			&.active
+				background: $color-warning
+				.icon
+					color: #fff
+	&--gift
+		.product-card__title
+			text-transform: uppercase
+	&.not-available
+		.product-card__body
+			opacity: 0.5
+
+	&._add-product
+		cursor: pointer
+	&._selected
+		.sticker--check
+			background: #77BA57
+			color: #fff
+
+.price-value, .price-old, .gift-value
+	display: inline-block
+	vertical-align: middle
+
+	font-size: 2.4rem
+	font-family: $font2
+	margin: .2rem .4rem
+	font-weight: 500
+	line-height: 1.1
+	position: relative
+
+.price-old
+	text-decoration: line-through
+
+.gift-value
+	color: $color-success
+	text-transform: uppercase
+	font-size: 2rem
+	font-weight: 600
+
+.sticker-wrap
+	display: inline-flex
+	margin: 0 .5rem
+	height: 6rem
+	background: linear-gradient(180deg, rgba(252, 210, 108, 0.95) 0%, rgba(250, 190, 65, 0.95) 100%)
+	border-radius: 30px
+	&__content
+		flex: none
+		text-align: left
+
+		padding: .8rem 2rem .6rem 1rem
+	&__title
+		font-size: 1rem
+		color: #000
+		font-weight: 400
+		display: block
+		margin-bottom: 0.2rem
+	&__timer
+		color: #000
+		font-size: 2.2rem
+		font-weight: 500
+		line-height: 1.2
+		display: block
+		text-transform: uppercase
+		font-family: $font2
+	.sticker
+		margin: 0
+
+.sticker
+	margin: 0 .5rem
+	width: 6rem
+	height: 6rem
+	box-shadow: 14px 0px 15px rgba(66, 6, 0, 0.1)
+
+	border-radius: 50%
+	display: inline-flex
+	vertical-align: middle
+	align-items: center
+	justify-content: center
+	text-align: center
+	color: $color
+	background: $color-warning
+	font-family: $font2
+	font-weight: 600
+
+	font-size: 2.2rem
+	&--sale
+		background: $color-danger
+		color: #fff
+		font-size: 2.7rem
+	&--gift
+		background: #77BA57
+		color: #fff
+		.icon
+			font-size: 2.7rem
+	&--check
+		color: #9D9D9D
+		background: #E7E7E7
+
+		box-shadow: 11px 4px 16px rgba(0, 0, 0, 0.23)
+		.icon
+			font-size: 2.7rem
+
+.btn-favorites
+	cursor: pointer
+	transition: opacity 0.2s linear
+
+	.icon
+		font-size: 2rem
+		display: block
+	.icon-star-filled
+		display: none
+
+	&.active
+
+		.icon-star
+			display: none
+		.icon-star-filled
+			display: block
+
+.btn-mon
+	cursor: pointer
+	transition: opacity 0.2s linear
+
+	.icon
+		font-size: 2rem
+		display: block
+		color: $color
+	&._selected .icon
+		color: red
+
+.label-tags
+	display: flex
+	flex-wrap: wrap
+	margin: 0 -.3rem -.6rem
+	&__item
+		cursor: pointer
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08)
+		text-align: center
+		border-radius: 2rem
+		background: #fff
+		height: 3.7rem
+		white-space: nowrap
+		padding-left: 1rem
+		padding-right: 1rem
+		line-height: 3.3rem
+		font-size: 1.2rem
+		font-weight: 500
+		color: #515151
+		font-family: $font2
+		border: .2rem solid transparent
+		+tr
+		margin: 0 .3rem .6rem
+		&._active
+			background: #000
+			color: #fff
+		@media (any-hover: hover)
+			&:not(._active):hover
+				background: #FFF9DB
+				border-color: #FFD97A
+				box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08)
+
+/* Больше меньше текста ============== */
+/* ===================================================================================================================== */
+
+.toggle-block
+	max-height: 11rem
+	overflow: hidden
+	position: relative
+	&.open
+		max-height: none
+		.toggle-block-overlay
+			height: 0
+	&-overlay
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 3rem
+		cursor: pointer
+		background: linear-gradient(to top, #fff 46%, rgba(255, 255, 255, 0) 100%)
+	&-btn
+		cursor: pointer
+
+/* Filter Mobile ============== */
+/* ===================================================================================================================== */
+
+.filter-fixed
+	z-index: 190
+	&__container
+		position: fixed
+		top: 0
+		left: 0
+		background: $color-default
+		height: 100%
+		width: 37.5rem
+		transform: translate(-100%,0)
+		transition: transform 0.2s linear, width 0.2s linear
+	&__head
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 5.5rem
+		display: flex
+		align-items: center
+		background: #212121
+		padding: 0 6rem .2rem 2rem
+	&__title
+		color: #B7B7B7
+		font-weight: 500
+		font-size: 1.8rem
+		font-family: $font2
+		text-transform: uppercase
+
+	&__edit
+		display: flex
+		align-items: center
+		white-space: nowrap
+		color: #B7B7B7
+		font-size: 1.5rem
+		font-weight: 400
+		margin-left: auto
+		.icon
+			font-size: 1.5rem
+			margin-right: 0.7rem
+
+	&__close
+		width: 3rem
+		height: 3rem
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		top: 1.1rem
+		right: 1.5rem
+
+		cursor: pointer
+		.icon
+			font-size: 2.9rem
+			color: rgba(#fff, 0.7)
+	&__body
+
+		overflow: hidden
+		overflow-y: auto
+		position: absolute
+		top: 5.5rem
+		bottom: 7.8rem
+		left: 0
+		right: 0
+
+	&__overlay
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		display: none
+		background: rgba(0,0,0,0.4)
+
+	&__button
+		margin-top: 1rem
+		text-align: center
+
+	&__buttons
+		position: absolute
+		bottom: 0
+		left: 0
+		display: flex
+		align-items: center
+		width: 100%
+		background: #F5F5F5
+		box-shadow: 0px -1rem 4rem rgba(0, 0, 0, 0.15)
+		padding: 2rem
+		height: 7.8rem
+		.btn
+			width: calc(50% - .7rem)
+			margin-right: 1.4rem
+
+	&._open
+		.filter-fixed__container
+			transform: translate(0,0)
+		.filter-fixed__overlay
+			display: block
+
+	.db-size
+		padding: 1rem 2rem
+	.sbox
+		margin-bottom: 0
+		&__head
+
+			border-bottom: .1rem solid #B7B7B7
+			&._active
+				border-bottom-color:  #eaeaea
+
+.filter-button
+	height: 3.5rem
+	border-radius: 3.5rem
+	background: $color
+	padding: 0 5rem 0 2rem
+	display: flex
+	align-items: center
+	color: #fff
+	font-size: 1.2rem
+	font-family: $font2
+	text-transform: uppercase
+	font-weight: 500
+	overflow: hidden
+	position: relative
+	cursor: pointer
+	border: .1rem solid $color
+	.icon
+		font-size: 1.2rem
+		flex: none
+		margin-right: 1rem
+		top: -.1rem
+	.badge
+		display: none
+		position: absolute
+		right: 1.6rem
+		top: 50%
+		margin-top: -.9rem
+
+	&__caret
+		display: flex
+		align-items: center
+		flex: none
+
+		font-size: 0
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 4.5rem
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			margin-top: -.6rem
+			right: 50%
+			margin-right: -0.2rem
+
+			width: .8rem
+			height: .8rem
+			border: .2rem solid #fff
+			border-top: 0
+			border-left: 0
+			transform: rotate(45deg)
+
+	&--menu
+		padding-right: 2rem
+		justify-content: center
+		.icon
+			font-size: 1.4rem
+			display: none
+
+	&--size
+		justify-content: center
+		padding-right: 2rem
+		background: #fff
+		border-color: #D0D0D0
+		color: $color
+		.icon
+			font-size: 1.5rem
+
+	&--selected
+		.filter-button__caret
+			display: none
+		.badge
+			display: block
+
+/* Box fixed Mobile ============== */
+/* ===================================================================================================================== */
+
+.box-fixed
+	z-index: 190
+	&__container
+		position: fixed
+		top: 0
+		left: 0
+		background: $color-default
+		height: 100%
+		width: 37.5rem
+		transform: translate(-100%,0)
+		transition: transform 0.2s linear, width 0.2s linear
+	&__head
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 5.5rem
+		display: flex
+		align-items: center
+		background: #212121
+		padding: 0 6rem .2rem 2rem
+	&__title
+		color: #B7B7B7
+		font-weight: 500
+		font-size: 1.8rem
+		font-family: $font2
+		text-transform: uppercase
+
+	&__close
+		width: 3rem
+		height: 3rem
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		top: 1.1rem
+		right: 1.5rem
+
+		cursor: pointer
+		.icon
+			font-size: 2.9rem
+			color: rgba(#fff, 0.7)
+	&__body
+
+		overflow: hidden
+		overflow-y: auto
+		position: absolute
+		top: 5.5rem
+		bottom: 6rem
+		left: 0
+		right: 0
+		padding: 2rem
+
+	&__footer
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 6rem
+		text-align: center
+		padding-left: 1.5rem
+		padding-right: 1.5rem
+		display: flex
+		align-items: center
+		background: #F5F5F5
+		justify-content: center
+
+		.btn
+
+			width: calc(50% - .5rem)
+			margin-left: 0.5rem
+			margin-right: 0.5rem
+	&__overlay
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		display: none
+		background: rgba(0,0,0,0.4)
+
+	&._open
+		.box-fixed__container
+			transform: translate(0,0)
+		.box-fixed__overlay
+			display: block
+
+	&--not-foot
+		.box-fixed__body
+			bottom: 0
+
+	.sbox
+		margin-left: -2rem
+		margin-right: -2rem
+
+/* Set ============== */
+/* ===================================================================================================================== */
+
+.section-set
+	margin-top: 8rem
+	.section__head
+		margin-bottom: 3rem
+
+.box
+	&__head
+		background: #F5F5F5
+		border-radius: 1rem 1rem 0 0
+		padding: 2.4rem 3rem
+	&__title
+		text-transform: uppercase
+		font-family: $font2
+		font-weight: 500
+		font-size: 1.8rem
+		color: #000
+	&__body
+		border: .1rem solid #F2EFEF
+		border-top: none
+		padding: 3rem
++max($laptop)
+	.product-card
+		&__brand
+			font-size: 1.1rem
+		&__title
+			font-size: 1.3rem
+			max-height: 3.1rem
+
+	.price-value, .price-old, .gift-value
+		font-size: 2rem
+
+	.sticker-wrap
+		height: 4.6rem
+		&__content
+
+			padding: .5rem 1.4rem .4rem 1rem
+		&__title
+			font-size: 0.9rem
+		&__timer
+			font-size: 1.8rem
+	.sticker
+		width: 4.6rem
+		height: 4.6rem
+		font-size: 1.7rem
+		&--gift
+			.icon
+				font-size: 2.3rem
+
++min($ipad + 1)
+	.box-fixed__container, .filter-fixed__container
+		transform: translate(-100%,0) !important
+	.box-fixed__overlay, .filter-fixed__overlay
+		display: none !important
++max($ipad)
+	.main-header__body
+		display: flex
+		flex-direction: column
+		.breadcrumbs, .content__header
+			order: 1
+
+	.sidebar__icons-box
+		margin-top: 2rem
+
+	.icons-box
+		margin-bottom: 1rem
+		&__icon
+			width: 4.6rem
+			height: 4.6rem
+			.icon
+				font-size: 2.2rem
+		&__title
+			font-size: 1.3rem
+
+	.filter-results
+		margin-bottom: 2.2rem
+
+	.sorting
+		&__item
+			width: 16.4rem
+			margin-left: 1rem
+			&--year
+				width: 9.5rem !important
+				.selectbox__head
+					border-radius: 1rem
+				.selectbox__text
+					font-size: 1.8rem
+				.selectbox__drop
+					border-radius: 1rem
+		.selectbox
+			&__head
+				height: 3.5rem
+			&__text
+				line-height: 3.3rem !important
+			&__drop
+				padding-top: 3.5rem
+				top: 0
+			&__caret
+				width: 3rem
+
+	.filter-results
+		flex-wrap: nowrap
+		margin-bottom: 3rem
+		margin-right: -2rem
+		margin-left: -2rem
+		padding-left: 2rem
+		padding-right: 2rem
+		&__item
+			margin-bottom: 0
+
+	.sbox
+		&__head
+			padding-left: 2rem
+			padding-right: 2rem
+		&__inner
+			padding-left: 2rem
+			padding-right: 2rem
+	.sbox__list-item>a, .sbox__list-item>span
+		padding-left: 4.3rem
+
+	.sbox__list-item:after
+		left: 2.5rem
+	.sbox__list-item:before
+		left: 2.6rem
+	.sbox__list-item._active:after
+		left: 2rem
+
+	.sbox__list-drop._active:before
+		left: 2.5rem
+
+	.sbox__list-item .sbox__list-item:after
+		left: 4.5rem
+	.sbox__list-item .sbox__list-item:before
+		left: 4.6rem
+	.sbox__list-item .sbox__list-item._active:after
+		left: 4rem
+	.sbox__list-item .sbox__list-drop._active:before
+		left: 4.5rem
+	.sbox__list-item .sbox__list-item>a, .sbox__list-item .sbox__list-item>span
+		padding-left: 6rem
+
+	.sbox__size
+		.checkbox
+			padding-left: 4.1rem
+			&__color, &__figure
+				left: 2rem
+
+	.product-card
+		&__stickers
+			bottom: -0.2rem
+		&__body
+			padding-top: .5rem
+			padding-bottom: 2rem
+		&__brand
+			font-size: .9rem
+		&__title
+			font-size: 1.1rem
+			max-height: 2.7rem
+		.price-value, .price-old
+			display: block
+		.price-old
+			margin-bottom: 0.4rem
+
+		@media (any-hover: none)
+			padding-top: 0
+			.btn-favorites, .btn-mon
+				top: 1rem
+				right: 1rem
+				width: 2rem
+				height: 2rem
+
+				.icon
+					font-size: 1.2rem
+
+			.btn-mon
+				top: 3.6rem
+
+		.btn-favorites, .btn-mon
+			width: 2rem
+			height: 2rem
+			top: 1rem
+			right: 1rem
+			.icon
+				font-size: 1.2rem
+
+		.btn-mon
+			top: 3.6rem
+
+	.price-value, .gift-value
+		font-size: 1.8rem
+	.price-old
+		font-size: 1.2rem
+
+	.sticker-wrap
+		height: 3.6rem
+		&__content
+
+			padding: .4rem 1.5rem .4rem .6rem
+		&__title
+			font-size: 0.8rem
+		&__timer
+			font-size: 1.2rem
+
+	.sticker
+		width: 3.6rem
+		height: 3.6rem
+		font-size: 1.3rem
+		&--sale
+			font-size: 1.6rem
+		&--gift
+			.icon
+				font-size: 1.8rem
+		&--check
+			.icon
+				font-size: 1.8rem
+
++max($iphone)
+
+	.label-tags__item
+		padding-left: .5rem
+		padding-right: .5rem
+
+	.filter-results
+		margin-top: -1rem
+		&__item
+
+			margin-right: 0.4rem
+
+	.box
+		&__head
+			padding: 1rem 2rem
+		&__title
+			font-size: 1.4rem
+		&__body
+			padding: 2rem
+
++max($iphone_sm)
+	.filter-fixed, .box-fixed
+
+		&__container
+			width: 100%
+
++max($iphone_xs)
+	.filter-results
+
+		margin-right: -1.5rem
+		margin-left: -1.5rem
+		padding-left: 1.5rem
+		padding-right: 1.5rem

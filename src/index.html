@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Главная"
+})
+
+<body class="loaded ">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<!-- <div class="alert-fixed">
+				<div class="container">
+					Дополнительная скидка 10% при оплате картой VISA на сайте!
+
+				</div>
+			</div> -->
+
+			<div class="alert-fixed alert-fixed--md">
+				<div class="container d-md-flex align-items-center justify-content-center flex-wrap">
+					<div class="alert-fixed__title">Чорна п'ятниця! Місяць шалених знижок</div>
+					<a href="#" class="btn btn--warning">Усі знижки тут</a>
+				</div>
+			</div>
+
+
+			<div class="container-fluid">
+				<div class="categories-buttons visible-iphone">
+					<a href="#" class="categories-buttons__item">Новинки</a>
+					<a href="#" class="categories-buttons__item">Бренды</a>
+					<a href="#" class="categories-buttons__item">Скидки</a>
+				</div>
+				<div class="categories-grid row">
+					<div class="col-6 categories-grid__item">
+						<a href="#" class="categories-grid-inner">
+							<picture class="categories-grid-inner__img">
+								<source media="(max-width: 767px)" srcset="img/categories-image-man-375.jpg">
+								<!-- <source media="(max-width: 1024px)" srcset="img/slider/1024x450_4.png"> -->
+								<img src="img/categories-image-man.jpg" alt="#">
+							</picture>
+							<div class="categories-grid-inner__body">
+								<h2 class="categories-grid-inner__title">Для мужчин</h2>
+								<div class="categories-grid-inner__button">
+									<span class="btn btn--warning">Смотреть</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-6 categories-grid__item">
+						<a href="#" class="categories-grid-inner">
+							<picture class="categories-grid-inner__img">
+								<source media="(max-width: 767px)" srcset="img/categories-image-woman-375.jpg">
+								<!-- <source media="(max-width: 1024px)" srcset="img/slider/1024x450_4.png"> -->
+								<img src="img/categories-image-woman.jpg" alt="#">
+							</picture>
+							<div class="categories-grid-inner__body">
+								<h2 class="categories-grid-inner__title">Для Женщин</h2>
+								<div class="categories-grid-inner__button">
+									<span class="btn btn--warning">Смотреть</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- BEGIN SEASONAL DISCOUNTS -->
+				<section class="section new-section">
+					<div class="section__header">
+						<h2 class="section__title">Новые поступления</h2>
+					</div>
+
+					<!-- Slider products-slider -->
+					<div class="products products-slider">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="product-card">
+										<div class="product-card__img">
+											<a href="#"><img src="img/products/products-slider-img1.png" alt=""></a>
+											<div class="product-card__stickers">
+												<span class="sticker sticker--new"><img src="img/new.png" alt=""></span>
+											</div>
+										</div>
+										<div class="product-card__body">
+
+											<div class="product-card__brand">DR.MARTENS</div>
+											<div class="product-card__title"><a href="#">1460 Pascal Hardware Black Virginia</a></div>
+											<div class="product-card__price">
+
+												<div class="price-value">17800 грн.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card ">
+										<div class="product-card__img">
+											<a href="#"><img src="img/products/products-slider-img2.png" alt=""></a>
+											<div class="product-card__stickers">
+												<span class="sticker sticker--new"><img src="img/new.png" alt=""></span>
+											</div>
+										</div>
+										<div class="product-card__body">
+
+											<div class="product-card__brand">DR.MARTENS</div>
+											<div class="product-card__title"><a href="#">1460 Pascal Black Vintage Smooth</a></div>
+											<div class="product-card__price">
+												<div class="price-value">14600 грн.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card">
+										<div class="product-card__img">
+											<a href="#"><img src="img/products/products-slider-img3.png" alt=""></a>
+											<div class="product-card__stickers">
+												<span class="sticker sticker--sale"><img src="img/sale.png" alt=""></span>
+											</div>
+										</div>
+										<div class="product-card__body">
+
+											<div class="product-card__brand">DR.MARTENS</div>
+											<div class="product-card__title"><a href="#">3989 YS Black Smooth</a></div>
+											<div class="product-card__price">
+												<div class="price-old">22100 грн.</div>
+												<div class="price-value text-danger">19999 грн.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card">
+										<div class="product-card__img">
+											<a href="#"><img src="img/products/products-slider-img4.png" alt=""></a>
+										</div>
+										<div class="product-card__body">
+
+											<div class="product-card__brand">DR.MARTENS</div>
+											<div class="product-card__title"><a href="#">2976 Fur Black Ambassador</a></div>
+											<div class="product-card__price">
+												<div class="price-value">14450 грн.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-card ">
+										<div class="product-card__img">
+											<a href="#"><img src="img/products/products-slider-img2.png" alt=""></a>
+											<div class="product-card__stickers">
+												<span class="sticker sticker--new"><img src="img/new.png" alt=""></span>
+											</div>
+										</div>
+										<div class="product-card__body">
+
+											<div class="product-card__brand">DR.MARTENS</div>
+											<div class="product-card__title"><a href="#">1460 Pascal Black Vintage Smooth</a></div>
+											<div class="product-card__price">
+												<div class="price-value">14600 грн.</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="products-slider-prev swiper-button-prev">
+							<svg class="icon icon-swiper-arrow">
+								<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+							</svg>
+						</div>
+						<div class="products-slider-next swiper-button-next">
+							<svg class="icon icon-swiper-arrow">
+								<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+							</svg>
+						</div>
+					</div>
+
+					<div class="section__button">
+						<a href="#" class="btn btn--dark">Смотреть больше</a>
+					</div>
+
+				</section>
+
+				<section class="section banners-section">
+					<div class="banners-grid row">
+						<div class="col-md-6 banners-grid__item banners-grid__item--lg">
+							<a href="#" class="banner-card banner-card--lg">
+								<img src="img/banner-inner.jpg" alt="" class="banner-card__img">
+								<div class="banner-card__body">
+
+									<div class="banner-card__title">Супер <br>скидки!</div>
+									<div class="banner-card__text">30% на большинство товаров при оплате карточкой monobank!</div>
+									<div class="banner-card__button">
+										<span class="btn btn--warning">В каталог!</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-6 banners-grid__item">
+							<a href="#" class="banner-card">
+								<img src="img/banner-card-img1.jpg" alt="" class="banner-card__img">
+
+								<div class="banner-card__body">
+									<div class="banner-card__title">Ботинки</div>
+									<div class="banner-card__button">
+										<span class="btn btn--warning">Подробнее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-6 banners-grid__item">
+							<a href="#" class="banner-card">
+								<img src="img/banner-card-img2.jpg" alt="" class="banner-card__img">
+
+								<div class="banner-card__body">
+									<div class="banner-card__title">Сапоги</div>
+									<div class="banner-card__button">
+										<span class="btn btn--warning">Подробнее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="section section--default social-section">
+					<div class="section__header">
+						<h2 class="section__title">
+							<span class="hidden-sm">ПРОФИЛИ НАШЕГО СООБЩЕСТВА В СОЦИАЛЬНЫХ СЕТЯХ</span>
+							<span class="visible-sm">Социальные сети</span>
+						</h2>
+					</div>
+					<div class="social-grid social-grid--center">
+						<div class="social-grid__item">
+
+							<div class="social-grid__labeled">
+								<a href="#" class="social-g">
+									<div class="social-g__img">
+										<div class="social-g__icon">
+											<img src="img/inst.svg" alt="">
+										</div>
+										<img src="img/set-img1.svg" alt="">
+									</div>
+									<div class="social-g__content">
+										<div class="social-g__title">Monoad</div>
+										<div class="social-g__subtitle">
+											1000000
+											<span>подписчиков</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="social-g">
+									<div class="social-g__img">
+										<div class="social-g__icon">
+											<img src="img/inst.svg" alt="">
+										</div>
+										<img src="img/set-img2.svg" alt="">
+									</div>
+									<div class="social-g__content">
+										<div class="social-g__title">Dr.Martens</div>
+										<div class="social-g__subtitle">
+											16 тыс.
+											<span>подписчиков</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="social-g">
+									<div class="social-g__img">
+										<div class="social-g__icon">
+											<img src="img/inst.svg" alt="">
+										</div>
+										<img src="img/set-img3.svg" alt="">
+									</div>
+									<div class="social-g__content">
+										<div class="social-g__title">MonoadTeam</div>
+										<div class="social-g__subtitle">
+											2,8 тыс.
+											<span>подписчиков</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="social-grid__item">
+
+							<div class="social-grid__labeled">
+								<a href="#" class="social-g">
+									<div class="social-g__img">
+										<div class="social-g__icon">
+											<img src="img/inst.svg" alt="">
+										</div>
+										<img src="img/set-img3.svg" alt="">
+									</div>
+									<div class="social-g__content">
+										<div class="social-g__title">Monoad</div>
+										<div class="social-g__subtitle">
+											2,8 тыс.
+											<span>подписчиков</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="social-g">
+									<div class="social-g__img">
+										<img src="img/set-img4.svg" alt="">
+									</div>
+									<div class="social-g__content">
+										<div class="social-g__title">Monoad</div>
+										<div class="social-g__subtitle">
+											25 тыс.
+											<span>подписчиков</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="social-g">
+									<div class="social-g__img">
+										<img src="img/set-img5.svg" alt="">
+									</div>
+									<div class="social-g__content">
+										<div class="social-g__title">Monoad</div>
+										<div class="social-g__subtitle">
+											9 тыс.
+											<span>подписчиков</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section banners-section">
+					<div class="section__header">
+						<h2 class="section__title">Обувь в деталях<span class="hidden-sm">. Информация о брендах и их продукции</span></h2>
+					</div>
+					<div class="banners-grid row">
+						<div class="col-md-6 banners-grid__item banners-grid__item--lg">
+							<a href="#" class="banner-card banner-card--lg">
+								<img src="img/banner-inner2.jpg" alt="" class="banner-card__img">
+								<div class="banner-card__body">
+
+									<div class="banner-card__title">Dr.martens <br>в деталях</div>
+									<div class="banner-card__text">ALL ABOUT DR.MARTENS</div>
+									<div class="banner-card__button">
+										<span class="btn btn--warning">Подробнее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-6 banners-grid__item">
+							<a href="#" class="banner-card">
+								<img src="img/banner-card-img3.jpg" alt="" class="banner-card__img">
+
+								<div class="banner-card__body">
+									<div class="banner-card__title">Всё о Converse</div>
+									<div class="banner-card__button">
+										<span class="btn btn--warning">Подробнее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-6 banners-grid__item">
+							<a href="#" class="banner-card">
+								<img src="img/banner-card-img4.jpg" alt="" class="banner-card__img">
+
+								<div class="banner-card__body">
+									<div class="banner-card__title">Всё о Vense</div>
+									<div class="banner-card__button">
+										<span class="btn btn--warning">Подробнее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

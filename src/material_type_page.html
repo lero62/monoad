@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "material_type_page"
+})
+
+<body class="loaded">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Меню',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item ">
+							<div class="filter-button filter-button--menu  _box-fixed-toggle" data-box-fixed-toggle="3">
+
+								<span>Меню</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="filter" data-da="menu-fixed__body, 1, 1024">
+							<div class="sbox filter__sbox">
+								<div class="sbox__head ">
+									<div class="sbox__title">Подробно о брендах</div>
+								</div>
+								<div class="sbox__body">
+									<div class="sbox__drops">
+										<div class="selectbox" data-selectbox>
+											<div class="selectbox__head" data-selectbox-head>
+												<div class="selectbox__text" data-selectbox-title>Dr.Martens</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li class="_selected">Dr.Martens</li>
+													<li>Dr.Martens 2</li>
+													<li>Dr.Martens 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item  sbox__list-drop _active">
+											<span>Коллекции</span>
+											<ul class="sbox__list sbox__dropdown" style="display: block;">
+												<li class="sbox__list-item _active"><a href="#">The Originals</a></li>
+												<li class="sbox__list-item"><a href="#">Made in England</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item  sbox__list-drop">
+											<span>Материал изделий</span>
+											<ul class="sbox__list sbox__dropdown">
+												<li class="sbox__list-item"><a href="#">Все</a></li>
+												<li class="sbox__list-item"><a href="#">Сандалии</a></li>
+												<li class="sbox__list-item"><a href="#">Шлепанцы</a></li>
+											</ul>
+										</li>
+										<li class="sbox__list-item"><a href="#">Подошва</a></li>
+										<li class="sbox__list-item"><a href="#">Уход</a></li>
+										<li class="sbox__list-item"><a href="#">Фасон</a></li>
+
+										<li class="sbox__list-item"><a href="#">Технологии</a></li>
+										<li class="sbox__list-item"><a href="#">История бренда</a></li>
+										<li class="sbox__list-item"><a href="#">Блог</a></li>
+
+									</ul>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem  _active">
+									<div class="sbox__title">Виды материалов</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item _active"><a href="#">Масляная кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Гладкая кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Зернистая кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Лакированная кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Ворсистая кожа</a></li>
+										<li class="sbox__list-item"><a href="#">Принтовая кожа</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body mb-lg-4 mb-3" data-da="main-header, last, 1199">
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Бренды</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Dr.Martens</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">материал изделий</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">натуральная кожа</a>
+								</li>
+								<li class="breadcrumbs__item">Масляная кожа</li>
+							</ul>
+
+						</div>
+
+						@@include('./template/blocks/collection-banner.html', {
+						img: 'img/collection/collection-banner-img-8',
+						imgMobile: 'img/collection/collection-banner-img-iphone-8',
+						icon: '',
+						title: 'Масляная <br class="hidden-ipad">кожа',
+						titleH1: true,
+						btn: 'Посмотреть товары',
+						})
+
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title">О материале</div>
+
+							<div class="row g-xxl-6 g-xl-3 g-2 flex-xxl-nowrap seo-text">
+								<div class="col-xxl">
+									<div class="temperature-informer d-flex mb-md-6 mb-4">
+										<div class="temperature-informer__icon ">
+											<svg width="45" height="39" viewBox="0 0 45 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_15205)">
+													<path d="M28.018 5.7957L32.6878 2.48438L39.0558 5.38178L39.4803 19.4549C40.4708 23.1801 42.3671 30.7134 42.0275 31.0445C41.6878 31.3756 38.7727 34.7697 37.3576 36.4254L28.018 35.1837L24.1973 28.9749L26.7444 21.9384L28.018 5.7957Z" fill="white" />
+													<path d="M42.5009 21.2139V8.53125C42.5009 3.8185 38.5845 0 33.8212 0C29.0579 0 25.1415 3.8185 25.1415 8.53125V21.2139C23.5985 23.0892 22.7118 25.4414 22.7118 28.0312C22.7118 34.0869 27.7509 38.9314 33.8915 38.9314C39.9618 39 45.0009 34.0869 45.0009 28.0312C45.0009 25.4414 44.0399 23.0877 42.5009 21.2139ZM33.7509 34.125C30.304 34.125 27.5017 31.3927 27.5017 28.0998C27.5017 26.1574 28.4587 24.3765 29.9314 23.2438V8.60361C29.9314 6.58506 31.611 4.94736 33.611 4.94736C35.6814 4.94736 37.2907 6.58506 37.2907 8.60361V23.2438C38.8337 24.3674 39.7204 26.1574 39.7204 28.0998C40.0009 31.3904 37.1962 34.125 33.7509 34.125ZM35.0009 24.5959V23.1562C35.0009 22.4897 34.4344 21.9375 33.7509 21.9375C33.0674 21.9375 32.5712 22.4897 32.5712 23.1562V24.5944C31.1165 25.099 30.0712 26.4415 30.0712 28.032C30.0712 30.0506 31.7509 31.6883 33.7509 31.6883C35.8212 31.6883 37.5009 30.0506 37.5009 28.032C37.5009 26.4393 36.454 25.0986 35.0009 24.5959ZM20.9618 23.2629C21.3603 22.265 21.8524 21.3053 22.5009 20.4064L22.5014 19.9192L17.4306 16.9939L22.4993 14.1405L22.4991 9.92443L15.5556 13.8937V9.46816L17.9103 7.17311C18.5206 6.57805 18.5206 5.61158 17.9103 5.01668C17.2999 4.42178 16.311 4.42163 15.7009 5.01668L15.5556 5.1576V4.26562C15.5556 3.25635 14.7157 2.4375 13.6806 2.4375C12.6454 2.4375 11.8056 3.25635 11.8056 4.26562V5.1576L11.6649 5.01516C11.0546 4.4201 10.0657 4.4201 9.45557 5.01516C8.84542 5.61021 8.84526 6.57668 9.45557 7.17158L11.8103 9.46664V13.896L7.87589 11.6848L7.0126 8.54648C6.78917 7.73145 5.93604 7.2508 5.1001 7.46713C4.26651 7.68376 3.77198 8.51906 3.99542 9.33334L4.04897 9.52826L3.25401 9.07969C2.36026 8.57695 1.20948 8.87402 0.692994 9.75C0.175416 10.626 0.481822 11.7457 1.37901 12.2484L2.17432 12.6959L1.97354 12.7436C1.14073 12.9602 0.646979 13.7955 0.870416 14.6098C1.05721 15.2906 1.68838 15.7379 2.37823 15.7379C2.51253 15.7379 2.64924 15.7212 2.78471 15.6855L5.99932 14.8459L9.93057 16.9939L6.13448 19.2029L2.91963 18.3574C2.09463 18.1441 1.22901 18.624 1.00557 19.4391C0.782135 20.2465 1.27667 21.0844 2.1087 21.3053L2.30917 21.3576L1.51495 21.8004C0.617369 22.3031 0.310963 23.4229 0.828229 24.2988C1.17495 24.8844 1.80635 25.2129 2.45323 25.2129C2.77182 25.2129 3.09409 25.1344 3.38917 24.9677L4.1837 24.5205L4.13014 24.7154C3.90714 25.5328 4.40167 26.3631 5.23526 26.5154C5.37073 26.5511 5.50628 26.5678 5.64057 26.5678C6.33026 26.5678 6.96167 26.1203 7.14839 25.4397L8.01089 22.3006L11.8093 20.1625V23.9825L9.45401 26.3402C8.8437 26.9353 8.8437 27.9018 9.45401 28.4967C10.0643 29.0916 11.0532 29.0917 11.6634 28.4967L11.8086 28.3549V29.8594C11.8086 30.8687 12.6485 31.6875 13.6836 31.6875C14.7188 31.6875 15.5586 30.8687 15.5586 29.8594V28.358L15.704 28.5035C16.0087 28.8006 16.4071 28.9453 16.8056 28.9453C17.204 28.9453 17.6048 28.7977 17.9103 28.5002C18.5206 27.9051 18.5206 26.9386 17.9103 26.3437L15.5556 24.0475V20.2313L20.9618 23.2629Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_15205">
+														<rect width="45" height="39" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+
+										</div>
+										<div class="temperature-informer__content align-self-center">
+											<div class="temperature-informer__item">
+												<div class="font-700 mb-1">Допустимая температура эксплуатации: </div>
+												<div>-7°C +18°C / Сезон: Демисезон</div>
+											</div>
+										</div>
+
+									</div>
+									<p>Туфли и ботинки из жированной/промасленной кожи вправе похвастать выносливостью и высокой степенью практичности, однако это не означает, что за ними можно не ухаживать. Если вы хотите, чтобы такая обувь прослужила как можно дольше, чтобы она многие годы сохраняла стильный внешний вид, вам нужно относится к ней с должным вниманием. В этой статье мы подробно расскажем о том, как следует ухаживать за туфлями и ботинками из жированной кожи. В этой статье мы подробно расскажем о том, как следует ухаживать за туфлями и ботинками из жированной кожи.
+									</p>
+
+									<div class="row pt-md-4 pt-1 gy-3">
+										<div class="col-xxxl-5 col-md-6">
+											<h6>Преимущества масляной кожи</h6>
+											<ul class="disc">
+												<li>Очень мягкая</li>
+												<li>Долговременный лоск</li>
+												<li>Изящная</li>
+												<li>Статусная</li>
+												<li>Не стирается</li>
+											</ul>
+										</div>
+										<div class="col-xxxl-5 col-md-6">
+											<h6>недостатки масляной кожи</h6>
+											<ul class="disc">
+												<li>Плохо чистится</li>
+												<li>Требует специальных средств хранения</li>
+												<li>Изнашивается</li>
+												<li>Дорогая</li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+								<div class="col-xxl-auto">
+									<img src="img/maretials/img-3.jpg" alt="">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-5">Материалы масляной кожи</div>
+
+							<div class="lines-grid">
+								<a href="#" class="lines-item lines-item--lg">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-1.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">Core applique</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-2.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">Core</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-5.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">collaborations</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-3.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">vegan</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-6.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">core print</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-4.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">icons</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-7.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">Core applique </div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-6.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">core print</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-4.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">icons</div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-7.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">Core applique </div>
+									</div>
+								</a>
+								<a href="#" class="lines-item">
+									<div class="lines-item__img">
+										<img src="img/subcollection/lines-img-7.jpg" alt="">
+									</div>
+									<div class="lines-item__body">
+										<div class="lines-item__title">Core applique </div>
+									</div>
+								</a>
+							</div>
+
+							<div class="text-center mt-md-6 mt-4 d-md-block d-flex flex-column">
+								<a href="#" class="ms-md-2 me-md-2 mb-1 btn btn--dark btn--iphone-static">
+									<span class="hidden-iphone">Посмотреть следующий вид</span>
+									<span class="visible-iphone">Следующая коллекция</span>
+
+								</a>
+								<a href="#" class="ms-md-2 me-md-2 btn btn--warning btn--iphone-static">Посмотреть все товары масляной кожи</a>
+							</div>
+						</div>
+
+						@@include('./template/sections/arhive_foto_line.html', {
+						title: 'Архивные фото Масляной кожи',
+						})
+
+						<div class="section-box mt-lg-7 mt-4">
+							<div class="section-box__title mb-md-5 text-md-center">товары из масляной <span class="nowrap">кожи <span class="badge badge--lg">9</span></span></div>
+
+							<div class="collections-swiper">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-1.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: true,
+											soles: false,
+											fason: false,
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-2.png',
+											title: '1460 Pascal Brown Savanna ',
+											materials: true,
+											soles: false,
+											fason: false,
+
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-3.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: true,
+											soles: false,
+											fason: false,
+
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-4.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: true,
+											soles: false,
+											fason: false,
+
+											})
+										</div>
+										<div class="swiper-slide">
+											@@include('./template/blocks/collection_card.html', {
+											img: 'img/subcollection/collection_card-img-1.png',
+											title: '1460 Pascal Brown Savanna',
+											materials: true,
+											soles: false,
+											fason: false,
+
+											})
+										</div>
+
+									</div>
+									<div class="swiper-pagination swiper-pagination--static visible-laptop"></div>
+
+								</div>
+								<div class="collections-swiper__prev swiper-button-prev hidden-laptop">
+									<svg class="icon icon-swiper-arrow">
+										<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+									</svg>
+								</div>
+								<div class="collections-swiper__next swiper-button-next hidden-laptop">
+									<svg class="icon icon-swiper-arrow">
+										<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="btn btn--fill btn--block mt-5">
+							<svg class="icon icon-star-filled me-2">
+								<use xlink:href="img/sprite.svg#star-filled"></use>
+							</svg>
+							<span>Сохранить страницу в избранном</span>
+						</a>
+					</div>
+
+
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Меню</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body pt-0 pb-0 menu-fixed__body scrollbar">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

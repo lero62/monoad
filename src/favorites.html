@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Избранное"
+})
+
+<body class="loaded ">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 13,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main swipe-block" id="main">
+			<div class="container-fluid">
+
+				<div class="main-header ">
+					<div class="main-header__controls controls visible-iphone">
+						<div class="controls__item">
+							<div class="filter-button _box-fixed-toggle" data-box-fixed-toggle="3">
+								<svg class="icon icon-grid">
+									<use xlink:href="img/sprite.svg#grid"></use>
+								</svg>
+								<span>Категории</span>
+								<div class="filter-button__caret"></div>
+							</div>
+						</div>
+						<div class="controls__item ">
+							<div class="filter-button _filter-toggle">
+								<svg class="icon icon-filter-alt">
+									<use xlink:href="img/sprite.svg#filter-alt"></use>
+								</svg>
+								<span>Фильтр</span>
+								<div class="filter-button__caret"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="wrap">
+					<!-- BEGIN SIDEBAR -->
+					<aside class="sidebar hidden-md">
+						<div class="sbox">
+							<div class="sbox__head _ac__navitem _active">
+								<div class="sbox__title">Меню кабинета</div>
+								<div class="sbox__caret"></div>
+							</div>
+							<div class="sbox__body _ac__item" style="display: block;">
+								<ul class="sbox__list sbox__list--one">
+									<li class="sbox__list-item "><a href="#">История заказов <span class="badge badge--dark">1</span></a></li>
+									<li class="sbox__list-item"><a href="#">Личные данные</a></li>
+									<li class="sbox__list-item _active"><a href="#">Избранное <span class="badge">26</span></a></li>
+									<li class="sbox__list-item"><a href="#">Выйти</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="filter" data-da="filter-fixed__body, 1, 1024">
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem _active">
+									<div class="sbox__title">Все бренды</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item _active"><a href="#">Dr. Martens</a></li>
+										<li class="sbox__list-item"><a href="#">Converse <span class="badge">1</span></a></li>
+										<li class="sbox__list-item"><a href="#">Vans</a></li>
+										<li class="sbox__list-item"><a href="#">Monoad</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox hidden-md">
+								<div class="sbox__head _ac__navitem _active">
+									<div class="sbox__title">Категории</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item _active"><a href="#">Все</a></li>
+										<li class="sbox__list-item"><a href="#">Сапоги <span class="badge">1</span></a></li>
+										<li class="sbox__list-item"><a href="#">Ботинки <span class="badge">5</span></a></li>
+
+									</ul>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem _active">
+									<div class="sbox__title">РАзмер</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item" style="display: block;">
+									<div class="sbox__inner">
+										<div class="label-tags _toggle">
+											<div class="label-tags__item">36 EUR</div>
+											<div class="label-tags__item _active">38 EUR</div>
+											<div class="label-tags__item">39 EUR</div>
+											<div class="label-tags__item">40 EUR</div>
+											<div class="label-tags__item">44 EUR</div>
+											<div class="label-tags__item">45 EUR</div>
+											<div class="label-tags__item">46 EUR</div>
+											<div class="label-tags__item">49 EUR</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem ">
+									<div class="sbox__title">Цвет</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item">
+									<ul class="sbox__size ">
+										<li>
+											<label class="checkbox checkbox--sm">
+												<input type="checkbox">
+												<span class="checkbox__color" style="background-color: #000;"></span>
+												<span class="checkbox__text">Черный</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox checkbox--sm">
+												<input type="checkbox">
+												<span class="checkbox__color" style="background-color: #9C693C;"></span>
+												<span class="checkbox__text">Коричневый</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox checkbox--sm">
+												<input type="checkbox">
+												<span class="checkbox__color" style="background-color: #BDBDBD;"></span>
+												<span class="checkbox__text">Серый</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox checkbox--sm">
+												<input type="checkbox">
+												<span class="checkbox__color" style="background-color: #FF5353;"></span>
+												<span class="checkbox__text">Красный</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox checkbox--sm">
+												<input type="checkbox">
+												<span class="checkbox__color" style="background-color: #7DD25F;"></span>
+												<span class="checkbox__text">Зеленый</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox checkbox--sm">
+												<input type="checkbox">
+												<span class="checkbox__color" style="background-color: #8CBAF3;"></span>
+												<span class="checkbox__text">Синий</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox checkbox--sm">
+												<input type="checkbox">
+												<span class="checkbox__color" style="background-color: #FBC644;"></span>
+												<span class="checkbox__text">Желтый</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox checkbox--sm">
+												<input type="checkbox">
+												<span class="checkbox__color checkbox__color--white" style="background-color: #FFFFFF;"></span>
+												<span class="checkbox__text">Белый</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="sbox filter__sbox">
+								<div class="sbox__head _ac__navitem ">
+									<div class="sbox__title">Сортировка</div>
+									<div class="sbox__caret"></div>
+								</div>
+								<div class="sbox__body _ac__item">
+									<ul class="sbox__list sbox__list--one">
+										<li class="sbox__list-item _active"><span>По умолчанию</span></li>
+										<li class="sbox__list-item"><span>Скидки</span></li>
+										<li class="sbox__list-item"><span>От дешевых</span></li>
+										<li class="sbox__list-item"><span>От дорогих</span></li>
+										<li class="sbox__list-item"><span>Новинки</span></li>
+										<li class="sbox__list-item"><span>Популярные</span></li>
+										<li class="sbox__list-item"><span>Доставка 1-2 дня</span></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="sidebar__icons-box ">
+								<a href="#" class="icons-box">
+									<div class="icons-box__icon">
+										<svg class="icon icon-table-size">
+											<use xlink:href="img/sprite.svg#table-size"></use>
+										</svg>
+									</div>
+									<div class="icons-box__title">Таблица <br>размеров</div>
+								</a>
+								<a href="#" class="icons-box">
+									<div class="icons-box__icon">
+										<svg class="icon icon-calculator">
+											<use xlink:href="img/sprite.svg#calculator"></use>
+										</svg>
+									</div>
+									<div class="icons-box__title">Подбор <br>размера</div>
+								</a>
+								<a href="#" class="icons-box">
+									<div class="icons-box__icon">
+										<svg class="icon icon-roulette">
+											<use xlink:href="img/sprite.svg#roulette"></use>
+										</svg>
+									</div>
+									<div class="icons-box__title">Мой <br>размер</div>
+								</a>
+							</div>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR EOF -->
+
+					<!-- BEGIN CONTENT -->
+					<div class="content">
+						<div class="main-header__body" data-da="main-header, 1, 1199">
+							<!-- Crumbs -->
+							<ul class="breadcrumbs ">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">Избранное</li>
+							</ul>
+							<!-- end Crumbs -->
+
+							<div class="content__header row flex-lg-nowrap">
+								<div class="col-12 col-lg-auto order-lg-1 hidden-md">
+									<div class="content__sorting">
+										<div class="sorting ">
+											<div class="sorting__item ">
+												<div class="selectbox selectbox--icon selectbox--bold">
+													<div class="selectbox__head">
+														<div class="selectbox__icon"><svg class="icon icon-grid">
+																<use xlink:href="img/sprite.svg#grid"></use>
+															</svg></div>
+														<div class="selectbox__text">По 20 на странице</div>
+														<div class="selectbox__caret"></div>
+													</div>
+													<div class="selectbox__drop">
+														<ul>
+															<li class="_selected">По 20 на странице</li>
+															<li>По 40 на странице</li>
+															<li>По 60 на странице</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="sorting__item ">
+												<div class="selectbox selectbox--icon selectbox--bold">
+													<div class="selectbox__head">
+														<div class="selectbox__icon"><svg class="icon icon-sort">
+																<use xlink:href="img/sprite.svg#sort"></use>
+															</svg></div>
+														<div class="selectbox__text">Популярные</div>
+														<div class="selectbox__caret"></div>
+													</div>
+													<div class="selectbox__drop">
+														<ul>
+															<li>По умолчанию</li>
+															<li>Скидки</li>
+															<li>От дешевых</li>
+															<li>От дорогих</li>
+															<li>Новинки</li>
+															<li class="_selected">Популярные</li>
+															<li>Доставка 1-2 дня</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg">
+									<h1 class="content__title">Избранные товары</h1>
+								</div>
+							</div>
+						</div>
+
+						<div class="alert alert--not-arrow alert--size-md ">
+							<div class="alert__inner ">
+								<div class="tel-bot">
+									<div class="tel-bot__icon">
+										<svg class="icon icon-telegram">
+											<use xlink:href="img/sprite.svg#telegram"></use>
+										</svg>
+									</div>
+									<div class="tel-bot__content">
+										Мы вас уведомим через нашего телеграмм-бота о любых изменениях в избранных вами товарах, включая снижение его цены, акционные предложения по нему и многое другое! Нажмите кнопку «Мониторить», чтобы выбрать желаемые параметры и следите за изменениями!
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- BEGIN PRODUCTS -->
+						<div class="favorites">
+							<div class="favorite-card">
+								<label class="favorite-card__check">
+									<input type="checkbox">
+									<span><svg class="icon icon-check">
+											<use xlink:href="img/sprite.svg#check"></use>
+										</svg></span>
+								</label>
+								<div class="favorite-card__remove">
+									<svg class="icon icon-close">
+										<use xlink:href="img/sprite.svg#close"></use>
+									</svg>
+								</div>
+
+								<div class="favorite-card__img">
+									<a href="#"><img src="img/products/catalog-img6.jpg" alt=""></a>
+								</div>
+								<div class="favorite-card__content">
+									<div class="favorite-card__brand">DR.MARTENS</div>
+									<div class="favorite-card__row">
+										<div class="favorite-card__head">
+
+											<div class="favorite-card__title"><a href="#">1160 Pascal Hardware Black Virginia</a></div>
+											<div class="favorite-card__price visible-lg">
+												<span class="price-value">10500 грн. </span>
+											</div>
+											<div class="favorite-card__details ort-details">
+												<div class="alert alert--danger visible-md">
+													<div class="alert__inner">Выберите размер, по которому мы будем отслеживать</div>
+												</div>
+												<div class="ort-details__item hidden-md">
+													<div class="ort-details__icon">
+														<svg class="icon icon-size">
+															<use xlink:href="img/sprite.svg#size"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content  ">
+														<div class="dropdown _dropdown _change">
+															<div class="toltipe-wrap">
+																<span class="dotted _dropdown-btn">Размер - 42 EUR / 8,5 US Men / 27 см.</span>
+																<div class="toltipe toltipe--top-center toltipe-s1">Выберите размер, по которомумы будем отслеживать</div>
+															</div>
+															<div class="dropdown__block">
+																<div class="dropdown__title">
+																	<span class="dropdown__title-start">Выберите Размер</span>
+																	<span class="dropdown__title-change">Измените Размер</span>
+																</div>
+																<ul class="dropdown__list">
+																	<li class="selected">8,5 US Men / 27 см</li>
+																	<li>9,0 US Men / 28 см</li>
+																	<li>9,5 US Men / 28 см</li>
+																	<li>10,0 US Men / 28 см</li>
+																	<li>9,0 US Men / 28 см</li>
+																	<li>9,5 US Men / 28 см</li>
+																	<li>10,0 US Men / 28 см</li>
+																</ul>
+															</div>
+														</div>
+
+													</div>
+												</div>
+												<div class="ort-details__item visible-md">
+													<div class="ort-details__icon">
+														<svg class="icon icon-size">
+															<use xlink:href="img/sprite.svg#size"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content  ">
+														<span class="dotted _box-fixed-toggle" data-box-fixed-toggle="2">Размер - 42 EUR / 8,5 US Men / 27 см.</span>
+
+													</div>
+												</div>
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-track">
+															<use xlink:href="img/sprite.svg#track"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content toltipe-wrap _toltipe-toggle">
+														<span class="dotted">Бесплатная доставка 5-10 дней</span>
+														<div class="toltipe toltipe--top-center toltipe-s2">
+															Взуття в наявності на складі в постачальника в Україні. <br>Безкоштовна доставка до вашого відділення Нової Пошти займе 3-7 днів, залежно від регіону доставки.
+														</div>
+													</div>
+												</div>
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-star-filled">
+															<use xlink:href="img/sprite.svg#star-filled"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content">
+														В избранном с 15.10.2021
+													</div>
+												</div>
+
+											</div>
+
+											<div class="favorite-card__description">Модель из лимитированной цветочной колекции. Модель изготовлена из мягкой цельнозерновой кожи с которой работает Dr.Martens. Всеми любимая линейка Vonda выпустила новую рассцветку, а именно монохромные цветочки, которые сохряняют ваши ноги влажными и сухими одновременно! Шикарная обувь для истенных ценителей а именно монохромные цветочки, которые сохряняют ваши</div>
+										</div>
+										<div class="favorite-card__side">
+											<div class="favorite-card__price hidden-lg">
+												<span class="price-value">10500 грн. </span>
+											</div>
+											<div class="favorite-card__controls">
+												<a href="#" class="btn btn--block btn--warning">в корзину</a>
+												<a href="#" class="btn btn--block btn--dark _mon hidden-md">
+													Не отслеживать
+												</a>
+
+												<a href="#" class="btn btn--block btn--dark _box-fixed-toggle visible-md" data-box-fixed-toggle="1">
+													<svg class="icon icon-watch btn-icon-left">
+														<use xlink:href="img/sprite.svg#watch"></use>
+													</svg>
+													Не отслеживать
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="favorite-card">
+								<label class="favorite-card__check">
+									<input type="checkbox">
+									<span><svg class="icon icon-check">
+											<use xlink:href="img/sprite.svg#check"></use>
+										</svg></span>
+								</label>
+								<div class="favorite-card__remove">
+									<svg class="icon icon-close">
+										<use xlink:href="img/sprite.svg#close"></use>
+									</svg>
+								</div>
+
+								<div class="favorite-card__img">
+									<a href="#"><img src="img/products/catalog-img6.jpg" alt=""></a>
+								</div>
+								<div class="favorite-card__content">
+									<div class="favorite-card__brand">DR.MARTENS</div>
+									<div class="favorite-card__row">
+										<div class="favorite-card__head">
+
+											<div class="favorite-card__title"><a href="#">1160 Pascal Hardware Black Virginia</a></div>
+											<div class="favorite-card__price visible-lg">
+												<span class="price-old">12500 грн. </span>
+												<span class="price-value text-danger">10500 грн. </span>
+											</div>
+											<div class="favorite-card__details ort-details">
+												<div class="alert alert--danger visible-md">
+													<div class="alert__inner">Выберите размер, по которому мы будем отслеживать</div>
+												</div>
+												<div class="ort-details__item hidden-md">
+													<div class="ort-details__icon">
+														<svg class="icon icon-size">
+															<use xlink:href="img/sprite.svg#size"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content ">
+														<div class="dropdown _dropdown ">
+															<div class="toltipe-wrap">
+																<span class="dotted _dropdown-btn">Выбрать размер</span>
+																<div class="toltipe toltipe--top-center toltipe-s1">Выберите размер, по которомумы будем отслеживать</div>
+															</div>
+															<div class="dropdown__block">
+																<div class="dropdown__title">
+																	<span class="dropdown__title-start">Выберите Размер</span>
+																	<span class="dropdown__title-change">Измените Размер</span>
+																</div>
+																<ul class="dropdown__list">
+																	<li>8,5 US Men / 27 см</li>
+																	<li>9,0 US Men / 28 см</li>
+																	<li>9,5 US Men / 28 см</li>
+																	<li>10,0 US Men / 28 см</li>
+																	<li>9,0 US Men / 28 см</li>
+																	<li>9,5 US Men / 28 см</li>
+																	<li>10,0 US Men / 28 см</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="ort-details__item visible-md">
+													<div class="ort-details__icon">
+														<svg class="icon icon-size">
+															<use xlink:href="img/sprite.svg#size"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content  ">
+														<span class="dotted _box-fixed-toggle" data-box-fixed-toggle="2">Выбрать размер</span>
+
+													</div>
+												</div>
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-track">
+															<use xlink:href="img/sprite.svg#track"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content toltipe-wrap _toltipe-toggle">
+														<span class="dotted">Бесплатная доставка 5-10 дней</span>
+														<div class="toltipe toltipe--top-center toltipe-s2">
+															Взуття в наявності на складі в постачальника в Україні. <br>Безкоштовна доставка до вашого відділення Нової Пошти займе 3-7 днів, залежно від регіону доставки.
+														</div>
+													</div>
+												</div>
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-star-filled">
+															<use xlink:href="img/sprite.svg#star-filled"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content">
+														В избранном с 15.10.2021
+													</div>
+												</div>
+
+											</div>
+
+											<div class="favorite-card__description">Модель из лимитированной цветочной колекции. Модель изготовлена из мягкой цельнозерновой кожи с которой работает Dr.Martens. Всеми любимая линейка Vonda выпустила новую рассцветку, а именно монохромные цветочки, которые сохряняют ваши ноги влажными и сухими одновременно! Шикарная обувь для истенных ценителей а именно монохромные цветочки, которые сохряняют ваши</div>
+										</div>
+										<div class="favorite-card__side">
+											<div class="favorite-card__price hidden-lg">
+												<span class="price-old">12500 грн. </span>
+												<span class="price-value text-danger">10500 грн. </span>
+											</div>
+											<div class="favorite-card__controls">
+												<a href="#" class="btn btn--block btn--warning">в корзину</a>
+												<a href="#" class="btn btn--block _mon hidden-md">
+													<svg class="icon icon-watch btn-icon-left">
+														<use xlink:href="img/sprite.svg#watch"></use>
+													</svg>
+													Мониторить
+												</a>
+												<a href="#" class="btn btn--block _box-fixed-toggle visible-md" data-box-fixed-toggle="1">
+													<svg class="icon icon-watch btn-icon-left">
+														<use xlink:href="img/sprite.svg#watch"></use>
+													</svg>
+													Мониторить
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="favorite-card favorite-card--not-aviable">
+								<label class="favorite-card__check">
+									<input type="checkbox">
+									<span><svg class="icon icon-check">
+											<use xlink:href="img/sprite.svg#check"></use>
+										</svg></span>
+								</label>
+								<div class="favorite-card__remove">
+									<svg class="icon icon-close">
+										<use xlink:href="img/sprite.svg#close"></use>
+									</svg>
+								</div>
+
+								<div class="favorite-card__img">
+									<a href="#"><img src="img/products/catalog-img6.jpg" alt=""></a>
+									<span class="favorite-card__not-aviable not-aviable">Нет в наличии</span>
+								</div>
+								<div class="favorite-card__content">
+									<div class="favorite-card__brand">DR.MARTENS</div>
+									<div class="favorite-card__row">
+										<div class="favorite-card__head">
+											<div class="favorite-card__title"><a href="#">1160 Pascal Hardware Black Virginia</a></div>
+											<div class="favorite-card__price visible-lg">
+												<span class="price-old">12500 грн. </span>
+												<span class="price-value text-danger">10500 грн. </span>
+											</div>
+											<div class="favorite-card__details ort-details">
+												<div class="alert alert--danger visible-md">
+													<div class="alert__inner">Выберите размер, по которому мы будем отслеживать</div>
+												</div>
+												<div class="ort-details__item hidden-md">
+													<div class="ort-details__icon">
+														<svg class="icon icon-size">
+															<use xlink:href="img/sprite.svg#size"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content toltipe-wrap">
+														<span class="dotted">Выбрать размер</span>
+														<div class="toltipe toltipe--top-center toltipe-s1">Выберите размер, по которомумы будем отслеживать</div>
+													</div>
+												</div>
+												<div class="ort-details__item visible-md">
+													<div class="ort-details__icon">
+														<svg class="icon icon-size">
+															<use xlink:href="img/sprite.svg#size"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content  ">
+														<span class="dotted _box-fixed-toggle" data-box-fixed-toggle="2">Выбрать размер</span>
+
+													</div>
+												</div>
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-track">
+															<use xlink:href="img/sprite.svg#track"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content toltipe-wrap _toltipe-toggle">
+														<span class="dotted">Бесплатная доставка 5-10 дней</span>
+														<div class="toltipe toltipe--top-center toltipe-s2">
+															Взуття в наявності на складі в постачальника в Україні. <br>Безкоштовна доставка до вашого відділення Нової Пошти займе 3-7 днів, залежно від регіону доставки.
+														</div>
+													</div>
+												</div>
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-star-filled">
+															<use xlink:href="img/sprite.svg#star-filled"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content">
+														В избранном с 15.10.2021
+													</div>
+												</div>
+
+											</div>
+
+											<div class="favorite-card__description">Модель из лимитированной цветочной колекции. Модель изготовлена из мягкой цельнозерновой кожи с которой работает Dr.Martens. Всеми любимая линейка Vonda выпустила новую рассцветку, а именно монохромные цветочки, которые сохряняют ваши ноги влажными и сухими одновременно! Шикарная обувь для истенных ценителей а именно монохромные цветочки, которые сохряняют ваши</div>
+										</div>
+										<div class="favorite-card__side">
+											<div class="favorite-card__price hidden-lg">
+												<span class="price-old">12500 грн. </span>
+												<span class="price-value text-danger">10500 грн. </span>
+											</div>
+											<div class="favorite-card__controls">
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- PRODUCTS EOF -->
+
+					</div>
+					<!-- CONTENT EOF -->
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- Мониторинг для десктопа -->
+		<div class="fcc-box _fcc-box-fav hidden-md">
+			<div class="fcc-box__head">
+				<div class="fcc-box__title">О чем уведомить вас в телеграмм?</div>
+				<div class="fcc-box__description">Мы сохраним ваш размер и сделаем выбор более удобным.</div>
+				<div class="fcc-box__icon">
+					<svg class="icon icon-telegram">
+						<use xlink:href="img/sprite.svg#telegram"></use>
+					</svg>
+				</div>
+			</div>
+
+
+			<div class="fcc-box__body">
+				<ul class="fcc-list">
+					<li>
+						<label class="checkbox">
+							<input type="checkbox">
+							<span class="checkbox__figure"></span>
+							<span class="checkbox__text">Скидка на этот товар</span>
+						</label>
+					</li>
+					<li>
+						<label class="checkbox">
+							<input type="checkbox">
+							<span class="checkbox__figure"></span>
+							<span class="checkbox__text">Скидка на мой размер по Dr. Martens.</span>
+						</label>
+					</li>
+
+					<li>
+						<label class="checkbox">
+							<input type="checkbox">
+							<span class="checkbox__figure"></span>
+							<span class="checkbox__text">Когда мой размер появится в наличии с доставкой 1-2 дня.</span>
+						</label>
+					</li>
+					<li>
+						<label class="checkbox">
+							<input type="checkbox">
+							<span class="checkbox__figure"></span>
+							<span class="checkbox__text">Когда мой размер станет доступен для заказа.</span>
+						</label>
+					</li>
+				</ul>
+			</div>
+			<div class="fcc-box__footer">
+				<a href="#" class="btn btn--dark">
+					<svg class="icon icon-watch btn-icon-left">
+						<use xlink:href="img/sprite.svg#watch"></use>
+					</svg>
+					Мониторить
+				</a>
+			</div>
+		</div>
+		<!-- End Мониторинг для десктопа -->
+
+		<!-- Фиксированная панель внизу над футером -->
+		<div class="panel-wrapper ">
+			<div class="panel-sticky swipe-block _open">
+				<div class="container panel-sticky__container">
+					<div class="panel-sticky__title">Групповая работа с выбранными товарами:</div>
+					<div class="panel-sticky__buttons">
+						<a href="#" class="btn">Удалить все</a>
+						<a href="#" class="btn">Мониторить</a>
+						<a href="#" class="btn btn--warning">в корзину</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Фиксированная панель внизу над футером -->
+
+		<!-- Мониторинг для мобилы -->
+		<div class="box-fixed" data-box-fixed="1">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="1"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">О чем уведомить вас в телеграмм?</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="1">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body scrollbar">
+					<div class="fbox-card ">
+						<div class="fbox-card__row">
+							<div class="fbox-card__img"><img src="img/products/catalog-img6.jpg" alt=""></div>
+							<div class="fbox-card__content">
+								<div class="fbox-card__brand">DR.MARTENS</div>
+								<div class="fbox-card__title">1460 Pascal Hardware Black Virginia</div>
+								<div class="fbox-card__price">
+									<span class="price-old">12100 грн.</span>
+									<span class="price-value text-danger">6100 грн.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="fbox-card__details details">
+							<div class="ort-details__item">
+								<div class="ort-details__icon">
+									<svg class="icon icon-track">
+										<use xlink:href="img/sprite.svg#track"></use>
+									</svg>
+								</div>
+								<div class="ort-details__content ">
+									<span>Бесплатная доставка 5-10 дней</span>
+
+								</div>
+							</div>
+							<div class="ort-details__item">
+								<div class="ort-details__icon">
+									<svg class="icon icon-star-filled">
+										<use xlink:href="img/sprite.svg#star-filled"></use>
+									</svg>
+								</div>
+								<div class="ort-details__content">
+									В избранном с 15.10.2021
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<ul class="fcc-list">
+						<li>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Скидка на этот товар</span>
+							</label>
+						</li>
+						<li>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Скидка на мой размер по Dr. Martens.</span>
+							</label>
+						</li>
+
+						<li>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Когда мой размер появится в наличии с доставкой 1-2 дня.</span>
+							</label>
+						</li>
+						<li>
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox__figure"></span>
+								<span class="checkbox__text">Когда мой размер станет доступен для заказа.</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="box-fixed__footer">
+					<a href="#" class="btn">Отмена</a>
+					<a href="#" class="btn btn--dark">
+						<svg class="icon icon-watch btn-icon-left">
+							<use xlink:href="img/sprite.svg#watch"></use>
+						</svg>
+						Мониторить
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- End Мониторинг для мобилы -->
+
+		<!-- Выбрать размер для мобилы  -->
+		<div class="box-fixed" data-box-fixed="2">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="2"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Изменение размера</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="2">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body scrollbar">
+					<div class="fbox-card ">
+						<div class="fbox-card__row">
+							<div class="fbox-card__img"><img src="img/products/catalog-img6.jpg" alt=""></div>
+							<div class="fbox-card__content">
+								<div class="fbox-card__brand">DR.MARTENS</div>
+								<div class="fbox-card__title">1460 Pascal Hardware Black Virginia</div>
+								<div class="fbox-card__price">
+									<span class="price-old">12100 грн.</span>
+									<span class="price-value text-danger">6100 грн.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="fbox-card__details details">
+
+							<div class="ort-details__item">
+								<div class="ort-details__icon">
+									<svg class="icon icon-track">
+										<use xlink:href="img/sprite.svg#track"></use>
+									</svg>
+								</div>
+								<div class="ort-details__content ">
+									<span>Бесплатная доставка 5-10 дней</span>
+
+								</div>
+							</div>
+							<div class="ort-details__item">
+								<div class="ort-details__icon">
+									<svg class="icon icon-star-filled">
+										<use xlink:href="img/sprite.svg#star-filled"></use>
+									</svg>
+								</div>
+								<div class="ort-details__content">
+									В избранном с 15.10.2021
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="fbox-title">Выберите размер</div>
+					<ul class="sel-list">
+						<li>8,5 US Men / 27 см</li>
+						<li>9,0 US Men / 28 см</li>
+						<li class="selected">9,5 US Men / 28 см</li>
+						<li>10,0 US Men / 28 см</li>
+						<li>10,5 US Men / 29 см</li>
+						<li>11,0 US Men / 29,5 см</li>
+						<li>11,5 US Men / 30 см</li>
+						<li>12,0 US Men / 30,5 см</li>
+					</ul>
+				</div>
+				<div class="box-fixed__footer">
+					<a href="#" class="btn">Отмена</a>
+					<a href="#" class="btn btn--dark">Сохранить размер</a>
+				</div>
+			</div>
+		</div>
+		<!-- End Выбрать размер для мобилы  -->
+
+
+		<!-- BEGIN Filter fixed -->
+		@@include('./template/blocks/filter.html', {})
+		<!-- Filter fixed EOF -->
+
+		<div class="box-fixed box-fixed--not-foot" data-box-fixed="3">
+			<div class="box-fixed__overlay _box-fixed-toggle" data-box-fixed-toggle="3"></div>
+			<div class="box-fixed__container">
+				<div class="box-fixed__head">
+					<div class="box-fixed__title">Категории</div>
+					<div class="box-fixed__close _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-close">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="box-fixed__body scrollbar">
+					<div class="sbox ">
+						<ul class="sbox__list sbox__list--one">
+							<li class="sbox__list-item _active"><a href="#">Все</a></li>
+							<li class="sbox__list-item"><a href="#">Сапоги <span class="badge">1</span></a></li>
+							<li class="sbox__list-item"><a href="#">Ботинки <span class="badge">5</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/popup_login.html', {})
+		@@include('./template/popups/popup_contacts.html', {})
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

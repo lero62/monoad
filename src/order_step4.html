@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Оформление заказа step 4"
+})
+
+<body class="loaded page-order">
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		<!-- 	//= template/header.html -->
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main" id="main">
+			<div class="back-page">
+				<a href="#" class="back-page__btn"><svg class="icon icon-back">
+						<use xlink:href="img/sprite.svg#back"></use>
+					</svg></a>
+			</div>
+			<div class="container">
+				<!-- BEGIN CONTENT -->
+				<div class="content">
+					<div class="order-main">
+
+						<div class="order-main__head">
+							<div class="order-main__head-logo"><img src="img/logo-mini.png" alt=""></div>
+							<h1>Оформление заказа</h1>
+							<span class="order-number">
+								<span class="order-number__symbol">N</span>
+								<span class="order-number__content">
+									Номер заказа:
+									<span class="order-number__drop-btn">
+										<span>40560800</span>
+										<svg class="icon icon-caret">
+											<use xlink:href="img/sprite.svg#caret"></use>
+										</svg>
+									</span>
+								</span>
+							</span>
+
+							<div class="order-main__head-close">
+								<svg class="icon icon-close">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg>
+							</div>
+						</div>
+
+						@@include('./template/blocks/order_crumbs.html', {
+						"crumbs": 4,
+						})
+
+						<div class="order-main__steps">
+							<ul class="steps">
+								<li class="steps__item _select">
+									<span class="steps__number">1</span>
+									<span class="steps__title">Личные данные</span>
+								</li>
+								<li class="steps__item _select">
+									<span class="steps__number">2</span>
+									<span class="steps__title">Доставка</span>
+								</li>
+								<li class="steps__item _select">
+									<span class="steps__number ">3</span>
+									<span class="steps__title">Оплата</span>
+								</li>
+								<li class="steps__item _active">
+									<span class="steps__number">4</span>
+									<span class="steps__title">Заказ</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="pbox">
+							<div class="pbox__head d-flex justify-content-between align-items-center">
+								<div class="hi-steps hi-steps--lg">
+									<div class="hi-steps__badge">1</div>
+									<div class="hi-steps__title">Ваш заказ от 23.05.21</div>
+								</div>
+
+								<a href="#" class="edit-link">
+									<svg class="icon icon-pencil">
+										<use xlink:href="img/sprite.svg#pencil"></use>
+									</svg>
+									<span>Редактировать</span>
+								</a>
+							</div>
+
+							<div class="pbox__body">
+								<div class="cards-table-wrap">
+									<div class="cards-table">
+										<a href="#" class="cards-table__item">
+											<div class="cards-table__img">
+												<img src="img/products/catalog-img1.jpg" alt="">
+											</div>
+											<div class="cards-table__content">
+												<div class="cards-table__brand">Dr.Martens</div>
+												<div class="cards-table__row">
+													<div class="cards-table__head ">
+														<div class="cards-table__title">Chunk Huck Taylor vintage 70 HI Black/Egret</div>
+
+														<div class="cards-table__price visible-iphone">
+															<span class="price-value">2750 грн.</span>
+														</div>
+
+														<div class="cards-table__details ort-details">
+															<div class="ort-details__item">
+																<div class="ort-details__icon">
+																	<svg class="icon icon-size">
+																		<use xlink:href="img/sprite.svg#size"></use>
+																	</svg>
+																</div>
+																<div class="ort-details__content">
+																	Размер - 42 EUR / 8,5 US Men / 27 см.
+																</div>
+															</div>
+															<div class="ort-details__item">
+																<div class="ort-details__icon">
+																	<svg class="icon icon-track">
+																		<use xlink:href="img/sprite.svg#track"></use>
+																	</svg>
+
+																</div>
+																<div class="ort-details__content toltipe-wrap  _toltipe-toggle">
+																	<span class="dotted">Бесплатная доставка 5-10 дней</span>
+																	<div class="toltipe toltipe--top-center">
+																		Здесь будет выводиться информационное
+																		сообщение, объясняющее, почему доставка
+																		будет длиться так долго или так быстро
+																	</div>
+																</div>
+															</div>
+															<div class="ort-details__row">
+																<div class="ort-details__item ort-details__item--default">
+																	<div class="ort-details__icon">
+																		<svg class="icon icon-info">
+																			<use xlink:href="img/sprite.svg#info"></use>
+																		</svg>
+																	</div>
+																	<div class="ort-details__content">
+																		Ориентировочная дата доставки: <span>09.12.2021</span>
+																	</div>
+																</div>
+																<div class="ort-details__item ort-details__item--default">
+																	<div class="ort-details__icon">
+																		<svg class="icon icon-gift-circle">
+																			<use xlink:href="img/sprite.svg#gift-circle"></use>
+																		</svg>
+																	</div>
+																	<div class="ort-details__content">
+																		Промо-код: <span class="no-active">неактивирован</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<div class="cards-table__actions hidden-iphone">
+														<div class="cards-table__price">
+															<span class="price-value">2750 грн.</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="cards-table__item">
+											<div class="cards-table__img">
+												<img src="img/products/catalog-img1.jpg" alt="">
+											</div>
+											<div class="cards-table__content">
+												<div class="cards-table__brand">Dr.Martens</div>
+												<div class="cards-table__row">
+													<div class="cards-table__head ">
+														<div class="cards-table__title">Chunk Huck Taylor vintage 70 HI Black/Egret</div>
+
+														<div class="cards-table__price visible-iphone">
+															<span class="price-old">3750 грн.</span>
+															<span class="price-value text-danger">2750 грн.</span>
+														</div>
+
+														<div class="cards-table__details ort-details">
+															<div class="ort-details__item">
+																<div class="ort-details__icon">
+																	<svg class="icon icon-size">
+																		<use xlink:href="img/sprite.svg#size"></use>
+																	</svg>
+																</div>
+																<div class="ort-details__content">
+																	Размер - 42 EUR / 8,5 US Men / 27 см.
+																</div>
+															</div>
+															<div class="ort-details__item">
+																<div class="ort-details__icon">
+																	<svg class="icon icon-track">
+																		<use xlink:href="img/sprite.svg#track"></use>
+																	</svg>
+
+																</div>
+																<div class="ort-details__content toltipe-wrap  _toltipe-toggle">
+																	<span class="dotted">Бесплатная доставка 5-10 дней</span>
+																	<div class="toltipe toltipe--top-center">
+																		Здесь будет выводиться информационное
+																		сообщение, объясняющее, почему доставка
+																		будет длиться так долго или так быстро
+																	</div>
+																</div>
+															</div>
+															<div class="ort-details__row">
+																<div class="ort-details__item ort-details__item--default">
+																	<div class="ort-details__icon">
+																		<svg class="icon icon-info">
+																			<use xlink:href="img/sprite.svg#info"></use>
+																		</svg>
+																	</div>
+																	<div class="ort-details__content">
+																		Ориентировочная дата доставки: <span>09.12.2021</span>
+																	</div>
+																</div>
+																<div class="ort-details__item ort-details__item--default">
+																	<div class="ort-details__icon">
+																		<svg class="icon icon-gift-circle">
+																			<use xlink:href="img/sprite.svg#gift-circle"></use>
+																		</svg>
+																	</div>
+																	<div class="ort-details__content">
+																		Промо-код: <span>QER2T-QW4ER-SWDFG <span class="procent">-15%</span></span>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+
+													</div>
+													<div class="cards-table__actions hidden-iphone">
+														<div class="cards-table__price">
+															<span class="price-old">3750 грн.</span>
+															<span class="price-value text-danger">2750 грн.</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="cards-table__item">
+											<div class="cards-table__img">
+												<img src="img/products/catalog-img1.jpg" alt="">
+											</div>
+											<div class="cards-table__content">
+												<div class="cards-table__brand">Dr.Martens</div>
+												<div class="cards-table__row">
+													<div class="cards-table__head ">
+														<div class="cards-table__title">Chunk Huck Taylor vintage 70 HI Black/Egret</div>
+
+														<div class="cards-table__actions visible-iphone">
+															<div class=" cards-table__price ">
+																<span class="price-old">3750 грн.</span>
+																<span class="price-value text-danger">2750 грн.</span>
+															</div>
+															<div class="cards-table__counter">
+																<div class="counter" data-counter>
+																	<button class="counter__btn counter__btn--minus" data-counter-minus type="button">
+																		<svg class="icon icon-minus">
+																			<use xlink:href="img/sprite.svg#minus"></use>
+																		</svg>
+																	</button>
+																	<div class="counter__val" data-counter-val>1 шт.</div>
+																	<button class="counter__btn counter__btn--plus" data-counter-plus type="button">
+																		<svg class="icon icon-c-plus">
+																			<use xlink:href="img/sprite.svg#c-plus"></use>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="cards-table__details ort-details">
+															<div class="ort-details__item">
+																<div class="ort-details__icon">
+																	<svg class="icon icon-size">
+																		<use xlink:href="img/sprite.svg#size"></use>
+																	</svg>
+																</div>
+																<div class="ort-details__content">
+																	Размер - 42 EUR / 8,5 US Men / 27 см.
+																</div>
+															</div>
+															<div class="ort-details__item">
+																<div class="ort-details__icon">
+																	<svg class="icon icon-track">
+																		<use xlink:href="img/sprite.svg#track"></use>
+																	</svg>
+
+																</div>
+																<div class="ort-details__content toltipe-wrap  _toltipe-toggle">
+																	<span class="dotted">Бесплатная доставка 5-10 дней</span>
+																	<div class="toltipe toltipe--top-center">
+																		Здесь будет выводиться информационное
+																		сообщение, объясняющее, почему доставка
+																		будет длиться так долго или так быстро
+																	</div>
+																</div>
+															</div>
+															<div class="ort-details__row">
+																<div class="ort-details__item ort-details__item--default">
+																	<div class="ort-details__icon">
+																		<svg class="icon icon-info">
+																			<use xlink:href="img/sprite.svg#info"></use>
+																		</svg>
+																	</div>
+																	<div class="ort-details__content">
+																		Ориентировочная дата доставки: <span>09.12.2021</span>
+																	</div>
+																</div>
+																<div class="ort-details__item ort-details__item--default">
+																	<div class="ort-details__icon">
+																		<svg class="icon icon-gift-circle">
+																			<use xlink:href="img/sprite.svg#gift-circle"></use>
+																		</svg>
+																	</div>
+																	<div class="ort-details__content">
+																		Промо-код: <span>QER2T-QW4ER-SWDFG <span class="procent">-15%</span></span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="cards-table__actions hidden-iphone">
+														<div class=" cards-table__price ">
+															<span class="price-old">3750 грн.</span>
+															<span class="price-value text-danger">2750 грн.</span>
+														</div>
+														<div class="cards-table__counter ">
+															<div class="counter" data-counter>
+																<button class="counter__btn counter__btn--minus" data-counter-minus type="button">
+																	<svg class="icon icon-minus">
+																		<use xlink:href="img/sprite.svg#minus"></use>
+																	</svg>
+																</button>
+																<div class="counter__val" data-counter-val>1 шт.</div>
+																<button class="counter__btn counter__btn--plus" data-counter-plus type="button">
+																	<svg class="icon icon-c-plus">
+																		<use xlink:href="img/sprite.svg#c-plus"></use>
+																	</svg>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="packing">
+									<div class="packing__title">Хотите упаковать посылку в подарочную упаковку?</div>
+
+									<!-- Slider packing-slider -->
+									<div class="packing-slider">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="packing-item">
+														<div class="packing-item__img"><a href="#"><img src="img/1234.jpg" alt=""></a></div>
+														<div class="packing-item__title"><a href="#"> Арабская ночь </a></div>
+														<div class="packing-item__price">75 грн.</div>
+														<div class="packing-item__button">
+															<a href="#" class="btn btn--dark">Добавить к заказу</a>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="packing-item">
+														<div class="packing-item__img"><a href="#"><img src="img/1234.jpg" alt=""></a></div>
+														<div class="packing-item__title"><a href="#"> Шарики на тёмном</a></div>
+														<div class="packing-item__price">75 грн.</div>
+														<div class="packing-item__button">
+															<a href="#" class="btn btn--dark">Добавить к заказу</a>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="packing-item">
+														<div class="packing-item__img"><a href="#"><img src="img/1234.jpg" alt=""></a></div>
+														<div class="packing-item__title"><a href="#">Ганжа</a></div>
+														<div class="packing-item__price">75 грн.</div>
+														<div class="packing-item__button">
+															<a href="#" class="btn btn--dark">Добавить к заказу</a>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="packing-item">
+														<div class="packing-item__img"><a href="#"><img src="img/1234.jpg" alt=""></a></div>
+														<div class="packing-item__title"><a href="#">Винтаж</a></div>
+														<div class="packing-item__price">75 грн.</div>
+														<div class="packing-item__button">
+															<a href="#" class="btn btn--dark">Добавить к заказу</a>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="packing-item">
+														<div class="packing-item__img"><a href="#"><img src="img/1234.jpg" alt=""></a></div>
+														<div class="packing-item__title"><a href="#">Винтаж</a></div>
+														<div class="packing-item__price">75 грн.</div>
+														<div class="packing-item__button">
+															<a href="#" class="btn btn--dark">Добавить к заказу</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- navigation buttons -->
+										<div class="packing-slider-prev swiper-button-prev">
+											<svg class="icon icon-swiper-arrow">
+												<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+											</svg>
+										</div>
+										<div class="packing-slider-next swiper-button-next">
+											<svg class="icon icon-swiper-arrow">
+												<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pbox">
+							<div class="pbox__head d-flex justify-content-between align-items-center">
+								<div class="hi-steps hi-steps--lg">
+									<div class="hi-steps__badge">2</div>
+									<div class="hi-steps__title">Проверьте Личные данные, Адрес доставки и способ Оплаты</div>
+								</div>
+
+
+							</div>
+							<div class="pbox__body">
+								<div class="data-checking">
+									<div class="data-checking__item data-checking__item--edit">
+										<a href="#" class="data-checking__edit-link edit-link">
+											<svg class="icon icon-pencil">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg>
+
+										</a>
+										<div class="data-checking__row row">
+											<div class="data-checking__label col-auto">ФИО</div>
+											<div class="data-checking__labeled col">Иванов Иван Иванович</div>
+										</div>
+										<div class="data-checking__row row">
+											<div class="data-checking__label col-auto">Телефон</div>
+											<div class="data-checking__labeled col">+38099 155-98-55</div>
+										</div>
+										<div class="data-checking__row row">
+											<div class="data-checking__label col-auto">Способ связи</div>
+											<div class="data-checking__labeled col">Телеграмм: @ivanov-prokaznik</div>
+										</div>
+
+									</div>
+									<div class="data-checking__item data-checking__item--edit">
+										<a href="#" class="data-checking__edit-link edit-link">
+											<svg class="icon icon-pencil">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg>
+
+										</a>
+										<div class="data-checking__row row">
+											<div class="data-checking__label col-auto">Доставка</div>
+											<div class="data-checking__labeled col">
+												Доставка на отделение Новой Почты <br>г. Житомир, отделение №16, ул. Леха Качинского,68
+											</div>
+										</div>
+
+									</div>
+									<div class="data-checking__item data-checking__item--edit">
+										<a href="#" class="data-checking__edit-link edit-link">
+											<svg class="icon icon-pencil">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg>
+
+										</a>
+										<div class="data-checking__row row">
+											<div class="data-checking__label col-auto">Комментарий</div>
+											<div class="data-checking__labeled col">Ребят, только не так как в прошлый раз, курьер пришел в 5 утра!!!</div>
+										</div>
+
+									</div>
+									<div class="data-checking__item data-checking__item--edit">
+										<a href="#" class="data-checking__edit-link edit-link">
+											<svg class="icon icon-pencil">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg>
+
+										</a>
+										<div class="data-checking__row row">
+											<div class="data-checking__label col-auto">
+												<span class="hidden-sm">Способ оплаты</span>
+												<span class="visible-sm">Оплата</span>
+											</div>
+											<div class="data-checking__labeled col">
+												Оплата онлайн. / Google Pay, Apple Pay, Банковской картой Monobank, <br>Privatbank и других. через систему LiqPay
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pbox">
+							<div class="pbox__head d-flex justify-content-between align-items-center">
+								<div class="hi-steps hi-steps--lg">
+									<div class="hi-steps__badge">3</div>
+									<div class="hi-steps__title">Дополнительные опции</div>
+								</div>
+							</div>
+							<div class="pbox__body">
+								<div class="row form-group">
+									<div class="col-md-auto">
+										<label class="form-group__label">Промокод</label>
+									</div>
+									<div class="col-md-7">
+										<input type="text" class="form-input" placeholder="Введите промокод и получите скидку">
+									</div>
+								</div>
+								<div class="row form-group align-items-start">
+									<div class="col-md-auto">
+										<label class="form-group__label">Комментарий к заказу</label>
+									</div>
+									<div class="col-md">
+										<textarea placeholder="Добавьте комментарий к заказу" class="form-input"></textarea>
+									</div>
+								</div>
+
+								<div class="order-total">
+									<div class="row align-items-end">
+										<div class="col-md-auto order-total-left">
+											<table class="total-table">
+												<tr>
+													<td>Стоимость товаров:</td>
+													<td>3600 грн</td>
+												</tr>
+												<tr class="hidden-sm">
+													<td>Скидка:</td>
+													<td>0.00 грн</td>
+												</tr>
+												<tr>
+													<td>Стоимость доставки:</td>
+													<td>Бесплатно</td>
+												</tr>
+												<tr class="total-table__last">
+													<td>
+														<span class="hidden-sm">К оплате:</span>
+														<span class="visible-sm">Общая стоимость:</span>
+													</td>
+													<td>3600 грн</td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md hidden-sm order-total-right">
+											<a href="#" class="btn btn--warning">Подтвердить заказ</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="prestend-wrap">
+							<div class="prestend-wrap__button visible-sm"><a href="#" class="btn btn--warning">Подтвердить заказ</a></div>
+							<div class="prestend">Подтверждая заказ, вы соглашаетесь с <a href="#" class="font-700 dotted">политикой конфиденциальности</a> и <a href="#" class="font-700 dotted">договором оферты</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- CONTENT EOF -->
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

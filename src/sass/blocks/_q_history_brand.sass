@@ -1,0 +1,239 @@
++min($ipad + 1)
+	.page-history-brand
+		.main
+			padding-top: 0
+
+.history-content
+	&__item
+		min-height: calc(100vh)
+		padding-top: 16.6rem
+
+		display: flex
+		align-items: center
+		// max-width: 1169px
+		color: #fff
+
+		&-inner
+			position: relative
+			z-index: 2
+
+			h2
+				font-size: 4.2rem
+				font-weight: 500
+				line-height: 1.3
+				text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+				margin-bottom: 2.8rem
+
+		&-badge
+			background: $color-warning
+			color: $color
+			padding: 0 2rem
+			margin-bottom: 1.6rem
+			border-radius: 1rem
+			font-family: $font2
+			font-size: 3rem
+			text-transform: uppercase
+			font-weight: 500
+			white-space: nowrap
+			line-height: 5rem
+			display: inline-block
+	&__images
+		width: auto
+		margin-top: -4rem
+		margin-left: -2rem
+		margin-right: -2rem
+		&-item
+			margin-top: 4rem
+			padding-left: 2rem
+			padding-right: 2rem
+	.sidebar
+		align-self: start
+		min-height: 100vh
+		position: sticky
+		top: 0
+		color: #fff
+		display: flex
+		flex-direction: column
+		padding-top: 10.5rem
+		padding-bottom: 10.5rem
+
+.img-line
+	position: relative
+
+	&:after
+		border-top: .3rem solid $color-warning
+		content: ''
+		+coverdiv
+		background: rgba(34, 34, 34, 0.4)
+
+.history-nav
+	list-style-type: none
+	margin-top: auto !important
+	margin-bottom: auto !important
+	li
+		font-size: 2rem
+		font-weight: 500
+		text-transform: uppercase
+		color: #fff
+		font-family: $font2
+		margin-bottom: 2.7rem
+		padding-left: 3.2rem
+		position: relative
+		cursor: pointer
+		&:last-child
+			margin-bottom: 0
+
+		&:after
+			content: ''
+			position: absolute
+			left: .7rem
+			top: 1.2rem
+			width: .7rem
+			height: .7rem
+			background: rgba(#9E9E9E, 0.7)
+			border-radius: 50%
+			+tr
+
+		&:before
+			content: ''
+			position: absolute
+			top: 1rem
+			left: .8rem
+			+arr(.8rem,1rem,#000,r)
+			z-index: 1
+			+tr
+			transform: scale(0)
+
+		&._active
+			color: $color-warning
+			&:after
+				width: 2.2rem
+				height: 2.2rem
+				top: .4rem
+				left: 0
+				background: $color-warning
+			&:before
+				transform: scale(1)
+
+.history-picture
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	&:after, &:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		z-index: 2
+		pointer-events: none
+		height: 35vh
+	&:before
+		background: linear-gradient(180deg, #1B1B1B 0%, rgba(36, 36, 36, 0) 100%)
+		top: 0
+	&:after
+		bottom: 0
+		background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgba(27, 27, 27, 0.8) 100%)
+	&__item
+		+coverdiv
+		overflow: hidden
+		opacity: 0
+		transition: all 0.4s linear
+		transition-delay: 0.2s
+		&:after
+			content: ''
+			+coverdiv
+			background:  rgba(36, 36, 36, 0.92)
+			pointer-events: none
+		img
+			object-fit: cover
+			width: 100%
+			height: 100%
+			transform: scale(1.4)
+			transition: all 0.6s linear
+
+		&._active
+			opacity: 1
+			img
+				transform: scale(1)
+
++max($desktop_lg)
+	.history-content
+
+		&__images
+
+			&-item
+				width: auto
+				max-width: 50%
+
++max($laptop)
+	.history-content
+		&__item
+			&-inner
+				h2
+					font-size: 3.8rem
+			&-badge
+				line-height: 4rem
+				font-size: 2.4rem
+				padding: 0 1.5rem
+
++max($ipad)
+	.history-content
+		&__item
+			min-height: 1px
+			padding-top: 6rem
+			padding-bottom: 6rem
+			&:first-child
+				padding-top: 4rem
+			&:last-child
+				padding-bottom: 4rem
++max($iphone)
+	.history-content
+		&__item
+
+			padding-top: 4rem
+			padding-bottom: 4rem
+			&:first-child
+				padding-top: 2rem
+			&:last-child
+				padding-bottom: 2rem
+			&-inner
+				h2
+					font-size: 2.2rem
+					line-height: 1.45
+					margin-bottom: 1.6rem
+			&-badge
+				line-height: 2.2rem
+				font-size: 1.4rem
+				padding: 0 1rem
+				border-radius: .5rem
+				margin-bottom: 0.8rem
+
+		&__images
+			margin-top: -2rem
+			margin-left: -1rem
+			margin-right: -1rem
+			&-item
+				padding-left: 1rem
+				padding-right: 1rem
+				margin-top: 2rem
+
++max($iphone_sm)
+
+	.history-content__images
+		margin-left: -2rem
+		margin-right: -2rem
+		&-item
+			width: auto
+			max-width: none
+			padding-left: 0
+			padding-right: 0
+		img
+			width: 100%
+
++max($iphone_xs)
+
+	.history-content__images
+		margin-left: -1.5rem
+		margin-right: -1.5rem

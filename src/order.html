@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Оформление заказа"
+})
+
+<body class="loaded page-order">
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN MAIN -->
+		<main class="main" id="main">
+			<div class="back-page">
+				<a href="#" class="back-page__btn"><svg class="icon icon-back">
+						<use xlink:href="img/sprite.svg#back"></use>
+					</svg></a>
+			</div>
+			<div class="container">
+				<!-- BEGIN CONTENT -->
+				<div class="content">
+					<div class="order-main">
+
+						<div class="order-main__head">
+							<div class="order-main__head-logo"><img src="img/logo-mini.png" alt=""></div>
+							<h1>Оформление заказа</h1>
+
+							<div class="order-main__head-close">
+								<svg class="icon icon-close">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg>
+							</div>
+						</div>
+
+						<div class="row g-xl-5 gx-3 gy-2">
+							<div class="col-lg-7">
+								<!-- start Личные данные -->
+								<div class="pbox mb-4">
+									<div class="pbox__head d-flex justify-content-between align-items-center">
+										<div class="hi-steps hi-steps--lg hi-steps--selected">
+											<div class="hi-steps__badge">1</div>
+											<div class="hi-steps__title">личные данные</div>
+										</div>
+									</div>
+
+									<div class="pbox__body">
+										<div class="row gy-0 form-group ">
+											<div class="col-md-auto">
+												<label class="form-group__label">Телефон:</label>
+											</div>
+											<div class="col-md">
+												<div class="toltipe-wrap">
+													<input type="tel" class="form-input" placeholder="">
+													<div class="toltipe toltipe--ipad-start toltipe--danger _visible" style="width: 222px">
+														Проверьте номер телефона,
+														кажется не хватает цифр
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="row gy-0 form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Фамилия:</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input" placeholder="">
+											</div>
+										</div>
+										<div class="row gy-0 form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Имя:</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input" placeholder="">
+											</div>
+										</div>
+
+										<div class="alert mt-md-4 mt-3">
+											<div class="alert__inner alert__wrapicon">
+												<svg class="alert__icon icon icon-warning">
+													<use xlink:href="img/sprite.svg#warning"></use>
+												</svg>
+												<div>
+													Способ связи при необходимости уточнений в процессе обработки Вашего заказа.
+												</div>
+											</div>
+										</div>
+
+
+										<div class="row gy-0 form-group align-items-start">
+											<div class="col-12">
+												<label class="form-group__label">Способ связи:</label>
+											</div>
+											<div class="col-12">
+												<div class="com-method-item">
+													<label class="radio radio--iphone-block">
+														<input type="radio" id="se-el1" name="se-el">
+														<span class="radio__figure"></span>
+														<span class="radio__text">Написать мне в месседжер </span>
+													</label>
+													<label class="radio radio--iphone-block">
+														<input type="radio" id="se-el2" name="se-el" checked="">
+														<span class="radio__figure"></span>
+														<span class="radio__text"> По телефону / SMS</span>
+													</label>
+												</div>
+												<div id="sel-el-block" style="display: none;">
+													<div class="com-method-item">
+														<label class="form-group__label">Выберите удобный для вас месседжер:</label>
+
+														<label class="checkbox checkbox--iphone-block">
+															<input type="checkbox">
+															<span class="checkbox__figure"></span>
+															<span class="checkbox__text">Telegram</span>
+														</label>
+														<label class="checkbox checkbox--iphone-block">
+															<input type="checkbox">
+															<span class="checkbox__figure"></span>
+															<span class="checkbox__text">Viber</span>
+														</label>
+														<label class="checkbox checkbox--iphone-block">
+															<input type="checkbox">
+															<span class="checkbox__figure"></span>
+															<span class="checkbox__text">WhatsApp</span>
+														</label>
+													</div>
+													<div class="com-method-item">
+														<div class="alert alert--default mb-5">
+															<div class="alert__inner ps-md-5 pe-md-5 pt-4 pb-4">
+
+																<div class="font-600 size-md mb-1">ВАЖНО! Случаи когда мы не сможем связаться с Вами:</div>
+																<ol class="decimal-sm">
+																	<li>Номер телефона при регистрации может отличаться от номера на
+																		который зарегистрирован Telegram, введите номер на который
+																		зарегистрирован Telegram или нажмите далее, если номер
+																		совпадает.
+																	</li>
+																	<li>Не редко, пользователи устанавливают запрет и скрывают свой
+																		номер в настройках приватности и в этом случае мы так же не
+																		сможем Вам написать. Если у Вас предусмотрен запрет, укажите
+																		пожалуйста псевдоним в Telegram. Псевдоним можно
+																		Скопировать зайдя в НАСТРОЙКИ и под аватаром нажать на
+																		свой псевдоним, где появится кнопка - КОПИРОВАТЬ
+																		ПСЕВДОНИМ.
+																	</li>
+																</ol>
+
+
+
+															</div>
+														</div>
+														<div class="row form-group">
+															<div class="col-md-auto">
+																<label class="form-group__label  ">Номер телефона:</label>
+															</div>
+															<div class="col-md-auto">
+																<input type="tel" class="form-input" placeholder="+380500000001">
+															</div>
+														</div>
+
+														<div class="row form-group">
+															<div class="col-md-auto">
+																<label class="form-group__label  ">Псевдоним в ТГ: </label>
+															</div>
+															<div class="col-md-auto">
+																<input type="text" class="form-input" placeholder="@alexey_popov_kurilshik">
+															</div>
+														</div>
+
+													</div>
+												</div>
+												<div id="sel-el-block2" style="">
+													<div class="com-method-item">
+														<div class="row form-group">
+															<div class="col-md-auto">
+																<label class="form-group__label">Номер телефона:</label>
+															</div>
+															<div class="col-md-auto">
+																<input type="tel" class="form-input" placeholder="+380XX XXX-XX-XX">
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+
+								<div class="pbox mb-4">
+									<div class="pbox__head d-flex justify-content-between align-items-center">
+										<div class="hi-steps hi-steps--lg ">
+											<div class="hi-steps__badge">1</div>
+											<div class="hi-steps__title">личные данные</div>
+										</div>
+
+										<button class="edit-link">
+											<svg class="icon icon-pencil">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg>
+											<span class="hidden-iphone">Редактировать</span>
+										</button>
+									</div>
+									<div class="pbox__body">
+										<div class="data-checking">
+											<div class="data-checking__item ">
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Телефон:</div>
+													<div class="data-checking__labeled">+38(050) 918-54-18</div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Имя и фамилия:</div>
+													<div class="data-checking__labeled">Эдуард Сандалькин </div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Способ связи:</div>
+													<div class="data-checking__labeled">Телеграм @sandalkin88</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- end  Личные данные -->
+
+
+								<!-- start Доставка -->
+								<div class="pbox mb-4">
+									<div class="pbox__head d-flex justify-content-between align-items-center">
+										<div class="hi-steps hi-steps--lg hi-steps--selected">
+											<div class="hi-steps__badge">2</div>
+											<div class="hi-steps__title">Доставка</div>
+										</div>
+									</div>
+
+									<div class="pbox__body">
+
+										<div class="alert">
+											<div class="alert__inner alert__wrapicon">
+												<svg class="alert__icon icon icon-warning">
+													<use xlink:href="img/sprite.svg#warning"></use>
+												</svg>
+												<div>
+													<span class="font-700">Бесплатная доставка к отделению Новой почты</span> <br>
+
+													При выборе почтомата убедитесь, что посылка пройдет по габаритам.
+													Ближайшее отделение можете выбрать на сайте Новой Почты. <br>
+													<a href="#" class="font-700">Выбрать отделение</a>
+												</div>
+
+											</div>
+										</div>
+
+
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Город: </label>
+											</div>
+											<div class="col-md">
+												<div class="selectbox selectbox--default selectbox--drop-different">
+													<div class="selectbox__head">
+														<div class="selectbox__text placeholder">Укажите город доставки</div>
+														<div class="selectbox__caret"></div>
+													</div>
+													<div class="selectbox__drop">
+														<ul class="ul-dotted">
+															<li><span>Киев</span></li>
+															<li><span>Харьков</span></li>
+															<li><span>Одесса</span></li>
+															<li><span>Днепр</span></li>
+
+															<li><span>Запорожье</span></li>
+
+															<li><span>Львов</span></li>
+														</ul>
+
+														<div class="selectbox__search mt-4">
+															<svg class="icon icon-search">
+																<use xlink:href="img/sprite.svg#search"></use>
+															</svg>
+															<input type="text" class="form-input" placeholder="Поиск города" autocomplete="off">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Способ доставки:</label>
+											</div>
+											<div class="col-md">
+												<div class="selectbox selectbox--default">
+													<div class="selectbox__head">
+														<div class="selectbox__text placeholder">Курьером</div>
+														<div class="selectbox__caret"></div>
+													</div>
+													<div class="selectbox__drop">
+														<ul>
+															<li class="selected">Курьером</li>
+															<li>В отделение Новой Почты</li>
+														</ul>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">ФИО получателя: </label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input" value="Иванов Иван">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Улица: </label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input" value="ул. Ленина ">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Дом, № квартиры: </label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input" value="15 / 46">
+											</div>
+										</div>
+
+										<div class="row form-group align-items-start">
+											<div class="col-md-auto">
+												<label class="form-group__label">Комментарий: </label>
+											</div>
+											<div class="col-md">
+												<textarea class="form-input">Звоните как подъедите, домофон не работает</textarea>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="pbox mb-4">
+									<div class="pbox__head d-flex justify-content-between align-items-center">
+										<div class="hi-steps hi-steps--lg ">
+											<div class="hi-steps__badge">2</div>
+											<div class="hi-steps__title">Доставка</div>
+										</div>
+
+										<button class="edit-link">
+											<svg class="icon icon-pencil">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg>
+											<span class="hidden-iphone">Редактировать</span>
+										</button>
+									</div>
+									<div class="pbox__body">
+
+										<div class="data-checking">
+											<div class="data-checking__item ">
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Город:</div>
+													<div class="data-checking__labeled">Киев</div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Способ доставки:</div>
+													<div class="data-checking__labeled">В отделение Новой Почты </div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">№ отеделения:</div>
+													<div class="data-checking__labeled">№5, ул. Ленина, 44/1</div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">ФИО получателя:</div>
+													<div class="data-checking__labeled">Иванов Пётр</div>
+												</div>
+												<div class="data-checking__row d-md-flex align-items-start">
+													<div class="data-checking__label">Телефон получателя:</div>
+													<div class="data-checking__labeled">+38(050) 918-54-18</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- end  Личные данные -->
+							</div>
+							<div class="col-lg-5">
+								<div class="pbox mb-5">
+									<div class="pbox__head d-flex justify-content-between align-items-center">
+										<div class="pbox__title pbox__title--sm">Товары в корзине</div>
+
+										<button class="edit-link">
+											<svg class="icon icon-pencil">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg>
+											<span>Редактировать</span>
+										</button>
+									</div>
+
+									<div class="pbox__body">
+
+										<div class="cards-table cards-table--sm mb-5">
+											<a href="#" class="cards-table__item">
+												<div class="cards-table__img">
+													<img src="img/products/catalog-img1.jpg" alt="">
+												</div>
+												<div class="cards-table__content">
+													<div class="cards-table__brand">Dr.Martens</div>
+													<div class="cards-table__row">
+														<div class="cards-table__head ">
+															<div class="cards-table__title">1460 Pascal Hardware Black Virg</div>
+
+															<div class="cards-table__price ">
+																<span class="price-value">2750 грн.</span>
+															</div>
+
+															<div class="cards-table__details ort-details">
+																<div class="ort-details__item">
+																	<div class="ort-details__icon">
+																		<svg class="icon icon-size">
+																			<use xlink:href="img/sprite.svg#size"></use>
+																		</svg>
+																	</div>
+																	<div class="ort-details__content">
+																		Размер - 42 EUR / 8,5 US Men / 27 см.
+																	</div>
+																</div>
+
+
+															</div>
+
+														</div>
+
+													</div>
+												</div>
+											</a>
+											<a href="#" class="cards-table__item">
+												<div class="cards-table__img">
+													<img src="img/products/catalog-img1.jpg" alt="">
+												</div>
+												<div class="cards-table__content">
+													<div class="cards-table__brand">Dr.Martens</div>
+													<div class="cards-table__row">
+														<div class="cards-table__head ">
+															<div class="cards-table__title">1460 Cian Colorado Blue
+															</div>
+
+															<div class="cards-table__price">
+																<span class="price-old">3750 грн.</span>
+																<span class="price-value text-danger">2750 грн.</span>
+															</div>
+
+															<div class="cards-table__details ort-details">
+																<div class="ort-details__item">
+																	<div class="ort-details__icon">
+																		<svg class="icon icon-size">
+																			<use xlink:href="img/sprite.svg#size"></use>
+																		</svg>
+																	</div>
+																	<div class="ort-details__content">
+																		Размер - 42 EUR / 8,5 US Men / 27 см.
+																	</div>
+																</div>
+
+															</div>
+
+														</div>
+
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="pbox__inner">
+
+											<label class="pbox__inner-head checkbox checkbox--sm ">
+												<input type="checkbox" />
+												<span class="checkbox__figure"></span>
+												<span class="checkbox__text">
+													<span class="dotted">Добавить подарочную упаковку</span></span>
+											</label>
+
+											<div class="pbox__inner-body"></div>
+										</div>
+										<div class="pbox__inner">
+
+											<label class="pbox__inner-head checkbox checkbox--sm ">
+												<input type="checkbox" />
+												<span class="checkbox__figure"></span>
+												<span class="checkbox__text">
+													<span class="dotted">Оставить комментарий к заказу</span></span>
+											</label>
+
+											<div class="pbox__inner-body"></div>
+										</div>
+										<div class="order-total mt-0">
+
+											<table class="total-table">
+												<tbody>
+													<tr>
+														<td>Стоимость товаров:</td>
+														<td>13 000 грн</td>
+													</tr>
+													<tr>
+														<td>Скидка:</td>
+														<td>0.00%</td>
+													</tr>
+													<tr>
+														<td>Стоимость доставки:</td>
+														<td>Бесплатно</td>
+													</tr>
+													<tr class="total-table__last">
+														<td>
+															К оплате:
+														</td>
+														<td>13 000 грн</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="prestend-wrap text-center">
+									<div class="prestend-wrap__button "><a href="#" class="btn btn--warning">Подтвердить заказ</a></div>
+									<div class="prestend text-center mt-4">Подтверждая заказ, вы соглашаетесь с <a href="#" class="font-700 dotted">политикой конфиденциальности</a> и <a href="#" class="font-700 dotted">договором оферты</a></div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- <div class="tab-wrap _tab">
+							<nav class="tab-wrap__nav hidden-iphone">
+								<div class="tab-wrap__navitem _tab__navitem _active">
+									<div class="tab-wrap__navtitle">Я Новый покупатель</div>
+								</div>
+								<div class="tab-wrap__navitem _tab__navitem">
+									<div class="tab-wrap__navtitle">У меня есть кабинет</div>
+								</div>
+								<div class="tab-wrap__navitem _tab__navitem">
+									<div class="tab-wrap__navtitle">Быстрый заказ</div>
+								</div>
+							</nav>
+							<div class="tab-wrap__items">
+								
+								<div class="tab-wrap__head _tab__head _active visible-iphone" data-tab-index="0">
+									<div class="tab-wrap__title">Я Новый покупатель</div>
+									<div class="cb-accordion-item__caret"><svg class="icon icon-arrow-down">
+											<use xlink:href="img/sprite.svg#arrow-down"></use>
+										</svg></div>
+								</div>
+								<div class="tab-wrap__item _tab__item _active">
+									<form action="#" class="order-form">
+										<div class="alert">
+											<div class="alert__inner alert__wrapicon">
+												<svg class="alert__icon icon icon-warning">
+													<use xlink:href="img/sprite.svg#warning"></use>
+												</svg>
+												Необходимо для отправки Вашей покупки
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Фамилия</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Имя</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Отчество</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Телефон</label>
+											</div>
+											<div class="col-md">
+												<input type="tel" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Email</label>
+											</div>
+											<div class="col-md">
+												<input type="email" class="form-input">
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="alert">
+											<div class="alert__inner alert__wrapicon">
+												<svg class="alert__icon icon icon-warning">
+													<use xlink:href="img/sprite.svg#warning"></use>
+												</svg>
+												Как с Вами связаться ? если на одном из этапов обработки Вашего заказа будет необходимость уточнить некоторые детали
+											</div>
+										</div>
+
+										<div class="row form-group align-items-start">
+											<div class="col-md-auto">
+												<label class="form-group__label">Способ связи:</label>
+											</div>
+											<div class="col-md">
+												<div class="com-method-item">
+													<label class="radio">
+														<input type="radio" id="se-el1" name="se-el" checked="">
+														<span class="radio__figure"></span>
+														<span class="radio__text">Написать мне в месседжер </span>
+													</label>
+													<label class="radio">
+														<input type="radio" id="se-el2" name="se-el">
+														<span class="radio__figure"></span>
+														<span class="radio__text">Позвонить по телефону / SMS</span>
+													</label>
+												</div>
+												<div id="sel-el-block">
+													<div class="com-method-item">
+														<label class="label">Выберите удобный для вас месседжер:</label>
+
+														<label class="checkbox">
+															<input type="checkbox">
+															<span class="checkbox__figure"></span>
+															<span class="checkbox__text">Telegram</span>
+														</label>
+														<label class="checkbox">
+															<input type="checkbox">
+															<span class="checkbox__figure"></span>
+															<span class="checkbox__text">Viber</span>
+														</label>
+														<label class="checkbox">
+															<input type="checkbox">
+															<span class="checkbox__figure"></span>
+															<span class="checkbox__text">WhatsApp</span>
+														</label>
+													</div>
+													<div class="com-method-item">
+														<div class="alert">
+															<div class="alert__inner alert__wrapicon">
+																<svg class="alert__icon icon icon-warning">
+																	<use xlink:href="img/sprite.svg#warning"></use>
+																</svg>
+																Номер телефона при регистрации может отличаться от номера на который зарегистрирован Телеграм, введите номер на который зарегистрирован мессенджер или нажмите далее, если номер совпадает.
+															</div>
+														</div>
+														<div class="row form-group">
+															<div class="col-md-auto">
+																<label class="form-group__label form-group__label--auto ">Номер телефона:</label>
+															</div>
+															<div class="col-md-auto">
+																<input type="tel" class="form-input">
+															</div>
+														</div>
+
+													</div>
+												</div>
+												<div id="sel-el-block2" style="display: none;">
+													<div class="com-method-item">
+
+														<div class="row form-group">
+															<div class="col-md-auto">
+																<label class="form-group__label form-group__label--auto ">Номер телефона:</label>
+															</div>
+															<div class="col-md-auto">
+																<input type="tel" class="form-input">
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</form>
+
+									<div class="tab-wrap__footer d-flex justify-content-between">
+										<a href="#" class="btn">Назад</a>
+										<a href="#" class="btn btn--warning">Далее</a>
+									</div>
+								</div>
+
+								
+								<div class="tab-wrap__head _tab__head visible-iphone" data-tab-index="1">
+									<div class="tab-wrap__title">У меня есть кабинет</div>
+									<div class="cb-accordion-item__caret"><svg class="icon icon-arrow-down">
+											<use xlink:href="img/sprite.svg#arrow-down"></use>
+										</svg></div>
+								</div>
+								<div class="tab-wrap__item _tab__item">
+									<form action="#" class="order-form">
+
+										<div class="alert">
+											<div class="alert__inner alert__wrapicon">
+												<svg class="alert__icon icon icon-warning">
+													<use xlink:href="img/sprite.svg#warning"></use>
+												</svg>
+												Введите ваш номер телефона который использовался при регистрации или покупке товара
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Мой телефон</label>
+											</div>
+											<div class="col-md">
+												<input type="tel" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group align-items-start">
+											<div class="col-md-auto">
+												<label class="form-group__label">Пароль</label>
+											</div>
+											<div class="col-md">
+												<input type="password" class="form-input">
+												<div class="form-text">
+													<a href="#" class="forgot-link">Забыли пароль?</a>
+												</div>
+											</div>
+
+										</div>
+
+									</form>
+
+									<div class="tab-wrap__footer d-flex justify-content-between">
+
+										<a href="#" class="btn">Назад</a>
+										<a href="#" class="btn btn--warning">Далее</a>
+
+									</div>
+								</div>
+
+								
+								<div class="tab-wrap__head _tab__head visible-iphone" data-tab-index="2">
+									<div class="tab-wrap__title">Быстрый заказ</div>
+									<div class="cb-accordion-item__caret"><svg class="icon icon-arrow-down">
+											<use xlink:href="img/sprite.svg#arrow-down"></use>
+										</svg></div>
+								</div>
+								<div class="tab-wrap__item _tab__item">
+									<form action="#" class="order-form">
+
+										<div class="alert">
+											<div class="alert__inner alert__wrapicon">
+												<svg class="alert__icon icon icon-warning">
+													<use xlink:href="img/sprite.svg#warning"></use>
+												</svg>
+												Экономте Ваше время и просто оставьте ФИО, телефон, а менеджер с Вами свяжется для уточнения всех деталей.
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Мой телефон</label>
+											</div>
+											<div class="col-md">
+												<input type="tel" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group align-items-start">
+											<div class="col-md-auto">
+												<label class="form-group__label">ФИО</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input">
+												<div class="form-text">
+													<label class="checkbox">
+														<input type="checkbox" checked="">
+														<span class="checkbox__figure"></span>
+														<span class="checkbox__text">Я соглашаюсь с условиями <a href="#">оферты</a></span>
+													</label>
+												</div>
+											</div>
+
+										</div>
+
+									</form>
+
+									<div class="tab-wrap__footer d-flex justify-content-between">
+
+										<a href="#" class="btn">Назад</a>
+										<a href="#" class="btn btn--warning">Заказать</a>
+
+									</div>
+								</div>
+							</div>
+						</div> -->
+
+					</div>
+
+				</div>
+				<!-- CONTENT EOF -->
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

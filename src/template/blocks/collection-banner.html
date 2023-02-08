@@ -1,0 +1,27 @@
+<div class="collection-banner">
+	<picture class="collection-banner__bg">
+		<source srcset="@@imgMobile.jpg" media="(max-width: 767px)">
+		<source srcset="@@img.webp" type="image/webp">
+
+		<img src="@@img.jpg" alt="">
+	</picture>
+	<div class="collection-banner__body">
+		<div class="collection-banner__head @@if(titleH1 == true) {collection-banner__head--row}">
+			@@if(icon != '') {
+			<div class="collection-banner__icon">@@icon</div>
+			}
+			<div class="collection-banner__content">
+				@@if(titleH1 == true) {
+				<h1 class="collection-banner__title">@@title</h1>
+				}
+				@@if(titleH1 == false) {
+				<h2 class="collection-banner__title">@@title</h2>
+				}
+
+			</div>
+			<div class="collection-banner__button">
+				<a href="#" class="btn btn--warning link-cover">@@btn</a>
+			</div>
+		</div>
+	</div>
+</div>

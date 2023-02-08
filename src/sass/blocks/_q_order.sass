@@ -1,0 +1,1263 @@
+
+.page-order
+	.back-page
+		position: absolute
+		left: 7.5rem
+		top: 5rem
+	.container
+		padding-left: 5.5rem !important
+		padding-right: 5.5rem !important
+
+.order-main
+	position: relative
+	&__head
+		display: flex
+		align-items: center
+		border-bottom: .2rem solid #828282
+		padding-bottom: 1.9rem
+		margin-bottom: 3rem
+		& + .step-nav
+			margin-top: 4rem
+		&-logo
+			flex: none
+			margin-top: 0.2rem
+			margin-right: 1.5rem
+		&-close
+			display: none
+		h1
+			font-size: 2.9rem
+			font-weight: 500
+			margin-right: 1.5rem
+			margin-bottom: 0
+			line-height: 1.3
+
+		.order-number
+			margin-left: auto
+			margin-bottom: 0
+			margin-top: 0.4rem
+			flex: none
+
+	&__steps
+		margin-bottom: 5rem
+
+.order-button
+	text-align: right
+	margin-top: 4rem
+
+.steps
+	display: flex
+	align-items: center
+
+	&__item
+		white-space: nowrap
+		margin-right: 3.7rem
+		cursor: pointer
+		position: relative
+		&._active
+			.steps__number
+				background: #fbc644
+				color: $color
+			.steps__title
+				border-bottom: .2rem solid
+		&._select
+			.steps__number
+				background: #fbc644
+				color: $color
+				text-indent: -99px
+				overflow: hidden
+
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					z-index: 1
+					left: .7rem
+					top: .8rem
+					height: .7rem
+					width: 1.1rem
+					border-left: .3rem solid $color
+					border-bottom: .3rem solid $color
+					transform: rotate(-45deg)
+	&__title
+		font-size: 1.7rem
+		font-weight: 600
+		letter-spacing: -.03rem
+		color: $color
+
+		line-height: 1.2
+		font-family: $font2
+
+	&__number
+		width: 2.5rem
+		height: 2.5rem
+		vertical-align: middle
+		position: relative
+		top: -.3rem
+		border-radius: 50%
+		display: inline-block
+		line-height: 2.5rem
+
+		text-align: center
+
+		background: $color
+		font-family: $font2
+		color: #fff
+		margin-right: .6rem
+		font-weight: 600
+		font-size: 1.5rem
+
+.order-total
+	margin-left: -4rem
+	margin-right: -4rem
+	margin-bottom: -3rem
+	padding: 2.5rem 4rem
+	background: #f3f3f3
+	border-radius: 0 0 1rem 1rem
+	margin-top: 3.5rem
+	&-right
+		padding-left: 4rem !important
+
+.edit-link
+	font-size: 1.4rem
+	font-weight: 400
+	line-height: 1.2
+	white-space: nowrap
+	padding: 0
+	display: inline-flex
+	align-items: center
+	vertical-align: middle
+	border: none
+	background: transparent
+
+	span
+		text-decoration: none
+		margin-left: 0.6rem
+		padding: .2rem 0 0 0
+	.icon
+
+		font-size: 1.2rem
+
+		vertical-align: middle
+
+	@media (any-hover: hover)
+		&:hover span
+			text-decoration: underline
+
+.total-box
+	background: #f3f3f3
+	padding: 3.6rem
+	padding-left: 18.5rem
+
+.total-table
+	width: 100%
+	font-size: 1.3rem
+	font-weight: 400
+	tr:first-child
+		td
+			padding-top: 0
+	td
+		padding-top: 0.5rem
+		&:first-child
+			white-space: nowrap
+			width: 1px
+			padding-right: 3rem
+
+	&__last
+		td
+			padding-top: 1.5rem
+			font-family: $font2
+			text-transform: uppercase
+			font-size: 1.5rem
+			font-weight: 600
+			&:last-child
+				text-transform: none
+
+.prestend
+	text-align: right
+	font-size: 1.3rem
+	color: #888888
+	font-weight: 400
+	margin-top: -1.5rem
+	a
+		color: $color
+
+/* packing */ 
+.packing
+	margin-top: 2.6rem
+	padding-bottom: 1rem
+	max-width: 56rem
+	margin-left: auto
+	margin-right: auto
+	&__title
+		text-transform: uppercase
+		font-family: $font2
+		font-weight: 600
+		line-height: 1.4
+		margin-bottom: 2.2rem
+		font-size: 1.8rem
+		text-align: center
+
+.packing-slider
+	position: relative
+	.swiper-button-prev, .swiper-button-next
+		top: 5.8rem
+
+		.icon
+			font-size: 2.2rem
+	.swiper-button-prev
+		left: -4rem
+	.swiper-button-next
+		right: -4rem
+
+.packing-item
+	text-align: center
+
+	margin-left: auto
+	margin-right: auto
+	&__img
+		width: 11.6rem
+		height: 11.6rem
+		margin: 0 auto 1.5rem
+		img
+			height: 100%
+			width: 100%
+			object-fit: cover
+
+	&__title
+		font-weight: 700
+		line-height: 1.4
+		margin-bottom: .3rem
+		font-size: 1.3rem
+	&__price
+		font-family: $font2
+		font-weight: 600
+		white-space: nowrap
+		margin-bottom: 1rem
+		font-size: 1.6rem
+	&__button
+		.btn
+			height: 2.8rem
+			padding-left: 1.5rem
+			padding-right: 1.5rem
+			font-size: 1rem
+			line-height: 2.5rem
+
+.data-checking
+	&__item
+		padding-bottom: 3.4rem
+		margin-bottom: 3.4rem
+
+		border-bottom: .1rem solid #f2efef
+		position: relative
+		&:last-child
+			margin-bottom: 0
+			padding-bottom: 0
+			border: none
+
+	&__row
+		margin-bottom: 1rem
+
+		&:last-child
+			margin-bottom: 0
+	&__label
+		font-weight: 700
+		font-size: 1.5rem
+		line-height: 1.3
+		width: 15.6rem !important
+		padding-right: 1rem
+
+	&__labeled
+		font-size: 1.5rem
+		color: #515151
+		font-weight: 400
+
+.hr
+	margin: 4rem 0
+	height: 0.1rem
+	background: #e3dede
+	&--sm
+		margin: 2.5rem 0
+
+.com-method-item
+	padding-bottom: 2.8rem
+	margin-bottom: 2.8rem
+	border-bottom: .1rem solid #e3dede
+	&:last-child
+		border: none
+		margin-bottom: 0
+		padding-bottom: 0
+
+.check-list
+	&__item
+		margin-bottom: 2.5rem
+		&:last-child
+			margin-bottom: 0
+	.radio
+		display: block
+		margin: 0
+	.radio__text
+		font-size: 1.5rem
+
+	.toltipe
+		width: 40rem
+
+.reg-block
+	padding-left: 3.3rem
+
+/* Ваш заказ */
+
+.order-number
+	display: inline-flex
+	border-radius: 1.7rem
+	background-color: #ebebeb
+
+	margin-bottom: 1.5rem
+	position: relative
+	&__symbol
+		width: 3.4rem
+		height: 3.4rem
+		border-radius: 50%
+		background-color: #fbc644
+		flex: none
+		line-height: 3.4rem
+		font-weight: 600
+		font-size: 1.8rem
+		text-align: center
+		color: #131313
+		text-transform: uppercase
+		z-index: 11
+
+	&__content
+		flex: 1 0 auto
+		font-size: 1.5rem
+		font-weight: 600
+		padding: 0 2rem 0 1.3rem
+		height: 3.4rem
+		line-height: 3.4rem
+		z-index: 11
+
+	&__drop-btn
+		cursor: pointer
+		&:hover
+			span
+				border-color: transparent
+		span
+			border-bottom: .1rem dotted
+
+		.icon
+			font-size: 1.2rem
+			vertical-align: middle
+			top: -.1rem
+			margin-left: 0.4rem
+
+	&__drop
+		position: absolute
+		top: -1rem
+		right: -.5rem
+		width: 47.3rem
+		background: #fff
+		z-index: 10
+
+		border-radius: 1.7rem
+		text-align: left
+		box-shadow: 2.4rem 2.4rem 3.8rem rgba(#202020, 0.11)
+		display: none
+		&._open
+			display: block
+		&:before
+			content: ''
+			display: block
+			background: #f5f5f5
+			height: 5.3rem
+
+			border-radius: 1.7rem 1.7rem 0 0
+
+	.cards-table
+		&__img
+			width: 11rem
+			img
+				max-height: 12rem
+	.ond-drop__scroll
+		max-height: 39rem
+
+.ond-drop
+	padding: 4rem
+	border-radius: 2rem
+	&__scroll
+		max-height: 40rem
+		overflow: hidden
+		overflow-y: auto
+		margin-right: -2rem
+		padding-right: 2rem
+		margin-top: -2.6rem
+
+	&__foot
+		margin-top: 2.8rem
+		text-align: center
+	&__total
+		font-size: 2.4rem
+		font-family: $font2
+		font-weight: 500
+		line-height: 1.4
+	&__button
+		margin-top: 1rem
+		.btn
+			margin-left: 0.5rem
+			margin-right: 0.5rem
+
+	.toltipe
+		left: -12rem
+		transform: none
+		width: 36rem
+		padding: 1.2rem
+		line-height: 1.4
+		font-size: 1.1rem
+
+	&--message
+		text-align: center
+		font-size: 1.5rem
+		font-weight: 400
+		color: #000
+		padding: 3.5rem 4rem
+
+.cards-table-wrap
+	margin-top: -2.6rem
+.cards-table
+
+	&__item
+		display: flex
+		align-items: flex-start
+		border-bottom: .1rem solid #f2efef
+		padding-bottom: 2.6rem
+		padding-top: 2.6rem
+		position: relative
+
+	&__img
+		flex: none
+		width: 15.8rem
+		margin-right: 2.7rem
+		img
+			max-height: 14.6rem
+			display: block
+			margin-left: auto
+			margin-right: auto
+	&__content
+		flex: 1
+		min-width: 1px
+	&__row
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+
+		.cards-table
+			&__head
+				flex: 1
+				min-width: 1px
+			&__title
+				display: block
+				white-space: normal
+			&__price
+				flex: none
+				width: 12rem
+				text-align: right
+				margin-top: -.2rem
+				margin-right: 0
+				margin-left: 0
+				order: 1
+
+				.price-value, .price-old
+					margin: 0
+					display: block
+				.price-old
+					font-size: 1.6rem
+					padding-top: 0.5rem
+					padding-bottom: 0.4rem
+
+			&__counter
+				flex: none
+				padding: 0 1rem
+
+			&__actions
+				display: flex
+				flex: none
+				align-items: flex-start
+
+	&__head
+		margin-bottom: .7rem
+	&__brand
+		line-height: 1.2
+		font-weight: 400
+		text-transform: uppercase
+		color: #636363
+		font-size: 1.3rem
+		margin-bottom: 0.5rem
+	&__title
+		font-size: 1.5rem
+		font-weight: 500
+		line-height: 1.2
+		color: #000
+		margin-bottom: 1.5rem
+
+	&__price
+		margin: 2rem -.4rem 0
+		.price-value, .price-old
+			font-size: 2rem
+			white-space: nowrap
+
+	&__favorite
+		position: absolute
+		top: 5.4rem
+		right: 0
+		width: 3rem
+		height: 3rem
+		display: flex
+		align-items: center
+		justify-content: center
+		.icon
+			font-size: 2.2rem
+			color: #8d8d8d
+		&.active
+			.icon
+				color: #fbc644
+
+		@media (any-hover: hover)
+			&:hover
+				.icon
+					color: #fbc644
+
+	&__remove
+		position: absolute
+		top: 2.1rem
+		right: 0
+		width: 3rem
+		height: 3rem
+		display: flex
+		align-items: center
+		justify-content: center
+		.icon
+			font-size: 3rem
+			color: rgba($color, 0.5)
+			display: block
+		@media (any-hover: hover)
+			&:hover
+				.icon
+					color: $color
+
+	.toltipe
+		left: -12rem
+		transform: none
+		width: 36rem
+		padding: 1.2rem 2rem
+		line-height: 1.4
+		font-size: 1.1rem
+
+	&--sm
+		.cards-table
+
+			&__item
+				&:first-child
+					padding-top: 0
+
+				&:last-child
+					border: none
+					padding-bottom: 0
+		.cards-table__img
+			order: 1
+			width: 4.5rem
+			margin-right: 0
+			margin-left: 1.5rem
+			img
+				max-height: 8rem
+
+		.cards-table__row
+			.cards-table__title
+				margin-bottom: 1.2rem
+			.cards-table__price
+				width: auto
+				text-align: left
+				margin-bottom: 1.4rem
+				margin-right: 1.5rem
+				.price-old
+					padding-top: 0
+					padding-bottom: 0
+					margin-right: 0.2rem
+					font-size: 1.8rem
+					display: inline-block
+				.price-value
+					font-size: 1.8rem
+					display: inline-block
+		.cards-table__brand
+			font-size: 1.1rem
+
+.ort-details
+	&__item
+		font-size: 1.2rem
+		font-weight: 400
+		margin-bottom: 0.5rem
+		display: flex
+		line-height: 1.4
+		align-items: flex-start
+
+		&:last-child
+			margin-bottom: 0
+		+min($ipad + 1)
+			&--default
+				font-weight: 500
+
+				span
+					font-weight: 400
+				.ort-details__icon
+					display: none
+
+	&__icon
+		flex: none
+		margin-right: .8rem
+
+		.icon
+			display: block
+			font-size: 1.8rem
+			top: 0rem
+			&-star-filled
+				color: $color-warning
+				top: -.3rem
+	&__content
+		align-self: center
+		a
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+
+	+min($ipad + 1)
+		&__row
+			display: flex
+			align-items: flex-start
+			flex-wrap: wrap
+			margin-top: 1.8rem
+			.ort-details__item
+				margin-right: 3rem
+				&:last-child
+					margin-right: 0
+.label
+	font-weight: 700
+	font-size: 1.5rem
+	margin-bottom: 1rem
+	line-height: 1.4
+
+.set-contacts
+	margin-top: -0.4rem
+	margin-bottom: -0.4rem
+	&__item
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 0.4rem
+		margin-top: 0.4rem
+	&__link
+		display: flex
+		align-items: center
+		font-weight: 400
+		font-size: 1.5rem
+		margin-right: 2rem
+	&__icon
+		width: 2.2rem
+		height: 2.2rem
+		display: flex
+		align-items: center
+		justify-content: center
+		flex: none
+		margin-right: 0.8rem
+		border-radius: 50%
+		.icon
+			color: #fff
+			font-size: 1.2rem
+		&--telegram
+			background: #2da4e1
+
+		&--viber
+			background: #8b66a9
+
+		&--tel
+			background: #0b9218
+
+.set-row
+	&__item
+
+		&:last-child
+			.set-row__content
+				border: none
+				padding-bottom: 0
+				margin-bottom: 0
+
+	&__label
+		width: 13rem !important
+		padding-right: 1rem !important
+		.label
+			margin-bottom: 0
+	&__content
+		border-bottom: .1rem solid #e0e0e0
+		padding-bottom: 2.6rem
+		margin-bottom: 2.6rem
+
+.set-profile-list
+	display: flex
+	flex-wrap: wrap
+	margin: -.6rem -1rem
+
+	&__item
+		width: 33.33%
+		padding: 1rem
+
+.set-profile
+	display: flex
+
+	border-radius: .4rem
+	&:hover
+		background: #f5f5f5
+	&__img
+		flex: none
+		margin-right: 1.5rem
+	&__content
+		flex: 1
+		min-width: 1px
+		padding-top: .6rem
+	&__name
+		font-family: $font2
+		font-size: 2rem
+		font-weight: 600
+		line-height: 1
+
+	&__sub
+		color: 515151
+		font-size: 1.3rem
+		font-weight: 400
+		line-height: 1.2
+		margin-top: 0.4rem
+
+/* Profile */ 
+
+.profile
+	&__side
+		margin-left: 2rem
+		width: 18.5rem
+		text-align: center
+	&__img
+		position: relative
+		border-radius: 50%
+		margin-bottom: .8rem
+		width: 18rem
+		height: 18rem
+		background: rgba(233, 233, 233, 0.44)
+		border: 1px solid rgba(0, 0, 0, 0.14)
+		.icon
+			position: absolute
+			top: 50%
+			left: 50%
+			font-size: 9.4rem
+			margin: -5rem 0 0 -4.7rem
+			color: rgba(0, 0, 0, 0.43)
+		img
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			object-fit: cover
+			position: relative
+			z-index: 2
+	&__name
+		font: 500 2rem $font2
+		margin-bottom: 1.4rem
+	.hi-steps
+		margin-bottom: 1.6rem
+		&__item
+			margin-right: 0
+
+.pbox
+	margin-bottom: 3rem
+	&__head
+		background: #F5F5F5
+		border-radius: 1rem 1rem 0 0
+		padding: 2.1rem 4rem
+	&__title
+		text-transform: uppercase
+		font-family: $font2
+		font-weight: 500
+		font-size: 1.8rem
+		color: #000
+		&--sm
+			font-size: 1.5rem
+	&__body
+		padding: 3rem 4rem
+		border: .1rem solid #F2EFEF
+		border-radius: 0 0 1rem 1rem
+
+	&__footer
+		padding: 2rem 5rem
+		margin: 3.5rem -5rem -3.5rem
+		border-top: .1rem solid #F2EFEF
+
+	&__inner
+		&-head
+			padding: 1.6rem 4rem
+			margin: 0 -4rem
+			border-top: .1rem solid #F2EFEF
+			&.checkbox
+				margin: 0 -4rem
+				display: block
+				padding: 1.6rem 4rem 1.6rem 6rem
+			.checkbox__figure
+				top: 50% !important
+				left: 4rem
+				margin-top: -0.8rem
+
+	.hi-steps
+		flex: 1
+		min-width: 1px
+		margin-right: 2rem
+		&__title
+			+text-overflow
+
++max(1500px)
+	.page-order .back-page
+		left: 3.7rem
+
++max(1259px)
+	.page-order .back-page
+		display: none
+
+	.order-main
+		&__head
+			padding-right: 4rem
+			&-logo
+				margin-top: 0
+			&-close
+				display: flex
+				align-items: center
+				justify-content: center
+				cursor: pointer
+				position: absolute
+				top: .2rem
+				right: -.6rem
+				width: 3.5rem
+				height: 3.5rem
+
+				.icon
+					display: block
+					font-size: 3.5rem
+					flex: none
+
+			h1
+				font-size: 2.6rem
+				padding-top: 0.2rem
+
+			.order-number
+				margin-top: .2rem
+
++max($laptop)
+	.page-order
+
+		.container
+			padding-left: 2rem !important
+			padding-right: 2rem !important
+	/* Profile */ 
+	.profile
+
+		&__side
+			margin-left: 0
+			width: 35rem
+			text-align: left
+			display: flex
+			align-items: center
+			margin-top: 3rem
+		&__img
+
+			margin-bottom: 0
+			margin-right: 2rem
+			width: 12.5rem
+			height: 12.5rem
+			flex: none
+			.icon
+
+				font-size: 6rem
+				margin: -3rem 0 0 -3rem
+
+		&__content
+			flex: 1
+
++max($ipad)
+
+	.page-order .main
+		padding-top: 2rem
+	.reg-block
+		padding-left: 0
+
+	.set-profile
+		&__img
+			width: 4rem
+			margin-right: 1rem
+		&__name
+			font-size: 1.8rem
+		&__sub
+			font-size: 1rem
+
+	.order-total
+		padding-left: 3rem
+		padding-right: 3rem
+		margin-left: -3rem
+		margin-right: -3rem
+
+	.pbox
+		&__head
+			padding-left: 3rem
+			padding-right: 3rem
+
+		&__body
+			padding-left: 3rem
+			padding-right: 3rem
+
+		&__footer
+			padding-left: 3rem
+			padding-right: 3rem
+			margin-left: -3rem
+			margin-right: -3rem
+
+		&__inner
+			&-head
+				padding-left: 3rem
+				padding-right: 3rem
+				margin-left: -3rem
+				margin-right: -3rem
+				&.checkbox
+					margin-left: -3rem
+					margin-right: -3rem
+					padding-right: 3rem
+					padding-left: 5rem
+				.checkbox__figure
+					left: 3rem
+
+	.cards-table
+		&__row
+			.cards-table__actions
+				display: block
+			.cards-table__counter
+				margin-top: 2rem
+
++max($iphone)
+	.page-order
+		.main
+			padding-top: 1.5rem
+		.container
+			padding-left: 2rem !important
+			padding-right: 2rem !important
+
+	.order-main
+		&__head
+			flex-wrap: wrap
+			padding-right: 0
+			padding-bottom: 0
+			border: none
+			margin-bottom: 2rem
+			&-logo
+				width: 3.8rem
+				margin-right: 1rem
+			&-close
+				top: -.3rem
+			h1
+				font-size: 2.4rem
+				margin-right: 0
+				flex: 1
+				padding-right: 3rem
+				padding-top: 0
+
+	.ond-drop
+		padding: 2rem
+		&__scroll
+			margin-top: -2rem
+			margin-right: 0
+			padding-right: 0
+			overflow: visible
+			max-height: none !important
+		&__foot
+			margin-top: 2rem
+
+	.steps
+		&__item
+			display: none
+			text-transform: uppercase
+			&._active
+				display: block
+		&__title
+			border: none !important
+
+	.hr
+		margin-top: 3.2rem
+		margin-bottom: 3.2rem
+		&--sm
+			margin-top: 2.5rem
+			margin-bottom: 3.5rem
+
+	.com-method-item
+		padding-bottom: 1.5rem
+		margin-bottom: 1.5rem
+
+	.check-list__item
+		margin-bottom: 1rem
+
+	.reg-block
+		.radio
+			display: block
+			margin-bottom: 1rem
+
+	.packing
+		max-width: none
+		&__title
+			font-size: 1.5rem
+			line-height: 1.5
+
+	.packing-slider
+
+		padding-left: 2rem
+		padding-right: 2rem
+		.swiper-button-prev
+			left: -1rem
+		.swiper-button-next
+			right: -1rem
+
+	.packing-item
+		&__img
+			width: 9.8rem
+			height: 9.8rem
+
+	.total-box
+		padding-top: 2.7rem
+		padding-bottom: 2.7rem
+		padding-left: 3.5rem
+		padding-right: 3.5rem
+
+	.ort-details
+		&__content
+			font-size: 1.2rem
+
+	.data-checking
+		&__item
+			margin-bottom: 1.5rem
+			padding-bottom: 1.5rem
+
+		&__row
+			margin-bottom: .6rem
+		&__label
+			padding-top: 0
+			width: auto !important
+			margin-bottom: 0
+		&__labeled
+			br
+				display: none
+
+	.prestend-wrap
+		text-align: center
+		&__button
+			.btn
+				height: 3.5rem
+				font-size: 1.3rem
+				width: 26.9rem
+				line-height: 3.2rem
+
+	.prestend
+		text-align: center
+		margin-top: 1rem
+
+	.label
+		font-size: 1.3rem
+
+	.set-contacts__link
+		font-size: 1.3rem
+
+	.set-row
+		margin-left: -1.2rem
+		margin-right: -1.2rem
+		&__label, &__content
+			padding-left: 1.2rem !important
+			padding-right: 1.2rem !important
+		&__content
+			padding-bottom: 1.5rem
+			margin-bottom: 1.5rem
+	.set-row__label
+		margin-bottom: 1rem
+	.set-profile-list
+		display: block
+		margin: -.5rem
+		&__item
+			width: auto
+			padding: .5rem
+
+	.set-profile
+		&__img
+			width: 3.5rem
+		&__content
+			padding-top: 0.4rem
+		&__name
+			font-size: 1.5rem
+
+	.cards-table
+		&__img
+			width: 8.5rem
+			margin-right: 2rem
+			img
+				max-height: 8.5rem
+		&__row
+			.cards-table
+				&__title
+					margin-bottom: 1.2rem
+				&__actions
+					display: flex
+
+					align-items: center
+					margin-bottom: .5rem
+
+				&__price
+					width: auto
+					text-align: left
+					margin-bottom: 1rem
+					margin-right: 1.5rem
+					order: 0
+					flex: 0 1 auto
+					.price-old, .price-value
+						font-size: 2.2rem
+						display: inline-block
+					.price-old
+						padding-top: 0
+						padding-bottom: 0
+						margin-right: 0.2rem
+
+				&__counter
+					margin-top: 0
+					margin-bottom: 1rem
+					padding-left: 0
+					padding-right: 0
+
+	.edit-link
+		min-width: 3rem
+		min-height: 2rem
+		justify-content: center
+		margin-right: -0.5rem
+
+	/* Profile */ 
+
+	.profile
+		&__side
+			width: 25rem
+		&__img
+			width: 7.5rem
+			height: 7.5rem
+
+			.icon
+				font-size: 4rem
+				margin-top: -2rem
+				margin-left: -2rem
+		&__name
+			margin-bottom: 0.5rem
+
+	.pbox
+		margin-bottom: 2rem
+		&__head
+			padding: 1.2rem 2rem
+			min-height: 5rem
+			position: relative
+			.hi-steps
+				margin-right: 0
+				&__title
+					font-size: 1.4rem !important
+				&__badge
+					width: 2.4rem !important
+					height: 2.4rem !important
+					line-height: 2.4rem !important
+
+			.edit-link
+				position: absolute
+				top: 0
+				right: .6rem
+				height: 100%
+				min-width: 5rem
+				span
+					margin-right: 1.4rem
+		&__title
+			font-size: 1.4rem
+		&__body
+			padding: 2rem
+
+		&__footer
+			padding: 2rem
+			margin: 3rem -2rem -2.5rem
+			.btn
+				min-width: 15rem
+
+		&__inner
+			&-head
+				padding-left: 2rem
+				padding-right: 2rem
+				margin-left: -2rem
+				margin-right: -2rem
+				&.checkbox
+					margin-left: -2rem
+					margin-right: -2rem
+					padding-right: 2rem
+					padding-left: 4rem
+				.checkbox__figure
+					left: 2rem
+
+		.order-total
+
+			padding: 2rem
+			margin-bottom: -2rem
+			margin-left: -2rem
+			margin-right: -2rem
+
++max($iphone_sm)
+
+	.cards-table
+		&__img
+			width: 4.5rem !important
+			margin-right: 1rem
+
+		&__panel
+			&-item
+				width: 2rem
+				height: 2rem
+
+				.icon
+					font-size: 1.4rem
+					&-close
+						font-size: 1rem
+
+	.ort-details .toltipe
+		width: 30rem
+		left: -8.5rem
+
++max($iphone_xs)
+	.page-order
+
+		.container
+			padding-left: 1.5rem !important
+			padding-right: 1.5rem !important
+	.order-crumbs
+		&__item
+			margin-right: 1.6rem
+			font-size: 1.2rem
+			&:after
+				margin-left: 0.5rem
+	.order-main__head-logo
+		width: 3.5rem
+	.order-main__head h1
+		font-size: 2rem
+
+	.order-main__head-close
+		width: 3rem
+		height: 3rem
+		.icon
+			font-size: 3rem
+
+	.cards-table
+		.counter
+			flex-direction: column
+			align-items: center
+			&__btn
+				height: 1.5rem
+			&__val
+				margin: .5rem 0

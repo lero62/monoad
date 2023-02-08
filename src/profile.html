@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+	"title": "Личные данные"
+})
+<body class="loaded page-catalog">
+
+
+<!-- BEGIN BODY -->
+<div class="main-wrapper">
+
+	<!-- BEGIN HEADER -->
+	@@include('./template/_header.html', {
+		user: 0,
+		nav: 11,
+	})
+	<!-- HEADER EOF   -->
+
+	<!-- BEGIN MAIN -->
+	<main class="main swipe-block" id="main">
+		<div class="container-fluid">
+			
+			<div class="main-header">
+				<div class="main-header__controls controls visible-iphone">
+				
+					<div class="controls__item ">
+						<div class="filter-button filter-button--size  _filter-toggle" > 
+							<svg class="icon icon-roulette"><use xlink:href="img/sprite.svg#roulette"></use></svg>
+							<span>Мой размер</span>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="wrap">
+				<!-- BEGIN SIDEBAR -->
+				<aside class="sidebar hidden-md">
+					
+					<div class="sbox ">
+						<div class="sbox__head _ac__navitem _active">
+							<div class="sbox__title">Меню кабинета</div>
+							<div class="sbox__caret"></div> 
+						</div>
+						<div class="sbox__body _ac__item" style="display: block;">
+							<ul class="sbox__list sbox__list--one">
+								<li class="sbox__list-item "><a href="#">История заказов <span class="badge">1</span></a></li>
+								<li class="sbox__list-item _active"><a href="#">Личные данные</a></li>
+								<li class="sbox__list-item"><a href="#">Избранное <span class="badge">26</span></a></li>
+								<li class="sbox__list-item"><a href="#">Выйти</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="dbox">
+						<div class="dbox__title">Мой размер</div>
+						<a href="#popup-edit-size" class="dbox__icon _open-popup"><svg class="icon icon-pencil"><use xlink:href="img/sprite.svg#pencil"></use></svg></a>
+						<div class="dbox__list ">
+							<div class="db-size">
+								<div class="db-size__item toltipe-wrap">
+									<div class="db-size__title">DR.MARTENS</div>
+									<div class="db-size__value">
+										<span class="badge">2</span>
+										36 EUR
+									</div>
+
+									<div class="dbox__toltipe toltipe">
+										Найдено 2 позиций на скидке по выбранному вами размеру 36 EUR
+									</div>
+								</div>
+								<div class="db-size__item toltipe-wrap">
+									<div class="db-size__title">CONVERSE</div>
+									<div class="db-size__value">
+										<span class="badge">95</span>
+										38 EUR
+									</div>
+									<div class="dbox__toltipe toltipe">
+										Найдено 95 позиций на скидке по выбранному вами размеру 38 EUR
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="dbox__button">
+							<a href="#" class="btn btn--dark btn--block">Добавить бренд</a>
+						</div>
+					</div>
+			
+
+				</aside>
+				<!-- SIDEBAR EOF -->
+
+				<!-- BEGIN CONTENT -->
+				<div class="content">
+					
+					<div class="main-header__body" data-da="main-header, 1, 1199">
+						<!-- Crumbs -->
+						<ul class="breadcrumbs">
+							<li class="breadcrumbs__item ">
+								<a href="#" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="#" class="breadcrumbs__link">Личный кабинет</a>
+							</li>
+							
+							<li class="breadcrumbs__item">Личные данные</li>
+						</ul>
+						<!-- end Crumbs -->
+
+						<div class="content__header">
+							<h1 class="content__title">Личные данные</h1>
+						</div>
+					</div>
+
+
+					<!-- BEGIN profile -->
+					<div class="pbox profile">
+						<div class="pbox__body">
+							<form action="#">
+							
+								<div class="hi-steps hi-steps--lg">
+									<div class="hi-steps__badge">1</div>
+									<div class="hi-steps__title">Информация о вас</div>
+								</div>
+								<div class="alert">
+									<div class="alert__inner alert__wrapicon">
+										<svg class="alert__icon icon icon-warning"><use xlink:href="img/sprite.svg#warning"></use></svg>
+										Необходимо для отправки Вашей покупки
+									</div>
+								</div>
+
+								<div class="row ">
+									<div class="col-xl">
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Фамилия</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Имя</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Отчество</label>
+											</div>
+											<div class="col-md">
+												<input type="text" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Телефон</label>
+											</div>
+											<div class="col-md">
+												<input type="tel" class="form-input">
+											</div>
+										</div>
+										<div class="row form-group">
+											<div class="col-md-auto">
+												<label class="form-group__label">Email</label>
+											</div>
+											<div class="col-md">
+												<input type="email" class="form-input">
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-auto">
+										<div class="profile__side">
+											<div class="profile__img">
+												<svg class="icon icon-user"><use xlink:href="img/sprite.svg#user"></use></svg>
+												<!-- <img src="" alt=""> -->
+											</div>
+											<div class="profile__content">
+												<div class="profile__name">Иван И.</div>
+												<div class="profile__button">
+													<a href="#" class="btn btn--dark btn--block">Загрузите юзерпик</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+								<div class="hr"></div>
+
+								<div class="hi-steps hi-steps--lg">
+									<div class="hi-steps__badge">2</div>
+									<div class="hi-steps__title">Контактные данные</div>
+								</div>
+
+								
+								<div class="alert">
+									<div class="alert__inner alert__wrapicon">
+										<svg class="alert__icon icon icon-warning"><use xlink:href="img/sprite.svg#warning"></use></svg>
+										Как с Вами связаться ? если на одном из этапов обработки Вашего заказа будет необходимость уточнить некоторые детали
+									</div>
+								</div>
+
+								<div class="row form-group align-items-start">
+									<div class="col-md-auto">
+										<label class="form-group__label">Способ связи:</label>
+									</div>
+									<div class="col-md">
+										<div class="com-method-item">
+											<label class="radio">
+												<input type="radio" id="se-el1" name="se-el" checked="">
+												<span class="radio__figure"></span>
+												<span class="radio__text">Написать мне в месседжер	</span>
+											</label>
+											<label class="radio">
+												<input type="radio" id="se-el2" name="se-el">
+												<span class="radio__figure"></span>
+												<span class="radio__text">Позвонить по телефону / SMS</span>
+											</label>
+										</div>
+										<div id="sel-el-block">
+											<div class="com-method-item">
+												<label class="label">Выберите удобный для вас месседжер:</label>
+
+												<label class="checkbox">
+													<input type="checkbox">
+													<span class="checkbox__figure"></span>
+													<span class="checkbox__text">Telegram</span>
+												</label>
+												<label class="checkbox">
+													<input type="checkbox">
+													<span class="checkbox__figure"></span>
+													<span class="checkbox__text">Viber</span>
+												</label>
+												<label class="checkbox">
+													<input type="checkbox">
+													<span class="checkbox__figure"></span>
+													<span class="checkbox__text">WhatsApp</span>
+												</label>
+											</div>
+											<div class="com-method-item">
+												<div class="alert">
+													<div class="alert__inner alert__wrapicon">
+														<svg class="alert__icon icon icon-warning"><use xlink:href="img/sprite.svg#warning"></use></svg>
+														Номер телефона при регистрации может отличаться от номера на который зарегистрирован Телеграм, введите номер на который зарегистрирован мессенджер или нажмите далее, если номер совпадает.
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-auto">
+														<label class="form-group__label form-group__label--auto ">Номер телефона:</label>
+													</div>
+													<div class="col-md-auto">
+														<input type="tel" class="form-input"  placeholder="+380XX XXX-XX-XX">
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div id="sel-el-block2" style="display: none;">
+											<div class="com-method-item">
+												
+												<div class="row form-group">
+													<div class="col-md-auto">
+														<label class="form-group__label">Номер телефона:</label>
+													</div>
+													<div class="col-md-auto">
+														<input type="tel" class="form-input" placeholder="+380XX XXX-XX-XX">
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="pbox__footer text-center">
+									<button class="btn btn--warning" type="submit">Сохранить изменения</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- profile EOF -->
+
+					
+				</div>
+				<!-- CONTENT EOF -->
+			</div>
+		</div>
+	</main>
+	<!-- MAIN EOF   -->
+	
+
+	<!-- BEGIN Filter fixed -->
+
+	<div class="filter-fixed ">
+		<div class="filter-fixed__overlay _filter-toggle"></div>
+		<div class="filter-fixed__container">
+			<div class="filter-fixed__head">
+				<div class="filter-fixed__title">Мой размер</div>
+				<a href="#popup-edit-size" class="filter-fixed__edit _open-popup">
+					<svg class="icon icon-pencil"><use xlink:href="img/sprite.svg#pencil"></use></svg>
+					Редактировать
+				</a>
+				<div class="filter-fixed__close _filter-toggle">
+					<svg class="icon icon-close"><use xlink:href="img/sprite.svg#close"></use></svg>
+				</div>
+			</div>
+			<div class="filter-fixed__body scrollbar">
+				<div class="db-size" data-da="filter__db-size, 1, 1024">
+					<div class="db-size__item toltipe-wrap">
+						<div class="db-size__title">DR.MARTENS</div>
+						<div class="db-size__value">
+							<span class="badge">2</span>
+							36 EUR
+						</div>
+
+						<div class="dbox__toltipe toltipe">
+							Найдено 2 позиций на скидке по выбранному вами размеру 36 EUR
+						</div>
+					</div>
+					<div class="db-size__item toltipe-wrap">
+						<div class="db-size__title">CONVERSE</div>
+						<div class="db-size__value">
+							<span class="badge">95</span>
+							38 EUR
+						</div>
+						<div class="dbox__toltipe toltipe">
+							Найдено 95 позиций на скидке по выбранному вами размеру 38 EUR
+						</div>
+					</div>
+				</div>
+
+				<div class="filter-fixed__button">
+					<a href="" class="btn btn--dark">Добавить бренд</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Filter fixed EOF -->
+
+	<!-- BEGIN NAVBAR FOR MOBILE -->
+	<nav class="navbar" data-navbar="2">
+		<div class="navbar__overlay _navbar-toggle" data-burger="2"></div>
+		
+		<div class="navbar__container">
+			
+			<ul class="navbar-menu active">
+				<li><a href="#">История заказов <span class="badge">1</span></a></li>
+				<li><a href="#">Личные данные</a></li>
+				<li><a href="#">Избранное <span class="badge">26</span></a></li>
+				<li><a href="#">Выйти</a></li>
+			</ul>
+			
+		</div>
+	</nav>
+	<!-- NAVBAR FOR MOBILE EOF -->
+
+
+
+	<!-- BEGIN FOOTER -->
+	@@include('./template/_footer.html', {})
+	<!-- FOOTER EOF   -->
+
+	@@include('./template/popups/popup_login.html', {})
+	@@include('./template/popups/popup_contacts.html', {})
+	@@include('./template/popups/popup_edit_size.html', {})
+
+</div>
+<!-- BODY EOF   -->
+
+@@include('./template/_js.html', {})
+
+</body>
+</html>

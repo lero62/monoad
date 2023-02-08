@@ -1,0 +1,276 @@
+
+.footer
+	background: $color
+	color: #fff
+
+	&__top
+		padding: 6.1rem 0
+	&__head
+		text-align: center
+		padding-top: 1rem
+		font-size: 4rem
+		font-weight: 400
+		line-height: 1.2
+		color: $color-warning
+		text-transform: uppercase
+		font-family: $font2
+		margin-bottom: 7rem
+	&__row
+		margin-bottom: -4rem
+
+	&__item
+		text-align: center
+		margin-bottom: 4rem
+	&__title
+		font-size: 2.2rem
+		text-transform: uppercase
+		font-family: $font2
+		font-weight: 500
+		line-height: 1.2
+		margin-bottom: 2rem
+
+	&__nav
+		li
+			margin-bottom: 1.8rem
+			line-height: 1.4
+		a
+			color: #fff
+			font-size: 1.6rem
+			border-bottom: .1rem solid transparent
+			@media (any-hover: hover)
+				&:hover
+					border-color: #fff
+	&__alert
+		text-align: center
+		margin-top: 5.7rem
+
+	&__bottom
+		&-container
+			position: relative
+			padding-top: 2.5rem
+			padding-bottom: 2.5rem
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				left: 3.5%
+				right: 3.5%
+				height: 0.1rem
+				background: #222222
+
+	&__social
+
+		.social
+			justify-content: flex-end
+			margin-right: -0.7rem
+
+	.pay-systems
+		justify-content: center
+.f-contacts
+	width: 18rem
+	margin-left: auto
+	margin-right: auto
+	&__item
+		display: flex
+		align-items: flex-start
+		margin-bottom: 1.5rem
+		@media (any-hover: hover)
+			&:hover
+				.f-contacts__content
+					color: rgba(#fff, 0.5)
+	&__icon
+		width: 2.4rem
+		height: 2.4rem
+		flex: none
+		margin-right: 1rem
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		background: $color-warning
+		.icon
+			color: $color
+			font-size: 1.5rem
+			&-telegram
+				left: -.1rem
+			&-book
+				font-size: 1.3rem
+	&__content
+		align-self: center
+		color: #fff
+		line-height: 1.4
+		font-size: 1.6rem
+		+tr
+
+.f-alert
+	display: inline-block
+	position: relative
+	min-height: 4.6rem
+	background: linear-gradient(90.14deg, #363636 4.63%, #2B2B2B 100%)
+	border-radius: 4.6rem
+	font-size: 1.4rem
+	padding: 1.2rem 3rem 1.2rem 6.5rem
+	line-height: 2.2rem
+	color: rgba(#fff, 0.4)
+	text-align: left
+	&__icon
+
+		width: 4.6rem
+		height: 4.6rem
+
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -2.3rem
+
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		background: $color-warning
+		.icon
+			color: $color
+			font-size: 2.4rem
+			&-telegram
+				left: -.1rem
+
+.pay-systems
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&__item
+		margin-right: 1rem
+		margin-left: 1rem
+		margin-top: 0.5rem
+		margin-bottom: 0.5rem
+		img
+			max-height: 100%
+.copyright
+	margin-bottom: 0
+	font-size: 1.4rem
+	line-height: 1.2
+	color: #565656
+
++max($laptop)
+	.footer
+		&__head
+			font-size: 3.2rem
+			margin-bottom: 5rem
+
+		&__nav
+			li
+				margin-bottom: 1.1rem
+			a
+				font-size: 1.4rem
+
+		&__title
+			font-size: 2rem
+
+		&__alert
+			margin-top: 4rem
+
++max($ipad)
+	.footer
+		&__top
+			padding: 3.7rem 0 1.8rem
+			&-container
+				display: flex
+				flex-direction: column
+		&__head
+			font-size: 2.6rem
+			padding-top: 0
+			font-weight: 500
+			margin-bottom: 3.5rem
+			order: 0
+		&__title
+			font-size: 1.8rem
+			margin-bottom: 1.2rem
+			&--contact
+				display: none
+		&__alert
+			order: 1
+			margin-top: 0
+			margin-bottom: 5.8rem
+			max-width: 67.6rem
+			margin-left: auto
+			margin-right: auto
+
+		&__row
+			order: 2
+			margin-bottom: -2.1rem
+
+		&__nav
+			li
+				margin-bottom: .6rem
+
+		&__bottom
+			text-align: center
+			&-container
+				padding-top: 0
+				&:after
+					display: none
+
+		&__social
+			.social
+				justify-content: center
+				margin-top: 1.5rem
+				margin-right: 0
+
+		&__pay-systems
+			margin-top: 1.5rem
+
+	.f-alert
+		padding: 2.4rem 2.4rem 3.5rem
+		border-radius: 2.3rem
+		text-align: center
+		&__icon
+			bottom: -2.3rem
+			top: auto
+			left: 50%
+			margin-top: 0
+			margin-left: -2.3rem
+
+	.pay-systems
+		&__item
+			margin: .3rem .5rem
+			height: 2rem
+
+@media screen and(max-width: $ipad) and (min-width: $iphone_sm +1)
+	.f-contacts
+		width: auto
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: -1.5rem
+		&__item
+			margin-left: 2rem
+			margin-right: 2rem
+
++max($iphone)
+	.pay-systems
+		&__item
+			height: 1.5rem
+
++max($iphone_sm)
+	.footer
+		&__top
+			padding-bottom: 3.3rem
+		&__row
+			margin-bottom: -2.6rem
+
+		&__item
+			margin-bottom: 2.6rem
+
+		&__title
+			font-size: 1.8rem
+			margin-bottom: 1rem
+			&--contact
+				display: block
+
+		&__nav
+			li
+				margin-bottom: .6rem
+
+	.f-contacts
+		&__item
+			margin-bottom: 0.7rem

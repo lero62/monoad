@@ -1,0 +1,848 @@
+$form-height: 3.8rem
+$form-size: 1.5rem
+$form-weight: 400
+$form-color: $color
+$form-border: .1rem solid #c4c4c4
+$form-bg: #fbfbfb
+$form-radius: 1.9rem
+$form-placeholder: #999
+
+$checkWidth: 1.8rem
+
+/* Form =========================================== */
+.form
+	&-row
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -1.5rem
+		&__col
+			padding: 0 1.5rem
+	&-field
+		margin-bottom: 2rem
+		position: relative
+	&-field-lg
+		position: relative
+		margin-bottom: 2.7rem
+		&:last-child
+			margin-bottom: 0
+
+	&-group
+		align-items: center
+		margin-bottom: 2rem
+		margin-left: -0.8rem !important
+		margin-right: -0.8rem !important
+		.row
+			margin-left: -0.8rem !important
+			margin-right: -0.8rem !important
+		[class*="col"]
+			padding-left: 0.8rem
+			padding-right: 0.8rem
+		+min($ipad + 1)
+			&.align-items-start
+				.form-group__label
+					padding-top: .5rem
+
+		&:last-child
+			margin-bottom: 0
+		&__label
+			margin-bottom: 0
+			font-weight: 700
+			padding: .5rem 0
+			line-height: 1.2
+			font-size: 1.5rem
+			width: 14rem
+			&--auto
+				width: auto
+			&.text-right-md
+				width: auto
+
+	&-input
+		display: block
+		width: 100%
+		height: $form-height
+		padding: 0 2rem
+		color: $form-color
+		font: $form-weight $form-size $font-family, Arial, sans-serif
+		line-height: normal
+		border: $form-border
+		background: $form-bg
+		border-radius: $form-radius
+		transition: all 0.2s linear
+		&:focus
+			border-color: $color
+			+placeholder
+				opacity: 0
+		+placeholder
+			color: $form-placeholder
+			transition: opacity 0.2s linear
+
+		&.error
+			border-color: red
+		&.valid
+			border-color: green
+
+	&-button
+		margin-top: 3rem
+
+	&-text
+		margin-top: 1rem
+		font-size: 1.4rem
+		font-weight: 400
+		a:hover
+			text-decoration: underline
+
+.forgot-link
+	color: #515151
+	font-size: 1.5rem
+
+.form-wicon
+	position: relative
+	.form-input
+		padding-left: 4rem
+	&__icon
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: 4rem
+		display: flex
+		align-items: center
+		justify-content: center
+		.icon
+			color: #131313
+			font-size: 1.8rem
+
+textarea.form-input
+	height: auto
+	min-height: 10rem
+	padding-top: 1rem
+	padding-bottom: 1rem
+	resize: none
+	overflow: auto
+
+label
+	display: block
+	font-weight: 500
+	font-size: 1.5rem
+	margin-bottom: 1rem
+	line-height: 1.2
+
+/* Form ============================================ */
+
+/* Checkbox  ======================================= */
+.checkbox, .radio
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	font-size: 1.4rem
+	font-weight: 400
+	line-height: 1.4
+	margin: .6rem 2rem .6rem 0
+	font-weight: 400
+	position: relative
+	padding-left: 2.6rem
+	-webkit-tap-highlight-color: transparent
+	input
+		display: none
+
+	&__figure
+		position: absolute
+		width: 2.4rem
+		height: 2.4rem
+		display: block
+		top: -.4rem
+		left: 0
+		background: #fff
+		border: .1rem solid #c4c4c4
+		transition: all 0.2s linear
+
+	&__color
+		position: absolute
+		width: 1.6rem
+		height: 1.6rem
+		display: block
+		top: -.4rem
+		left: 0
+		border-radius: .2rem
+		background: #fff
+		transition: all 0.2s linear
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			background: $color-default
+			top: .2rem
+			left: .2rem
+			right: .2rem
+			bottom: .2rem
+			border-radius: .2rem
+			background-size: 1rem .8rem !important
+
+		&--white
+			&:after
+				background-color: #fff
+
+	&__text
+		padding-left: .7rem
+		min-height: 2rem
+		flex: 1
+		display: block
+		min-width: 1px
+		a
+			text-decoration: underline
+
+	&--block
+		display: block
+		margin: .5rem 0
+
+	&--sm
+		padding-left: 2rem
+		.checkbox, .radio
+
+			&__figure
+				width: 1.5rem
+				height: 1.5rem
+
+				top: .2rem
+				&:after
+					background-size: 1rem .8rem !important
+
+.checkbox
+	input
+		&:checked ~ .checkbox__figure
+			background: #fbc644
+			border-color: #fbc644
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				z-index: 1
+				left: 0
+				top: 0
+				height: 100%
+				width: 100%
+				background: url('../img/checkbox.svg') no-repeat center
+
+		&:checked ~ .checkbox__color
+			&:after
+				left: 0
+				top: 0
+				right: 0
+				bottom: 0
+				background: url('../img/checkbox-white.svg') no-repeat .3rem .4rem
+
+			&--white
+				&:after
+					background: url('../img/checkbox.svg') no-repeat .3rem .4rem
+
+	&__figure
+		border-radius: 0.3rem
+
+.radio
+	input
+		&:checked ~ .radio__figure
+			background: #fbc644
+			border-color: #fbc644
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				z-index: 1
+				left: .5rem
+				top: .5rem
+				height: 1.2rem
+				width: 1.2rem
+				border-radius: 50%
+				background: $color
+
+	&__figure
+		border-radius: 50%
+
+.check-button
+	font-weight: 300
+	margin: 0
+	display: inline-block
+	vertical-align: middle
+	margin-right: 2rem
+	cursor: pointer
+	input
+		display: none
+		&:checked + .check-button__slider
+			background: #131313
+			&:after
+				left: 1.4rem
+
+	&__slider
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		top: -.1rem
+		cursor: pointer
+		width: 2.7rem
+		height: 1.5rem
+		margin-right: .5rem
+		border-radius: 0.8rem
+		background-color: #888
+		transition: all 0.2s linear
+		&:hover
+			background: #888
+		&:after
+			position: absolute
+			content: ''
+			top: .2rem
+			left: .2rem
+			width: 1.1rem
+			height: 1.1rem
+			border-radius: 50%
+			background-color: #ffffff
+			transition: all 0.2s linear
+
+.radio-stars
+	display: inline-flex
+	align-items: center
+	&__item
+		flex: none
+		width: 2.3rem
+		height: 2.1rem
+
+		background: url('../img/rating-star.svg')	no-repeat center
+		background-size: contain
+		margin: 0 .2rem 0 0
+	&__labels
+		display: flex
+		justify-content: flex-end
+		flex-direction: row-reverse
+
+	&__value
+		color: #A6A6A6
+		font-size: 1.8rem
+		font-family: $font2
+		line-height: 1.2
+		flex: none
+		margin-left: 1rem
+		padding-top: 0.4rem
+		&:before
+			content: '0.0'
+			display: block
+
+	input
+		display: none
+		&:nth-child(5):checked
+			& ~ .radio-stars__labels .radio-stars__item
+				background-image: url('../img/rating-star-1.svg')
+			& ~ .radio-stars__value
+				&:before
+					content: '5'
+
+		&:nth-child(4):checked
+			& ~ .radio-stars__labels .radio-stars__item:nth-child(2),
+			& ~ .radio-stars__labels .radio-stars__item:nth-child(3),
+			& ~ .radio-stars__labels .radio-stars__item:nth-child(4),
+			& ~ .radio-stars__labels .radio-stars__item:nth-child(5)
+				background-image: url('../img/rating-star-1.svg')
+			& ~ .radio-stars__value
+				&:before
+					content: '4'
+
+		&:nth-child(3):checked
+			& ~ .radio-stars__labels .radio-stars__item:nth-child(3),
+			& ~ .radio-stars__labels .radio-stars__item:nth-child(4),
+			& ~ .radio-stars__labels .radio-stars__item:nth-child(5)
+				background-image: url('../img/rating-star-1.svg')
+			& ~ .radio-stars__value
+				&:before
+					content: '3'
+
+		&:nth-child(2):checked
+			& ~ .radio-stars__labels .radio-stars__item:nth-child(4),
+			& ~ .radio-stars__labels .radio-stars__item:nth-child(5)
+				background-image: url('../img/rating-star-1.svg')
+
+			& ~ .radio-stars__value
+				&:before
+					content: '2'
+
+		&:nth-child(1):checked
+			& ~ .radio-stars__labels .radio-stars__item:nth-child(5)
+				background-image: url('../img/rating-star-1.svg')
+
+			& ~ .radio-stars__value
+				&:before
+					content: '1'
+
+/* Selectbox  ======================================= */
+
+.selectbox
+	position: relative
+	width: 100%
+
+	&__head
+		display: flex
+		height: $form-height
+		border: $form-border
+		border-radius: $form-radius
+		cursor: pointer
+		background: $form-bg
+		position: relative
+
+	&__legend
+		top: 0
+		left: 1.2rem
+		font-size: 1.6rem
+		line-height: $form-height - .2rem
+		color: #000
+		position: absolute
+		z-index: 2
+		+text-overflow
+
+		max-width: calc(100% - 2.4rem)
+		pointer-events: none
+		padding: 0 .3rem
+		transition: all 0.1s linear
+		letter-spacing: 0.01rem
+
+	&__icon
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 3.3rem
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		.icon
+			font-size: 1.5rem
+			display: block
+			&-sort
+				font-size: 1.7rem
+			&-star-filled
+				top: -.2rem
+	&__text
+
+		flex: 1
+		min-width: 1px
+		padding: 0 0 0 2rem
+		max-width: 100%
+		+text-overflow
+		font: 500 $form-size $font2
+		text-transform: uppercase
+		color: $color
+		line-height: $form-height - .3rem
+
+		&.placeholder
+			color: $color
+
+		.selectbox__vis
+			&-text
+				display: block
+			.rating
+				display: none
+
+	&__caret
+		display: flex
+		align-items: center
+		flex: none
+
+		font-size: 0
+		position: relative
+		width: 4.5rem
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			margin-top: -.6rem
+			right: 50%
+			margin-right: -0.2rem
+
+			width: .8rem
+			height: .8rem
+			border: .2rem solid #131313
+			border-top: 0
+			border-left: 0
+			transform: rotate(45deg)
+
+	&__drop
+		display: none
+		position: absolute
+		top: -.1rem
+		left: 0
+		width: 100%
+		z-index: 10
+		width: 100%
+		border-radius: 2rem
+		overflow: hidden
+		text-align: left
+		padding-top: $form-height + .1rem
+		background: #fff
+
+		& > ul:not(.ul-dotted)
+			max-height: 33rem
+			overflow: hidden
+			overflow-y: auto
+			position: relative
+			z-index: 2
+			& > li
+				font-size: 1.5rem
+				cursor: pointer
+				padding: .6rem 2rem
+				line-height: 1.4
+				color: #131313
+				font-weight: 400
+				transition: .2s linear
+				@media (any-hover: hover)
+					&:hover
+
+						background: #FFEDBF
+						color: #131313
+				&.selected
+					background: #FBC644
+					color: #000
+
+		.ul-dotted
+			display: grid
+			grid-template-columns: auto auto auto
+			gap: 1rem
+			li
+				width: 100%
+				display: inline-block
+				font-size: 1.4rem
+				cursor: pointer
+				span
+					border-bottom: .1rem dotted
+				&.selected
+					font-weight: 500
+
+	&__search
+		margin-left: 2rem
+		margin-right: 2rem
+		position: relative
+		z-index: 2
+		.icon
+			position: absolute
+			left: 1.5rem
+			top: 1.1rem
+			font-size: 1.6rem
+
+		.form-input
+			padding-left: 4rem
+
+	&__vis
+		display: block
+
+	&__vis-text
+		display: none
+
+	.rating
+		display: flex
+		justify-content: center
+
+	&._open
+		.selectbox__head
+			z-index: 11
+			border-color: transparent
+			background: #fff
+		.selectbox__caret:after
+			transform: scale(1, -1) rotate(45deg)
+			margin-top: -.2rem
+
+		.selectbox__drop
+			display: block
+			box-shadow: 0px 14px 40px rgba(0, 0, 0, 0.2)
+
+	&._change
+		.selectbox__legend
+			top: -.9rem
+			background: #fff
+			font-size: 1.3rem
+			line-height: 1.4rem
+			color: #aaa
+			letter-spacing: -.03rem
+
+	&--lower
+		.selectbox__text
+			text-transform: none
+
+	&--icon
+		.selectbox__text
+			padding-left: 4.2rem
+
+	&--bold
+		.selectbox__text
+			font-weight: 600
+			font-size: 1.4rem
+			padding-top: 0.1rem
+
+	&--default
+		.selectbox__text
+			font-family: $font-family
+			text-transform: none
+			color: #131313
+			font-weight: 400
+
+	&--warning
+		.selectbox
+			&__head
+				background: $color-warning
+				border: none
+			&__drop
+				background: #505050
+				& > ul > li
+					color: #fff
+
+					&.selected
+						background: #fff
+						color: $color
+					@media (any-hover: hover)
+						&:hover
+							background: rgba(#fff, 0.8)
+							color: $color
+
+		&._open
+
+			.selectbox__head
+				background: $color-warning
+				border-bottom-left-radius: 0
+				border-bottom-right-radius: 0
+			.selectbox__drop
+				box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.6)
+	&--line
+		width: auto
+		.selectbox
+			&__head
+				height: 1.8rem
+				border: none
+				background: none
+
+			&__text
+				padding-left: 0
+				font: 700 1.2rem $font-family, Arial, sans-serif
+				line-height: 1.2
+				border-bottom: .2rem solid $color-warning
+			&__caret
+				width: 1.2rem
+				margin-left: 0.3rem
+				&:after
+					+arr(.6rem, .4rem, $color, b)
+					transform: rotate(0)
+
+			&__drop
+
+				top: -1.4rem
+				left: 50%
+				transform: translate(calc((50% + .5rem)* (-1)), 0)
+
+				width: calc(100% + 3.5rem)
+
+				li
+					padding-left: 2.5rem
+					font-size: 1.3rem
+
+		&._open
+			.selectbox
+				&__head
+					background: transparent
+				&__caret:after
+					transform: rotate(180deg)
+					margin-top: -.4rem
+
+	&--drop-different
+
+		.selectbox__drop
+			top: 100%
+			padding: 2rem 3rem
+			margin-top: 1.5rem
+			overflow: visible
+			border-top-right-radius: 0
+
+			&:after
+				content: ''
+				position: absolute
+				bottom: 100%
+				right: 0
+				+arr(1rem, 1rem, #fff, br)
+		.selectbox__search
+			margin: 0
+		&._open
+			.selectbox__head
+				border-color: #c4c4c4
+				background: #fbfbfb
+			.selectbox__drop
+				box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2)
+.selectbox__drop ul::-webkit-scrollbar
+	width: 0.2rem
+
+.selectbox__drop ul::-webkit-scrollbar-track
+	background: #aaa
+.selectbox__drop ul::-webkit-scrollbar-thumb
+	background: #000
+
+.selectbox__drop ul::-webkit-scrollbar-button
+	display: none
+
+.dropdown__list::-webkit-scrollbar
+	width: 0.2rem
+
+.dropdown__list::-webkit-scrollbar-track
+	background: rgba(0, 0, 0, 0.1)
+.dropdown__list::-webkit-scrollbar-thumb
+	background: rgba(0, 0, 0, 0.46)
+
+.dropdown__list::-webkit-scrollbar-button
+	display: none
+
+.dropdown
+	position: relative
+
+	&__title
+		white-space: nowrap
+		padding: 0 2.8rem
+		font: 500 1.2rem $font-family, Arial, sans-serif
+		line-height: 1.2
+		text-transform: uppercase
+		margin-bottom: 1rem
+		span
+			border-bottom: .2rem solid $color-warning
+
+		&-change
+			display: none
+
+	&__block
+		border: none
+		box-shadow: 0px 6px 27px rgba(0, 0, 0, 0.12)
+		background: #fff
+		border-radius: 2rem
+		position: absolute
+		top: -1rem
+		left: -2.8rem
+		min-width: calc(100% + 6.6rem)
+		z-index: 10
+		padding: 1.2rem 0
+		display: none
+	&__list
+
+		max-height: 12.5rem
+		overflow: hidden
+		overflow-y: auto
+
+		li
+			font-size: 1.3rem
+			cursor: pointer
+			padding: .6rem 2.8rem
+			line-height: 1.4
+			color: #131313
+			font-weight: 400
+			transition: .2s linear
+			white-space: nowrap
+			@media (any-hover: hover)
+				&:hover
+					background: rgba(255, 237, 191, 0.35)
+					color: $color
+			&.selected
+				background: #FFEDBF
+				font-weight: 700
+				color: $color
+	&._open
+		.dropdown__block
+			display: block
+	&._change
+		.dropdown__title
+			&-change
+				display: inline-block
+			&-start
+				display: none
+
+/* File  =========================================== */
+
+.upload-file
+	&__wrap
+		display: inline-flex
+		align-items: flex-start
+		position: relative
+		overflow: hidden
+		margin-top: .5rem
+
+	input
+		position: absolute
+		top: 0
+		right: 0
+		height: auto
+		margin: 0
+		padding: 0
+		opacity: 0
+		font-size: 100px
+		line-height: 1em
+		cursor: pointer
+
+	&__name
+		flex: 1
+		min-width: 1px
+		order: 1
+
+		font-weight: $form-weight
+		font-size: $form-size
+		color: #636363
+		+tr
+		+text-overflow
+		border-bottom: .1rem dotted
+	&__browse
+		flex: none
+		margin-right: 1rem
+		.icon
+			font-size: 1.9rem
+			display: block
+			color: #666666
+
+	&__images
+		display: flex
+		flex-wrap: wrap
+
+	&__img
+		margin: 0 1rem 1rem 0
+		flex: none
+		img
+			width: 7rem
+			height: 7rem
+			object-fit: cover
+
+	&__text
+		color: #515151
+		font-size: 1.5rem
+		margin-bottom: 1rem
+
+/* File  =========================================== */
+
++max($iphone)
+	label
+		margin-bottom: 0.4rem
+	.form-field-lg
+		margin-bottom: 1.5rem
+
+	.form-input
+		font-size: 1.3rem
+
+	.form-group
+		margin-bottom: 1rem
+		&__label
+			padding-top: 0
+
+	.upload-file
+		&__name, &__text
+			font-size: 1.3rem
+		&__browse
+			.icon
+				font-size: 1.5rem
+				top: .1rem
+
+	.selectbox
+		&__text
+			font-size: 1.2rem
+		&__drop
+			& > ul > li
+				font-size: 1.2rem
+
+	.checkbox--iphone-block,
+	.radio--iphone-block
+		display: block
+		margin-top: 1rem
+		margin-bottom: 1rem

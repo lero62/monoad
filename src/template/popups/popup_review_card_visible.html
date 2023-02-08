@@ -1,0 +1,69 @@
+<div id="popup-review-card-visible" class="popup popup--mst">
+	<div class="popup__body">
+		<div class="popup__content">
+			<div class="popup__close _close-popup">
+				<svg class="icon icon-close">
+					<use xlink:href="img/sprite.svg#close"></use>
+				</svg>
+			</div>
+
+			<div class="popup__top">
+				<div class="popup__top-logo">
+					<img src="img/logo-mini.png" alt="">
+				</div>
+				<div class="popup__title ">
+					<span class="hidden-iphone">отзывы о COURT-READY CLOUD WASHED HOODIE WHEAT</span>
+					<span class="visible-iphone">Отзывы о товаре</span>
+
+				</div>
+			</div>
+
+			<div class="popup__wrap-wisl wrap-wsl">
+				<div class="wrap-wsl__img">
+					<div class="wsl-slider">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="img/wsl-img.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="img/wsl-img.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="img/wsl-img.jpg" alt=""></div>
+							</div>
+
+						</div>
+						<div class="swiper-button-prev">
+							<svg class="icon icon-swiper-arrow">
+								<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+							</svg>
+						</div>
+						<div class="swiper-button-next">
+							<svg class="icon icon-swiper-arrow">
+								<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+							</svg>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="wrap-wsl__content">
+					@@include('../blocks/review_card.html', {
+
+					actions: true,
+					activated: 'true',
+					avatar: 'img/reviews/avatar.png',
+					name: 'Котофеев И. ',
+					date: '2 дня назад',
+					user_status: 'Пользователь сайта',
+					rating: 'true',
+					text: '<p>Обувь очень крутая, когда я выхожу из подъезда, на меня сразу все смотрят и бабки на лавочке и другие прохожие! <br>Всем рекомендую Мартинсов!</p> ',
+					advantages: '',
+					advantages_stores: 'false',
+					flaws: '',
+					gallery: '',
+					like_val: '3',
+					dislike_val: '4',
+					reply: 'Ответить',
+					})
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>

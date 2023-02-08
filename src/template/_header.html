@@ -1,0 +1,524 @@
+<header class="header lock-padding swipe-block">
+	<div class="container-fluid header__container">
+
+		<div class="header__left">
+			<ul class="top-nav">
+				<li class="top-nav__item">
+					<a href="#" class="top-nav__link">Для женщин</a>
+				</li>
+				<li class="top-nav__item">
+					<a href="#" class="top-nav__link @@if(nav==2){_active}">Для мужчин</a>
+				</li>
+				<li class="top-nav__item">
+					<a href="#" class="top-nav__link">Бренды</a>
+					<ul class="dropdown-nav">
+						<li class="dropdown-nav__item">
+							<a href="#" class="dropdown-nav__link">Dr. Martens</a>
+						</li>
+						<li class="dropdown-nav__item">
+							<a href="#" class="dropdown-nav__link">Converse</a>
+						</li>
+						<li class="dropdown-nav__item">
+							<a href="#" class="dropdown-nav__link">Vans</a>
+						</li>
+						<li class="dropdown-nav__item">
+							<a href="#" class="dropdown-nav__link">Monoad</a>
+						</li>
+						<li class="dropdown-nav__item dropdown-nav__item--selected">
+							<a href="#" class="dropdown-nav__link">Все бренды</a>
+						</li>
+					</ul>
+				</li>
+				<li class="top-nav__item ">
+					<a href="#" class="top-nav__link top-nav__link--selected @@if(nav==3){_active}">Скидки</a>
+				</li>
+			</ul>
+
+			<div class="burger _navbar-toggle" data-burger="1">
+				<svg class="icon icon-menu">
+					<use xlink:href="img/sprite.svg#menu"></use>
+				</svg>
+			</div>
+
+			<!-- Выбор языка только для мобилы -->
+			<div class="header__lang top-lang visible-md">
+				<a href="#" class="top-lang__link _lang-toggle">рус</a>
+				<ul class="dropdown-nav _lang-dropdown">
+					<li class="dropdown-nav__item">
+						<a href="#" class="dropdown-nav__link _active">Русский</a>
+					</li>
+					<li class="dropdown-nav__item">
+						<a href="#" class="dropdown-nav__link">Украинский</a>
+					</li>
+					<li class="dropdown-nav__item">
+						<a href="#" class="dropdown-nav__link">English</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header__logo logo">
+			<a href="#">
+				@@if(nav != 'history-brand') {
+				<img src="img/logo.svg" alt="">
+				}
+				@@if(nav == 'history-brand') {
+				<img src="img/logo-light.svg" alt="">
+				}
+			</a>
+		</div>
+
+		<div class="header__right">
+			<!-- Поиск -->
+			<div class="header__search hidden-md" data-da="header__left, last, 1600">
+				<div class="top-search" data-da="header__mobile-search, first, 1024">
+					<form action="#" class="top-search__form">
+						<span class="top-search__icon">
+							<svg class="icon icon-search">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</span>
+						<input type="text" placeholder="Поиск" class="top-search__input">
+					</form>
+
+					<!-- Добавить класс open чтобы отобразить блок подсказки для поиска -->
+					<div class="dropdown-block dropdown-block--search db-search ">
+						<div class="dropdown-block__close"><svg class="icon icon-close">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg></div>
+						<div class="dropdown-block__scroll scrollbar">
+							<div class="db-search__top">
+								<div class="alert alert--not-arrow alert--not-icon ">
+									<div class="alert__inner"><strong>Показаны результаты по запросу «Ботинки 1460»</strong></div>
+								</div>
+							</div>
+
+							<ul class="db-search__list">
+								<li><a href="#"><strong>1460</strong> Black Smooth <em>— Ботинки</em></a></li>
+								<li><a href="#"><strong>1460</strong> Black Nappa <em>— Ботинки</em></a></li>
+								<li><a href="#"><strong>1460</strong> Black Greasy <em>— Ботинки</em></a></li>
+							</ul>
+
+							<ul class="db-search__cards">
+								<li>
+									<a href="#" class="dbc-card">
+										<div class="dbc-card__img">
+											<img src="img/products/products-slider-img1.jpg" alt="">
+											<div class="dbc-card__stickers">
+												<span class="sticker sticker--sale">%</span>
+											</div>
+										</div>
+										<div class="dbc-card__content">
+											<div class="dbc-card__brand">DR.MARTENS</div>
+											<div class="dbc-card__title">1460 Pascal Hardware Black Virginia</div>
+											<div class="dbc-card__price">
+												<span class="price-old ">6100 грн.</span>
+												<span class="price-value text-danger">5999 грн.</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dbc-card">
+										<div class="dbc-card__img">
+											<img src="img/products/products-slider-img2.jpg" alt="">
+										</div>
+										<div class="dbc-card__content">
+											<div class="dbc-card__brand">DR.MARTENS</div>
+											<div class="dbc-card__title">1460 Pascal Hardware Black Virginia</div>
+											<div class="dbc-card__price">
+												<span class="price-value">6100 грн.</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dbc-card">
+										<div class="dbc-card__img">
+											<img src="img/products/products-slider-img3.jpg" alt="">
+										</div>
+										<div class="dbc-card__content">
+											<div class="dbc-card__brand">DR.MARTENS</div>
+											<div class="dbc-card__title">1460 Pascal Hardware Black Virginia</div>
+											<div class="dbc-card__price">
+												<span class="price-value">6100 грн.</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+
+							<div class="db-search__footer">
+								<div class="db-search__history"><a href="#">История поиска</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Выбор языка только для десктопа -->
+			<div class="header__lang top-lang hidden-md">
+				<a href="#" class="top-lang__link _lang-toggle">рус</a>
+				<ul class="dropdown-nav _lang-dropdown">
+					<li class="dropdown-nav__item">
+						<a href="#" class="dropdown-nav__link _active">Русский</a>
+					</li>
+					<li class="dropdown-nav__item">
+						<a href="#" class="dropdown-nav__link">Украинский</a>
+					</li>
+					<li class="dropdown-nav__item">
+						<a href="#" class="dropdown-nav__link">English</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Меню иконок -->
+			<ul class="header__controls top-controls">
+				<li class="top-controls__item hidden-iphone">
+					<a href="#" class="top-controls__link @@if(nav == 13){_active}">
+						<span class="top-controls__badge">1</span>
+						<svg class="icon icon-star">
+							<use xlink:href="img/sprite.svg#star"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="top-controls__item ">
+					<a href="#popup-contacts" class="top-controls__link _open-popup"><svg class="icon icon-comment">
+							<use xlink:href="img/sprite.svg#comment"></use>
+						</svg></a>
+
+
+				</li>
+				<li class="top-controls__item hidden-iphone">
+					<a href="#popup-login" class="top-controls__link btn-profile _open-popup @@if(nav == 11){_active}"><svg class="icon icon-user">
+							<use xlink:href="img/sprite.svg#user"></use>
+						</svg></a>
+				</li>
+				<li class="top-controls__item dropdown-hover">
+					<a href="#popup-cart" class="top-controls__link _open-popup">
+						<span class="top-controls__badge">3</span>
+						<svg class="icon icon-shopping-cart">
+							<use xlink:href="img/sprite.svg#shopping-cart"></use>
+						</svg>
+					</a>
+					<div class="dropdown-block dropdown-block--right dropdown-block--cart ">
+						<div class="ond-drop ond-drop--message" style="display: none;">Корзина пустая</div>
+						<div class="ond-drop ">
+							<div class="ond-drop__scroll scrollbar">
+								<div class="cards-table">
+									<a href="#" class="cards-table__item">
+										<div class="cards-table__img">
+											<img src="img/products/catalog-img1.jpg" alt="">
+										</div>
+										<div class="cards-table__content">
+											<div class="cards-table__head ">
+												<div class="cards-table__brand">Dr.Martens</div>
+												<div class="cards-table__title">1460 Pascal Hardware Black Virginia</div>
+											</div>
+
+											<div class="cards-table__details ort-details">
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-size">
+															<use xlink:href="img/sprite.svg#size"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content">
+														Размер - 42 EUR / 8,5 US Men / 27 см.
+													</div>
+												</div>
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-track">
+															<use xlink:href="img/sprite.svg#track"></use>
+														</svg>
+
+													</div>
+													<div class="ort-details__content toltipe-wrap  _toltipe-toggle">
+														<span class="dotted">Бесплатная доставка 5-10 дней</span>
+														<div class="toltipe toltipe--top-center">
+															Взуття в наявності на складі в постачальника в Україні. <br>Безкоштовна доставка до вашого відділення Нової Пошти займе 3-7 днів, залежно від регіону доставки.
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cards-table__price">
+												<span class="price-value">6100 грн.</span>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="cards-table__item">
+										<div class="cards-table__img">
+											<img src="img/products/catalog-img1.jpg" alt="">
+										</div>
+										<div class="cards-table__content">
+											<div class="cards-table__head ">
+												<div class="cards-table__brand">Dr.Martens</div>
+												<div class="cards-table__title">1460 Cian Colorado Blue</div>
+											</div>
+
+											<div class="cards-table__details ort-details">
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-size">
+															<use xlink:href="img/sprite.svg#size"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content">
+														Размер - 42 EUR / 8,5 US Men / 27 см.
+													</div>
+												</div>
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-track">
+															<use xlink:href="img/sprite.svg#track"></use>
+														</svg>
+
+													</div>
+													<div class="ort-details__content toltipe-wrap  _toltipe-toggle">
+														<span class="dotted">Бесплатная доставка 5-10 дней</span>
+														<div class="toltipe toltipe--top-center">
+															Взуття в наявності на складі в постачальника в Україні. <br>Безкоштовна доставка до вашого відділення Нової Пошти займе 3-7 днів, залежно від регіону доставки.
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cards-table__price">
+												<span class="price-value">3900 грн.</span>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="cards-table__item">
+										<div class="cards-table__img">
+											<img src="img/products/catalog-img1.jpg" alt="">
+										</div>
+										<div class="cards-table__content">
+											<div class="cards-table__head ">
+												<div class="cards-table__brand">Dr.Martens</div>
+												<div class="cards-table__title">1460 Cian Colorado Blue</div>
+											</div>
+
+											<div class="cards-table__details ort-details">
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-size">
+															<use xlink:href="img/sprite.svg#size"></use>
+														</svg>
+													</div>
+													<div class="ort-details__content">
+														Размер - 42 EUR / 8,5 US Men / 27 см.
+													</div>
+												</div>
+												<div class="ort-details__item">
+													<div class="ort-details__icon">
+														<svg class="icon icon-track">
+															<use xlink:href="img/sprite.svg#track"></use>
+														</svg>
+
+													</div>
+													<div class="ort-details__content toltipe-wrap  _toltipe-toggle">
+														<span class="dotted">Бесплатная доставка 5-10 дней</span>
+														<div class="toltipe toltipe--top-center">
+															Взуття в наявності на складі в постачальника в Україні. <br>Безкоштовна доставка до вашого відділення Нової Пошти займе 3-7 днів, залежно від регіону доставки.
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cards-table__price">
+												<span class="price-value">3900 грн.</span>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="ond-drop__foot">
+								<div class="ond-drop__total">ИТОГО: 10000 грн</div>
+								<div class="ond-drop__button">
+									<a href="#" class="btn btn--dark">Добавить еще</a>
+									<a href="#" class="btn btn--warning">Оформить заказ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+
+		<!-- Поиск только для мобилы + блоки фильтров -->
+		<div class="header__mobile-search">
+			@@if (nav == 2 || nav == 3 || nav == 13) {
+
+			<!-- Блоки сортировки и фильтров только в каталогах -->
+			<div class="header__actions sorting visible-md">
+				<div class="sorting__item ">
+					<div class="filter-button _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-grid">
+							<use xlink:href="img/sprite.svg#grid"></use>
+						</svg>
+						<span>Категории</span>
+						<div class="filter-button__caret"></div>
+					</div>
+
+				</div>
+				<div class="sorting__item ">
+					<div class="filter-button filter-button--selected _filter-toggle">
+						<svg class="icon icon-filter-alt">
+							<use xlink:href="img/sprite.svg#filter-alt"></use>
+						</svg>
+						<span>Фильтр</span>
+						<div class="filter-button__caret"></div>
+						<span class="badge">2</span>
+					</div>
+				</div>
+			</div>
+			}
+
+			@@if (nav == 11 ) {
+
+			<!-- Блоки сортировки и фильтров только в каталогах -->
+			<div class="header__actions sorting visible-md">
+				<div class="sorting__item ">
+					<div class="filter-button filter-button--size _filter-toggle">
+						<svg class="icon icon-roulette">
+							<use xlink:href="img/sprite.svg#roulette"></use>
+						</svg>
+						<span>Мой размер</span>
+					</div>
+				</div>
+			</div>
+			}
+
+
+			@@if (nav == 12) {
+
+			<!-- Блоки сортировки и фильтров только в каталогах -->
+			<div class="header__actions sorting visible-md">
+				<div class="sorting__item ">
+					<div class="filter-button filter-button--menu _navbar-toggle" data-burger="2">
+						<svg class="icon icon-menu">
+							<use xlink:href="img/sprite.svg#menu"></use>
+						</svg>
+						<span>разделы помощи</span>
+					</div>
+				</div>
+			</div>
+			}
+			@@if (nav == 'Меню') {
+
+			<!-- Блоки сортировки и фильтров только в каталогах -->
+			<div class="header__actions sorting visible-md">
+				<div class="sorting__item ">
+					<div class="filter-button filter-button--menu _box-fixed-toggle" data-box-fixed-toggle="3">
+						<svg class="icon icon-menu">
+							<use xlink:href="img/sprite.svg#menu"></use>
+						</svg>
+						<span>@@nav</span>
+					</div>
+				</div>
+			</div>
+			}
+
+			@@if (nav == 'history-brand' ) {
+
+			<!-- Блоки сортировки и фильтров только в каталогах -->
+			<div class="header__actions sorting visible-md">
+				<div class="sorting__item sorting__item--year">
+					<div class="selectbox selectbox--warning" data-selectbox>
+						<div class="selectbox__head" data-selectbox-head>
+							<div class="selectbox__text" data-selectbox-title>1901</div>
+							<div class="selectbox__caret"></div>
+						</div>
+						<div class="selectbox__drop _fixed-drop">
+							<ul>
+								<li data-history-href="#section-h-1" class="selected">1901</li>
+								<li data-history-href="#section-h-2">1960</li>
+								<li data-history-href="#section-h-3">1970</li>
+								<li data-history-href="#section-h-4">1980</li>
+								<li data-history-href="#section-h-5">1990</li>
+								<li data-history-href="#section-h-6">2000</li>
+								<li data-history-href="#section-h-7">2013</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			}
+		</div>
+	</div>
+
+
+</header>
+
+<!-- BEGIN NAVBAR FOR MOBILE -->
+<nav class="navbar" data-navbar="1">
+	<div class="navbar__overlay _navbar-toggle" data-burger="1"></div>
+
+	<div class="navbar__container">
+		<ul class="navbar-menu  _menu">
+			<li>
+				<a href="#">Для женщин</a>
+				<ul>
+					<li><a href="#">Все</a></li>
+					<li><a href="#">Ботинки и челси</a></li>
+					<li>
+						<a href="#">Туфли и лоферы</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Кеды</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Кроссовки</a></li>
+					<li><a href="#">Сандалии</a></li>
+					<li><a href="#">Шлепанцы</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Для мужчин</a>
+				<ul>
+					<li><a href="#">Все</a></li>
+					<li><a href="#">Ботинки и челси</a></li>
+					<li><a href="#">Туфли и лоферы</a></li>
+					<li><a href="#">Кеды</a></li>
+					<li><a href="#">Кроссовки</a></li>
+					<li><a href="#">Сандалии</a></li>
+					<li><a href="#">Шлепанцы</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Бренды</a>
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">1</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="navbar-selected">Скидки</a></li>
+
+			<li class="end-menu">
+				<a href="#">Личный кабинет</a>
+				<ul>
+					<li><a href="#">История заказов <span class="badge">1</span></a></li>
+					<li><a href="#">Личные данные</a></li>
+					<li><a href="#" class="@@if (nav==13){active}">Избранное <span class="badge">26</span></a></li>
+					<li><a href="#">Выйти</a></li>
+
+					<li class="end-menu"><a href="#">Главное меню</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="@@if (nav==13){active}">Избранное</a></li>
+		</ul>
+	</div>
+
+</nav>
+<!-- NAVBAR FOR MOBILE EOF -->
